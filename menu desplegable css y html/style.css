@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main{
+    display: grid;
+   height: 100vh;;
+    
+}
+
+.container {
+    justify-self: center;
+    align-self: center;
+   border: 1px solid black;
+   padding: 10px;
+   border-radius: 30%;
+   width: 8em;
+   height: 8em;
+   
+} */
+
+
+.navbar{
+   background-color: aquamarine;
+    height: 4em;
+    padding: 1em;
+    position: relative;
+    
+}
+
+/* colocar el checkobs y las imagenes del mismo tamaño */
+.checkbox, .icon{
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+}
+
+/* el para que no le haga caso a las imagenes y si al check */
+.icon{
+    pointer-events: none;
+    font-size: 1em;
+}
+.checkbox{
+    opacity: 0;
+}
+
+.checkbox:checked ~ .amb{
+    display: none;
+}
+
+.x{
+    display: none;
+}
+
+.checkbox:checked ~ .x{
+    display: block;
+}
+
+.menu{
+   
+    width: 20em;
+    position: absolute;
+    top: -3.8em;
+    z-index: -1;
+    right: 0em;
+    transition: 250ms;
+}
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: inherit;
+    background-color: rgba(40, 230, 230,0.3);
+    display: block;
+    padding: 0.3em 1em;
+}
+
+.menu li a:hover{
+    background-color: rgba(40, 230, 230,0.6);
+}
+
+.checkbox:checked ~ .menu{
+    top: 3.8em;
+}
+
+@media(min-width: 560px){
+    .checkbox, .amb, .x{
+        display: none;
+    }
+
+
+   
+
+    .menu{
+        top: 0;
+        z-index: 1;
+        width: unset;
+        display: flex;
+   
+
+      
+
+    }
+
+    .menu li a{
+       
+        height: 4em;
+        padding:  1em 1em 0.6em;
+    }
+}

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   font-family: julee, Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    height: 300vh;
+    background: -moz-linear-gradient(45deg,rgba(79, 79, 236),rgb(163, 27, 218, 0.9));
+}
+
+.header{
+    height: 85vh;
+     background-image:url(/img/fotoPerfil.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+
+    
+}
+
+
+
+.container_foto_perfil {
+    position: absolute;
+  left: 40px;
+
+ 
+}
+
+
+.foto_perfil{
+width: 10rem;
+height: 10rem;
+object-fit: cover;
+border-radius: 50%;
+border: solid 2px blue ;
+
+}
+
+.title{
+    position: absolute;
+    z-index: 1;
+    top: -30%;
+    left: 20%;
+    vertical-align: text-top;
+    line-height: 70vh;
+    font-size: 1rem;
+    color: white;
+   
+}
+
+.nav{
+    background-color: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    position: sticky;
+    top: 0;
+}
+
+.nav_link{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+
+
+.main{
+  
+
+
+ overflow: hidden;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+
+}
+
+
+.relleno{
+    width: 25rem;
+    height: 22rem;
+    border: solid 3px black;
+    background: radial-gradient(rgba(52, 245, 235), rgb(48, 128, 48,0.4));
+    margin: 1rem;
+    
+}
