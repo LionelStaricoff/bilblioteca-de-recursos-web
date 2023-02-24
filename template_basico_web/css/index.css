@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+@import 'animate.css';
+
+
+:root{
+    --fondo_menu: rgba(243, 99, 99, 0.9);
+    --font: white;
+}
+
+
+
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   font-family: julee, Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    height: 300vh;
+    background: -moz-linear-gradient(45deg, rgba(79, 79, 236, 0.9),rgba(163, 27, 218, 0.9));
+
+}
+
+.header{
+    height: 90vh;
+    background-image:url(/img/fotoPerfil.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+
+    
+}
+
+/* animasion del fondo */
+/* 
+@keyframes float1 {
+    0%{transform: translate(0, 20)}
+    50%{transform: translate(-20px, 10px)}
+    100%{transform: translate(1, 10)}
+}
+
+.triangle-float1 {
+    animation: float1 5s infinite;
+}
+
+@keyframes float2 {
+    0%{transform: translate(0, 0)}
+    50%{transform: translate(-5px, -5px)}
+    100%{transform: translate(0, 0)}
+}
+
+.triangle-float2 {
+    animation: float2 4s infinite;
+}
+
+@keyframes float3 {
+    0%{transform: translate(0, 0)}
+    50%{transform: translate(0, -10px)}
+    100%{transform: translate(0, 0)}
+}
+
+.triangle-float3 {
+    animation: float3 6s infinite;
+} */
+
+
+
+
+
+.container_foto_perfil {
+  position: absolute;
+  right:  1em;
+
+ 
+}
+
+header:hover .container_foto_perfil .foto_perfil{
+
+  animation: flip; 
+  animation-duration: 2s;
+
+  
+  
+}
+
+.foto_perfil{
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: solid 2px blue ;
+  
+
+}
+
+.title{
+    position: absolute;
+    z-index: 1;
+    top: -30%;
+    left: 20%;
+    vertical-align: text-top;
+    line-height: 70vh;
+    font-size: 1rem;
+    color: var(--font);
+   
+}
+
+
+
+.nav_container{
+    background-color: var(--fondo_menu);
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+
+    position: sticky;
+    top: 0;
+}
+
+
+
+.nav_link{
+    font-size: 1.3rem;
+    text-decoration: none;
+     color: inherit;
+     background-color: rgba(40, 230, 230,0.3);
+     display: block;
+     padding: 0.3em 1em;
+     margin: 0 0.1em;
+}
+
+
+
+.main{
+  
+
+
+ overflow: hidden;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+
+}
+
+
+.relleno{
+    width: 25rem;
+    height: 22rem;
+    border: solid 3px black;
+    background: radial-gradient(rgba(52, 245, 235), rgb(48, 128, 48,0.4));
+    margin: 1rem;
+    
+}
+
+
+
+
+ .checkbox, .amb, .x{
+    display: none;
+}
+
+
+
+
+.menu{
+  
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 100vh;
+   
+     
+        
+   
+}
+
+.menu a:hover{
+        background-color: rgba(40, 230, 230,0.6);
+    }
+  
+footer{
+    display: flex;
+    margin: 0.5em;
+    justify-content: space-between;
+
+}
+
+footer  i{
+    font-size: 1,5rem;
+    width: 50%;
+    text-align: center;
+}
+
+footer  img{
+    width: 2em;
+  
+  
+}
+
+
+
+
+
+
+
+
+ @media(max-width: 560px){
+     
+ 
+     .menu{
+   
+        width:100vh;
+        position: absolute;
+        z-index: -1;
+        top: 2.7em;
+        right: 30em; 
+        padding-top: 0.3em;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(0em);
+        transition: 0.5s;
+      
+    }
+    
+    
+    
+    
+    
+    
+    .checkbox:checked ~ .menu{
+        transform: translateX(30em);
+        transition: 0.3s;
+        
+    }
+ 
+ /* colocar el checkobs y las imagenes del mismo tamaño */
+ .checkbox, .icon{
+     display: block;
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: -0.1em;
+    right: 1em;
+    cursor: pointer;
+}
+
+/* es para que no le haga caso a las imagenes y si al check */
+.icon{
+    pointer-events: none;
+    font-size: 1em;
+}
+.checkbox{
+      opacity: 0;  
+}
+
+.checkbox:checked ~ .amb{
+    display: none;
+}
+
+.x{
+    display: none;
+}
+
+.checkbox:checked ~ .x{
+    display: block;
+}
+
+.nav_link{
+    text-align: center;
+}
+
+
+.nav_container{
+    background-color: var(--fondo_menu);
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.relleno{
+    width: 100vmax;
+    margin: 1em 0;
+}
+ }
