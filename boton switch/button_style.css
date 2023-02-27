@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+.button{
+    margin: 1em;
+}
+
+.lbl_switch{
+    display: inline-block;
+    width: 5.5em;
+    height: 3em;
+    background-color: gray;
+    border-radius: 10em;
+    position: relative;
+    cursor: pointer;
+}
+
+.lbl_switch::after{
+
+    position: absolute;
+    content: '';
+    width: 2.2em;
+    height: 2.2em;
+    /* background-color: azure; */
+    border-radius: 10em;
+    top: .4em;
+    left: .5em;
+    transition: .3s;
+}
+
+#btn_switch{
+    display: none;
+}
+
+#btn_switch:checked ~ .lbl_switch{
+    background-color: aqua;
+}
+
+#btn_switch:checked ~ .lbl_switch::after{
+   left: 2.8em;
+}
+#btn_switch:checked ~ .img_icon{
+    opacity: 0%;
+    
+}
+#btn_switch:checked ~ .img_icon_luz{
+    opacity: 100%;
+    left: 3.8em;
+}
+
+.img_icon{
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    width: 2.2em;
+    height: 2.2em;
+    border-radius: 10em;
+    top: 1.4em;
+    left: 1.5em;
+    opacity: 100%;
+    transition: .3s;
+}
+.img_icon_luz{
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    width: 2.2em;
+    height: 2.2em;
+    background-color: azure;
+    border-radius: 10em;
+    top: 1.4em;
+    left: 1.5em;
+    /* top: 1.4em;
+    left: 3.8em; */
+    /* display: none; */
+    opacity: 0%;
+    transition: .3s;
+}
