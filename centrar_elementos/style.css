@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+.body{
+    height: 100%;
+    background-color: blueviolet;
+    display: grid;
+    /* align-items: center;
+    justify-items: center; */
+    place-items: center;
+}
+
+.container{
+    padding: 1em;
+    width: 25em;
+    height: 25em;
+    border: 5px solid rgb(0 0 0 /5);
+    background-color: aqua;
+    margin: 1em 0;
+
+    position: relative;
+}
+
+.img{
+    border: 2px solid wheat;
+    width: 20em;
+
+    position: absolute;
+    inset: o;
+    margin: auto;
+   
+}
+
+/* segundo centrado  utiliza el mismo container que el 
+de arriba*/
+
+.img2{
+    border: 2px solid rgb(67, 0, 250);
+    width: 20em;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+ 
+   
+}
+
+
+/* tercer contenedor */
+
+.container3{
+    padding: 1em;
+    width: 25em;
+    height: 25em;
+    border: 5px solid rgb(0 0 0 /5);
+    background-color: aqua;
+    margin: 1em 0;
+
+    display: grid;
+    place-items: center;
+
+}
+
+.img3{
+    border: 2px solid rgb(247, 168, 22);
+    width: 20em;
+
+   
+}
+
+
+
+/* cuarto contenedor */
+
+.container4{
+    padding: 1em;
+    width: 25em;
+    height: 25em;
+    border: 5px solid rgb(0 0 0 /5);
+    background-color: aqua;
+    margin: 1em 0;
+
+    display: grid;
+    /* align-items: center;
+    justify-items: center; */
+
+}
+
+.img4{
+    border: 2px solid rgb(247, 22, 161);
+    width: 20em;
+  /* la propiedad place-self es la abreviatura de estas dos: */
+   /* justify-self: center;
+   align-self: center; */
+
+   place-self: center;
+}
+
+
+/* quinta contenedor */
+
+.container5{
+    padding: 1em;
+    width: 25em;
+    height: 25em;
+    border: 5px solid rgb(0 0 0 /5);
+    background-color: aqua;
+    margin: 1em 0;
+
+    display: grid;
+ 
+
+}
+
+.img5{
+    border: 2px solid rgb(57, 224, 15);
+    width: 20em;
+    margin: auto;
+  
+}
+
+
+
+/* sexta contenedor */
+
+.container6{
+    padding: 1em;
+    width: 25em;
+    height: 25em;
+    border: 5px solid rgb(0 0 0 /5);
+    background-color: aqua;
+    margin: 1em 0;
+
+    display: flex;
+ 
+
+}
+
+.img6{
+    border: 2px solid rgb(224, 15, 25);
+    width: 20em;
+    margin: auto;
+  
+}
+
+/* septima contenedor */
+
+.container7{
+    padding: 1em;
+    width: 25em;
+    height: 25em;
+    border: 5px solid rgb(0 0 0 /5);
+    background-color: aqua;
+    margin: 1em 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+
+}
+
+.img7{
+    border: 2px solid rgb(36, 36, 36);
+    width: 20em;
+
+}
+
+/* octaba contenedor */
+
+.container8{
+    padding: 1em;
+    width: 25em;
+    height: 25em;
+    border: 5px solid rgb(0 0 0 /5);
+    background-color: aqua;
+    margin: 1em 0 ;
+
+ display: grid;
+
+
+}
+
+.img8{
+    border: 2px solid rgb(224, 25, 25);
+    width: 20em;
+   
+    justify-self: center;
+    align-self: center
+  
+    
+}
