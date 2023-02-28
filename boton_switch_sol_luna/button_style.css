@@ -1,10 +1,19 @@
+:root{
+    --fondo: rgb(71, 13, 64);
+    --fondo_color: gray;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 100%;
 }
-
+.fondo{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--fondo);
+}
 .button{
     margin: 1em;
 }
@@ -13,36 +22,26 @@
     display: inline-block;
     width: 5.5em;
     height: 3em;
-    background-color: gray;
+    background-color: var(--fondo_color);
     border-radius: 10em;
     position: relative;
     cursor: pointer;
 }
 
-.lbl_switch::after{
 
-    position: absolute;
-    content: '';
-    width: 2.2em;
-    height: 2.2em;
-    /* background-color: azure; */
-    border-radius: 10em;
-    top: .4em;
-    left: .5em;
-    transition: .3s;
-}
 
 #btn_switch{
     display: none;
 }
 
 #btn_switch:checked ~ .lbl_switch{
-    background-color: aqua;
+    --fondo_color: aqua;
 }
 
-#btn_switch:checked ~ .lbl_switch::after{
-   left: 2.8em;
+#btn_switch:checked ~ .fondo{
+    --fondo: rgb(19, 29, 29);
 }
+
 #btn_switch:checked ~ .img_icon{
     opacity: 0%;
     
@@ -74,9 +73,8 @@
     border-radius: 10em;
     top: 1.4em;
     left: 1.5em;
-    /* top: 1.4em;
-    left: 3.8em; */
-    /* display: none; */
+
     opacity: 0%;
     transition: .3s;
 }
+
