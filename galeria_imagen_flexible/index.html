@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    .galeria{display: flex;}
+     img{
+         display: block;
+         object-fit: cover;
+         min-width: 50px;
+         width: 300px;
+         flex: 1;
+         transition: flex .5s;
+         height: 200px;
+         gap: 10px;
+    }   
+    img:hover{ flex: 4; }
+
+      /* in */
+      .in{
+         display: block;
+         object-fit: cover;
+         min-width: 50px;
+         width: 100%;
+         flex: 4;
+         transition: flex .5s;
+         height: 300px;
+         gap: 10px;
+         border: 1px solid black;
+       
+    }   
+    .in:hover{ flex: 1; }
+
+    /* out  convinar el flex 1 con otros valores */
+    .out{
+         display: block;
+         object-fit: cover;
+         min-width: 50px;
+         width: 100%;
+         flex: 1;
+         transition: flex .5s;
+         height: 30%;
+         gap: 10px;
+         border: 1px solid black;
+       
+    }   
+    .out:hover{ flex: 3; }
+
+  
+    </style>
+    <title>Galeria de imagenes con efecto</title>
+</head>
+<body>
+   <div class="galeria">
+       <img src="java.png" alt="">
+       <img src="css.jpeg" alt="">
+       <img src="mysql.jpeg" alt="">
+   </div>
+       <!-- in -->
+       <div class="galeria">
+        <img class="in" src="java.png" alt="">
+        <img class="in" src="css.jpeg" alt="">
+        <img class="in" src="mysql.jpeg" alt="">
+    </div>
+     <!-- out -->
+   <div class="galeria">
+    <img class="out" src="java.png" alt="">
+    <img class="out" src="css.jpeg" alt="">
+    <img class="out" src="mysql.jpeg" alt="">
+  
+</body>
+</html>
