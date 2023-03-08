@@ -1,6 +1,14 @@
-## bilblioteca-de-recursos-web
-<h2>archivos para maquetado web</h2>
+## Bilblioteca-de-recursos-web 
+<br><br>
+
+<h3>Archivos para maquetado web solo con css & Html</h3>
+<br><br>
 
 Podras encontrar layouts, buton, menu responsibos, efectos y muchas cosas mas.
-<br>
-dentro de la carpeta efectos varios encontraran archivos unicos los cuales tienen los efectos en la etiqueta style .
+<br><br>
+
+Dentro de la carpeta efectos varios, buttons  encontraran archivos unicos los cuales tienen los efectos en la etiqueta style .
+<br><br>
+
+Dentro de template encontraran:<br>
+Imagenes y templates responsibos para iniciar una web.

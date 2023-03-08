@@ -10,30 +10,6 @@
       --fill-size: 0%;
       --desde:-100%;
   }
-  .progress-bar{
-      position: relative;
-      width: 200px;
-      height: 20px;
-      background-color: #ccc;
-      border-radius: 2em;
-      overflow: hidden;
-      margin: 2em auto;
-  }
-  .progress-bar::before{
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: var(--bar-color);
-      transform: translateX(var(--desde));
-      animation: fill-bar 3s 1s ease-in-out forwards;
-  }
-  @keyframes fill-bar {
-      to{
-          transform: translateX(var(--fill-size));
-      }
-  }
-
   /* boton de carga */
 .activar{
     width: 300px;
@@ -43,11 +19,14 @@
     border-radius: 10px;
     transition: 1s;
 }
+.activar:hover{
+   background-color: rgba(7, 54, 124, 0.6);
+   border-radius: 50%;
+}
 .activar input{
     width: 100%;
     height: 100%;
-    /* display: none; */
-    opacity: 30%;
+    opacity: 5%;
 
 }
 
@@ -90,6 +69,6 @@
       <div class="barra_buton"  ></div>
     </div>
    
-    <div class="progress-bar"></div>
+   
 </body>
 </html>
