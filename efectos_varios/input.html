@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <style>
+       .div{
+           height: 100vh;
+           padding: 40% 0;
+           background-color: greenyellow;
+       }
+       input{
+           display: block;
+           margin: 0 auto;
+       }
+   input:invalid{
+       height: 30px;
+       animation: shake 1s;
+   }
+   @keyframes shake {
+       25%{transform: translateX(4px)}
+       50%{transform: translateX(-4px)}
+       75%{transform: translateX(4px)}
+   }
+   </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="div">
+    <input type="text"
+    pattern="[a-z]"
+    placeholder="cual es tu nombre?">
+</div>
+</body>
+</html>
