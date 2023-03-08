@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+  :root{
+      --bar-color: royalblue;
+      --fill-size: 0%;
+      --desde:-100%;
+  }
+  .progress-bar{
+      position: relative;
+      width: 200px;
+      height: 20px;
+      background-color: #ccc;
+      border-radius: 2em;
+      overflow: hidden;
+      margin: 2em auto;
+  }
+  .progress-bar::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: var(--bar-color);
+      transform: translateX(var(--desde));
+      animation: fill-bar 3s 1s ease-in-out forwards;
+  }
+  @keyframes fill-bar {
+      to{
+          transform: translateX(var(--fill-size));
+      }
+  }
+
+  /* boton de carga */
+.activar{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: 1s;
+}
+.activar input{
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+    opacity: 30%;
+
+}
+
+
+.barra_buton{
+    left: 20%;
+    display: inline-block;
+    position: relative;
+      width: 200px;
+      height: 20px;
+      background-color: #ccc;
+      border-radius: 2em;
+      overflow: hidden;
+      margin: 0 auto ;
+      
+}
+
+
+#input:checked ~.barra_buton::before{
+    content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: var(--bar-color);
+      transform: translateX(var(--desde));
+      animation: fill-buton 3s 0s ease-in-out forwards;
+  }
+  @keyframes fill-buton {
+      to{
+          transform: translateX(var(--fill-size));
+      }
+  }
+  </style>
+    <title>Barra</title>
+</head>
+<body>
+    
+    <div class="activar"> 
+      <input id="input" type="checkbox">
+      <div class="barra_buton"  ></div>
+    </div>
+   
+    <div class="progress-bar"></div>
+</body>
+</html>
