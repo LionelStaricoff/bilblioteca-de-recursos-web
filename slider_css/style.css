@@ -15,14 +15,30 @@ section {
     flex: 0 0 100%;
     scroll-snap-align: start;
     animation: slide 12s alternate 2;
-
+    background-color: aqua;
+    @media screen {
+      @media(width < 617px) {
+        animation: slide2 12s alternate 2;
+      }
+    
+      @media screen and (orientation: landscape){
+      width: 100%;
+      flex: 0 0 0;
+      img {
+      object-fit: 110%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      }
+     }
+    }
     img {
       object-fit: contain;
       width: auto;
       height: 100vh;
-     
+    
     }
-
+ 
   }
 
 }
@@ -37,6 +53,23 @@ section {
   }
   100% {
     transform: translateX(-200%);
+   
+  }
+
+}
+
+
+/* para en modo movile*/
+@keyframes slide2 {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-250%);
+   
   }
 
 }
