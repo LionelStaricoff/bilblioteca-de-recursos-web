@@ -3,6 +3,8 @@ let pincel = pantalla.getContext("2d");
 
 pincel.fillStyle = "grey";
 pincel.fillRect(0,0,600,400);
+//clearRect sirve para crear otro rectanguno o borrar por zonas segun se use
+//pincel.clearRect(20, 20, 100, 50);
 
 
 //evento: se refiere al mouse cuando hace click
@@ -13,6 +15,7 @@ function exibirAlerta(evento){
     alert(x + ", " + y);
 }
 
+var puedoDibujar= false;
 
 function dibujarCirculo(evento){
     let x = evento.pageX - pantalla.offsetLeft;
@@ -21,28 +24,29 @@ function dibujarCirculo(evento){
 //funcionalidad para cambiar de color
 let color = document.querySelector("#color").value;
 
-pincel.fillStyle= color;
-
-  //  pincel.fillStyle = "blue";
+  if(puedoDibujar){
+    pincel.fillStyle= color;
     pincel.beginPath();
     pincel.arc(x,y,10,0,2*Math.PI);
     pincel.fill();
-   // console.log(x + ", "+y);
-
+   
+  }
 }
 
 function borrarPantalla(){
+
     pincel.fillStyle = "grey";
-    pincel.fillRect(0,0,600,400);
+   pincel.fillRect(0,0,600,400);
 
 }
 
 function pintar(){
+    puedoDibujar = true;
     pantalla.onmousemove = dibujarCirculo;
   
 }
  function pintarOf(){
-
+    puedoDibujar = false;
     pantalla.onmousemove = null;
  }
 
@@ -51,6 +55,6 @@ let btnBorrar = document.querySelector("#borrar");
 btnBorrar.onclick = borrarPantalla;
 
 //funcionalidad para dibujar circulos en pantalla
-pantalla.onclick = pintar;
-pantalla.ondblclick= pintarOf;
+pantalla.onmousedown = pintar;
+pantalla.onmouseup = pintarOf;
 
