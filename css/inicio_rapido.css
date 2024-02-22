@@ -1,4 +1,9 @@
-
+:root {
+    --fondo: #333333;
+    --letras: #F5F5F5;
+    --azul_claro: #4169E1;
+    --azul_oscuro: #000080;
+}
 
 #inicio_rapido {
     position: fixed;
@@ -28,6 +33,7 @@
                 background-color: var(--azul_claro);
                 border: 1px solid var(--azul_oscuro);
                 border-radius: 15px;
+                color: var(--letras);
 
                 &:hover {
                     transform: scale(0.9);
