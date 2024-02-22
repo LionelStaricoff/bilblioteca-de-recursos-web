@@ -843,7 +843,5 @@ ol li:nth-child(odd) {
         border-radius: 3px;
         background-color: #6d6b6b;
     }
-    .ejemplo{
-        overflow-x: auto;
-    }
+
 }
