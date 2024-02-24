@@ -38,7 +38,6 @@ body {
 section {
     width: 100vw;
     height: 100%;
-    scroll-snap-align: start;
 }
 
 section.inicio {
@@ -314,7 +313,8 @@ section.libreria {
     width: 14px;
     height: 14px;
     margin-top: 20px;
-    margin-right: 5px
+    margin-right: 5px;
+    filter: invert(0)
 }
 
 .volver a:hover {
@@ -345,7 +345,7 @@ section.libreria {
     display: none;
     position: absolute;
     top: 45px;
-    right: -30px;
+    right: 0px;
 }
 
 #check-2 {
@@ -366,7 +366,7 @@ section.libreria {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 0 10px;
-    margin-top: 25px;
+    margin-top: -18px;
     border: 3px outset #0ef7d4;
 }
 
@@ -498,7 +498,7 @@ section.enlaces {
     font-size: 1rem;
 }
 
-.enlaces h5 {
+h5 {
     text-align: left;
     display: flex;
     cursor: pointer;
@@ -508,7 +508,7 @@ section.enlaces {
     text-decoration: underline;
 }
 
-.enlaces h5 img {
+h5 img {
     width: 14px;
     height: 14px;
     margin-right: 5px;
@@ -577,18 +577,55 @@ hr {
     filter: invert(100%)
 }
 
-/* ************ WEBS DE INTERES ************ */
-section.websDeInteres {
+/* ************ CONTRIBUCIÓN ************ */
+section.contribucion {
     width: 100%;
+    height: 100vh;
     background-color: #0cd9bad5;
     text-align: center;
     padding: 10px;
     padding-bottom: 10px;
     display: grid;
+    /* place-content: center; */
+    font-size: 1rem;
+}
+.contribucion h5{
+    width: 100vw;
+    margin-left: 50px;
+}
+.contribucion h5 img {
+    filter: invert(0%)
+}
+.contribucion .volver {
+    padding: 10px;
+    width: 100%;
+}
+
+.contribucion div .titulo {
+    font-size: 1.8rem;
+    text-shadow: -10px 10px 10px rgba(0, 0, 0, .3);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.contribucion h3 {
+    margin-top: 20px
+}
+
+/* ************ WEBS DE INTERES ************ */
+section.websDeInteres {
+    width: 100%;
+    background-color: #97b7f5;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 30px;
+    display: grid;
     place-content: center;
     font-size: 1rem;
 }
-
+.websDeInteres h5 img{
+    filter: invert(0%);
+} 
 .websDeInteres .volver {
     padding: 10px;
     width: 100%;
@@ -626,7 +663,20 @@ ol li:nth-child(odd) {
 .websDeInteres li a {
     color: blue
 }
-
+/* ************ Quienes Somos ************ */
+section.quienesSomos {
+    width: 100%;
+    background-color: #0cd9ba;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 30px;
+    display: grid;
+    place-content: center;
+    font-size: 1rem;
+}
+.quienesSomos h5 img {
+    filter: invert(0%)
+}
 @media (max-width: 1000px) {
     section.inicio {
         width: 100vw;
@@ -742,7 +792,8 @@ ol li:nth-child(odd) {
         height: auto;
         padding-top: 20px
     }
-/* Responsive Section Library */
+
+/***** Responsive Section Library *******/
     section.libreria {
         width: 100%;
         height: 100vh;
@@ -757,7 +808,7 @@ ol li:nth-child(odd) {
     }
     .libreria .volver {
         grid-area: volver;
-        width: 100vw;
+        width: 100%;
         justify-content: left;
         margin: 0;
         line-height: 70px;
@@ -772,14 +823,14 @@ ol li:nth-child(odd) {
         height: 60px;
         position: absolute;
         top: -45px;
-        right: 30px;
+        right: 00px;
     }
     #check-2:checked~ul {
         right: 0;
     }
 
     .menuTemas {
-        width: 90vw;
+        width: 90%;
         height: 70px;
         margin: 0px;
         z-index: 10;
@@ -794,9 +845,10 @@ ol li:nth-child(odd) {
         position: fixed;
         top: 70px;
         left: 0;
-        width: 100vw;
+        right: 0;
+        width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
         z-index: 5;
         overflow: hidden;
         transition: transform 0.3s ease-in-out;
@@ -807,15 +859,14 @@ ol li:nth-child(odd) {
         transform: translateX(0);
     }
     
-    .menuMobile .listado {
-        max-width: 50vw;
+    .menuTemas div.listado {
+        max-width: 50%;
         width: 400px;
         height: 100%;
-        /* padding: 20px; */
-        background-color: #dbddde; 
+        margin-top: 0px;
+        background-color: rgba(250, 251, 252, 0.801); 
         float: right;
         overflow-y: auto;
-        
     }
     
     .botones {
