@@ -10,6 +10,17 @@ enlacesMenu.forEach(enlace => {
 });
 
 
+const menuLibreria = document.querySelectorAll('.menuTemas ul details summary p a');
+
+// Recorrer cada enlace y agregar un evento de clic
+menuLibreria.forEach(libreria => {
+    libreria.addEventListener('click', () => {
+        // Cerrar el menú al hacer clic en cualquier enlace
+        document.getElementById('check-2').checked = false;
+    });
+});
+
+
 
 
 

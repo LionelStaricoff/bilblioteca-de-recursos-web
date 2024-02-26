@@ -611,6 +611,9 @@ section.contribucion {
 .contribucion h3 {
     margin-top: 20px
 }
+.contribucion p {
+    font-size: 1.1em;
+}
 
 /* ************ WEBS DE INTERES ************ */
 section.websDeInteres {
@@ -677,6 +680,24 @@ section.quienesSomos {
 .quienesSomos h5 img {
     filter: invert(0%)
 }
+
+.quienesSomos h2 {
+    margin-top: 15px
+}
+.quienesSomos p {
+    font-size: 1.1em;
+    padding: 10px 200px;
+    text-align: justify;
+}
+.quienesSomos div i{
+    text-align: center;
+    font-size: 1.1em
+}
+.quienesSomos i span{
+    color: rgb(158, 6, 213);
+    font-size: 1.2em;
+}
+
 @media (max-width: 1000px) {
     section.inicio {
         width: 100vw;
@@ -854,7 +875,7 @@ section.quienesSomos {
         transition: transform 0.3s ease-in-out;
     }
     
-    #check-2:checked + .menuMobile {
+    #check-2:checked + .listado {
         display: block;
         transform: translateX(0);
     }
