@@ -547,7 +547,7 @@ h5 img {
 
 .titulo {
     font-size: 1.8rem;
-    text-shadow: -10px 10px 10px rgba(0, 0, 0, .3);
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, .3);
     letter-spacing: 2px;
     margin-bottom: 10px
 }
@@ -623,7 +623,7 @@ section.contribucion {
 
 .contribucion div .titulo {
     font-size: 1.8rem;
-    text-shadow: -10px 10px 10px rgba(0, 0, 0, .3);
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, .3);
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
@@ -656,7 +656,7 @@ section.websDeInteres {
 
 .websDeInteres div .titulo {
     font-size: 1.8rem;
-    text-shadow: -10px 10px 10px rgba(0, 0, 0, .3);
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, .3);
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
@@ -702,7 +702,9 @@ section.quienesSomos {
 }
 
 .quienesSomos h2 {
-    margin-top: 15px
+    margin-top: 15px;
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, .3);
+
 }
 .quienesSomos p {
     font-size: 1.1em;

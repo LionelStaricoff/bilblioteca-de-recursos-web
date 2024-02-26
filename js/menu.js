@@ -32,6 +32,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+    // Añade un evento de cambio de tamaño de la ventana para manejar cambios en la pantalla
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 1000) {
+            menuTemas.style.display = 'block';
+        } else {
+            menuTemas.style.display = 'none';
+        }
+    });
+
+
+
+
+
+
+
 
 
 
