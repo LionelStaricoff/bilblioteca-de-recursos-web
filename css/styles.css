@@ -368,6 +368,19 @@ section.libreria {
     width: 100%;
 }
 
+/* 
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px; igual que logo
+    padding: 0 20px;
+    line-height: 60px; esta línea en modo navegador va a tener 60px pos default
+    cursor: pointer;
+    display:none; para que no sea vea en el dispositivo
+} */
+
+
 .menuTemas h3 {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.5);
@@ -383,6 +396,7 @@ section.libreria {
     height: calc(100vh - 130px);
     border: 3px outset #0ef7d4;
     padding: 0px 15px;
+    transition: display 0.5s ease;
 }
 
 .menuTemas summary {
@@ -841,7 +855,7 @@ section.quienesSomos {
         display: block;
         width: 50px;
         height: 60px;
-        position: absolute;
+        position: stickly;
         top: -45px;
         right: 20px;
     }
@@ -858,11 +872,18 @@ section.quienesSomos {
         border-bottom: 2px outset rgba(174, 171, 171, 0.35);
         display: block;
     }
+    /* .nav-toggle{
+        display: block;
+     }
+
+     .nav-toggle:focus(:focus-visible){
+         outline: none;
+     } */
     .menuTemas h3{
         display: none
     }
     .menuMobile {
-        display: block;
+        display: none;
         position: fixed;
         top: 70px;
         left: 0;
@@ -872,7 +893,7 @@ section.quienesSomos {
         background-color: rgba(0, 0, 0, 0.7);
         z-index: 5;
         overflow: hidden;
-        transition: transform 0.3s ease-in-out;
+        transition: display 1s ease-in-out;
     }
     
     #check-2:checked + .listado {
@@ -888,6 +909,7 @@ section.quienesSomos {
         background-color: rgba(250, 251, 252, 0.801); 
         float: right;
         overflow-y: auto;
+        transition: display 1s ease-in;
     }
     
     .botones {
@@ -922,4 +944,10 @@ section.quienesSomos {
         padding-top: 20px
     }
 
+    /* *******quienes Somos******** */
+    .quienesSomos p {
+        padding: 10px 20px;
+    }
+
 }
+

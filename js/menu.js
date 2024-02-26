@@ -10,17 +10,24 @@ enlacesMenu.forEach(enlace => {
 });
 
 
-const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector(".nav-menu");
+document.addEventListener('DOMContentLoaded', function () {
+    let checkbox = document.getElementById('check-2');
 
-navToggle.addEventListener('click', ()=>{
-    navMenu.classList.toggle('nav-menu_visible');
-    if(navMenu.classList.contains("nav-menu_visible")){
-        navToggle.setAttribute("aria-label","Cerrar Menú");
-    }else{
-        navToggle.setAttribute("aria-label","Abrir Menú");
+    if (checkbox) {
+        checkbox.addEventListener('change', function () {
+            let menuListado = document.querySelector('.listado');
+            let menuMobile = document.querySelector('.menuMobile');
+
+            if (menuListado) {
+                menuListado.style.display = checkbox.checked ? 'block' : 'none';
+                menuMobile.style.display = checkbox.checked ? 'block' : 'none';
+
+            }
+        });
     }
 });
+
+
 
 
 
