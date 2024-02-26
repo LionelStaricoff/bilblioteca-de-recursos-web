@@ -341,7 +341,7 @@ section.libreria {
     float: right;
     line-height: 70px;
     cursor: pointer;
-    display: none;
+    display: block;
     position: absolute;
     top: 45px;
     right: 0px;
@@ -353,7 +353,14 @@ section.libreria {
     top: 20px;
     right: 20px
 }
-
+.checkbtn-2 img {
+    display: none;
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    top: -45px;
+    right: 20px;
+}
 .menuTemas .fijo {
     grid-area: titulo;
     top: 0px;
@@ -779,7 +786,6 @@ section.quienesSomos {
         right: 0;
     }
 
-
     .centro {
         width: 90vw;
         max-height: fit-content;
@@ -787,19 +793,16 @@ section.quienesSomos {
         padding: 0;
         justify-content: start;
     }
-
     .centro h1 {
         font-size: 1.45em;
         margin-top: 10px;
     }
-
     .centro h3 {
         width: fit-content;
         height: fit-content;
         font-size: 1em;
         margin: 8px;
     }
-
     .centro .logo {
         align-content: left;
     }
@@ -808,10 +811,7 @@ section.quienesSomos {
         display: none;
     }
 
-    section.enlaces {
-        height: auto;
-        padding-top: 20px
-    }
+
 
 /***** Responsive Section Library *******/
     section.libreria {
@@ -843,20 +843,20 @@ section.quienesSomos {
         height: 60px;
         position: absolute;
         top: -45px;
-        right: 00px;
+        right: 20px;
     }
     #check-2:checked~ul {
         right: 0;
     }
 
     .menuTemas {
-        width: 90%;
+        width: 100%;
         height: 70px;
         margin: 0px;
         z-index: 10;
         border: none;
         border-bottom: 2px outset rgba(174, 171, 171, 0.35);
-        display: none;
+        display: block;
     }
     .menuTemas h3{
         display: none
@@ -867,7 +867,7 @@ section.quienesSomos {
         top: 70px;
         left: 0;
         right: 0;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.7);
         z-index: 5;
@@ -914,6 +914,12 @@ section.quienesSomos {
         border: 1.5px solid #000080;
         border-radius: 3px;
         background-color: #6d6b6b;
+    }
+
+/* ******sección Enlaces****** */
+        section.enlaces {
+        height: auto;
+        padding-top: 20px
     }
 
 }

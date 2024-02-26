@@ -10,14 +10,16 @@ enlacesMenu.forEach(enlace => {
 });
 
 
-const menuLibreria = document.querySelectorAll('.menuTemas ul details summary p a');
+const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".nav-menu");
 
-// Recorrer cada enlace y agregar un evento de clic
-menuLibreria.forEach(libreria => {
-    libreria.addEventListener('click', () => {
-        // Cerrar el menú al hacer clic en cualquier enlace
-        document.getElementById('check-2').checked = false;
-    });
+navToggle.addEventListener('click', ()=>{
+    navMenu.classList.toggle('nav-menu_visible');
+    if(navMenu.classList.contains("nav-menu_visible")){
+        navToggle.setAttribute("aria-label","Cerrar Menú");
+    }else{
+        navToggle.setAttribute("aria-label","Abrir Menú");
+    }
 });
 
 
