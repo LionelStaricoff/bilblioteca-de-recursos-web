@@ -48,7 +48,6 @@ section.inicio {
     grid-template-areas:
         "menu centro derecha";
     background: var(--azul_claro);
-
 }
 
 nav {
@@ -202,8 +201,8 @@ nav li:hover {
 
 .copyRight {
     line-height: 1;
-    font-family: 'Roboto';
-    font-size: 10px;
+    /* font-family: 'Roboto'; */
+    font-size: 11px;
     padding: 0 15px 10px;
     padding-bottom: 10px
 }
@@ -780,11 +779,11 @@ section.quienesSomos {
         right: 0;
     }
 
-    
+
     .centro {
         width: 90vw;
-        min-height: fit-content;
-        height: auto;
+        max-height: fit-content;
+        min-height: calc(100vh - 100px);
         padding: 0;
         justify-content: start;
     }
@@ -857,6 +856,7 @@ section.quienesSomos {
         z-index: 10;
         border: none;
         border-bottom: 2px outset rgba(174, 171, 171, 0.35);
+        display: none;
     }
     .menuTemas h3{
         display: none
