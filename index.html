@@ -23,7 +23,7 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#libreria">Librería</a></li>
                 <li><a href="#enlaces">Enlaces</a></li>
-                <li><a href="#colaboraciones">Colaboraciones</a></li>
+                <li><a href="#contribucion">Contribuciones</a></li>
                 <li><a href="#websDeInteres">Webs de Interés</a></li>
                 <li><a href="#quienesSomos">Quienes Somos</a></li>
                 <!-- <li class="darkMode"><label for="darkMode"><img src="img/iconos/claro-oscuro.png"
@@ -35,7 +35,7 @@
         </nav>
 
         <div class="centro">
-            <img src="img/logo-1.png" alt="" class="logo">
+            <a href="#quienesSomos"><img src="img/logo-1.png" alt="" class="logo"></a>
             <div>
                 <h1>Bienvenidos a <br>La Librería Web Front End de Objetos</h1>
                 <h3>En este sitio encontrarás numerosas implementaciones para web realizadas en HTML, CSS y JavaScript.
@@ -61,16 +61,17 @@
     </section>
 
     <section class="libreria" id="libreria">
-        <div class="menuTemas">
+        <div class="menuTemas"> 
             <div class="fijo">
+                <input type="checkbox" id="check-2">
+                <label for="check-2" class="checkbtn-2">
+                    <img src="img/iconos/menu.png" alt="menú">
+                </label>
                 <h5 class="volver"><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver
                         al inicio</a></h5>
                 <h3>LIBRERIA</h3>
             </div>
-            <input type="checkbox" id="check-2">
-            <label for="check-2" class="checkbtn-2">
-                <img src="img/iconos/menu.png" alt="menú">
-            </label>
+
             <div class="menuMobile">
                 <div class="listado">
 
@@ -266,13 +267,28 @@
         </div>
     </section>
 
+    <section class="contribucion" id="contribucion">
+        <div>
+            <h5><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver al inicio</a></h5>
+
+            <h2 class="titulo">Contribuciones:</h2>
+            <h3>Para sumar tus códigos a este proyecto, sigue los siguientes pasos:</h3>
+            <p>bla blablablabla</p>
+            <div>
+                <p>Acá ponemos las instrucciones que sean necesarias</p>
+                <BR></BR>
+                <p>PODEMOS PONER UN VIDEO MOSTRANDO CÓMO HACERLO</p>
+
+            </div>
+        </div>
+    </section>
 
     <section class="websDeInteres" id="websDeInteres">
         <div>
             <h5 class="volver"><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver
                     al inicio</a></h5>
 
-            <h2 class="titulo">Webs de interés</h2>
+            <h2 class="titulo">Webs de interés:</h2>
 
             <h3>Imágenes & iconos gratis:</h3>
             <ol>
@@ -446,7 +462,33 @@
         <div class="example"></div>
     </section>
 
-    <section class="QuienesSomos"></section>
+    <section class="quienesSomos" id="quienesSomos">
+        <div>
+            <h5 class="volver"><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver
+                al inicio</a></h5>
+            <h2>¿Quiénes Somos?</h2>
+
+            <p>Nosotros, un grupo de apasionados programadores, hemos unido fuerzas para crear
+            esta biblioteca de recursos, con la visión de facilitar tu camino en el fascinante mundo del desarrollo de
+            software.</p>
+
+            <h2>Nuestra Historia:</h2>
+            <p>Este proyecto surgió de la convicción de que el aprendizaje es más efectivo cuando se comparte. Cada uno de
+            nosotros aporta una perspectiva única, y estamos emocionados de poner a tu disposición los conocimientos y herramientas que hemos recopilado a lo largo de nuestros viajes.
+            </p>
+
+            <h2>Únete a Nuestra Comunidad:</h2>
+            <p>Además de ser una fuente de recursos, queremos que te sientas parte de nuestra comunidad. Explora, aprende y
+            comparte tus experiencias con nosotros. Juntos, podemos hacer que el mundo de la programación sea aún más
+            emocionante y accesible.
+            </p>
+            <p>Gracias por ser parte de nuestra historia. ¡Esperamos que encuentres inspiración y utilidad en cada línea de
+            código y recurso que compartimos!
+            </p>
+            <p>Programáticamente,<br></p>
+            <i>Lionel "Lyon" Staricoff  <span> & </span>  Gladys "MagiCode" Romero  <span> & </span> Luciana "LuMa" ???</i> 
+        </div>
+    </section>
 
     <script>
         // Inicializar Prism.js

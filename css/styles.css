@@ -38,7 +38,6 @@ body {
 section {
     width: 100vw;
     height: 100%;
-    scroll-snap-align: start;
 }
 
 section.inicio {
@@ -49,7 +48,6 @@ section.inicio {
     grid-template-areas:
         "menu centro derecha";
     background: var(--azul_claro);
-
 }
 
 nav {
@@ -203,8 +201,8 @@ nav li:hover {
 
 .copyRight {
     line-height: 1;
-    font-family: 'Roboto';
-    font-size: 10px;
+    /* font-family: 'Roboto'; */
+    font-size: 11px;
     padding: 0 15px 10px;
     padding-bottom: 10px
 }
@@ -314,7 +312,8 @@ section.libreria {
     width: 14px;
     height: 14px;
     margin-top: 20px;
-    margin-right: 5px
+    margin-right: 5px;
+    filter: invert(0)
 }
 
 .volver a:hover {
@@ -342,10 +341,10 @@ section.libreria {
     float: right;
     line-height: 70px;
     cursor: pointer;
-    display: none;
+    display: block;
     position: absolute;
     top: 45px;
-    right: -30px;
+    right: 0px;
 }
 
 #check-2 {
@@ -354,7 +353,14 @@ section.libreria {
     top: 20px;
     right: 20px
 }
-
+.checkbtn-2 img {
+    display: none;
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    top: -45px;
+    right: 20px;
+}
 .menuTemas .fijo {
     grid-area: titulo;
     top: 0px;
@@ -362,11 +368,24 @@ section.libreria {
     width: 100%;
 }
 
+/* 
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px; igual que logo
+    padding: 0 20px;
+    line-height: 60px; esta línea en modo navegador va a tener 60px pos default
+    cursor: pointer;
+    display:none; para que no sea vea en el dispositivo
+} */
+
+
 .menuTemas h3 {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 0 10px;
-    margin-top: 25px;
+    margin-top: -18px;
     border: 3px outset #0ef7d4;
 }
 
@@ -377,6 +396,7 @@ section.libreria {
     height: calc(100vh - 130px);
     border: 3px outset #0ef7d4;
     padding: 0px 15px;
+    transition: display 0.5s ease;
 }
 
 .menuTemas summary {
@@ -498,7 +518,7 @@ section.enlaces {
     font-size: 1rem;
 }
 
-.enlaces h5 {
+h5 {
     text-align: left;
     display: flex;
     cursor: pointer;
@@ -508,7 +528,7 @@ section.enlaces {
     text-decoration: underline;
 }
 
-.enlaces h5 img {
+h5 img {
     width: 14px;
     height: 14px;
     margin-right: 5px;
@@ -527,7 +547,7 @@ section.enlaces {
 
 .titulo {
     font-size: 1.8rem;
-    text-shadow: -10px 10px 10px rgba(0, 0, 0, .3);
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, .3);
     letter-spacing: 2px;
     margin-bottom: 10px
 }
@@ -577,18 +597,58 @@ hr {
     filter: invert(100%)
 }
 
-/* ************ WEBS DE INTERES ************ */
-section.websDeInteres {
+/* ************ CONTRIBUCIÓN ************ */
+section.contribucion {
     width: 100%;
+    height: 100vh;
     background-color: #0cd9bad5;
     text-align: center;
     padding: 10px;
     padding-bottom: 10px;
     display: grid;
+    /* place-content: center; */
+    font-size: 1rem;
+}
+.contribucion h5{
+    width: 100vw;
+    margin-left: 50px;
+}
+.contribucion h5 img {
+    filter: invert(0%)
+}
+.contribucion .volver {
+    padding: 10px;
+    width: 100%;
+}
+
+.contribucion div .titulo {
+    font-size: 1.8rem;
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, .3);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.contribucion h3 {
+    margin-top: 20px
+}
+.contribucion p {
+    font-size: 1.1em;
+}
+
+/* ************ WEBS DE INTERES ************ */
+section.websDeInteres {
+    width: 100%;
+    background-color: #97b7f5;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 30px;
+    display: grid;
     place-content: center;
     font-size: 1rem;
 }
-
+.websDeInteres h5 img{
+    filter: invert(0%);
+} 
 .websDeInteres .volver {
     padding: 10px;
     width: 100%;
@@ -596,7 +656,7 @@ section.websDeInteres {
 
 .websDeInteres div .titulo {
     font-size: 1.8rem;
-    text-shadow: -10px 10px 10px rgba(0, 0, 0, .3);
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, .3);
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
@@ -625,6 +685,39 @@ ol li:nth-child(odd) {
 
 .websDeInteres li a {
     color: blue
+}
+/* ************ Quienes Somos ************ */
+section.quienesSomos {
+    width: 100%;
+    background-color: #0cd9ba;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 30px;
+    display: grid;
+    place-content: center;
+    font-size: 1rem;
+}
+.quienesSomos h5 img {
+    filter: invert(0%)
+}
+
+.quienesSomos h2 {
+    margin-top: 15px;
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, .3);
+
+}
+.quienesSomos p {
+    font-size: 1.1em;
+    padding: 10px 200px;
+    text-align: justify;
+}
+.quienesSomos div i{
+    text-align: center;
+    font-size: 1.1em
+}
+.quienesSomos i span{
+    color: rgb(158, 6, 213);
+    font-size: 1.2em;
 }
 
 @media (max-width: 1000px) {
@@ -709,27 +802,23 @@ ol li:nth-child(odd) {
         right: 0;
     }
 
-    
     .centro {
         width: 90vw;
-        min-height: fit-content;
-        height: auto;
+        max-height: fit-content;
+        min-height: calc(100vh - 100px);
         padding: 0;
         justify-content: start;
     }
-
     .centro h1 {
         font-size: 1.45em;
         margin-top: 10px;
     }
-
     .centro h3 {
         width: fit-content;
         height: fit-content;
         font-size: 1em;
         margin: 8px;
     }
-
     .centro .logo {
         align-content: left;
     }
@@ -738,11 +827,9 @@ ol li:nth-child(odd) {
         display: none;
     }
 
-    section.enlaces {
-        height: auto;
-        padding-top: 20px
-    }
-/* Responsive Section Library */
+
+
+/***** Responsive Section Library *******/
     section.libreria {
         width: 100%;
         height: 100vh;
@@ -757,7 +844,7 @@ ol li:nth-child(odd) {
     }
     .libreria .volver {
         grid-area: volver;
-        width: 100vw;
+        width: 100%;
         justify-content: left;
         margin: 0;
         line-height: 70px;
@@ -770,52 +857,61 @@ ol li:nth-child(odd) {
         display: block;
         width: 50px;
         height: 60px;
-        position: absolute;
+        position: stickly;
         top: -45px;
-        right: 30px;
+        right: 20px;
     }
     #check-2:checked~ul {
         right: 0;
     }
 
     .menuTemas {
-        width: 90vw;
+        width: 100%;
         height: 70px;
         margin: 0px;
         z-index: 10;
         border: none;
         border-bottom: 2px outset rgba(174, 171, 171, 0.35);
+        display: block;
     }
+    /* .nav-toggle{
+        display: block;
+     }
+
+     .nav-toggle:focus(:focus-visible){
+         outline: none;
+     } */
     .menuTemas h3{
         display: none
     }
     .menuMobile {
-        display: block;
+        display: none;
         position: fixed;
         top: 70px;
         left: 0;
+        right: 0;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
         z-index: 5;
         overflow: hidden;
-        transition: transform 0.3s ease-in-out;
+        transition: display 1s ease-in-out;
     }
     
-    #check-2:checked + .menuMobile {
+    #check-2:checked + .listado {
         display: block;
         transform: translateX(0);
     }
     
-    .menuMobile .listado {
-        max-width: 50vw;
+    .menuTemas div.listado {
+        max-width: 50%;
         width: 400px;
         height: 100%;
-        /* padding: 20px; */
-        background-color: #dbddde; 
+        margin-top: 0px;
+        background-color: rgba(250, 251, 252, 0.801); 
         float: right;
         overflow-y: auto;
-        
+        transition: display 1s ease-in;
     }
     
     .botones {
@@ -844,4 +940,16 @@ ol li:nth-child(odd) {
         background-color: #6d6b6b;
     }
 
+/* ******sección Enlaces****** */
+        section.enlaces {
+        height: auto;
+        padding-top: 20px
+    }
+
+    /* *******quienes Somos******** */
+    .quienesSomos p {
+        padding: 10px 20px;
+    }
+
 }
+

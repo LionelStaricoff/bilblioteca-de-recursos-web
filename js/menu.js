@@ -10,22 +10,43 @@ enlacesMenu.forEach(enlace => {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const checkBtn = document.getElementById("check-2");
-    const menuMobile = document.querySelector(".menuMobile");
+document.addEventListener('DOMContentLoaded', function () {
+    let checkbox = document.getElementById('check-2');
 
-    checkBtn.addEventListener("change", function () {
-        menuMobile.style.transform = checkBtn.checked ? "translateX(0)" : "translateX(100%)";
-    });
+    if (checkbox) {
+        checkbox.addEventListener('change', function () {
+            let menuListado = document.querySelector('.listado');
+            let menuMobile = document.querySelector('.menuMobile');
 
-    // Cierra el menú si se hace clic en un enlace del menú
-    const menuLinks = document.querySelectorAll(".menuMobile .listado a");
-    menuLinks.forEach(function (link) {
-        link.addEventListener("click", function () {
-            checkBtn.checked = false;
-            menuMobile.style.transform = "translateX(100%)";
+            if (menuListado) {
+                menuListado.style.display = checkbox.checked ? 'block' : 'none';
+                menuMobile.style.display = checkbox.checked ? 'block' : 'none';
+
+            }
         });
-    });
+    }
 });
+
+
+
+
+
+
+    // Añade un evento de cambio de tamaño de la ventana para manejar cambios en la pantalla
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 1000) {
+            menuTemas.style.display = 'block';
+        } else {
+            menuTemas.style.display = 'none';
+        }
+    });
+
+
+
+
+
+
+
+
 
 
