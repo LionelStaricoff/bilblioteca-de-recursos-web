@@ -931,9 +931,19 @@ section.quienesSomos {
     }
 
     .menuTemas {
-
+        margin: 0;
+        padding: 0 !important;
         &:has(:checked) > .menuMobile {
             display: block;
+          
+        }
+
+        &:has(:checked) > .fijo {
+            background-color: #0cd9ba;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+          
         }
 
         div.listado {

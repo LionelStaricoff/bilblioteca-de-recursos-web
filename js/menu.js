@@ -1,3 +1,5 @@
+
+
 // Obtener todos los enlaces dentro del menú
 const enlacesMenu = document.querySelectorAll('nav ul li a');
 
@@ -30,14 +32,7 @@ enlacesMenu.forEach(enlace => {
 
 
 
-    // Añade un evento de cambio de tamaño de la ventana para manejar cambios en la pantalla
-    window.addEventListener('resize', function () {
-        if (window.innerWidth > 1000) {
-            menuTemas.style.display = 'block';
-        } else {
-            menuTemas.style.display = 'none';
-        }
-    });
+  
 
 
 
