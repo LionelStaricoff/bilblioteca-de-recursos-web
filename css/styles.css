@@ -739,8 +739,9 @@ section.quienesSomos {
 
 @media (max-width: 1000px) {
     section.inicio {
+       
         width: 100vw;
-        height: 100vh;
+        min-height:calc(100vh - 70px) ;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto 1fr;
         grid-template-areas:
@@ -822,9 +823,11 @@ section.quienesSomos {
     .centro {
         width: 90vw;
         max-height: fit-content;
-        min-height: calc(100vh - 100px);
+        min-height: calc(100vh - 70px);
         padding: 0;
         justify-content: start;
+    
+
     }
 
     .centro h1 {
