@@ -64,7 +64,7 @@ nav {
     margin: 0px 15px 0 15px;
 }
 
-nav ul{
+nav ul {
     background-color: #fbfdfd22;
     border-end-end-radius: 10px
 }
@@ -294,8 +294,6 @@ section.libreria {
     height: 100vh;
     width: 100%;
     grid-template-areas:
-        "contenido contenedorEjemplo"
-        "contenido contenedorEjemplo"
         "contenido contenedorEjemplo";
 }
 
@@ -353,6 +351,7 @@ section.libreria {
     top: 20px;
     right: 20px
 }
+
 .checkbtn-2 img {
     display: none;
     width: 50px;
@@ -361,6 +360,7 @@ section.libreria {
     top: -45px;
     right: 20px;
 }
+
 .menuTemas .fijo {
     grid-area: titulo;
     top: 0px;
@@ -459,6 +459,7 @@ details p a:active {
     background-color: var(--azul_oscuro);
     color: white;
 }
+
 .contenedorEjemplo {
     grid-area: contenedorEjemplo;
     height: 91%;
@@ -466,6 +467,7 @@ details p a:active {
     padding: 20px 25px 25px;
     position: relative;
 }
+
 .ejemplo {
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
@@ -497,11 +499,13 @@ details p a:active {
 .iconoCopy img {
     filter: invert(100%)
 }
-.iconoCopy:hover{
+
+.iconoCopy:hover {
     background-color: #0853e9;
     transform: scale(110%);
 }
-.iconoCopy:active{
+
+.iconoCopy:active {
     transform: scale(95%)
 }
 
@@ -583,10 +587,12 @@ hr {
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
-.enlaces button:hover{
+
+.enlaces button:hover {
     background-color: #135869;
 }
-.enlaces button:active{
+
+.enlaces button:active {
     transform: scale(90%);
 }
 
@@ -609,13 +615,16 @@ section.contribucion {
     /* place-content: center; */
     font-size: 1rem;
 }
-.contribucion h5{
+
+.contribucion h5 {
     width: 100vw;
     margin-left: 50px;
 }
+
 .contribucion h5 img {
     filter: invert(0%)
 }
+
 .contribucion .volver {
     padding: 10px;
     width: 100%;
@@ -631,6 +640,7 @@ section.contribucion {
 .contribucion h3 {
     margin-top: 20px
 }
+
 .contribucion p {
     font-size: 1.1em;
 }
@@ -646,9 +656,11 @@ section.websDeInteres {
     place-content: center;
     font-size: 1rem;
 }
-.websDeInteres h5 img{
+
+.websDeInteres h5 img {
     filter: invert(0%);
-} 
+}
+
 .websDeInteres .volver {
     padding: 10px;
     width: 100%;
@@ -686,6 +698,7 @@ ol li:nth-child(odd) {
 .websDeInteres li a {
     color: blue
 }
+
 /* ************ Quienes Somos ************ */
 section.quienesSomos {
     width: 100%;
@@ -697,6 +710,7 @@ section.quienesSomos {
     place-content: center;
     font-size: 1rem;
 }
+
 .quienesSomos h5 img {
     filter: invert(0%)
 }
@@ -706,16 +720,19 @@ section.quienesSomos {
     text-shadow: -5px 5px 5px rgba(0, 0, 0, .3);
 
 }
+
 .quienesSomos p {
     font-size: 1.1em;
     padding: 10px 200px;
     text-align: justify;
 }
-.quienesSomos div i{
+
+.quienesSomos div i {
     text-align: center;
     font-size: 1.1em
 }
-.quienesSomos i span{
+
+.quienesSomos i span {
     color: rgb(158, 6, 213);
     font-size: 1.2em;
 }
@@ -809,16 +826,19 @@ section.quienesSomos {
         padding: 0;
         justify-content: start;
     }
+
     .centro h1 {
         font-size: 1.45em;
         margin-top: 10px;
     }
+
     .centro h3 {
         width: fit-content;
         height: fit-content;
         font-size: 1em;
         margin: 8px;
     }
+
     .centro .logo {
         align-content: left;
     }
@@ -829,19 +849,20 @@ section.quienesSomos {
 
 
 
-/***** Responsive Section Library *******/
+    /***** Responsive Section Library *******/
     section.libreria {
         width: 100%;
         height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 4fr;
         grid-template-areas:
-         "contenido"
-         "contenedorEjemplo";
+            "contenido"
+            "contenedorEjemplo";
         padding: 10px;
         place-content: center;
         position: relative;
     }
+
     .libreria .volver {
         grid-area: volver;
         width: 100%;
@@ -849,10 +870,12 @@ section.quienesSomos {
         margin: 0;
         line-height: 70px;
     }
+
     .checkbtn-2 {
         display: block;
         width: 100%;
     }
+
     .checkbtn-2 img {
         display: block;
         width: 50px;
@@ -861,6 +884,7 @@ section.quienesSomos {
         top: -45px;
         right: 20px;
     }
+
     #check-2:checked~ul {
         right: 0;
     }
@@ -874,6 +898,7 @@ section.quienesSomos {
         border-bottom: 2px outset rgba(174, 171, 171, 0.35);
         display: block;
     }
+
     /* .nav-toggle{
         display: block;
      }
@@ -881,9 +906,10 @@ section.quienesSomos {
      .nav-toggle:focus(:focus-visible){
          outline: none;
      } */
-    .menuTemas h3{
+    .menuTemas h3 {
         display: none
     }
+
     .menuMobile {
         display: none;
         position: fixed;
@@ -897,51 +923,64 @@ section.quienesSomos {
         overflow: hidden;
         transition: display 1s ease-in-out;
     }
-    
-    #check-2:checked + .listado {
+
+    #check-2:checked+label>img {
         display: block;
+        filter: opacity(50%);
         transform: translateX(0);
     }
-    
-    .menuTemas div.listado {
-        max-width: 50%;
-        width: 400px;
-        height: 100%;
-        margin-top: 0px;
-        background-color: rgba(250, 251, 252, 0.801); 
-        float: right;
-        overflow-y: auto;
-        transition: display 1s ease-in;
+
+    .menuTemas {
+
+        &:has(:checked) > .menuMobile {
+            display: block;
+        }
+
+        div.listado {
+            max-width: 50%;
+            width: 400px;
+            height: 100%;
+            margin-top: 0px;
+            background-color: rgba(250, 251, 252, 0.801);
+            float: right;
+            overflow-y: auto;
+            transition: display 1s ease-in;
+        }
+
     }
-    
+
     .botones {
         margin: 0px;
         justify-content: space-around;
         padding: 0 6px;
         margin-bottom: 10px
     }
+
     .botones button {
         font-size: 0.9em;
         margin: 0
     }
+
     section.libreria .contenedorEjemplo {
         width: 100%;
         padding: 0px;
         position: absolute;
     }
-    .ejemplo{
+
+    .ejemplo {
         max-height: 85%;
         overflow: auto
     }
-    .iconoCopy{
+
+    .iconoCopy {
         top: 42px;
         border: 1.5px solid #000080;
         border-radius: 3px;
         background-color: #6d6b6b;
     }
 
-/* ******sección Enlaces****** */
-        section.enlaces {
+    /* ******sección Enlaces****** */
+    section.enlaces {
         height: auto;
         padding-top: 20px
     }
@@ -952,4 +991,3 @@ section.quienesSomos {
     }
 
 }
-

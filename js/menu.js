@@ -10,10 +10,8 @@ enlacesMenu.forEach(enlace => {
 });
 
 
-document.addEventListener('DOMContentLoaded', function () {
+/*
     let checkbox = document.getElementById('check-2');
-
-    if (checkbox) {
         checkbox.addEventListener('change', function () {
             let menuListado = document.querySelector('.listado');
             let menuMobile = document.querySelector('.menuMobile');
@@ -23,9 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 menuMobile.style.display = checkbox.checked ? 'block' : 'none';
 
             }
-        });
-    }
-});
+        });*/
+    
+
 
 
 
