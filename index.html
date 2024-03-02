@@ -30,8 +30,6 @@
                             alt="darkMode"></label>
                 </li> -->
             </ul>
-
-
         </nav>
 
         <div class="centro">
@@ -50,7 +48,6 @@
             <p class="copyRight">® Licencia de uso libre, prohibida la comercialización del mismo sin permiso de los
                 desarrolladores.
                 Todos los derechos reservados.</p>
-
         </div>
 
         <div class="derecha">
@@ -61,7 +58,7 @@
     </section>
 
     <section class="libreria" id="libreria">
-        <div class="menuTemas"> 
+        <div class="menuTemas">
             <div class="fijo">
                 <input type="checkbox" id="check-2">
                 <label for="check-2" class="checkbtn-2">
@@ -207,6 +204,18 @@
 &lt;html lang="es"&gt;
 &lt;head&gt;
 &lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scalegt, supongamos que esto es mucho más largo;
+&lt;title&gt;Mi Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hola, Mundo!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
 &lt;meta name="viewport" content="width=device-width, initial-scalegt;
 &lt;title&gt;Mi Página&lt;/title&gt;
 &lt;/head&gt;
@@ -216,52 +225,50 @@
 &lt;/html&gt;
                 </code>
                 </pre>
-
-
             </div>
-
-
         </div>
     </section>
 
     <section class="enlaces" id="enlaces">
         <div>
-            <h5><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver al inicio</a></h5>
-
+            <h5 class="volver"><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver
+                    al inicio</a></h5>
             <h2 class="titulo">Enlaces:</h2>
-            <div>
-                <p>Sólo necesitas pegar el enlace en tu HTML:</p>
-                <p>&lt;link rel="stylesheet"
-                    href="https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/css/style.css"&gt;
-                    <button>Copiar</button>
-                </p>
-                <br>
-            </div>
+            <div class="contenido">
+                <div>
+                    <p>Sólo necesitas pegar el enlace en tu HTML:</p>
+                    <p class="link">&lt;link rel="stylesheet"
+                        href="https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/css/style.css"&gt;
+                        <button>Copiar</button>
+                    </p>
+                    <br>
+                </div>
 
-            <div>
-                <p>También puedes incluir la URL dentro del import en tu archivo style.css: </p>
-                <p>@import
-                    url('https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/css/style.css');
-                    <button>Copiar</button>
-                </p>
-                <br>
-            </div>
-
-            <div>
-                <p>Para crear objetos sólo debes enlazar el módulo dentro de tu archivo.JS: </p>
-                <p>import * as objetos from
-                    'https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/js/objectos.js';
-                    <button>Copiar</button>
-                </p>
-                <br>
-            </div>
-            <div>
-                <p>O simplemente, puedes ir a la sección 'Librería', elegir lo que necesitas y copiar el código, desde
-                    el botón:
-                    <img src="img/iconos/copiar.png" alt="icono copy">
-                </p>
-
-                <hr>
+                <div>
+                    <p>También puedes incluir la URL dentro del import en tu archivo style.css: </p>
+                    <p class="link">@import
+                        url('https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/css/style.css');
+                        <button>Copiar</button>
+                    </p>
+                    <br>
+                </div>
+                
+                <div>
+                    <p>Para crear objetos sólo debes enlazar el módulo dentro de tu archivo.JS: </p>
+                    <p class="link">import * as objetos from
+                        'https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/js/objectos.js';
+                        <button>Copiar</button>
+                    </p>
+                    <br>
+                </div>
+                <div>
+                    <p>O simplemente, puedes ir a la sección 'Librería', elegir lo que necesitas y copiar el código,
+                        desde
+                        el botón:
+                        <img src="img/iconos/copiar.png" alt="icono copy">
+                    </p>
+                    <hr>
+                </div>
             </div>
 
         </div>
@@ -269,8 +276,8 @@
 
     <section class="contribucion" id="contribucion">
         <div>
-            <h5><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver al inicio</a></h5>
-
+            <h5 class="volver"><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver
+                    al inicio</a></h5>
             <h2 class="titulo">Contribuciones:</h2>
             <h3>Para sumar tus códigos a este proyecto, sigue los siguientes pasos:</h3>
             <p>bla blablablabla</p>
@@ -458,43 +465,44 @@
         </div>
     </section>
 
-    <section class="colaboraciones">
-        <div class="example"></div>
-    </section>
-
     <section class="quienesSomos" id="quienesSomos">
         <div>
             <h5 class="volver"><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver
-                al inicio</a></h5>
+                    al inicio</a></h5>
             <h2>¿Quiénes Somos?</h2>
 
             <p>Nosotros, un grupo de apasionados programadores, hemos unido fuerzas para crear
-            esta biblioteca de recursos, con la visión de facilitar tu camino en el fascinante mundo del desarrollo de
-            software.</p>
+                esta biblioteca de recursos, con la visión de facilitar tu camino en el fascinante mundo del desarrollo
+                de
+                software.</p>
 
             <h2>Nuestra Historia:</h2>
-            <p>Este proyecto surgió de la convicción de que el aprendizaje es más efectivo cuando se comparte. Cada uno de
-            nosotros aporta una perspectiva única, y estamos emocionados de poner a tu disposición los conocimientos y herramientas que hemos recopilado a lo largo de nuestros viajes.
+            <p>Este proyecto surgió de la convicción de que el aprendizaje es más efectivo cuando se comparte. Cada uno
+                de
+                nosotros aporta una perspectiva única, y estamos emocionados de poner a tu disposición los conocimientos
+                y herramientas que hemos recopilado a lo largo de nuestros viajes.
             </p>
 
             <h2>Únete a Nuestra Comunidad:</h2>
-            <p>Además de ser una fuente de recursos, queremos que te sientas parte de nuestra comunidad. Explora, aprende y
-            comparte tus experiencias con nosotros. Juntos, podemos hacer que el mundo de la programación sea aún más
-            emocionante y accesible.
+            <p>Además de ser una fuente de recursos, queremos que te sientas parte de nuestra comunidad. Explora,
+                aprende y
+                comparte tus experiencias con nosotros. Juntos, podemos hacer que el mundo de la programación sea aún
+                más
+                emocionante y accesible.
             </p>
-            <p>Gracias por ser parte de nuestra historia. ¡Esperamos que encuentres inspiración y utilidad en cada línea de
-            código y recurso que compartimos!
+            <p>Gracias por ser parte de nuestra historia. ¡Esperamos que encuentres inspiración y utilidad en cada línea
+                de
+                código y recurso que compartimos!
             </p>
             <p>Programáticamente,<br></p>
-            <i>Lionel "Lyon" Staricoff  <span> & </span>  Gladys "MagiCode" Romero  <span> & </span> Luciana "LuMa" ???</i> 
+            <i>Lionel "Lyon" Staricoff <span> & </span> Gladys "MagiCode" Romero <span> & </span> Luciana "LuMa" ???</i>
         </div>
     </section>
 
-
-    <script  type="module" src="js/menu.js" ></script>
+    <script type="module" src="js/menu.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script defer>hljs.highlightAll();</script>
-  
+
 </body>
 
 </html>
