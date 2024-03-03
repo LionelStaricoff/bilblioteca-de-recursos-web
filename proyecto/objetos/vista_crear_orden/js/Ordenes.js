@@ -5,7 +5,7 @@ export class Ordenes {
         this.divPadre = divPadre ?? '#front';
         this.orden = {
             "description": this.textarea ?? "nueva orden test",
-            "cliente_id": 15
+            "cliente_id": dato.clienteId ?? NaN
         }
     }
 
@@ -27,8 +27,17 @@ export class Ordenes {
 
             this.orden.description = document.querySelector('textarea').value;
             this.textarea = console.log(this.orden);
-        })
-        div.append(textarea, button);
+        });
+
+        const buttonX = document.createElement('button');
+        buttonX.innerText = "X";
+        buttonX.addEventListener('click', () => {
+           const padre =  div.parentNode;
+           padre.removeChild(div);
+        });
+
+
+        div.append(buttonX ,textarea, button);
         return div;
     }
     agregarAlFront() {
