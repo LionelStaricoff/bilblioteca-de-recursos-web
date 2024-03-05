@@ -148,6 +148,7 @@ section.libreria {
             margin-top: 12px;
             overflow-wrap: break-word;
             overflow-x: hidden;
+            tab-size: 2;
         }
         /* .hljs {
             font-size: 1.2em;
