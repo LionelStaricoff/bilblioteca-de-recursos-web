@@ -9,7 +9,7 @@ export class Cartel {
     crearCartel() {
         this.div = document.createElement('div');
         this.div.id = 'cartel';
-        this.div.classList.add("styleCartel");
+   
 
         const vista = document.createElement('div');
         vista.innerText = this.mensaje;
