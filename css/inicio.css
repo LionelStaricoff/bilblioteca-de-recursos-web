@@ -135,16 +135,13 @@ section.inicio {
         margin: 15px;
 
         .boton {
-            display: flex;
-            align-items: center;
-            justify-content: center;
             width: 150px;
             height: 50px;
             background-color: var(--verde_claro);
             font-family: 'Roboto', sans-serif;
             font-size: 18px;
             font-weight: bold;
-            border: 3px ridge var(--blanco);
+            border: 3px outset var(--verde_claro);
             cursor: pointer;
             border-start-start-radius: 15px;
             border-end-end-radius: 15px;
@@ -153,7 +150,6 @@ section.inicio {
             overflow: hidden;
             display: grid;
             place-content: center;
-            border: 2px outset;
 
             span {
                 z-index: 2;

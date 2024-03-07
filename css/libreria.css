@@ -140,7 +140,7 @@ section.libreria {
             font-family: 'Courier New', Courier, monospace;
             max-width: 100%;
             background-color: var(--gris_oscuro);
-            color: var(--blanco);
+            color: var(--verde_agua);
             height: calc(100vh - 100px);
             border: 3px outset var(--azul_oscuro);
             border-radius: 10px;
@@ -148,6 +148,7 @@ section.libreria {
             margin-top: 12px;
             overflow-wrap: break-word;
             overflow-x: hidden;
+            font-size: 1.15em;
             tab-size: 2;
         }
         /* .hljs {
