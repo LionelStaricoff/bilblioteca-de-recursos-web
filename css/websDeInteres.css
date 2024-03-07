@@ -1,0 +1,43 @@
+section.websDeInteres {
+    height: auto;
+    width: 100%;
+    background-color: var(--azul_tenue);
+    padding: 10px;
+    padding-bottom: 50px;
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+
+    h3 {
+        margin-top: 20px;
+    }
+    ol {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.1rem;
+        margin: 0 200px;
+        overflow-wrap: break-word;
+
+        li {
+            text-align: left;
+            margin-top: 5px;
+            padding: 2px 0px 2px 5px;
+            text-decoration: underline;
+            cursor: pointer;
+
+            &:nth-child(odd) {
+                background-color: var(--blanco);
+            }
+            a {
+                color: var(--negro)
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    section.websDeInteres {
+        ol {
+            margin: 0 30px;
+        }
+    }
+}

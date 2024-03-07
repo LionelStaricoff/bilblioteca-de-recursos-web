@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin: 10em  auto;
+}
+.boton-02 {
+            width: 150px;
+            height: 50px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: greenyellow;
+            border: 3px outset green;
+            border-start-start-radius: 15px;
+            border-end-end-radius: 15px;
+            box-shadow: -5px 5px 5px rgba(67, 130, 3, 0.84);
+            position: relative;
+            overflow: hidden;
+            display: grid;
+            place-content: center;
+            cursor: pointer;
+
+
+            span {
+                z-index: 2;
+            }
+
+            &::after {
+                content: "";
+                width: 100%;
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: calc(-100% - 50px);
+                border-bottom: 50px solid green;
+                border-right: 50px solid transparent;
+                transition: .4s ease-in-out all;
+            }
+            &:hover::after {
+                left: 0;
+            }
+            &:hover span a {
+                color: white;
+            }
+            &:active {
+                transform: scale(90%);
+                color: white;
+            }
+        }
+
+ </style>
+    <title>boton animado 02</title>
+</head>
+<body>
+        <button class="boton-02">
+            <span><a href="#">Button 02</a></span>
+        </button>
+</body>
+</html>
