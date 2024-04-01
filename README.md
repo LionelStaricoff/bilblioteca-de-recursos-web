@@ -47,7 +47,7 @@ https://app.diagrams.net/
 <br>
 
 
-<img src="img/FotoLio.png" width="70px"> | <img src="img/FotoGladys.jpg"  width="80px" style="border-radius: 50%"> | <img src="img/Luma.jpg" width="70px" style="border-radius: 40%" > |
+<img src="img/FotoLio.png" width="70px"> | <img src="img/fotoGladys.jpg"  width="80px" style="border-radius: 50%"> | <img src="img/Luma.jpg" width="70px" style="border-radius: 40%" > |
 | :------------: | :------------: | :------------: |
 | Lionel | Gladys | Luciana |
 | 'Lyon' | <img src= "img/MiLogo-verde-svg.svg" width="80px"> | 'LuMa' |
