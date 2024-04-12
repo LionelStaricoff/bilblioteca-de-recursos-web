@@ -1,0 +1,84 @@
+@import url("inicio.css");
+@import url("libreria.css");
+@import url("enlaces.css");
+@import url("contribuciones.css");
+@import url("websDeInteres.css");
+@import url("quienesSomos.css");
+
+@font-face {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    src: url(fonts/lucida-sans-cufonfonts/LSANS.TTF) format('trueType');
+}
+@font-face {
+    font-family: 'Courier New', Courier, monospace;
+    src: url(fonts/Courier_Prime/CourierPrime-Regular.ttf) format('trueType');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto/Roboto-Regular.ttf) format('trueType');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+:root {
+    --verde_agua: #0ef7d4;
+    --verde_claro: #0cd9ba;
+    --verde_claro_tenue: #0cd9bad5; 
+    --verde_esmeralda: #135869;
+    --blanco: #fcfcfc;
+    --azul_tenue: #9ab9f9fd;
+    --azul_claro: #598ef7;
+    --azul_oscuro: #000080;
+    --gris: #6e6e6e;
+    --gris_oscuro: #2c2c2c;
+    --semiTransparente: #fbfdfd22;
+    --negro: #141414;
+    --purpura: #9e06d5;
+}
+
+body {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+/* *****LINK VOLVER AL INICIO***** */
+h5 {
+    text-align: left;
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-left: 5px;
+    font-size: 1em;
+    text-decoration: underline;
+
+    img {
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+        margin-top: 20px;
+    }
+
+    a:hover {
+        color: var(--azul_oscuro);
+        transform: scale(90%);
+    }
+}
+
+/* *****TITULOS***** */
+.titulo {
+    font-size: 1.8rem;
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, .3);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: var(--blanco);
+}

@@ -1,47 +1,502 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="js/main.js" defer></script>
-    <title>Libreria web de objetos</title>
+    <link rel="stylesheet" href="path/to/prism.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/panda-syntax-dark.min.css"> 
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Biblioteca de Recursos Web</title>
 </head>
-
 <body>
-    <section>
-        <h1>Bienvenidos a la librería web Front End de objetos.</h1>
-        <h3>En este sitio encontrarás numerosas implementaciones para web realizadas en HTML, CSS y JavaScript. Podrás
-            copiar y descargar el código, así como crear tus propias implementaciones directamente desde objetos. Sin
-            más preámbulos, te invito a leer las instrucciones de uso rápido y a disfrutar de la experiencia</h3>
-        <button>Inicio rapido</button>
-    </section>
 
-    <section id="inicio_rapido">
-        <h2>Bienvenido al inicio rápido:</h2>
-        <div>
-            <p>Solo necesitas pegar el enlace en tu HTML:</p>
-            <p>&lt;link rel="stylesheet"
-                href="https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/css/style.css"&gt;
-                <button>copiar</button></p>
-                <hr>
-        </div>
+    <section class="inicio" id="inicio">
+        <nav class="menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img src="img/iconos/menu.png" alt="menú">
+            </label>
+            <ul><b>MENU</b>
+                <li><a href="#libreria">Librería</a></li>
+                <li><a href="#enlaces">Enlaces</a></li>
+                <li><a href="#contribucion">Contribuciones</a></li>
+                <li><a href="#websDeInteres">Webs de Interés</a></li>
+                <li><a href="#quienesSomos">Quienes Somos</a></li>
+            </ul>
+        </nav>
 
-        <div>
-        <p>También puedes incluir la URL dentro del import en tu archivo style.css: </p>
-        <p>@import url('https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/css/style.css');
-            <button>copiar</button></p>
-            <hr>
-        </div>
-
-        <div>
-            <p>Para crear objetos solo debes enlazar el modulo dentro de tu archivo.JS: </p>
-            <p>import * as objetos from 'https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/js/objectos.js';
-                <button>copiar</button></p>
-                <hr>
+        <div class="centro">
+            <a href="#quienesSomos"><img src="img/logo-1.png" alt="" class="logo"></a>
+            <div>
+                <h1>Bienvenidos a <br>La Librería Web Front End</h1>
+                <h3>En este sitio encontrarás numerosas implementaciones para web realizadas en HTML, CSS, JavaScript y Object.
+                    Podrás copiar y descargar el código, así como crear tus propias implementaciones directamente desde
+                    objetos.
+                    <br>
+                    Sin más preámbulos, te invitamos a leer las instrucciones
+                    de <a href="#enlaces">uso rápido</a> y a disfrutar de la experiencia.
+                </h3>
             </div>
-    </section>
-</body>
 
+            <p class="copyRight">® Licencia de uso libre, prohibida la comercialización del mismo sin permiso de los
+                desarrolladores.
+                Todos los derechos reservados.</p>
+        </div>
+
+        <div class="derecha">
+            <button class="boton">
+                <span><a href="#libreria">Librería <img src="img/iconos/flecha-derecha.png" alt=""></a></span>
+            </button>
+        </div>
+    </section>
+
+    <section class="libreria" id="libreria">
+        <div class="menuTemas">
+            <div class="fijo">
+                <input type="checkbox" id="check-2">
+                <label for="check-2" class="checkbtn-2">
+                    <img src="img/iconos/menu.png" alt="menú">
+                </label>
+                <h5 class="volver"><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver
+                        al inicio</a></h5>
+                <h3>LIBRERIA</h3>
+            </div>
+
+            <!--menu de items-->
+            <div class="menuMobile">
+                <div class="listado">
+
+                    <details>
+                        <summary>Alertas</summary>
+                        <p><a href="#alertas-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Animaciones</summary>
+                        <p><a href="#animacion-01">Ejemplo 1</a></p>
+                        <p><a href="#animacion-01">Ejemplo 2</a></p>
+                        <p><a href="#animacion-01">Ejemplo 3</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Animación de Carga (spinner)</summary>
+                        <p><a href="#spinner-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Insignias</summary>
+                        <p><a href="#insignias-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Barras de Navegación</summary>
+                        <p><a href="#barrasDeNavegacion-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Barras de progreso (progress bar)</summary>
+                        <p><a href="#barrasDeProgreso-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Botones</summary>
+                        <p><a href="#boton-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Carrusel</summary>
+                        <p><a href="#carrusel-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Colapso</summary>
+                        <p><a href="#colapso-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Desplegables</summary>
+                        <p><a href="#desplegable-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Formularios</summary>
+                        <p><a href="#formularios-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Indicadores (toolips)</summary>
+                        <p><a href="#indicadores-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Jumbotron</summary>
+                        <p><a href="#jumbotron-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Listas</summary>
+                        <p><a href="#listas-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Menú Desplegable</summary>
+                        <p><a href="#menuDesplegable-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Modal</summary>
+                        <p><a href="#modal-01">Ejemplo 1</a></p>
+                    </details>
+                    <details>
+                        <summary>Paginación</summary>
+                        <p><a href="#paginacion-01">Ejemplo 1</a></p>
+                    </details>
+                    <details>
+                        <summary>Paneles</summary>
+                        <p><a href="#paneles-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Popovers</summary>
+                        <p><a href="#popovers-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Pestañas (tabs)</summary>
+                        <p><a href="#pestañas-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Plantillas (templates)</summary>
+                        <p><a href="#plantillas-01">Ejemplo 1</a></p>
+                    </details>
+
+                    <details>
+                        <summary>Tarjetas (cards)</summary>
+                        <p><a href="#tarjetas-01">Ejemplo 1</a></p>
+                    </details>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedorEjemplo">
+
+            <div class="botones">
+                <button>VISTA</button>
+                <button>HTML</button>
+                <button>CSS</button>
+                <button>JS</button>
+                <button>OBJECT</button>
+            </div>
+
+            <div class="ejemplo">
+                <button class="iconoCopy"><img src="img/iconos/copiar.png" alt="Copiar" width="20px"
+                        height="20px"></button>
+                <pre style="tab-size: 2;">
+                <code class="language-html"> 
+                <div class=contenidoEjemplo>
+                    <!-- código HTML aquí -->
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="es"&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scalegt;<br>
+                    &lt;title&gt;Mi Página&lt;/title&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                        &lt;h1&gt;Hola, Mundo!&lt;/h1&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="es"&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scalegt;<br>
+                    &lt;title&gt;Mi Página&lt;/title&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                        &lt;h1&gt;Hola, Mundo!&lt;/h1&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                </div>
+                 </code>
+                </pre> 
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="enlaces" id="enlaces">
+        <div>
+            <h5 class="volver"><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver
+                    al inicio</a></h5>
+            <h2 class="titulo">Enlaces:</h2>
+            <div class="contenido">
+                <div>
+                    <p>Sólo necesitas pegar el enlace en tu HTML:</p>
+                    <p class="link">&lt;link rel="stylesheet"
+                        href="https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/css/style.css"&gt;
+                        <button>Copiar</button>
+                    </p>
+                    <br>
+                </div>
+                <div>
+                    <p>También puedes incluir la URL dentro del import en tu archivo style.css: </p>
+                    <p class="link">@import
+                        url('https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/css/style.css');
+                        <button>Copiar</button>
+                    </p>
+                    <br>
+                </div>
+                <div>
+                    <p>Para crear objetos sólo debes enlazar el módulo dentro de tu archivo.JS: </p>
+                    <p class="link">import * as objetos from
+                        'https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/js/objectos.js';
+                        <button>Copiar</button>
+                    </p>
+                    <br>
+                </div>
+                <div>
+                    <p>O simplemente, puedes ir a la sección 'Librería', elegir lo que necesitas y copiar el código,
+                        desde
+                        el botón:
+                        <img src="img/iconos/copiar.png" alt="icono copy">
+                    </p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contribucion" id="contribucion">
+        <div>
+            <h5 class="volver"><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver
+                    al inicio</a></h5>
+            <h2 class="titulo">Contribuciones:</h2>
+            <h3>Para sumar tus códigos a este proyecto, sigue los siguientes pasos:</h3>
+            <p>bla blablablabla</p>
+            <div>
+                <p>Acá ponemos las instrucciones que sean necesarias</p>
+                <BR></BR>
+                <p>PODEMOS PONER UN VIDEO MOSTRANDO CÓMO HACERLO</p>
+
+            </div>
+        </div>
+    </section>
+    <section class="websDeInteres" id="websDeInteres">
+        <div>
+            <h5 class="volver"><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver
+                    al inicio</a></h5>
+
+            <h2 class="titulo">Webs de interés:</h2>
+            <div class="listaDeEnlaces">
+                <h3>Imágenes & iconos gratis:</h3>
+                <ol>
+                    <li><a href="https://www.iconfinder.com/" target="_blank">https://www.iconfinder.com/</a></li>
+                    <li><a href="https://dryicons.com/" target="_blank">https://dryicons.com/</a></li>
+                    <li><a href="https://vector.me/" target="_blank">https://vector.me/</a></li>
+                    <li><a href="https://vectorportal.com/es" target="_blank">https://vectorportal.com/es</a></li>
+                    <li><a href="https://www.1001freedownloads.com/"
+                            target="_blank">https://www.1001freedownloads.com/</a>
+                    </li>
+                    <li><a href="https://www.vectorstock.com/" target="_blank">https://www.vectorstock.com/</a></li>
+                    <li><a href="https://pixabay.com/es/" target="_blank">https://pixabay.com/es/</a></li>
+                    <li><a href="https://es.vecteezy.com/" target="_blank">https://es.vecteezy.com/</a></li>
+                    <li><a href="https://wallpapers.com/" target="_blank">https://wallpapers.com/</a></li>
+                    <li><a href="https://unsplash.com/es" target="_blank">https://unsplash.com/es</a></li>
+                    <li><a href="https://www.pexels.com/es-es/" target="_blank">https://www.pexels.com/es-es/</a></li>
+                    <li><a href="https://www.flaticon.es/" target="_blank">https://www.flaticon.es/ (tiene packs de
+                            iconos)</a></li>
+                    <li><a href="https://favicon.io/" target="_blank">https://favicon.io/</a></li>
+                    <li><a href="https://fontawesome.com/" target="_blank">https://fontawesome.com/</a></li>
+                    <li><a href="https://fonts.google.com/iconshttps://fonts.google.com/icons"
+                            target="_blank">https://fonts.google.com/iconshttps://fonts.google.com/icons</a></li>
+                    <li><a href="https://freeillustrations.xyz/" target="_blank">https://freeillustrations.xyz/</a></li>
+                    <li><a href="https://error404.fun/" target="_blank">https://error404.fun/</a></li>
+                    <li><a href="https://bgjar.com/" target="_blank">https://bgjar.com/ (fondos svg)</a></li>
+                    <li><a href="https://coolors.co/" target="_blank">https://coolors.co/ (para crear paletas de
+                            colores)</a></li>
+                    <li><a href="https://burst.shopify.com/" target="_blank">https://burst.shopify.com/ (fotos free)</a></li>
+                    <li><a href="https://stocksnap.io/" target="_blank">https://stocksnap.io/</a></li>
+                    <li><a href="https://www.stockvault.net/" target="_blank">https://www.stockvault.net/</a></li>
+                    <li><a href="https://pixabay.com/es/" target="_blank">https://pixabay.com/es/ </a></li>
+                    <li><a href="https://es.vecteezy.com/" target="_blank">https://es.vecteezy.com/</a></li>
+                    <li><a href="https://www.lifeofpix.com/" target="_blank">https://www.lifeofpix.com/</a></li>
+                    <li><a href="https://kaboompics.com/" target="_blank">https://kaboompics.com/</a></li>
+                    <li><a href="https://pngwing.com.es" target="_blank">https://pngwing.com.es</a></li>
+                </ol>
+
+                <h3>Prácticas y tutoriales:</h3>
+                <ol>
+                    <li><a href="https://www.frontendmentor.io/" target="_blank">https://www.frontendmentor.io/
+                            (practicas
+                            para armar web)</a></li>
+                    <li><a href="https://aprendecss.com/" target="_blank">https://aprendecss.com/ (tutoriales css
+                            flexbox y
+                            grid)</a></li>
+                </ol>
+
+                <h3>Editar online:</h3>
+                <ol>
+                    <li><a href="https://miro.com/es/" target="_blank">https://miro.com/es/ (diseño front web y
+                            diagramas de
+                            flujo colaborativos)</a></li>
+                    <li><a href="https://penpot.app/" target="_blank">https://penpot.app/ ( diseño front tipo sigma pero
+                            gratis)</a></li>
+                    <li><a href="https://www.ilovepdf.com/" target="_blank">https://www.ilovepdf.com/</a></li>
+                    <li><a href="https://www.canva.com/es_419/" target="_blank">https://www.canva.com/es_419/</a></li>
+                    <li><a href="https://www.photopea.com/" target="_blank">https://www.photopea.com/</a></li>
+                    <li><a href="http://www.umletino.com/umletino.html"
+                            target="_blank">http://www.umletino.com/umletino.html</a></li>
+                    <li><a href="https://boxy-svg.com/" target="_blank">https://boxy-svg.com/</a></li>
+                </ol>
+
+                <h3>Crear programas en línea:</h3>
+                <ol>
+                    <li><a href="https://stackblitz.com/" target="_blank">https://stackblitz.com/</a></li>
+                </ol>
+
+                <h3>Proyectos para realizar:</h3>
+                <ol>
+                    <li><a href="https://github.com/bradtraversy/50projects50days"
+                            target="_blank">https://github.com/bradtraversy/50projects50days</a></li>
+                </ol>
+
+                <h3>Templates html y css:</h3>
+                <ol>
+                    <li><a href="https://www.noupe.com/essentials/freebies-tools-templates/50-free-css-x-html-templates.html"
+                            target="_blank">https://www.noupe.com/essentials/freebies-tools-templates/50-free-css-x-html-templates.html</a>
+                    <li><a href="https://html5up.net/" target="_blank">https://html5up.net/</a></li>
+                </ol>
+
+                <h3>Efectos css:</h3>
+                <ol>
+                    <li><a href="https://ideakreativa.net/30-ejemplos-geniales-de-animacion-css-para-sitios-web-increibles/amp/"
+                            target="_blank">https://ideakreativa.net/30-ejemplos-geniales-de-animacion-css-para-sitios-web-increibles/amp/</a>
+                    </li>
+                </ol>
+
+                <h3>Convertir archivos jar de la libreria javaFx en apk para android:</h3>
+                <ol>
+                    <li><a href="https://gluonhq.com/products/scene-builder/"
+                            target="_blank">https://gluonhq.com/products/scene-builder/</a></li>
+                </ol>
+
+                <h3>Aprender desarrollo web y lenguajes:</h3>
+                <ol>
+                    <li><a href="https://open-bootcamp.com/" target="_blank">https://open-bootcamp.com/</a></li>
+                    <li><a href="https://100dayscss.com/" target="_blank">https://100dayscss.com/</a></li>
+                    <li><a href="https://web.dev/learn?hl=es-419" target="_blank">https://web.dev/learn?hl=es-419</a>
+                    </li>
+                    <li><a href="https://quickref.me/index.html" target="_blank">https://quickref.me/index.html</a></li>
+                    <li><a href="https://learnjavascript.online/app.html?id=1435"
+                            target="_blank">https://learnjavascript.online/app.html?id=1435</a></li>
+                    <li><a href="https://sqlinteractivo.desafiolatam.com/"
+                            target="_blank">https://sqlinteractivo.desafiolatam.com/</a></li>
+                    <li><a href="https://es.javascript.info/" target="_blank">https://es.javascript.info/</a></li>
+                    <li><a href="https://applicants.bairesdev.com/test-lab?lang=es"
+                            target="_blank">https://applicants.bairesdev.com/test-lab?lang=es</a></li>
+                    <li><a href="https://refactoring.guru/es/design-patterns/java"
+                            target="_blank">https://refactoring.guru/es/design-patterns/java</a></li>
+                    <li><a href="https://picodotdev.github.io/blog-bitix/"
+                            target="_blank">https://picodotdev.github.io/blog-bitix/</a></li>
+                </ol>
+
+                <h3>CEO web:</h3>
+                <ol>
+                    <li><a href="https://developer.chrome.com/docs/lighthouse/seo/meta-description?hl=es-419"
+                            target="_blank">https://developer.chrome.com/docs/lighthouse/seo/meta-description?hl=es-419</a>
+                    </li>
+                    <li><a href="https://www.aluracursos.com/blog/seo-herramientas-gratuitas-para-que-tu-sitio-se-posicione-mejor"
+                            target="_blank">https://www.aluracursos.com/blog/seo-herramientas-gratuitas-para-que-tu-sitio-se-posicione-mejor
+                        </a></li>
+                    <li><a href="https://www.freecodecamp.org/news/learn-html-and-css-from-the-ceo-of-scrimba/"
+                            target="_blank">https://www.freecodecamp.org/news/learn-html-and-css-from-the-ceo-of-scrimba/</a>
+                    </li>
+                </ol>
+
+                <h3>Editor online:</h3>
+                <ol>
+                    <li><a href="https://duckly.com/tools" target="_blank">https://duckly.com/tools</a></li>
+                    <li><a href="https://codepen.io/" target="_blank">https://codepen.io/</a></li>
+                </ol>
+
+                <h3>Editor svg online:</h3>
+                <ol>
+                    <li> <a href="https://boxy-svg.com/app" target="_blank">https://boxy-svg.com/app</a></li>
+                </ol>
+
+                <h3>Mejorar perfil LinkedIn:</h3>
+                <ol>
+                    <li><a href="https://www.aluracursos.com/blog/como-crear-un-perfil-atractivo-para-reclutadores-en-linkedin"
+                            target="_blank">https://www.aluracursos.com/blog/como-crear-un-perfil-atractivo-para-reclutadores-en-linkedin</a>
+                    </li>
+                </ol>
+
+                <h3>Crear componentes con ai:</h3>
+                <ol>
+                    <li><a href="https://ai2ui.co/es" target="_blank">https://ai2ui.co/es</a></li>
+                </ol>
+
+                <h3>Desarrollo front end:</h3>
+                <ol>
+                    <li><a href="https://design.penpot.app/" target="_blank">https://design.penpot.app/</a></li>
+                </ol>
+
+                <h3>Servidores web:</h3>
+                <ol>
+                    <li><a href="https://stackblitz.com/?starters=backend"
+                            target="_blank">https://stackblitz.com/?starters=backend</a></li>
+                    <li><a href="https://northflank.com/" target="_blank">https://northflank.com/</a></li>
+                    <li><a href="https://www.netlify.com/" target="_blank">https://www.netlify.com/</a></li>
+                </ol>
+
+                <h3>Cursos gratuitos:</h3>
+                <ol>
+                    <li><a href="https://platzi.com/clases/2822-marca-personal/46988-elige-las-comunidades-profesionales-para-tu-perfil/"
+                            target="_blank">https://platzi.com/clases/2822-marca-personal/46988-elige-las-comunidades-profesionales-para-tu-perfil/
+                        </a></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section class="quienesSomos" id="quienesSomos">
+        <div>
+            <h5 class="volver"><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver
+                    al inicio</a></h5>
+            <h2>¿Quiénes Somos?</h2>
+
+            <p>Nosotros, un grupo de apasionados programadores, hemos unido fuerzas para crear
+                esta biblioteca de recursos, con la visión de facilitar tu camino en el fascinante mundo del desarrollo
+                de
+                software.</p>
+
+            <h2>Nuestra Historia:</h2>
+            <p>Este proyecto surgió de la convicción de que el aprendizaje es más efectivo cuando se comparte. Cada uno
+                de
+                nosotros aporta una perspectiva única, y estamos emocionados de poner a tu disposición los conocimientos
+                y herramientas que hemos recopilado a lo largo de nuestros viajes.
+            </p>
+
+            <h2>Únete a Nuestra Comunidad:</h2>
+            <p>Además de ser una fuente de recursos, queremos que te sientas parte de nuestra comunidad. Explora,
+                aprende y
+                comparte tus experiencias con nosotros. Juntos, podemos hacer que el mundo de la programación sea aún
+                más
+                emocionante y accesible.
+            </p>
+            <p>Gracias por ser parte de nuestra historia. ¡Esperamos que encuentres inspiración y utilidad en cada línea
+                de
+                código y recurso que compartimos!
+            </p>
+            <p>Programáticamente,<br></p>
+            <i>Lionel "Lyon" Staricoff <span> & </span> Gladys "MagiCode" Romero <span> & </span> Luciana "LuMa" ???</i>
+        </div>
+    </section>
+    <script type="module" src="js/menu.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll()</script> 
+</body>
 </html>

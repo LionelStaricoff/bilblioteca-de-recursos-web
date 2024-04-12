@@ -1,0 +1,104 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background: #565656;
+}
+
+
+
+.slider-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+
+    .slider {
+        display: flex;
+        max-width: 900px;
+        flex: none;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        position: relative;
+        /*width: 100%;*/
+
+
+        &::-webkit-scrollbar {
+            /*no compatible con firefox*/
+            display: none;
+        }
+
+        div {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 20px;
+            padding: 10px;
+            flex: none;
+
+            img {
+                width: 100%;
+                filter: grayscale(100%);
+                transition: transform 0.5s;
+
+                /*object-fit: cover;*/
+                scroll-snap-align: center;
+
+                &:hover {
+                    filter: grayscale(0);
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    #backBtn,
+    #nextBtn {
+        width: 50px;
+        height: 50px;
+        background: lightblue;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+
+        font-size: 1.25rem;
+        transform: translateY(-50%);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+        transform: translateY(-50%);
+        transition: transform 0.1s linear;
+        z-index: 10;
+
+        &:active {
+            transform: translateY(-50%) scale(0.85);
+        }
+
+    }
+    #backBtn {
+        left: 22px;
+    }
+    
+    #nextBtn {
+        right: 22px;
+    }
+}
+
+
+ 
+
+.cuerpo{
+    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
