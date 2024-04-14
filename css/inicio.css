@@ -62,6 +62,7 @@ section.inicio {
                     text-align: center;
                     padding: 2px;
                     color: var(--blanco);
+                    display: block;
                 }
                 &:hover {
                     background-color: var(--azul_oscuro);
