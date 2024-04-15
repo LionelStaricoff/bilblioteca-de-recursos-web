@@ -44,6 +44,18 @@ document.addEventListener("DOMContentLoaded", function() {
           }
       })
       .catch(error => {
-          console.error('Error al leer el archivo JSON:', error);
+        const websDeInteres = document.querySelector('.websDeInteres');
+
+        console.error('Error al cargar WebsInteres.json .', error);
+
+              
+        const errorMessage = document.createElement('div');
+        errorMessage.textContent = '¡Ouch! Hubo un error al cargar el listado. Intenta más tarde.';
+        errorMessage.classList.add('errorMessage');
+
+      //  const websDeInteres = document.querySelector('.websDeInteres');
+      //  websDeInteres.innerHTML = ''; 
+       websDeInteres.appendChild(errorMessage);
+
       });
 });
