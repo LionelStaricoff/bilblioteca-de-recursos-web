@@ -15,7 +15,7 @@
 }
 @font-face {
     font-family: 'Roboto';
-    src: url(fonts/Roboto/Roboto-Regular.ttf) format('trueType');
+    src: url(../fonts/Roboto/Roboto-Regular.ttf) format('trueType');
 }
 
 * {

@@ -377,7 +377,6 @@ section.libreria {
             top: 145px;
         }
         .ejemplo .contenidoEjemplo{
-            /* height: calc(100vh - 305px); */
             min-height:70%;
             height: 70%;
             margin: 12px
