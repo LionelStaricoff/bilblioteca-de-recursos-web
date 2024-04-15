@@ -1,0 +1,21 @@
+{
+    "menu": [
+      {
+        "titulo": "Alertas",
+        "subitems": [
+          {"titulo": "Ejemplo 1", "href": "#alertas-01"}
+        ]
+      },
+      {
+        "titulo": "Animaciones",
+        "subitems": [
+          {"titulo": "Ejemplo 1", "href": "#animacion-01"},
+          {"titulo": "Ejemplo 2", "href": "#animacion-02"},
+          {"titulo": "Ejemplo 3", "href": "#animacion-03"}
+        ]
+      }
+      //etc.
+    ]
+  }
+  
+  

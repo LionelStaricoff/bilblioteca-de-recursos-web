@@ -46,15 +46,13 @@ document.addEventListener("DOMContentLoaded", function() {
       .catch(error => {
         const websDeInteres = document.querySelector('.websDeInteres');
 
-        console.error('Error al cargar WebsInteres.json .', error);
+        console.error('Error al cargar la información.', error);
 
               
         const errorMessage = document.createElement('div');
-        errorMessage.textContent = '¡Ouch! Hubo un error al cargar el listado. Intenta más tarde.';
+        errorMessage.textContent = '¡Ouch! Hubo un error al cargar la información. Intenta más tarde.';
         errorMessage.classList.add('errorMessage');
 
-      //  const websDeInteres = document.querySelector('.websDeInteres');
-      //  websDeInteres.innerHTML = ''; 
        websDeInteres.appendChild(errorMessage);
 
       });
