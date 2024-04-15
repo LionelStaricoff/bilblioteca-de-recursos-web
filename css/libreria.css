@@ -12,6 +12,7 @@ section.libreria {
 
 
     .menuTemas {
+        width: 100%;
         grid-area: contenido;
         color: var(--negro);
         overflow: hidden;

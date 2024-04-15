@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
         errorMessage.textContent = '¡Ouch! Hubo un error al cargar la información. Intenta más tarde.';
         errorMessage.classList.add('errorMessage');
 
-       websDeInteres.appendChild(errorMessage);
+        websDeInteres.appendChild(errorMessage);
 
       });
 });
