@@ -40,7 +40,7 @@ https://app.diagrams.net/
 <div align="center">
 
 Herramientas que se utilizaron:<br><br>
- <img src="https://avatars.githubusercontent.com/u/18133?s=200&v=4" width="60" alt="GIT"> | <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" width="60" alt="GITHUB"> | <img src="img/drawio.png" width="60" alt="Draw.io"> | <img src="img/notitas.png" width=66px alt=AppNotas></a></div>|<img src="img/logoHTML.png" width="52" alt="HTML"> | <img src="img/logocss.png" width="60" alt="CSS"> | <img src="img/logojs.png" width="60" alt="JS"> | 
+ <img src="https://avatars.githubusercontent.com/u/18133?s=200&v=4" width="60" alt="GIT"> | <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" width="60" alt="GITHUB"> | <img src="img/drawio.png" width="60" alt="Draw.io"> | <img src="img/notitas.png" width=66px alt=AppNotas></a></div>|<img src="img/logoHTML.png" height="60" alt="HTML"> | <img src="img/logoCSS.png" height="60" alt="CSS"> | <img src="img/logoJS.png" height="60" alt="JS"> | 
 | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | 
 | GIT | GITHUB  | Draw.io  |  AppNotas |  HTML  |  CSS  | JS | 
 <br>
@@ -50,7 +50,7 @@ Herramientas que se utilizaron:<br><br>
 
 <div align="center">
 
-<img src="img/FotoLio.png" width="70px"> | <img src="img/fotoGladys.jpg"  width="80px" style="border-radius: 50%"> | <img src="img/Luma.jpg" width="70px" style="border-radius: 40%" > |
+<img src="img/FotoLio.png" width="70px"> | <img src="img/gladys.png"  width="115px" style="border-radius: 50%"> | <img src="img/Luma.jpg" width="72px" style="border-radius: 40%" > |
 | :------------: | :------------: | :------------: |
 | Lionel | Gladys | Luciana |
 | 'Lyon' | <img src= "img/MiLogo-verde-svg.svg" width="80px"> | 'LuMa' |
