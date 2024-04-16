@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const cartelError = new CartelError('.websDeInteres');
 
     // Leer el archivo JSON
-    fetch('json/WebsInteresS.json')
+    fetch('json/WebsInteres.json')
         .then(response => response.json())
         .then(data => {
             // Obtener el elemento donde se insertará el contenido

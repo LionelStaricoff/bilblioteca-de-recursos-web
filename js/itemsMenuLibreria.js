@@ -3,7 +3,7 @@ import { CartelError } from './utils.js';
 document.addEventListener("DOMContentLoaded", function () {
     const cartelError = new CartelError('.listado');
 
-    fetch('json/menuLibreriaA.json')
+    fetch('json/menuLibreria.json')
         .then(response => response.json())
         .then(data => {
             const menuItems = data.menu;
