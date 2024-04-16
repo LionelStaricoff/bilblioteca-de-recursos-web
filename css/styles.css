@@ -82,3 +82,24 @@ h5 {
     margin-bottom: 10px;
     color: var(--blanco);
 }
+
+/* *****CARTEL ERROR***** */
+.errorMessage {
+    width: 10em;
+    background-color: #f2bfbf;
+    color: #ff0000;
+    padding: 10px;
+    border: 3px double #ff0000;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(-10px); }
+}

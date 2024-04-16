@@ -1,6 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
+import { CartelError } from './utils.js';
 
-    fetch('json/menuLibreria.json')
+document.addEventListener("DOMContentLoaded", function () {
+    const cartelError = new CartelError('.listado');
+
+    fetch('json/menuLibreriaA.json')
         .then(response => response.json())
         .then(data => {
             const menuItems = data.menu;
@@ -28,11 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         })
         .catch(error => {
-            console.error('Ups! Error al cargar el menú.', error);
-            const listado = document.querySelector('.listado');
-            const errorMessage = document.createElement('div');
-            errorMessage.textContent = '¡Ouch! Hubo un error al cargar la información. Intenta más tarde.';
-            errorMessage.classList.add('errorMessage');
-            listado.appendChild(errorMessage);
+            cartelError.displayError(error);
+
         });
 });

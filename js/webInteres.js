@@ -1,59 +1,54 @@
+import { CartelError } from './utils.js';
+
 document.addEventListener("DOMContentLoaded", function() {
-  // Leer el archivo JSON
-  fetch('json/WebsInteres.json')
-      .then(response => response.json())
-      .then(data => {
-          // Obtener el elemento donde se insertará el contenido
-          const websDeInteres = document.querySelector('.websDeInteres');
+    const cartelError = new CartelError('.websDeInteres');
 
-          // Iterar sobre los datos del JSON
-          for (const seccion of data.websDeInteres) {
-              // Crear el elemento <h3> para el título de la sección
-              const titulo = document.createElement('h3');
-              titulo.textContent = seccion.titulo;
-              titulo.classList.add('titleLinks');
+    // Leer el archivo JSON
+    fetch('json/WebsInteresS.json')
+        .then(response => response.json())
+        .then(data => {
+            // Obtener el elemento donde se insertará el contenido
+            const websDeInteres = document.querySelector('.websDeInteres');
 
-              // Insertar el título en la sección
-              websDeInteres.appendChild(titulo);
+            // Iterar sobre los datos del JSON usando forEach
+            data.websDeInteres.forEach(seccion => {
+                // Crear el elemento <h3> para el título de la sección
+                const titulo = document.createElement('h3');
+                titulo.textContent = seccion.titulo;
+                titulo.classList.add('titleLinks');
 
-              // Crear la lista <ol> para los enlaces
-              const listaEnlaces = document.createElement('ol');
-              listaEnlaces.classList.add('listLinks');
+                // Insertar el título en la sección
+                websDeInteres.appendChild(titulo);
 
-              // Iterar sobre los enlaces de la sección
-              for (const link of seccion.links) {
-                  // Crear el elemento <li> para cada enlace
-                  const listItem = document.createElement('li');
-                  listItem.classList.add('li');
+                // Crear la lista <ol> para los enlaces
+                const listaEnlaces = document.createElement('ol');
+                listaEnlaces.classList.add('listLinks');
 
-                  // Crear el elemento <a> para el enlace
-                  const enlace = document.createElement('a');
-                  enlace.href = link;
-                  enlace.textContent = link;
-                  enlace.classList.add('link');
+                // Iterar sobre los enlaces de la sección usando forEach
+                seccion.links.forEach(link => {
+                    // Crear el elemento <li> para cada enlace
+                    const listItem = document.createElement('li');
+                    listItem.classList.add('li');
 
-                  // Insertar el enlace en el elemento <li>
-                  listItem.appendChild(enlace);
+                    // Crear el elemento <a> para el enlace
+                    const enlace = document.createElement('a');
+                    enlace.href = link;
+                    enlace.textContent = link;
+                    enlace.classList.add('link');
 
-                  // Insertar el elemento <li> en la lista <ol>
-                  listaEnlaces.appendChild(listItem);
-              }
+                    // Insertar el enlace en el elemento <li>
+                    listItem.appendChild(enlace);
 
-              // Insertar la lista de enlaces en la sección
-              websDeInteres.appendChild(listaEnlaces);
-          }
-      })
-      .catch(error => {
-        const websDeInteres = document.querySelector('.websDeInteres');
+                    // Insertar el elemento <li> en la lista <ol>
+                    listaEnlaces.appendChild(listItem);
+                });
 
-        console.error('Error al cargar la información.', error);
-
-              
-        const errorMessage = document.createElement('div');
-        errorMessage.textContent = '¡Ouch! Hubo un error al cargar la información. Intenta más tarde.';
-        errorMessage.classList.add('errorMessage');
-
-        websDeInteres.appendChild(errorMessage);
-
-      });
+                // Insertar la lista de enlaces en la sección
+                websDeInteres.appendChild(listaEnlaces);
+            });
+        })
+        .catch(error => {
+            cartelError.displayError(error);
+            
+        });
 });
