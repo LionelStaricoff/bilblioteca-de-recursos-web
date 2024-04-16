@@ -1,3 +1,5 @@
+@import url(styles.css);
+
 section.inicio {
     display: grid;
     max-width: 100vw;
@@ -11,12 +13,12 @@ section.inicio {
 
     nav {
         grid-area: menu;
-        color: var(--blanco);
+        color: var(--azul_oscuro);
         justify-self: center;
         font-size: 1.1em;
         display: grid;
         justify-content: center;
-        letter-spacing: .5px;
+        letter-spacing: .4px;
         text-align: center;
         align-items: center;
         justify-items: center;
@@ -39,15 +41,22 @@ section.inicio {
             right: 30px;
         }
         ul {
-            background-color: var(--semiTransparente);
-            border-end-end-radius: 10px;
+            background-color: var(--verde_claro_tenue);
+            box-shadow: -5px 5px 5px rgba(0, 0, 0, .6);
+            border-start-start-radius: 15px;
+            border-end-end-radius: 15px;
 
             b {
                 width: 100%;
                 display: block;
-                background-color: rgba(255, 255, 255, 0.1);
-                letter-spacing: 10px;
-                border: 3px outset var(--azul_claro);
+                /* background-color: rgba(255, 255, 255, 0.1); */
+                background-color: var(--azul_oscuro);
+                color: var(--blanco);
+                letter-spacing: 8px;
+                border: 3px ridge var(--verde_claro);
+                border-start-start-radius: 15px;
+                padding-top: 5px;
+                padding-bottom: 3px;
             }
             li {
                 padding: 0 10px;
@@ -57,16 +66,21 @@ section.inicio {
                 cursor: pointer;
                 list-style: none;
                 font-weight: 400;
-
+                &:last-child{
+                    border-bottom: 0px solid var(--blanco);
+                }
                 a {
                     text-align: center;
                     padding: 2px;
-                    color: var(--blanco);
+                    color: var(--azul_oscuro);
+                    display: block;
+                    &:hover{
+                        color: var(--blanco);
+                    }
                 }
                 &:hover {
-                    background-color: var(--azul_oscuro);
-                    filter: opacity(60%);
-                    box-shadow: -2px 2px 2px rgba(255, 255, 255, .4);
+                    background-color: var(--azul_claro);
+                    transform: scale(103%);
                 }
             }
         }
@@ -145,7 +159,7 @@ section.inicio {
             cursor: pointer;
             border-start-start-radius: 15px;
             border-end-end-radius: 15px;
-            box-shadow: -5px 5px 5px rgba(255, 255, 255, .6);
+            box-shadow: -5px 5px 5px rgba(0, 0, 0, .6);
             position: relative;
             overflow: hidden;
             display: grid;
