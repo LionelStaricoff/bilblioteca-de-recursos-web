@@ -40,7 +40,7 @@ https://app.diagrams.net/
 <div align="center">
 
 Herramientas que se utilizaron:<br><br>
- <img src="https://avatars.githubusercontent.com/u/18133?s=200&v=4" width="60" alt="GIT"> | <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" width="60" alt="GITHUB"> | <img src="img/drawio.png" width="60" alt="Draw.io"> | <div style="height: 45px; width: 45px; background: rgb(34, 205, 28); border-radius: 5px; border: 2px solid rgba(0,0,0,0.7); padding: 5px; ;"><img src="img/notitas.png" width=300px alt=AppNotas style="margin-top:10px; transform: rotate(-45deg); cursor: pointer"><a href="https://appnotas1.netlify.app/"></a></div>|<img src="img/logoHTML.png" width="52" alt="HTML"> | <img src="img/logocss.png" width="60" alt="CSS"> | <img src="img/logojs.png" width="60" alt="JS"> | 
+ <img src="https://avatars.githubusercontent.com/u/18133?s=200&v=4" width="60" alt="GIT"> | <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" width="60" alt="GITHUB"> | <img src="img/drawio.png" width="60" alt="Draw.io"> | <img src="img/notitas.png" width=66px alt=AppNotas></a></div>|<img src="img/logoHTML.png" width="52" alt="HTML"> | <img src="img/logocss.png" width="60" alt="CSS"> | <img src="img/logojs.png" width="60" alt="JS"> | 
 | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | 
 | GIT | GITHUB  | Draw.io  |  AppNotas |  HTML  |  CSS  | JS | 
 <br>
