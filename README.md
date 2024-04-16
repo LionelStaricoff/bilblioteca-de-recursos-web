@@ -37,15 +37,18 @@ Entre ellos encontrarás ejemplos de layouts, buttons, menu responsives, efectos
 
 Maquetado del proyecto desde el archivo libreriaWeb.drawio y se puede ver en:
 https://app.diagrams.net/
+<div align="center">
 
- <img src="https://avatars.githubusercontent.com/u/18133?s=200&v=4" width="60" alt="GIT"> | <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" width="60" alt="GITHUB"> | <img src="img/jira.png" width=60px alt=Jira> | <img src="https://avatars.githubusercontent.com/u/5155369?s=200&v=4" width="60" alt="FIGMA"> | 
-| :------------: | :------------: | :------------: | :------------: | 
-| GIT | GITHUB  | Jira | FIGMA  | 
+Herramientas que se utilizaron:<br><br>
+ <img src="https://avatars.githubusercontent.com/u/18133?s=200&v=4" width="60" alt="GIT"> | <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" width="60" alt="GITHUB"> | <img src="img/drawio.png" width="60" alt="Draw.io"> | <div style="height: 45px; width: 45px; background: rgb(34, 205, 28); border-radius: 5px; border: 2px solid rgba(0,0,0,0.7); padding: 5px; ;"><img src="img/notitas.png" width=300px alt=AppNotas style="margin-top:10px; transform: rotate(-45deg); cursor: pointer"><a href="https://appnotas1.netlify.app/"></a></div>|<img src="img/logoHTML.png" width="52" alt="HTML"> | <img src="img/logocss.png" width="60" alt="CSS"> | <img src="img/logojs.png" width="60" alt="JS"> | 
+| :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | 
+| GIT | GITHUB  | Draw.io  |  AppNotas |  HTML  |  CSS  | JS | 
 <br>
 </h4>
-
+</div>
 <br>
 
+<div align="center">
 
 <img src="img/FotoLio.png" width="70px"> | <img src="img/fotoGladys.jpg"  width="80px" style="border-radius: 50%"> | <img src="img/Luma.jpg" width="70px" style="border-radius: 40%" > |
 | :------------: | :------------: | :------------: |
@@ -55,3 +58,4 @@ https://app.diagrams.net/
 <a href="https://github.com/lionelStaricoff"> <img src="img/github.svg"  width="70px"></a> | <a href="https://github.com/gladys007"><img src="img/github.svg"  width="70px"></a> | <a href="https://github.com/luma2001"><img src="img/github.svg"  width="70px"></a> ||
 <a href="https://www.linkedin.com/in/lionel-staricoff/" rel="nofollow"><img src="img/linkedin.svg" width="70px"></a> | <a href="https://magicode-webpersonal.netlify.app">WebPersonal</a> | <a href="https://www.linkedin.com/in/???/" rel="nofollow"><img src="img/linkedin.svg" width="70px"></a> 
 
+</div>
