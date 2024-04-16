@@ -33,7 +33,6 @@ section.libreria {
 
             #check-2 {
                 display: none;
-                /* position: absolute; */
                 top: 20px;
                 right: 20px;
             }
@@ -76,6 +75,8 @@ section.libreria {
             padding: 0px 15px;
             transition: display 0.5s ease;
             background-color: rgba(255, 255, 255, 0.3);
+            font-family: 'Roboto';
+
 
             details {
                 summary {

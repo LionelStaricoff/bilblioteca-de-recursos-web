@@ -36,6 +36,7 @@
     --azul_claro: #598ef7;
     --azul_oscuro: #000080;
     --gris: #6e6e6e;
+    --gris_claro: #ececec;
     --gris_oscuro: #2c2c2c;
     --semiTransparente: #fbfdfd22;
     --negro: #141414;
@@ -95,11 +96,12 @@ h5 {
     text-align: center;
     margin: auto;
     margin-top: 60px;
-    animation: shake 0.5s ease-in-out;
+    animation: desliza 0.5s ease-in-out;
 }
 
-@keyframes shake {
+@keyframes desliza {
     0% { transform: translateX(-10px); }
     50% { transform: translateX(10px); }
     100% { transform: translateX(-10px); }
 }
+
