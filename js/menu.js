@@ -1,4 +1,5 @@
-import * as obj from './main';
+import * as obj from './main.js';
+import {ColorearHtml} from './utils.js';
 
 // Obtener todos los enlaces dentro del menú
 const enlacesMenu = document.querySelectorAll('nav ul li a');
@@ -11,7 +12,7 @@ enlacesMenu.forEach(enlace => {
     });
 });
 
-
+new ColorearHtml();
 
     
 
