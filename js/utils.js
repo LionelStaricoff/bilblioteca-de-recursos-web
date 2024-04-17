@@ -40,6 +40,7 @@ reemplazar(){
 }
 
 colorear(codigoHtml){
+    codigoHtml.style.backgroundColor = "#333333";
     const contenido = codigoHtml.innerHTML;
       
     const contenidoModificado = contenido.replace('<', `<L style="color: ${this.menor};">&lt;</L>`)
