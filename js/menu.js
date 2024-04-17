@@ -1,9 +1,8 @@
-import * as obj from './main';
+import './itemsMenuLibreria.js';
+import './webInteres.js';
 
-// Obtener todos los enlaces dentro del menú
 const enlacesMenu = document.querySelectorAll('nav ul li a');
 
-// Recorrer cada enlace y agregar un evento de clic
 enlacesMenu.forEach(enlace => {
     enlace.addEventListener('click', () => {
         // Cerrar el menú al hacer clic en cualquier enlace
