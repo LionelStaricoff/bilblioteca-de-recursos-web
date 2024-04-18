@@ -1,5 +1,7 @@
+import * as obj from './main.js';
 import './itemsMenuLibreria.js';
-import './webInteres.js';
+import './webInteres.js.js';
+import {ColorearHtml} from './utils.js';
 
 const enlacesMenu = document.querySelectorAll('nav ul li a');
 
@@ -10,7 +12,7 @@ enlacesMenu.forEach(enlace => {
     });
 });
 
-
+new ColorearHtml();
 
     
 
