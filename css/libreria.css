@@ -7,9 +7,12 @@ section.libreria {
     position: relative;
     grid-template-areas:
         "contenido contenedorEjemplo";
-    padding: 20px 35px 0px 20px;
+    padding: 20px 20px 0px 20px;
+    overflow-x: hidden;
+
 
     .menuTemas {
+        width: 100%;
         grid-area: contenido;
         color: var(--negro);
         overflow: hidden;
@@ -27,12 +30,14 @@ section.libreria {
             top: 0px;
             position: absolute;
             width: 100%;
+
             #check-2 {
                 display: none;
                 /* position: absolute; */
                 top: 20px;
                 right: 20px;
             }
+
             .checkbtn-2 {
                 font-size: 40px;
                 float: right;
@@ -52,6 +57,7 @@ section.libreria {
                     right: 20px;
                 }
             }
+
             h3 {
                 text-align: center;
                 background-color: rgba(255, 255, 255, 0.5);
@@ -60,14 +66,16 @@ section.libreria {
                 border: 3px outset #0ef7d4;
             }
         }
+
         .listado {
             grid-area: listado;
             margin-top: 100px;
             overflow-y: scroll;
-            height: calc(100vh - 135px);
-            border: 3px outset var(--verde_agua);
+            height: calc(100vh - 140px);
+            border: 3px ridge var(--verde_agua);
             padding: 0px 15px;
             transition: display 0.5s ease;
+            background-color: rgba(255, 255, 255, 0.3);
 
             details {
                 summary {
@@ -90,6 +98,7 @@ section.libreria {
                         font-weight: bold;
                         color: var(--azul_oscuro)
                     }
+
                     &:active {
                         color: var(--azul_oscuro);
                         background-color: rgba(255, 255, 255, 0.5);
@@ -104,8 +113,9 @@ section.libreria {
         grid-area: contenedorEjemplo;
         height: 100%;
         width: 100%;
-        padding: 20px 0px 30px 20px;
-        position: absolute;
+        padding: 20px 0px 0px 20px;
+        position: absolutes;
+
 
         .botones {
             display: flex;
@@ -125,10 +135,12 @@ section.libreria {
                 border-radius: 5px;
                 font-weight: bold;
                 font-size: 1em;
+
                 &:hover {
                     transform: scale(115%);
                     color: #0cd9ba;
                 }
+
                 &:active {
                     transform: scale(90%);
                     background-color: var(--azul_oscuro);
@@ -136,12 +148,14 @@ section.libreria {
                 }
             }
         }
-        .contenidoEjemplo {
+
+        .ejemplo .contenidoEjemplo {
             font-family: 'Courier New', Courier, monospace;
-            max-width: 100%;
+            width: 100%;
+            height: calc(100vh - 105px);
+
             background-color: var(--gris_oscuro);
             color: var(--verde_agua);
-            height: calc(100vh - 100px);
             border: 3px outset var(--azul_oscuro);
             border-radius: 10px;
             padding: 7px;
@@ -151,6 +165,7 @@ section.libreria {
             font-size: 1.15em;
             tab-size: 2;
         }
+
         /* .hljs {
             font-size: 1.2em;
         } */
@@ -158,7 +173,7 @@ section.libreria {
             padding: 5px 5px;
             cursor: pointer;
             position: absolute;
-            top: 70px;
+            top: 45px;
             right: 35px;
             background-color: var(--gris);
             box-shadow: -2px 2px 2px rgba(0, 0, 0, .3);
@@ -168,10 +183,12 @@ section.libreria {
             img {
                 filter: invert(100%);
             }
+
             &:hover {
                 background-color: var(--azul_oscuro);
                 transform: scale(110%);
             }
+
             &:active {
                 transform: scale(95%);
             }
@@ -185,9 +202,20 @@ section.libreria {
         grid-template-areas:
             "contenido"
             "contenedorEjemplo";
-        padding: 15px 35px 20px 20px;
+        padding: 15px 20px 20px 20px;
         justify-content: center;
         height: fit-content;
+        overflow-y: auto;
+
+        ::-webkit-scrollbar {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 20px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgb(12, 217, 186, 0.5);
+            width: 10px;
+        }
 
         .menuTemas {
             width: 100vw;
@@ -203,8 +231,10 @@ section.libreria {
                     filter: opacity(80%);
                     transform: translateX(0);
                 }
+
                 .checkbtn-2 {
                     display: block;
+
                     img {
                         display: block;
                         width: 50px;
@@ -213,16 +243,20 @@ section.libreria {
                         right: 20px;
                     }
                 }
+
                 h5 {
                     margin-left: 30px;
                 }
+
                 h3 {
                     display: none;
                 }
             }
+
             &:has(:checked)>.menuMobile {
                 display: block;
             }
+
             &:has(:checked)>.fijo {
                 width: 100%;
                 line-height: 70px;
@@ -232,6 +266,7 @@ section.libreria {
                 top: 0;
                 right: 0;
             }
+
             .listado {
                 max-width: 50%;
                 width: 400px;
@@ -241,40 +276,49 @@ section.libreria {
                 float: right;
                 overflow-y: auto;
             }
+
             .menuMobile {
                 display: none;
                 position: fixed;
                 top: 70px;
                 left: 0;
-                right: 0;
+                right: 0px;
                 height: 100vh;
                 background-color: rgba(0, 0, 0, 0.85);
                 z-index: 5;
                 overflow: hidden;
             }
         }
+
         .contenedorEjemplo {
+            padding: 20px 20px 20px 20px;
+
             .botones {
                 button {
                     font-size: 0.9em;
                 }
             }
+
             /* code {
                 margin: 0 15px;
                 overflow-wrap: break-word;
                 overflow: auto;
             } */
-            .contenidoEjemplo {
+            .ejemplo .contenidoEjemplo {
                 margin: 12px;
                 overflow: auto;
                 position: absolute;
+                width: 93%;
+                min-height: 75%;
+                height: 75%;
             }
+
             /* .hljs {
                 font-size: 1.1em;
             } */
-            .iconoCopy{
-                top: 68px;
-                right: 45px;
+            .iconoCopy {
+                top: 113px;
+                right: 55px;
                 border: 1.5px solid #000080;
                 border-radius: 3px;
             }
@@ -282,13 +326,80 @@ section.libreria {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 650px) {
     section.libreria {
+        .menuTemas {
+            .listado {
+                max-width: 75%;
+            }
+        }
         .contenedorEjemplo {
+            padding: 20px 10px 20px 20px;
+
             .iconoCopy {
-                top: 106px;
-                right: 28px;
+                padding: 5px 5px;
+                cursor: pointer;
+                position: absolute;
+                top: 150px;
+                right: 35px;
+                background-color: var(--gris);
+                box-shadow: -2px 2px 2px rgba(0, 0, 0, .3);
+                border: 3px ridge var(--gris_oscuro);
+                z-index: 1;
+
+                img {
+                    filter: invert(100%);
+                }
+
+                &:hover {
+                    background-color: var(--azul_oscuro);
+                    transform: scale(110%);
+                }
+
+                &:active {
+                    transform: scale(95%);
+                }
+            }
+            .ejemplo .contenidoEjemplo{
+                padding: 0;
+                margin: 0;
+                margin-top: 12px
             }
         }
     }
-} 
+}
+@media (max-width: 500px) {
+section.libreria {
+    padding: 10px 0;
+
+    .contenedorEjemplo {
+        padding: 20px 5px 5px 5px;
+        .iconoCopy {
+            top: 145px;
+        }
+        .ejemplo .contenidoEjemplo{
+            min-height:70%;
+            height: 70%;
+            margin: 12px
+            }
+        }
+    }
+}
+@media (max-width: 350px) {
+    section.libreria {
+        .menuTemas {
+            .listado {
+                max-width: 100%;
+            }
+        }
+
+        .contenedorEjemplo {
+            .iconoCopy {
+                right: 20px;
+            }
+            .ejemplo .contenidoEjemplo{
+                margin: 12px;
+            }
+        }
+    }
+}

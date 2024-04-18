@@ -1,0 +1,120 @@
+/* Estilos generales para el bloque de código */
+pre {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    overflow-x: auto; /* Para permitir el desplazamiento horizontal en bloques de código largos */
+}
+
+/* Estilos para el código HTML */
+.html code {
+    color: #000; /* Color del texto */
+}
+
+.html .tag {
+    color: #0000FF; /* Color de las etiquetas HTML */
+}
+
+.html .attribute {
+    color: #FF5733; /* Color de los atributos HTML */
+}
+
+.html .value {
+    color: #008000; /* Color de los valores de los atributos HTML */
+}
+
+/* Estilos para el código CSS */
+.css code {
+    color: #000; /* Color del texto */
+}
+
+.css .selector {
+    color: #A52A2A; /* Color de los selectores CSS */
+}
+
+.css .property {
+    color: #0000FF; /* Color de las propiedades CSS */
+}
+
+.css .value {
+    color: #008000; /* Color de los valores de las propiedades CSS */
+}
+
+/* Estilos para el código JavaScript */
+.js code {
+    color: #000; /* Color del texto */
+}
+
+.js .keyword {
+    color: #0000FF; /* Color de las palabras clave JavaScript */
+}
+
+.js .comment {
+    color: #008000; /* Color de los comentarios JavaScript */
+}
+
+.js .string {
+    color: #FF5733; /* Color de las cadenas de texto JavaScript */
+}
+
+/* seguir revisando este tema */
+.hljs {
+    color: #000;
+    background: #fff;
+  }
+  
+  .hljs-subst {
+    /* default */
+  }
+  
+  .hljs-string,
+  .hljs-meta,
+  .hljs-symbol,
+  .hljs-template-tag,
+  .hljs-template-variable,
+  .hljs-addition {
+    color: #756bb1;
+  }
+  
+  .hljs-comment,
+  .hljs-quote {
+    color: #636363;
+  }
+  
+  .hljs-number,
+  .hljs-regexp,
+  .hljs-literal,
+  .hljs-bullet,
+  .hljs-link {
+    color: #31a354;
+  }
+  
+  .hljs-deletion,
+  .hljs-variable {
+    color: #88f;
+  }
+  
+  
+  
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-title,
+  .hljs-section,
+  .hljs-built_in,
+  .hljs-doctag,
+  .hljs-type,
+  .hljs-tag,
+  .hljs-name,
+  .hljs-selector-id,
+  .hljs-selector-class,
+  .hljs-strong {
+    color: #3182bd;
+  }
+  
+  .hljs-emphasis {
+    font-style: italic;
+  }
+  
+  .hljs-attribute {
+    color: #e6550d;
+  }
