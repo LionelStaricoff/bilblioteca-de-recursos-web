@@ -43,6 +43,7 @@ export class ColorearHtml {
         codigoHtml.style.backgroundColor = "#333333";
         codigoHtml.style.padding = '1em';
         codigoHtml.style.textAlign  = 'center';
+        codigoHtml.style.color  = 'gainsboro';
  
         const contenido = codigoHtml.innerHTML;
 
