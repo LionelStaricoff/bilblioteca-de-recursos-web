@@ -42,7 +42,7 @@ export class ColorearHtml {
     colorear(codigoHtml) {
         codigoHtml.style.backgroundColor = "#333333";
         codigoHtml.style.padding = '1em';
-        codigoHtml.style.textAlign  = 'center';
+        codigoHtml.style.textAlign  = 'left';
  
         const contenido = codigoHtml.innerHTML;
 

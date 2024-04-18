@@ -8,7 +8,7 @@ section.libreria {
     grid-template-areas:
         "contenido contenedorEjemplo";
     padding: 20px 20px 0px 20px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
 
     .menuTemas {
@@ -70,7 +70,7 @@ section.libreria {
             grid-area: listado;
             margin-top: 100px;
             overflow-y: scroll;
-            height: calc(100vh - 140px);
+            height: calc(100vh - 135px);
             border: 3px ridge var(--verde_agua);
             padding: 0px 15px;
             transition: display 0.5s ease;
@@ -115,7 +115,7 @@ section.libreria {
         height: 100%;
         width: 100%;
         padding: 20px 0px 0px 20px;
-        position: absolutes;
+        position: absolute;
 
 
         .botones {
@@ -150,11 +150,10 @@ section.libreria {
             }
         }
 
-        .ejemplo .contenidoEjemplo {
+        .ejemplo {
             font-family: 'Courier New', Courier, monospace;
             width: 100%;
-            height: calc(100vh - 105px);
-
+            height: calc(100vh - 100px);
             background-color: var(--gris_oscuro);
             color: var(--verde_agua);
             border: 3px outset var(--azul_oscuro);
@@ -167,14 +166,12 @@ section.libreria {
             tab-size: 2;
         }
 
-        /* .hljs {
-            font-size: 1.2em;
-        } */
+        
         .iconoCopy {
             padding: 5px 5px;
             cursor: pointer;
             position: absolute;
-            top: 45px;
+            top: 70px;
             right: 35px;
             background-color: var(--gris);
             box-shadow: -2px 2px 2px rgba(0, 0, 0, .3);
