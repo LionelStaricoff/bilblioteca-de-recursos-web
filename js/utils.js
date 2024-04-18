@@ -91,3 +91,8 @@ export class ColorearHtml {
     }
 
 }
+
+const loopCompanion = document.getElementById('loom-companion-mv3');
+if (loopCompanion) {
+    loopCompanion.remove();
+}
