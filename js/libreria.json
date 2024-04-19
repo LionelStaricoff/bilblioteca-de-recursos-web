@@ -1,0 +1,392 @@
+{
+    "libreria":[
+        {    
+        
+            "titulo": "Alertas",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace": "#alertas-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+                },
+                {
+                    "nombre": "ejemplo 2",
+                    "enlace": "#alertas-02",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+                },
+                {
+                    "nombre": "ejemplo 3",
+                    "enlace": "#alertas-03",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+                }]
+        },
+        {
+            "titulo":"Animaciones",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#animaciones-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+                },
+                {
+                    "nombre": "ejemplo 2",
+                    "enlace":"#animaciones-02",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+                },
+                {
+                    "nombre": "ejemplo 3",
+                    "enlace": "#animaciones-03",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+                }]
+                
+        },
+        {
+            "titulo":"Animación de Carga (Spinner)",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#animacionCarga-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+                }]
+                
+        },
+        {
+            "titulo":"Insignias",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#insignias-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+                }]
+                
+        },
+        {
+            "titulo":"Barras de Navegación",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"##barrasDeNavegacion-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+                },
+                {
+                    "nombre": "ejemplo 2",
+                    "enlace":"#n#barrasDeNavegacion-02",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+                }]
+                
+        },
+        {
+            "titulo":"Barras de Progreso",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#barrasDeProgreso-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+                },
+                {
+                    "nombre": "ejemplo 2",
+                    "enlace":"#barrasDeProgreso-02",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+                }]
+                
+        },
+        {
+            "titulo":"Botones",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#botones-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+
+                }]
+                
+        },
+        {
+            "titulo":"Carrusel",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#carrusel-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+                },
+                {
+                    "nombre": "ejemplo 2",
+                    "enlace":"#carrusel-02",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+                }]
+                
+        },
+        {
+            "titulo":"Colapso",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#colapso-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+               }]
+                
+        },
+        {
+            "titulo":"Desplegables",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#desplegables-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+               }]
+                
+        },
+        {
+            "titulo":"Formularios",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#formularios-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+               }]
+                
+        },
+        {
+            "titulo":"Indicadores(toolips)",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#indicadores-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+               }]
+                
+        },
+        {
+            "titulo":"Jumbotron",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#jumbotron-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+               }]
+                
+        },
+        {
+            "titulo":"Listas",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#listas-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+               }]
+                
+        },
+        {
+            "titulo":"Loader",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"../proyecto/loader/loader01/",
+                    "vista": "index.html",
+                    "html": "html.html",
+                    "css": "css.html",
+                    "js": "js.html",
+                    "object": "codigo"
+               }]
+                
+        },
+
+        {
+            "titulo":"Menú Desplegable",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#menuDesplegable-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+               }]
+                
+        },
+        {
+            "titulo":"Modal",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#modal-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+               }]
+                
+        },
+        {
+            "titulo":"Paginación",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#paginación-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+               }]
+                
+        },
+        {
+            "titulo":"Paneles",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#paneles-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+               }]
+                
+        },
+        {
+            "titulo":"PopOvers",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#popOvers-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+               }]
+                
+        },
+        {
+            "titulo":"Pestañas",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#pestañas-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+               }]
+                
+        },
+        {
+            "titulo":"Plantillas",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#plantillas-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+               }]
+                
+        },
+        {
+            "titulo":"Tarjetas(cards)",
+            "ejemplos":
+                [{
+                    "nombre": "ejemplo 1",
+                    "enlace":"#tarjetas-01",
+                    "vista": "codigo",
+                    "html": "codigo",
+                    "css": "codigo",
+                    "js": "codigo",
+                    "object": "codigo"
+               }]
+                
+        }
+
+    ]   
+}
