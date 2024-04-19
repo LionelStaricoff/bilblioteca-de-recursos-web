@@ -8,9 +8,19 @@ section.quienesSomos {
     display: block;
     font-size: 1rem;
 
-    h2 {
-        max-width: 1000px;
+    .container_QSomos{
+        border: 3px ridge var(--verde_esmeralda);
+        max-width: 800px;
         margin: 0 auto;
+        padding: 30px 20px;
+        border-radius: 10px;
+        background-color: var(--semiTransparente);
+        filter:brightness(40%);
+    }
+
+    h2 {
+        max-width: 800px;
+        margin: 0 auto 5px;
         text-shadow: -5px 5px 5px rgba(0, 0, 0, .3);
     }
     p {
@@ -24,7 +34,8 @@ section.quienesSomos {
     }
     i {
         text-align: center;
-        font-size: 1.1em
+        font-size: 1.05em;
+        font-weight: bold;
     }
     i span {
         color: var(--purpura);
