@@ -4,38 +4,56 @@ section.websDeInteres {
     width: 100%;
     background-color: var(--azul_tenue);
     padding: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     display: block;
     font-size: 1rem;
     text-align: center;
+    
+   
+    details{
+        max-width: 700px;
+        margin: auto;
+        margin-top: 5px;
+        background-color: var(--verde_agua);
+        padding: 10px 0;
+        filter: brightness(93%);
+        border-radius: 5px;
+    }
 
-    h3.titleLinks {
-        margin-top: 20px;
+    summary.titleLinks {
+        font-size: 1.1em;
+        text-align: left;
+        font-weight: bolder;
+        max-width: 600px;
+        margin: auto;
     }
     
-    ol.listLinks {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    .listLinks {
+        font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 1.1rem;
         margin: 0 auto;
-        max-width: 800px;
+        max-width: 540px;
         overflow-wrap: break-word;
+        text-align: left;
     }
 
-    li.li {
-        text-align: left;
+    .li {
         margin-top: 5px;
         padding: 2px 0px 2px 5px;
         text-decoration: underline;
         cursor: pointer;
         color: var(--negro);
+        text-align: left;
+
 
         &:nth-child(odd) {
-            background-color: var(--blanco);
+            background-color: var(--gris_claro);
         }
     }
 
     a.link {
         color: var(--negro);
+        text-align: left;
     }
 
 }
@@ -44,5 +62,10 @@ section.websDeInteres {
 @media (max-width: 1000px) {
     section.websDeInteres ol.listLinks {
         margin: 0 30px;
+    }
+}
+@media (max-width: 650px) {
+    section.websDeInteres details {
+        padding-left: 15px;
     }
 }

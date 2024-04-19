@@ -42,6 +42,7 @@ export class ColorearHtml {
     colorear(codigoHtml) {
         codigoHtml.style.backgroundColor = "#333333";
         codigoHtml.style.padding = '1em';
+        codigoHtml.style.textAlign  = 'left';
         codigoHtml.style.textAlign  = 'center';
         codigoHtml.style.color  = 'gainsboro';
  
@@ -101,3 +102,35 @@ export class ColorearHtml {
     }
 
 }
+
+//Botón para ir al inicio desde cualquier sección
+// Función para volver al inicio de la página
+function volverArriba() {
+    document.body.scrollTop = 0; // Para Safari
+    document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+}
+
+// Event listener para el botón de volver arriba
+window.onload = function() {
+    // Busca el botón por su ID
+    var btnVolverArriba = document.getElementById("btnVolverArriba");
+
+    // Agrega un event listener para el evento de clic
+    btnVolverArriba.addEventListener("click", function() {
+        volverArriba();
+    });
+};
+
+// Función para controlar la visibilidad del botón de volver arriba
+window.onscroll = function() {
+    // Verifica la posición de desplazamiento
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        // Si se ha desplazado lo suficiente, muestra el botón
+        document.getElementById("btnVolverArriba").style.display = "block";
+    } else {
+        // Si no se ha desplazado lo suficiente, oculta el botón
+        document.getElementById("btnVolverArriba").style.display = "none";
+    }
+};
+volverArriba();
+
