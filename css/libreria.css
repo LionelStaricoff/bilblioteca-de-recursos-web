@@ -8,8 +8,7 @@ section.libreria {
     grid-template-areas:
         "contenido contenedorEjemplo";
     padding: 20px 20px 0px 20px;
-    overflow-x: hidden;
-
+    overflow: hidden;
 
     .menuTemas {
         width: 100%;
@@ -33,7 +32,6 @@ section.libreria {
 
             #check-2 {
                 display: none;
-                /* position: absolute; */
                 top: 20px;
                 right: 20px;
             }
@@ -71,11 +69,13 @@ section.libreria {
             grid-area: listado;
             margin-top: 100px;
             overflow-y: scroll;
-            height: calc(100vh - 140px);
+            height: calc(100vh - 150px);
             border: 3px ridge var(--verde_agua);
             padding: 0px 15px;
             transition: display 0.5s ease;
             background-color: rgba(255, 255, 255, 0.3);
+            font-family: 'Roboto';
+
 
             details {
                 summary {
@@ -114,8 +114,7 @@ section.libreria {
         height: 100%;
         width: 100%;
         padding: 20px 0px 0px 20px;
-        position: absolutes;
-
+        position: absolute;
 
         .botones {
             display: flex;
@@ -149,11 +148,10 @@ section.libreria {
             }
         }
 
-        .ejemplo .contenidoEjemplo {
+        .ejemplo {
             font-family: 'Courier New', Courier, monospace;
             width: 100%;
-            height: calc(100vh - 105px);
-
+            height: calc(100vh - 115px);
             background-color: var(--gris_oscuro);
             color: var(--verde_agua);
             border: 3px outset var(--azul_oscuro);
@@ -165,17 +163,14 @@ section.libreria {
             font-size: 1.15em;
             tab-size: 2;
         }
-
-        /* .hljs {
-            font-size: 1.2em;
-        } */
+        
         .iconoCopy {
             padding: 5px 5px;
             cursor: pointer;
             position: absolute;
-            top: 45px;
+            top: 70px;
             right: 35px;
-            background-color: var(--gris);
+            background-color: rgba(128, 128, 128, 0.5);
             box-shadow: -2px 2px 2px rgba(0, 0, 0, .3);
             border: 3px ridge var(--gris_oscuro);
             z-index: 1;
@@ -202,16 +197,15 @@ section.libreria {
         grid-template-areas:
             "contenido"
             "contenedorEjemplo";
-        padding: 15px 20px 20px 20px;
+        padding: 10px 20px 25px 20px;
         justify-content: center;
         height: fit-content;
         overflow-y: auto;
-
+        position: relative;
         ::-webkit-scrollbar {
             background-color: rgba(0, 0, 0, 0.5);
             width: 20px;
         }
-
         ::-webkit-scrollbar-thumb {
             background: rgb(12, 217, 186, 0.5);
             width: 10px;
@@ -231,7 +225,6 @@ section.libreria {
                     filter: opacity(80%);
                     transform: translateX(0);
                 }
-
                 .checkbtn-2 {
                     display: block;
 
@@ -243,11 +236,9 @@ section.libreria {
                         right: 20px;
                     }
                 }
-
                 h5 {
                     margin-left: 30px;
                 }
-
                 h3 {
                     display: none;
                 }
@@ -282,7 +273,7 @@ section.libreria {
                 position: fixed;
                 top: 70px;
                 left: 0;
-                right: 0px;
+                right: 0;
                 height: 100vh;
                 background-color: rgba(0, 0, 0, 0.85);
                 z-index: 5;
@@ -291,33 +282,20 @@ section.libreria {
         }
 
         .contenedorEjemplo {
-            padding: 20px 20px 20px 20px;
-
             .botones {
                 button {
                     font-size: 0.9em;
                 }
             }
-
-            /* code {
-                margin: 0 15px;
-                overflow-wrap: break-word;
+            .ejemplo {
                 overflow: auto;
-            } */
-            .ejemplo .contenidoEjemplo {
-                margin: 12px;
-                overflow: auto;
-                position: absolute;
-                width: 93%;
-                min-height: 75%;
-                height: 75%;
+                width: calc(100% - 20px);
+                height: 89%;
             }
-
-            /* .hljs {
-                font-size: 1.1em;
-            } */
             .iconoCopy {
-                top: 113px;
+                cursor: pointer;
+                position: absolute;
+                top: 30px;
                 right: 55px;
                 border: 1.5px solid #000080;
                 border-radius: 3px;
@@ -326,7 +304,7 @@ section.libreria {
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     section.libreria {
         .menuTemas {
             .listado {
@@ -334,53 +312,29 @@ section.libreria {
             }
         }
         .contenedorEjemplo {
-            padding: 20px 10px 20px 20px;
-
-            .iconoCopy {
-                padding: 5px 5px;
-                cursor: pointer;
-                position: absolute;
-                top: 150px;
-                right: 35px;
-                background-color: var(--gris);
-                box-shadow: -2px 2px 2px rgba(0, 0, 0, .3);
-                border: 3px ridge var(--gris_oscuro);
-                z-index: 1;
-
-                img {
-                    filter: invert(100%);
-                }
-
-                &:hover {
-                    background-color: var(--azul_oscuro);
-                    transform: scale(110%);
-                }
-
-                &:active {
-                    transform: scale(95%);
-                }
+            .botones {
+                width: 98%;
             }
-            .ejemplo .contenidoEjemplo{
-                padding: 0;
-                margin: 0;
-                margin-top: 12px
+            .iconoCopy {
+                position: absolute;
+                top: 68px;
             }
         }
     }
 }
 @media (max-width: 500px) {
 section.libreria {
-    padding: 10px 0;
+    padding: 10px 0 0 5px ;
 
     .contenedorEjemplo {
-        padding: 20px 5px 5px 5px;
+        padding: 20px 0px 0px 15px;
         .iconoCopy {
-            top: 145px;
+            right: 50px
         }
-        .ejemplo .contenidoEjemplo{
-            min-height:70%;
-            height: 70%;
-            margin: 12px
+        
+        .ejemplo {
+            min-height:78%;
+            height: 78%;
             }
         }
     }
@@ -395,10 +349,7 @@ section.libreria {
 
         .contenedorEjemplo {
             .iconoCopy {
-                right: 20px;
-            }
-            .ejemplo .contenidoEjemplo{
-                margin: 12px;
+                right: 28px;
             }
         }
     }
