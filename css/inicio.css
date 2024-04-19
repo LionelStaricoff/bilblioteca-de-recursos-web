@@ -261,6 +261,7 @@ section.inicio {
                 background-color: var(--azul_claro);
                 line-height: 70px;
                 z-index: 40;
+
             }
             #check:checked~label>img {
                 top: 5px;
@@ -284,7 +285,7 @@ section.inicio {
                 height: 85vh;
                 background-color: var(--azul_oscuro);
                 top: 70px;
-                right: -100vw;
+                right: -110vw;
                 text-align: center;
                 transition: all .7s;
                 z-index: 4;

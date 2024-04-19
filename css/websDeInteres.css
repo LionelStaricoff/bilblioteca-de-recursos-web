@@ -64,3 +64,8 @@ section.websDeInteres {
         margin: 0 30px;
     }
 }
+@media (max-width: 650px) {
+    section.websDeInteres details {
+        padding-left: 15px;
+    }
+}
