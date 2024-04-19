@@ -142,7 +142,7 @@
             "titulo":"Botones",
             "ejemplos":
                 [{
-                    "nombre": "ejemplo 1",
+                    "nombre": "ejemplo 1", 
                     "enlace":"#botones-01",
                     "vista": "codigo",
                     "html": "codigo",
