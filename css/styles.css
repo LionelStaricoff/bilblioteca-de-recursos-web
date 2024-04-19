@@ -42,9 +42,14 @@
     --negro: #141414;
     --purpura: #9e06d5;
 }
+html{
+    scroll-behavior: smooth;
+
+}
 
 body {
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -105,3 +110,34 @@ h5 {
     100% { transform: translateX(-10px); }
 }
 
+/* botón volver arriba */
+#btnVolverArriba {
+    width: 4em;
+    height: 4em;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+    background-color: #fdfeff9f;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    img{
+        width: 2.5em;
+        height: 2.5em;
+        margin: auto;
+        filter:invert(50%);
+    }
+}
+
+#btnVolverArriba:hover {
+    background-color: #fdfeff;
+    
+}
+
+#loom-companion-mv3{
+    display: none;
+}

@@ -92,7 +92,20 @@ export class ColorearHtml {
 
 }
 
-const loopCompanion = document.getElementById('loom-companion-mv3');
-if (loopCompanion) {
-    loopCompanion.remove();
+//Botón para ir al inicio desde cualquier sección
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("btnVolverArriba").style.display = "block";
+    } else {
+        document.getElementById("btnVolverArriba").style.display = "none";
+    }
 }
+
+function volverArriba() {
+    document.body.scrollTop = 0; // Para Safari
+    document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+}
+volverArriba();
+scrollFunction();
