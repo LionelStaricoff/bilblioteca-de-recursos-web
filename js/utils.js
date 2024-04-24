@@ -42,23 +42,32 @@ export class ColorearHtml {
     colorear(codigoHtml) {
         codigoHtml.style.backgroundColor = "#333333";
         codigoHtml.style.padding = '1em';
-        codigoHtml.style.textAlign  = 'left';
+        codigoHtml.style.color  = 'gainsboro';
  
         const contenido = codigoHtml.innerHTML;
 
         const contenidoModificado = contenido
-            .replace('<header>', `<L style="color: ${this.header};">&lt;header&gt;</L>`)
-            .replace('</header>', `<L style="color: ${this.header};">&lt;/header&gt;<br> </L>`)
-            .replace('<section>', `<L style="color: ${this.section};">&lt;section&gt;</L>`)
-            .replace('</section>', `<L style="color: ${this.section};">&lt;/section&gt;<br> </L>`)
-            .replace('<div>', `<L style="color: ${this.div};">&lt;div&gt;</L>`)
+   
+        
+        //.replace( /<[^>]*>/g,`<L style="color: ${this.header};">`+/<[^>]*>/g`</L>`)
+        .replace(/ >/g, `<L style="color: ${this.header};">&gt; </L>`)
+        .replace(/">/g, `<L style="color: ${this.header};">"&gt; </L>`)
+        .replace(/id="/g, `<L style="color: ${this.header};">id=" </L>`)
+        .replace(/class="/g, `<L style="color: ${this.header};">class=" </L>`)
+       
+        //.replace(/<footer>(.*?)<\/footer>/g, '<footer style="color: ' + this.footer + ';">$1</footer>')
+            .replace(/<header/g, `<L style="color: ${this.header};">&lt;header</L>`)
+            .replace(/<\/header>/g, `<L style="color: ${this.header};">&lt;/header&gt;<br> </L>`)
+            .replace(/<section/g, `<L style="color: ${this.section};">&lt;section</L>`)
+            .replace(/<\/section>/g, `<L style="color: ${this.section};">&lt;/section&gt;<br> </L>`)
+            .replace('<div', `<L style="color: ${this.div};">&lt;div</L>`)
             .replace('</div>', `<L style="color: ${this.div};">&lt;/div&gt;<br> </L>`)
-            .replace('<button>', `<L style="color: ${this.button};">&lt;button&gt;</L>`)
+            .replace('<button', `<L style="color: ${this.button};">&lt;button</L>`)
             .replace('</button>', `<L style="color: ${this.button};">&lt;/button&gt;<br> </L>`)
-            .replace('<main>', `<L style="color: ${this.main};">&lt;main&gt;</L>`)
+            .replace('<main', `<L style="color: ${this.main};">&lt;main</L>`)
             .replace('</main>', `<L style="color: ${this.main};">&lt;/main&gt;<br> </L>`)
-            .replace('<footer>', `<L style="color: ${this.footer};">&lt;footer&gt;</L>`)
-            .replace('</footer>', `<L style="color: ${this.footer};">&lt;/footer&gt;<br> </L>`)
+            .replace(/<footer/g, `<L style="color: ${this.footer};">&lt;footer&gt;</L>`)
+            .replace(/<\/footer>/g, `<L style="color: ${this.footer};">&lt;/footer&gt;<br> </L>`)
             .replace('<H1>', `<L style="color: ${this.H1};">&lt;H1&gt;</L>`)
             .replace('</H1>', `<L style="color: ${this.H1};">&lt;/H1&gt;<br> </L>`)
             .replace('<h1>', `<L style="color: ${this.H1};">&lt;h1&gt;</L>`)
@@ -78,13 +87,13 @@ export class ColorearHtml {
             .replace('<h5>', `<L style="color: ${this.H5};">&lt;h5&gt;</L>`)
             .replace('</h5>', `<L style="color: ${this.H5};">&lt;/h5&gt;<br> </L>`)
             .replace('<H5>', `<L style="color: ${this.H5};">&lt;H5&gt;</L>`)
-            .replace('<H5>', `<L style="color: ${this.H5};">&lt;/H5&gt;<br> </L>`)
+            .replace('</H5>', `<L style="color: ${this.H5};">&lt;/H5&gt;<br> </L>`)
             .replace('<h6>', `<L style="color: ${this.H6};">&lt;h6&gt;</L>`)
             .replace('</h6>', `<L style="color: ${this.H6};">&lt;/h6&gt;<br> </L>`)
             .replace('<H6>', `<L style="color: ${this.H6};">&lt;H6&gt;</L>`)
             .replace('<H6>', `<L style="color: ${this.H6};">&lt;/H6&gt;<br> </L>`)
 
-
+            
             ;
 
         codigoHtml.innerHTML = contenidoModificado;

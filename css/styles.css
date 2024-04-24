@@ -24,7 +24,7 @@
     box-sizing: border-box;
     transition: .3s ease all;
     text-decoration: none;
-    scroll-behavior: smooth;
+   
 }
 
 :root {
@@ -45,12 +45,13 @@
 }
 html{
     scroll-behavior: smooth;
-
+    -webkit-scroll-behavior: smooth; 
+    transition: all 1s;
 }
 
 body {
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    scroll-behavior: smooth;
+   
 }
 
 section {
