@@ -60,7 +60,7 @@ section.inicio {
             li {
                 font-family: 'Lucida Sans';
                 padding: 0 10px;
-                border-bottom: 1px solid var(--blanco);
+                /* border-bottom: 1px solid var(--blanco); */
                 align-items: center;
                 padding: 15px 20px;
                 cursor: pointer;
@@ -68,7 +68,7 @@ section.inicio {
                 font-weight: 500;
                 
                 &:last-child{
-                    border-bottom: 0px solid var(--blanco);
+                    /* border-bottom: 0px solid var(--blanco); */
                 }
                 a {
                     text-align: center;
@@ -247,7 +247,7 @@ section.inicio {
             height: 70px;
             font-size: 14px;
             margin: 0px;
-            z-index: 20;
+            z-index: 21;
             
             #check:checked~ul {
                 right: 0;
@@ -282,23 +282,22 @@ section.inicio {
             ul {
                 position: fixed;
                 width: 100vw;
-                height: 85vh;
+                height: 82vh;
                 background-color: var(--azul_oscuro);
                 top: 70px;
                 right: -110vw;
                 text-align: center;
                 transition: all .7s;
-                z-index: 4;
                 justify-content: center;
-                align-items: start;
+                align-content: top;
 
                 b {
                     display: none;
                 }
                 li {
                     display: grid;
-                    margin: 0 auto;
-                    border-bottom: 1px solid var(--azul_claro);
+                    margin: 5px auto;
+                    /* border-bottom: 1px solid var(--azul_claro); */
                     letter-spacing: 2px;
 
                     a {
@@ -310,7 +309,8 @@ section.inicio {
                         padding: 0;
                     }
                     &:hover {
-                        background-color: var(--azul_claro);
+                        background-color: var(--azul_tenue);
+                        color: var(--azul_oscuro);
                     }
                 }
             }
