@@ -3,42 +3,67 @@ section.quienesSomos {
     height: auto;
     background-color: var(--verde_claro);
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     padding-bottom: 50px;
     display: block;
-    font-size: 1rem;
+    font-size: 1em;
+    line-height: 1.5em;
 
     .container_QSomos{
-        border: 3px ridge var(--verde_esmeralda);
+        border: 1px ridge var(--verde_esmeralda);
         max-width: 800px;
         margin: 0 auto;
-        padding: 30px 20px;
-        border-radius: 10px;
-        background-color: var(--semiTransparente);
-        filter:brightness(40%);
+        padding: 30px 20px 40px;
+        border-radius: 70px 0 70px;
+        box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.6);
+        background-color:  var(--azul_tenue);
+    }
+    .container_QSomos:hover{
+        animation: shake-2 2.5s ;
     }
 
     h2 {
         max-width: 800px;
-        margin: 0 auto 5px;
-        text-shadow: -5px 5px 5px rgba(0, 0, 0, .3);
+        margin: 0px auto 15px;
+        text-shadow: -1.5px 1.5px 2px rgba(255, 255, 255, 0.893);
     }
     p {
         max-width: 1000px;
         margin: auto;
-        margin-bottom: 30px;
+        margin-bottom: 5px;
         font-size: 1.1em;
-        text-align: justify;
-        hyphens: auto; /*corte de sílabas*/
+        text-align: left;
         padding: 0px 20px;
     }
+    .equipo{
+        width: 75px;
+        height: 65px;
+        border: .8px outset #135869;
+        border-radius: 20px 0 20px;
+        background-color: var(--blanco);
+        padding-top: 1px;
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.6);
+        margin-bottom: 10px;
+    }
+    
     i {
         text-align: center;
         font-size: 1.05em;
         font-weight: bold;
     }
     i span {
-        color: var(--purpura);
+        color: var(--naranja);
         font-size: 1.2em;
+    }
+}
+@keyframes shake-2 {
+    0% {
+        transform: rotate(4deg);
+    }
+    50% {
+        transform: rotate(-4deg);
+    }
+    100% {
+        transform: rotate(4deg);
     }
 }
