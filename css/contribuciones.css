@@ -5,11 +5,10 @@ section.contribucion {
     background-color: var(--verde_claro_tenue);
     display: block;
     text-align: center;
-    padding: 10px;
-    padding-bottom: 20px;
+    padding: 20px;
 
     h3 {
-        margin-top: 20px
+        margin-top: 20px;
     }
     p {
         font-size: 1.1em;

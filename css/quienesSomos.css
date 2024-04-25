@@ -3,7 +3,7 @@ section.quienesSomos {
     height: auto;
     background-color: var(--verde_claro);
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     padding-bottom: 50px;
     display: block;
     font-size: 1rem;
@@ -14,8 +14,9 @@ section.quienesSomos {
         margin: 0 auto;
         padding: 30px 20px;
         border-radius: 10px;
-        background-color: var(--semiTransparente);
-        filter:brightness(40%);
+        background-color:  var(--verde_agua);
+        filter: brightness(93%);
+
     }
 
     h2 {

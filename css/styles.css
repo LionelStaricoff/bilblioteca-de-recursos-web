@@ -24,7 +24,6 @@
     box-sizing: border-box;
     transition: .3s ease all;
     text-decoration: none;
-   
 }
 
 :root {
@@ -35,6 +34,7 @@
     --blanco: #fcfcfc;
     --azul_tenue: #9ab9f9fd;
     --azul_claro: #598ef7;
+    --azul_medio: #143aac;
     --azul_oscuro: #000080;
     --gris: #6e6e6e;
     --gris_claro: #ececec;
@@ -50,8 +50,7 @@ html{
 }
 
 body {
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   
+    font-family: 'Roboto', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 section {
@@ -65,8 +64,7 @@ h5 {
     display: flex;
     cursor: pointer;
     margin-bottom: 40px;
-    margin-left: 5px;
-    font-size: 1em;
+    font-size: 16px;
     text-decoration: underline;
 
     img {
@@ -76,7 +74,7 @@ h5 {
         margin-top: 20px;
     }
 
-    a:hover {
+    a:hover, a:active {
         color: var(--azul_oscuro);
         transform: scale(90%);
     }
