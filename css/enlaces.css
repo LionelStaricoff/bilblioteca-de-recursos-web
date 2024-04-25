@@ -7,10 +7,6 @@ section.enlaces {
     text-align: center;
     padding: 20px 20px;
 
-    .volver {
-        padding: 0;
-    }
-
     div.contenido {
         width: 100%;
         max-width: 800px;
@@ -18,7 +14,6 @@ section.enlaces {
 
         p {
             line-height: 1.8em;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             letter-spacing: 0.05em;
             color: var(--blanco);
 
@@ -43,12 +38,13 @@ section.enlaces {
             }
         }
         button {
-            padding: 7px 10px;
             border: 1px ridge var(--verde_agua);
             background-color: var(--azul_oscuro);
             color: var(--blanco);
             border-radius: 7px;
             cursor: pointer;
+            height: 32px;
+            padding: 0 15px;
 
             &:hover {
                 background-color: var(--verde_esmeralda);

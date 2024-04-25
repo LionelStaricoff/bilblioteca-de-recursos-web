@@ -3,12 +3,11 @@ section.websDeInteres {
     min-height: 100vh;
     width: 100%;
     background-color: var(--azul_tenue);
-    padding: 10px;
+    padding: 20px;
     padding-bottom: 80px;
     display: block;
     font-size: 1rem;
-    text-align: center;
-    
+    text-align: center; 
    
     details{
         max-width: 700px;
@@ -55,17 +54,26 @@ section.websDeInteres {
         color: var(--negro);
         text-align: left;
     }
-
 }
 
-
 @media (max-width: 1000px) {
-    section.websDeInteres ol.listLinks {
-        margin: 0 30px;
+    .titleLinks{
+        min-height: 48px;
+        align-content: center;
+    }
+    .listLinks {
+        margin: 0 0px;
+        line-height: 40px;
+        &:last-child{
+            padding-bottom: 18px;
+        }
     }
 }
 @media (max-width: 650px) {
-    section.websDeInteres details {
-        padding-left: 15px;
+    .titleLinks{
+        padding: 0 20px ;
+    }
+    .listLinks{
+        padding: 0 25px 0 40px ;
     }
 }
