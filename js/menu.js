@@ -1,5 +1,6 @@
 import * as obj from './main.js';
 import './itemsMenuLibreria.js';
+// import '/index.js';
 import './webInteres.js';
 import {ColorearHtml} from './utils.js';
 
@@ -14,7 +15,7 @@ enlacesMenu.forEach(enlace => {
 
 new ColorearHtml();
 
-
+cargarlibreria();
 
     
 
