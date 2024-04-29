@@ -109,15 +109,16 @@ function volverArriba() {
 }
 
 // Event listener para el botón de volver arriba
-window.onload = function() {
-    // Busca el botón por su ID
-    var btnVolverArriba = document.getElementById("btnVolverArriba");
+btnVolverArriba.addEventListener("click", function() {
+    // Ejecuta la transición suave
+    setTimeout(() => {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+      });
+    }, 4000);
+  });
 
-    // Agrega un event listener para el evento de clic
-    btnVolverArriba.addEventListener("click", function() {
-        volverArriba();
-    });
-};
 
 // Función para controlar la visibilidad del botón de volver arriba
 window.onscroll = function() {
