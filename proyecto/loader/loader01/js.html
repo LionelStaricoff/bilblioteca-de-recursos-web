@@ -1,0 +1,28 @@
+<!-- javascript.html (página para mostrar código JavaScript): -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Código JavaScript</title>
+</head>
+<body>
+  <pre>
+    <code class="language-javascript codigo">
+        window.onload = () => {
+            let contenido = document.querySelector(".img-wrapper");
+            let loading = document.querySelector(".loader");
+            setTimeout(()=>{
+                loading.style.display = 'none';
+                contenido.style.display ='flex';
+        
+            }, 3000)
+        }
+    </code>
+  </pre>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+</body>
+</html>

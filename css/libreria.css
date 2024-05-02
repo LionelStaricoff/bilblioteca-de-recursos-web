@@ -195,6 +195,11 @@ section.libreria {
     }
 }
 
+.codigo{
+    width: fit-content;
+    background-color: #1e1d1d;
+}
+
 @media (max-width: 1000px) {
     section.libreria {
         grid-template-rows: 1fr 8fr;

@@ -1,0 +1,28 @@
+/*1ro Colocar acá listado de @import url()
+    Ejemplo: 
+    fuentes externas 
+    @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+    modelos de css
+    @import url(header.css);
+    @import url(historial.css);
+    @import url(tablero.css);
+    @import url(notas.css);
+    @import url(prompt.css);
+*/
+
+
+/*2do armar :root necesarios para el proyecto. Paletas de colores, lista de fuentes
+    --font-raleway: "Raleway", sans-serif;
+    --color-amarillo:rgb(252, 252, 120);
+    --color-marronOscuro:rgb(117, 60, 17);
+    --color-marronClaro:rgb(212, 125, 56);
+*/
+
+/*3ro escribir código general del proyecto
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*como va a calcular el tamaño del elemento, en el width y height que le demos va a incluir a las medidas de su margin y padding*/
+}
