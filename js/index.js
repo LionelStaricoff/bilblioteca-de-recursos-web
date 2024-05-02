@@ -24,7 +24,7 @@ const verEjemplo= (enlace,html,css,js,obj)=>{
     const btnjs = document.getElementById("btnJs");
     const btnobj = document.getElementById("btnObject");
 
-    btnvista.addEventListener('click',()=>{iframe.src=enlace;});
+    btnvista.addEventListener('click',()=>{ej.innerHTML=html;});
     btnhtml.addEventListener('click',()=>{ej.innerText= html;});
     btncss.addEventListener('click',()=>{ej.innerHTML=css;});
     btnjs.addEventListener('click',()=>{ej.innerHTML=js;});
@@ -47,7 +47,7 @@ function mostrarObjeto(objeto) {
                      
                     const link = document.createElement('a');
                     link.textContent = ejemplo.titulo;
-                    link.href = ejemplo.href;
+                    link.href = ejemplo.html;
                     link.target= "codeFrame";
 
                     const paragraph = document.createElement('p');
