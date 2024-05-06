@@ -72,6 +72,12 @@ export class ColorearHtml {
         .replace(/<\/h6>/g, `&lt;<L style="color: ${this.etiquetas};">/h6</L>&gt;<br>`)
         .replace(/<H6/g, `&lt;<L style="color: ${this.etiquetas};">H6</L>`)
         .replace(/<\/H6>/g, `&lt;<L style="color: ${this.etiquetas};">/H6</L>&gt;<br>`)
+        .replace(/<button/g, `&lt;<L style="color: ${this.etiquetas};">button</L>`)
+        .replace(/<\/button>/g, `&lt;<L style="color: ${this.etiquetas};">/button</L>&gt;<br>`)
+        .replace(/<ul/g, `&lt;<L style="color: ${this.etiquetas};">ul</L>`)
+        .replace(/<\/ul>/g, `&lt;<L style="color: ${this.etiquetas};">/ul</L>&gt;<br>`)
+        .replace(/<li/g, `&lt;<L style="color: ${this.etiquetas};">li</L>`)
+        .replace(/<\/li>/g, `&lt;<L style="color: ${this.etiquetas};">/li</L>&gt;<br>`)
        
             ;
 
