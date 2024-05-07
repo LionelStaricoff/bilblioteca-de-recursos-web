@@ -192,6 +192,12 @@ section.libreria {
                 transform: scale(95%);
             }
         }
+
+        #ej-contenedor{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
     }
 }
 

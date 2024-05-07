@@ -5,6 +5,68 @@ export const librerias = [
             {
              
                 titulo:"Ejemplo 1",
+                href:`<!DOCTYPE html>
+                <html lang="es">
+                <head>
+                                
+                    <style>
+  
+                      
+                        .loader-content{
+                    
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100vh;
+                            width: 100vw;
+                        }
+                
+                        .loader {
+                            
+                            width: 80px;
+                            height: 80px;
+                            border: solid 5px #436ff3;
+                            border-top: solid 5px #e7ecf8;
+                            border-radius: 50%;
+                
+                            animation: spin 1.2s
+                                        linear infinite;
+                
+                            
+                        }
+                
+                        @keyframes spin {
+                            to {
+                                transform: rotate(360deg);
+                            }
+                            
+                        }
+                
+                    </style>
+                </head>
+                <body>
+                
+                    <div class="loader-content">
+                        <div class="loader"></div>
+                    </div>
+                
+                    <div class="img-wrapper">
+                        <!-- <img class="img-content" src ="https://source.unsplash.com/random"> -->
+                    </div>
+                
+                    <script>
+                        document.onload = () => {
+                        let contenido = document.querySelector(".img-wrapper");
+                        let loading = document.querySelector(".loader");
+                        loading.style.display = 'none';
+                        contenido.style.display ='flex';
+                
+                        }
+                    </script>
+                    
+                </body>
+                </html>`,
                 html:`
                     
 
@@ -14,7 +76,7 @@ export const librerias = [
                     </div>
                 
                     <div class="img-wrapper">
-                        <img class="img-content" src ="https://source.unsplash.com/random">
+                        <!--<img class="img-content" src ="https://source.unsplash.com/random">-->
                     </div>
              
                     
