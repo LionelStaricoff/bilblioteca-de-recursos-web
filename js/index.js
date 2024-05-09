@@ -1,7 +1,7 @@
 import { librerias } from './libreria.js';
 
 const ej = document.querySelector("#ej-contenedor");
-
+// const ej = document.querySelector(".ejemplo");
 
 
 
