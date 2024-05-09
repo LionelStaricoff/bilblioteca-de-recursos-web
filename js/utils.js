@@ -98,7 +98,7 @@ export class ColorearHtml {
         }
     }
     colocarPadding(hijo) {
-        debugger;
+     
        
            
                 for (const c of hijo){
@@ -106,21 +106,24 @@ export class ColorearHtml {
                         const hijos =c.children;
                        
                     for(const ch of hijos){
-                        const padre = ch.parentNode;
-                       const span = document.createElement('span')
-                       span.style.display = 'inline-block'
-                       span.style.paddingLeft = '20px';
-                       span.style.color = 'blue'
-                       span.appendChild(ch);
-                      padre.appendChild(span) 
+                        this.colocarPaddingInterno(ch); 
                     }
                 
                     
                     }
             }
-       
-       
     }
+    colocarPaddingInterno(ch){
+        const padre = ch.parentNode;
+        const span = document.createElement('span')
+        span.style.display = 'inline-block'
+        span.style.marginLeft = '20px';
+        span.style.marginTop = '-20px';
+       // span.style.color = 'blue'
+        span.appendChild(ch);
+       padre.appendChild(span)
+       
+       }
 }
 
 //Botón para ir al inicio desde cualquier sección
