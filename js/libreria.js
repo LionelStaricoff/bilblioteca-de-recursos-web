@@ -144,21 +144,18 @@ window.onload = () => {
 }
                 </code></pre>`,
                 objeto: `<pre><code>
-export class crearLoader {
 
-    agregarAlFront(){
-        const divcontent = document.body.createElement("div");
-        divcontent.className='loader-content';
-        
-        const loader =document.createElement("div");
-        loader.className='loader';
-        
-        divcontent.appendChild(loader);
+                import {loader1} from './main.js';
+                
+                ejemplo1: colocar un id
+              new loader1(#id_del_padre) ;
+                
+              ejemplo2: colocar una clase
+              new loader1(.class_del_padre) ;
+                
+              ejemplo3:colocar cualquier elemento html
+              new loader1(div) ;
 
-    }
-
-
-}
                 </code></pre>
                 `,
                 images:""
