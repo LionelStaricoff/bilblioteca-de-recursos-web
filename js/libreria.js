@@ -85,80 +85,80 @@ export const librerias = [
                     
                 `,
                 css: `<pre><code>
-                body{
-                    position: relative;
-                }
-                
-                .img-wrapper{
-                    height: 100vh;
-                    display: none;
-                    justify-content: center;
-                    align-items: center;
-                
-                    .img-content{
-                        width: 500px;
-                        height: auto;
-                    }
-                
-                
-                }/*fin img-wrapper*/
+body{
+    position: relative;
+}
 
-                .loader-content{
-            
-                    position: absolute;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: 100vh;
-                    width: 100vw;
-                }
-                
-                .loader {
-                    
-                    width: 80px;
-                    height: 80px;
-                    border: solid 5px #436ff3;
-                    border-top: solid 5px #e7ecf8;
-                    border-radius: 50%;
-                
-                    animation: spin 1.2s
-                                linear infinite;
-                
-                    
-                }
-                
-                @keyframes spin {
-                    to {
-                        transform: rotate(360deg);
-                    }
-                    
-                }
+.img-wrapper{
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    .img-content{
+        width: 500px;
+        height: auto;
+    }
+
+
+}/*fin img-wrapper*/
+
+.loader-content{
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.loader {
+    
+    width: 80px;
+    height: 80px;
+    border: solid 5px #436ff3;
+    border-top: solid 5px #e7ecf8;
+    border-radius: 50%;
+
+    animation: spin 1.2s
+                linear infinite;
+
+    
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
                 </code></pre>`,
                 js: `<pre><code>
 
-                window.onload = () => {
-                    let contenido = document.querySelector(".img-wrapper");
-                    let loading = document.querySelector(".loader");
-                    loading.style.display = 'none';
-                    contenido.style.display ='flex'; 
-                }
+window.onload = () => {
+    let contenido = document.querySelector(".img-wrapper");
+    let loading = document.querySelector(".loader");
+    loading.style.display = 'none';
+    contenido.style.display ='flex'; 
+}
                 </code></pre>`,
                 objeto: `<pre><code>
-                export class crearLoader {
-    
-                    agregarAlFront(){
-                        const divcontent = document.body.createElement("div");
-                        divcontent.className='loader-content';
-                        
-                        const loader =document.createElement("div");
-                        loader.className='loader';
-                        
-                        divcontent.appendChild(loader);
-                
-                    }
-                
-                
-                }
+export class crearLoader {
+
+    agregarAlFront(){
+        const divcontent = document.body.createElement("div");
+        divcontent.className='loader-content';
+        
+        const loader =document.createElement("div");
+        loader.className='loader';
+        
+        divcontent.appendChild(loader);
+
+    }
+
+
+}
                 </code></pre>
                 `,
                 images:""
@@ -183,20 +183,14 @@ export const librerias = [
              
                 titulo:"Ejemplo 1",
                 href:`
-                
-                <!DOCTYPE html>
-<html lang="en">
+               
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
     <script src="https://kit.fontawesome.com/2d9fe71672.js" crossorigin="anonymous"></script>
     <style>
         
-        body {
-            font-family: sans-serif;
-            padding: 90px 20px 0;
-        }
-
+  
         .header{
             background-color: #0769e9;
             height: 80px;
@@ -266,9 +260,9 @@ export const librerias = [
 
         @media(max-width: 768px){
             
-                body {
-                    padding-top: 70px;
-                }
+                // body {
+                //     padding-top: 70px;
+                // }
 
                 .header{
                     height: 60px;
@@ -340,11 +334,11 @@ export const librerias = [
                 }
         }
     </style>
-    <title>Menu Responsive</title>
+    
 </head>
-<body>
-    <header class="header">
-        <nav class="nav">
+<div>
+    <div class="header">
+        <div class="nav">
             <a href="#" class="logo nav-link">Your Logo</a>
             <buttton class="nav-toggle" aria-label="Abrir Menú">
                 <i class="fas fa-bars"></i>
@@ -356,13 +350,14 @@ export const librerias = [
                 <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">BLOG</a></li>
                 <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">CONTACT</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </div>
+    
     <script>
        
         /*Comportamiento navToggle */
-                const navToggle = document.querySelector(".nav-toggle");
-                const navMenu = document.querySelector(".nav-menu");
+                const navToggle = nav.querySelector(".nav-toggle");
+                const navMenu = nav.querySelector(".nav-menu");
 
         navToggle.addEventListener('click', ()=>{
             navMenu.classList.toggle('nav-menu_visible');
@@ -375,8 +370,8 @@ export const librerias = [
 
        
     </script>
-</body>
-</html>
+</div>
+
 `,
                 html:`
                     
