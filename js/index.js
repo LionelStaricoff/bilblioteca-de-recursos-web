@@ -1,30 +1,20 @@
 import { librerias } from './libreria.js';
-// import { CartelError } from './utils.js';
+
+const ej = document.querySelector("#ej-contenedor");
+// const ej = document.querySelector(".ejemplo");
 
 
-const iframe = document.querySelector('iframe[name="codeFrame"]');
-iframe.style.width="100%";
-iframe.style.height="70vh";
-iframe.style.margin="20px";
 
-
-const verEjemplo= (enlace,html,css,js,obj)=>{
+const verEjemplo= (href,html,css,js,obj)=>{
     
-    console.log("Mostrando enlace: "+ enlace);
-    console.log("Mostrando html: "+ html);
-    console.log("Mostrando css: "+ css);
-    console.log("Mostrando js: "+ js);
-    console.log("Mostrando obj: "+ obj);
-
-
-    const ej = document.querySelector(".ejemplo");
+    
     const btnvista= document.getElementById("btnVista");
     const btnhtml = document.getElementById("btnHtml");
     const btncss = document.getElementById("btnCss");
     const btnjs = document.getElementById("btnJs");
     const btnobj = document.getElementById("btnObject");
 
-    btnvista.addEventListener('click',()=>{ej.innerHTML=html;});
+    btnvista.addEventListener('click',()=>{ej.innerHTML=href;});
     btnhtml.addEventListener('click',()=>{ej.innerText= html;});
     btncss.addEventListener('click',()=>{ej.innerHTML=css;});
     btnjs.addEventListener('click',()=>{ej.innerHTML=js;});
@@ -44,15 +34,15 @@ function mostrarObjeto(objeto) {
     const ejemplos = objeto.ejemplos;
 
     ejemplos.forEach(ejemplo => {
-                     
-                    const link = document.createElement('a');
-                    link.textContent = ejemplo.titulo;
-                    link.href = ejemplo.html;
-                    link.target= "codeFrame";
-
+                    const link= document.createElement('a');
+                    link.textContent= ejemplo.titulo;
                     const paragraph = document.createElement('p');
                     paragraph.appendChild(link);
-                    paragraph.addEventListener('click',()=>{verEjemplo(ejemplo.href,ejemplo.html,ejemplo.css,ejemplo.js,ejemplo.objeto)});
+                    paragraph.addEventListener('click',()=>{
+                        ej.innerHTML=ejemplo.href;
+                        verEjemplo(ejemplo.href,ejemplo.html,ejemplo.css,ejemplo.js,ejemplo.objeto)
+                    });
+
                     details.appendChild(paragraph);
     })
     container.appendChild(details);
