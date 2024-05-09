@@ -47,7 +47,7 @@ controlarDesplazamientoVertical('check-2');
 
 new ColorearHtml();
 
-cargarlibreria();
+//cargarlibreria();
 
     
 
