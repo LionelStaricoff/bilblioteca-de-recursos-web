@@ -106,8 +106,13 @@ export class ColorearHtml {
                         const hijos =c.children;
                        
                     for(const ch of hijos){
-                        ch.style.color = 'red'
-                        //ch.style.padding = '0 0 0 20px';
+                        const padre = ch.parentNode;
+                       const span = document.createElement('span')
+                       span.style.display = 'inline-block'
+                       span.style.paddingLeft = '20px';
+                       span.style.color = 'blue'
+                       span.appendChild(ch);
+                      padre.appendChild(span) 
                     }
                 
                     
