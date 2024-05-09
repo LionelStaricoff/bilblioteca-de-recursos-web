@@ -98,57 +98,52 @@ export class ColorearHtml {
         }
     }
     colocarPadding(hijo) {
-     
-       
-           
-                for (const c of hijo){
-                    if (c.children.length > 0) {
-                        const hijos =c.children;
-                       
-                   
-                        this.colocarPaddingInterno(hijos); 
-                    
-                
-                    
-                    }
+
+        for (const c of hijo) {
+            if (c.children.length > 0) {
+                const hijos = c.children;
+
+                this.colocarPaddingInterno(hijos);
+
             }
+        }
     }
-    colocarPaddingInterno(hijos, padding=20,){
-   
+    colocarPaddingInterno(hijos, padding = 20,) {
+
         const span = document.createElement('span')
         span.style.display = 'block'
         span.style.marginLeft = `${padding}px`;
         span.style.marginTop = '-20px';
-        for(const ch of hijos){
-        const padre = ch.parentNode;
-       
-  
-        span.appendChild(ch);
-       padre.appendChild(span)
-        
+        for (const ch of hijos) {
+            const padre = ch.parentNode;
 
-       if(ch.children.length > 0){
-      
-        const hijos2 = ch.children; 
-     
-        this.colocarPaddingInterno2(hijos2, 40);
-       }
+
+            span.appendChild(ch);
+            padre.appendChild(span)
+
+
+            if (ch.children.length > 0) {
+
+                const hijos2 = ch.children;
+
+                this.colocarPaddingInterno2(hijos2, 40);
+            }
+        }
     }
-    }
-    colocarPaddingInterno2(hijos, padding){
+    colocarPaddingInterno2(hijos, padding) {
         const div = document.createElement('div')
-            div.style.marginLeft = `${padding}px`;
-            div.style.marginTop = '-20px';
-            let padre;
-            const hijos1 = Array.from(hijos);
-            debugger;
-        for(const ch of hijos1){
-             padre = ch.parentNode;
+        div.style.marginLeft = `${padding}px`;
+        div.style.marginTop = '-20px';
+        let padre;
+        const hijos1 = Array.from(hijos);
+   
+        for (const ch of hijos1) {
+            padre = ch.parentNode;
             div.appendChild(ch);
-          
+
+        }
+        padre.appendChild(div);
     }
-    padre.appendChild(div);
-}
 
 }
 
