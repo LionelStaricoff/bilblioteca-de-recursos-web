@@ -28,7 +28,7 @@ section.websDeInteres {
     }
     
     .listLinks {
-        font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Roboto', 'Lucida Sans', Arial, sans-serif;
         font-size: 1.1rem;
         margin: 0 auto;
         max-width: 540px;

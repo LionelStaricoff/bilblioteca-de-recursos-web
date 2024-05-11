@@ -108,16 +108,7 @@ function volverArriba() {
     document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
 }
 
-// Event listener para el botón de volver arriba
-btnVolverArriba.addEventListener("click", function() {
-    // Ejecuta la transición suave
-    setTimeout(() => {
-      window.scrollTo({
-        top: document.body.scrollHeight,
-        behavior: 'smooth'
-      });
-    }, 4000);
-  });
+
 
 
 // Función para controlar la visibilidad del botón de volver arriba
@@ -133,3 +124,13 @@ window.onscroll = function() {
 };
 volverArriba();
 
+// Event listener para el botón de volver arriba
+btnVolverArriba.addEventListener("click", function() {
+    // Ejecuta la transición suave
+    setTimeout(() => {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+      });
+    }, 4000);
+  });

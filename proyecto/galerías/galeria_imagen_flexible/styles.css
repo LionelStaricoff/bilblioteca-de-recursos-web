@@ -1,0 +1,46 @@
+.galeria{
+    display: flex;
+}
+     img{
+         display: block;
+         object-fit: cover;
+         min-width: 50px;
+         width: 300px;
+         flex: 1;
+         transition: flex .5s;
+         height: 200px;
+         gap: 10px;
+    }   
+    img:hover{ flex: 4; }
+
+      /* in */
+      .in{
+         display: block;
+         object-fit: cover;
+         min-width: 50px;
+         width: 100%;
+         flex: 4;
+         transition: flex .5s;
+         height: 300px;
+         gap: 10px;
+         border: 1px solid black;
+       
+    }   
+    .in:hover{ flex: 1; }
+
+    /* out  combinar el flex 1 con otros valores */
+    .out{
+         display: block;
+         object-fit: cover;
+         min-width: 50px;
+         width: 100%;
+         flex: 1;
+         transition: flex .5s;
+         height: 30%;
+         gap: 10px;
+         border: 1px solid black;
+       
+    }   
+    .out:hover{ flex: 3; }
+
+  

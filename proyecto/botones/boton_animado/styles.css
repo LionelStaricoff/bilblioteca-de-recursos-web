@@ -1,27 +1,16 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <style>
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 body{
     display: flex;
     justify-content: center;
     margin: 10em  10em  auto  auto;
 }
-
 .container{
    height:  10rem;
-   
 }
-
 .cuadrado{
     position: absolute;
     height: 10rem;
@@ -30,13 +19,11 @@ body{
     transition: 0.3s;
     z-index: 1;
 }
-
 .cuadrado:hover{
     cursor: pointer;
     border-radius: 30%;
     transition: 0.3s;
 }
-
 .circulo_top{
     position: absolute;
     height: 5rem;
@@ -46,13 +33,10 @@ body{
     margin: 2.5em   auto  auto 2.5em;
     border-radius: 50%;
 }
-
 .container:hover .circulo_top{
     transform: translateY(10em);
     transition: 0.3s;
 }
-
-
 .circulo_right{
     position: absolute;
     height: 5rem;
@@ -62,12 +46,10 @@ body{
     margin: 2.5em   auto  auto 2.5em;
     border-radius: 50%;
 }
-
 .container:hover .circulo_right{
     transform: translateY(-10em);
     transition: 0.3s;
 }
-
 .circulo_down{
     position: absolute;
     height: 5rem;
@@ -76,14 +58,11 @@ body{
     transition: 0.3s;
     margin: 2.5em   auto  auto 2.5em;
     border-radius: 50%;
-    
 }
-
 .container:hover .circulo_down{
     transform: translateX(-10em);
     transition: 0.3s;
 }
-
 .circulo_left{
     position: absolute;
     height: 5rem;
@@ -92,27 +71,8 @@ body{
     transition: 0.3s;
     margin: 2.5em   auto  auto 2.5em;
     border-radius: 50%;
-    
 }
-
 .container:hover .circulo_left{
     transform: translateX(10em);
     transition: 0.3s;
 }
-
- </style>
-    <title>boton animado</title>
-</head>
-<body>
-    
-    <div class="container">
-        <div class="cuadrado"></div>
-        <div class="circulo_top"></div>
-        <div class="circulo_right"></div>
-        <div class="circulo_down"></div>
-        <div class="circulo_left"></div>
-    </div>
-
-    
-</body>
-</html>

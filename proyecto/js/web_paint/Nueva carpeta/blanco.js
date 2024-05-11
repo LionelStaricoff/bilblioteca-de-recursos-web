@@ -4,7 +4,6 @@ let pincel = pantalla.getContext("2d");
 pincel.fillStyle = "grey";
 pincel.fillRect(0,0,600,400);
 
-
 function diseniarcirculo(x,y,radio,color){
     pincel.fillStyle = color;
     pincel.beginPath();
@@ -13,10 +12,8 @@ function diseniarcirculo(x,y,radio,color){
 }
 
 function borrarPantalla(){
-   
    pincel.fillStyle = "grey";
    pincel.fillRect(0,0,600,400);
-
 }
 
 var radio = 10;
