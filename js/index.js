@@ -1,8 +1,8 @@
 import { librerias } from './libreria.js';
 
+const iframe = document.querySelector("#iframe");
 const ej = document.querySelector("#ej-contenedor");
 // const ej = document.querySelector(".ejemplo");
-
 
 
 const verEjemplo= (href,html,css,js,obj)=>{
@@ -14,13 +14,17 @@ const verEjemplo= (href,html,css,js,obj)=>{
     const btnjs = document.getElementById("btnJs");
     const btnobj = document.getElementById("btnObject");
 
-    btnvista.addEventListener('click',()=>{ej.innerHTML=href;});
-    btnhtml.addEventListener('click',()=>{ej.innerText= html;});
-    btncss.addEventListener('click',()=>{ej.innerHTML=css;});
-    btnjs.addEventListener('click',()=>{ej.innerHTML=js;});
-    btnobj.addEventListener('click',()=>{ej.innerHTML=obj;});
+
+
+    btnvista.addEventListener('click',()=>{iframe.srcdoc=href; ej.innerHTML="";});
+    btnhtml.addEventListener('click',()=>{iframe.srcdoc=""; ej.innerText= html;});
+    btncss.addEventListener('click',()=>{iframe.srcdoc=""; ej.innerHTML=css;});
+    btnjs.addEventListener('click',()=>{iframe.srcdoc=""; ej.innerHTML=js;});
+    btnobj.addEventListener('click',()=>{iframe.srcdoc=""; ej.innerHTML=obj;});
    
 }
+
+
 
 
 function mostrarObjeto(objeto) {
@@ -39,7 +43,12 @@ function mostrarObjeto(objeto) {
                     const paragraph = document.createElement('p');
                     paragraph.appendChild(link);
                     paragraph.addEventListener('click',()=>{
-                        ej.innerHTML=ejemplo.href;
+                        const vistaHtml = ejemplo.href;
+                        ej.innerHTML="";
+                        ej.innerText="";
+                        iframe.srcdoc = vistaHtml;
+
+                        // ej.innerHTML=ejemplo.href;
                         verEjemplo(ejemplo.href,ejemplo.html,ejemplo.css,ejemplo.js,ejemplo.objeto)
                     });
 
