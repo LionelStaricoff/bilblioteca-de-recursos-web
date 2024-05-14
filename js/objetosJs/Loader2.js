@@ -5,8 +5,8 @@ export class crearLoader {
         this.agregarAlFront(padre);
     }
     agregarAlFront(padre = 'body') {
-        const padre = document.querySelector(padre);
-        padre.appendChild(this.armarLoader());
+        const papa = document.querySelector(padre);
+        papa.appendChild(this.armarLoader());
     }
     armarLoader() {
         const divcontent = document.createElement("div");

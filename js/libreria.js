@@ -58,17 +58,11 @@ export const librerias = [
                     </div>
                 
                     <script>
-                        document.onload = () => {
-                        let contenido = document.querySelector(".img-wrapper");
-                        let loading = document.querySelector(".loader");
-                        loading.style.display = 'none';
-                        contenido.style.display ='flex';
-                
-                        }
+                    alert('hola')
+                    
                     </script>
                     
-                </body>
-                </html>
+               
                 `,
                 html:`
                     
