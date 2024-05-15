@@ -1,3 +1,5 @@
+import * as obj from './main.js'
+
 export const librerias = [
     {
         titulo: "Loader",
@@ -5,63 +7,9 @@ export const librerias = [
             {
              
                 titulo:"Ejemplo 1",
-                href:`
-                
-                <head>
-                                
-                    <style>
+                href:()=> new obj.loader1("#ej-contenedor")
   
-                      
-                        .loader-content{
-                    
-                            position: absolute;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            height: 100vh;
-                            width: 100vw;
-                        }
-                
-                        .loader {
-                            
-                            width: 80px;
-                            height: 80px;
-                            border: solid 5px #436ff3;
-                            border-top: solid 5px #e7ecf8;
-                            border-radius: 50%;
-                
-                            animation: spin 1.2s
-                                        linear infinite;
-                
-                            
-                        }
-                
-                        @keyframes spin {
-                            to {
-                                transform: rotate(360deg);
-                            }
-                            
-                        }
-                
-                    </style>
-                </head>
-                <body>
-                
-                    <div class="loader-content">
-                        <div class="loader"></div>
-                    </div>
-                
-                    <div class="img-wrapper">
-                        <!-- <img class="img-content" src ="https://source.unsplash.com/random"> -->
-                    </div>
-                
-                    <script>
-                    alert('hola')
-                    
-                    </script>
-                    
-               
-                `,
+                ,
                 html:`  
                     <div class="loader-content">
                         <div class="loader"></div>

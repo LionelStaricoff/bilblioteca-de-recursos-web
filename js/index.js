@@ -1,5 +1,6 @@
 import { librerias } from './libreria.js';
-
+import * as obj from './main.js';
+new obj.loader1('#iframe');
 const iframe = document.querySelector("#iframe");
 const ej = document.querySelector("#ej-contenedor");
 // const ej = document.querySelector(".ejemplo");
