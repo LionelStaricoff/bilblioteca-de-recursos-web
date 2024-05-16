@@ -72,9 +72,9 @@ function getAllObjects(){
 function esFuncion(dato) {
  
     if (typeof dato === 'function') {
-      dato(); // Ejecuta la función si es el caso
+      dato(); 
     } else {
-      console.log('El dato no es una función');
+      alert('El dato no es una función');
     }
   }
 
