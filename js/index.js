@@ -47,8 +47,9 @@ function mostrarObjeto(objeto) {
                     paragraph.appendChild(link);
                     paragraph.addEventListener('click',()=>{
                        let vistaHtml = ejemplo.href;
-                        ej.innerHTML="";
-                        ej.innerText="";
+                      esFuncion(vistaHtml);
+                       // ej.innerHTML="";
+                       // ej.innerText="";
                        // iframe.srcdoc = vistaHtml;
 
                         // ej.innerHTML=ejemplo.href;
@@ -69,6 +70,7 @@ function getAllObjects(){
 }
 
 function esFuncion(dato) {
+ 
     if (typeof dato === 'function') {
       dato(); // Ejecuta la función si es el caso
     } else {
