@@ -1,10 +1,9 @@
 import { librerias } from './libreria.js';
-import * as obj from './main.js';
-new obj.loader1('#iframe');
+
+
 const iframe = document.querySelector("#iframe");
 const ej = document.querySelector("#ej-contenedor");
 // const ej = document.querySelector(".ejemplo");
-
 
 const verEjemplo= (href,html,css,js,obj)=>{
     
@@ -17,7 +16,10 @@ const verEjemplo= (href,html,css,js,obj)=>{
 
 
 
-    btnvista.addEventListener('click',()=>{iframe.srcdoc=href; ej.innerHTML="";});
+    btnvista.addEventListener('click',()=>{
+        iframe.srcdoc=""; ej.innerText= '';
+        esFuncion(href);
+        });
     btnhtml.addEventListener('click',()=>{iframe.srcdoc=""; ej.innerText= html;});
     btncss.addEventListener('click',()=>{iframe.srcdoc=""; ej.innerHTML=css;});
     btnjs.addEventListener('click',()=>{iframe.srcdoc=""; ej.innerHTML=js;});
@@ -44,13 +46,13 @@ function mostrarObjeto(objeto) {
                     const paragraph = document.createElement('p');
                     paragraph.appendChild(link);
                     paragraph.addEventListener('click',()=>{
-                        const vistaHtml = ejemplo.href;
+                       let vistaHtml = ejemplo.href;
                         ej.innerHTML="";
                         ej.innerText="";
-                        iframe.srcdoc = vistaHtml;
+                       // iframe.srcdoc = vistaHtml;
 
                         // ej.innerHTML=ejemplo.href;
-                        verEjemplo(ejemplo.href,ejemplo.html,ejemplo.css,ejemplo.js,ejemplo.objeto)
+                        verEjemplo(vistaHtml,ejemplo.html,ejemplo.css,ejemplo.js,ejemplo.objeto)
                     });
 
                     details.appendChild(paragraph);
@@ -66,6 +68,13 @@ function getAllObjects(){
 
 }
 
+function esFuncion(dato) {
+    if (typeof dato === 'function') {
+      dato(); // Ejecuta la función si es el caso
+    } else {
+      console.log('El dato no es una función');
+    }
+  }
 
 
 

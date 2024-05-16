@@ -9,7 +9,7 @@ export class crearLoader {
         const papa = document.querySelector(padre);
         papa.appendChild(this.armarLoader());
     }
-    armarLoader() {
+     armarLoader() {
         const divcontent = document.createElement("div");
         divcontent.className = 'loader-content';
 

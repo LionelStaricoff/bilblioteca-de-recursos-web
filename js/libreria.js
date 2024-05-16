@@ -1,4 +1,4 @@
-import * as obj from './main.js'
+import * as objs from './main.js'
 
 export const librerias = [
     {
@@ -7,7 +7,7 @@ export const librerias = [
             {
              
                 titulo:"Ejemplo 1",
-                href:()=> new obj.loader1("#ej-contenedor")
+                href: ()=> new objs.loader1("#ej-contenedor")
   
                 ,
                 html:`  
@@ -543,7 +543,7 @@ window.onload = () => {
 
 ];
 
-console.log(librerias);
+//console.log(librerias);
 
 
 // const ejemploGaleria = {
