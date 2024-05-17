@@ -1,0 +1,76 @@
+
+<!-- css.html (página para mostrar código CSS): -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Código CSS</title>
+
+</head>
+<body>
+  <pre>
+    <code class="language-css codigo">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;/*como va a calcular el tamaño del elemento, en el width y height que le demos va a incluir a las medidas de su margin y padding*/
+        }
+        body{
+            position: relative;
+        }
+        
+        .img-wrapper{
+            height: 100vh;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        
+            .img-content{
+                width: 500px;
+                height: auto;
+            }
+        
+        
+        }/*fin img-wrapper*/
+
+        .loader-content{
+    
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        .loader {
+            
+            width: 80px;
+            height: 80px;
+            border: solid 5px #436ff3;
+            border-top: solid 5px #e7ecf8;
+            border-radius: 50%;
+        
+            animation: spin 1.2s
+                        linear infinite;
+        
+            
+        }
+        
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+            
+        }
+        
+        
+    </code>
+  </pre>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+</body>
+</html>

@@ -1,7 +1,8 @@
 import * as obj from './main.js';
 import './itemsMenuLibreria.js';
+// import '/index.js';
 import './webInteres.js';
-import {ColorearHtml} from './utils.js';
+
 
 const enlacesMenu = document.querySelectorAll('nav ul li a');
 
@@ -33,9 +34,9 @@ controlarDesplazamientoVertical('check');
 controlarDesplazamientoVertical('check-2');
 
 
-new ColorearHtml();
 
 
+//cargarlibreria();
 
     
 

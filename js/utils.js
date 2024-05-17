@@ -14,21 +14,12 @@ export class CartelError {
 
 export class ColorearHtml {
     constructor() {
-        this.menor = 'gray';
-        this.div = 'blue';
-        this.section = 'cyan';
-        this.button = 'palevioletred';
-        this.main = 'yellow';
-        this.header = 'yellow';
-        this.footer = 'yellow';
-        this.H1 = 'yellowgreen';
-        this.H2 = 'yellowgreen';
-        this.H3 = 'yellowgreen';
-        this.H4 = 'yellowgreen';
-        this.H5 = 'yellowgreen';
-        this.H6 = 'yellowgreen';
+        this.etiquetas = 'yellowgreen';
+        this.atributos = 'palevioletred';
+        this.nombres = 'cyan';
 
         this.reemplazar();
+        this.espaciar();
     }
 
     reemplazar() {
@@ -42,61 +33,116 @@ export class ColorearHtml {
     colorear(codigoHtml) {
         codigoHtml.style.backgroundColor = "#333333";
         codigoHtml.style.padding = '1em';
-        codigoHtml.style.color  = 'gainsboro';
- 
+        codigoHtml.style.color = 'gainsboro';
+
         const contenido = codigoHtml.innerHTML;
 
         const contenidoModificado = contenido
-   
-        
-        //.replace( /<[^>]*>/g,`<L style="color: ${this.header};">`+/<[^>]*>/g`</L>`)
-        .replace(/ >/g, `<L style="color: ${this.header};">&gt; </L>`)
-        .replace(/">/g, `<L style="color: ${this.header};">"&gt; </L>`)
-        .replace(/id="/g, `<L style="color: ${this.header};">id=" </L>`)
-        .replace(/class="/g, `<L style="color: ${this.header};">class=" </L>`)
-       
-        //.replace(/<footer>(.*?)<\/footer>/g, '<footer style="color: ' + this.footer + ';">$1</footer>')
-            .replace(/<header/g, `<L style="color: ${this.header};">&lt;header</L>`)
-            .replace(/<\/header>/g, `<L style="color: ${this.header};">&lt;/header&gt;<br> </L>`)
-            .replace(/<section/g, `<L style="color: ${this.section};">&lt;section</L>`)
-            .replace(/<\/section>/g, `<L style="color: ${this.section};">&lt;/section&gt;<br> </L>`)
-            .replace('<div', `<L style="color: ${this.div};">&lt;div</L>`)
-            .replace('</div>', `<L style="color: ${this.div};">&lt;/div&gt;<br> </L>`)
-            .replace('<button', `<L style="color: ${this.button};">&lt;button</L>`)
-            .replace('</button>', `<L style="color: ${this.button};">&lt;/button&gt;<br> </L>`)
-            .replace('<main', `<L style="color: ${this.main};">&lt;main</L>`)
-            .replace('</main>', `<L style="color: ${this.main};">&lt;/main&gt;<br> </L>`)
-            .replace(/<footer/g, `<L style="color: ${this.footer};">&lt;footer&gt;</L>`)
-            .replace(/<\/footer>/g, `<L style="color: ${this.footer};">&lt;/footer&gt;<br> </L>`)
-            .replace('<H1>', `<L style="color: ${this.H1};">&lt;H1&gt;</L>`)
-            .replace('</H1>', `<L style="color: ${this.H1};">&lt;/H1&gt;<br> </L>`)
-            .replace('<h1>', `<L style="color: ${this.H1};">&lt;h1&gt;</L>`)
-            .replace('</h1>', `<L style="color: ${this.H1};">&lt;/h1&gt;<br> </L>`)
-            .replace('<H2>', `<L style="color: ${this.H2};">&lt;H2&gt;</L>`)
-            .replace('</H2>', `<L style="color: ${this.H2};">&lt;/H2&gt;<br> </L>`)
-            .replace('<h2>', `<L style="color: ${this.H2};">&lt;h2&gt;</L>`)
-            .replace('</h2>', `<L style="color: ${this.H2};">&lt;/h2&gt;<br> </L>`)
-            .replace('<H3>', `<L style="color: ${this.H3};">&lt;H3&gt;</L>`)
-            .replace('</H3>', `<L style="color: ${this.H3};">&lt;/H3&gt;<br> </L>`)
-            .replace('<h3>', `<L style="color: ${this.H3};">&lt;h3&gt;</L>`)
-            .replace('</h3>', `<L style="color: ${this.H3};">&lt;/h3&gt;<br> </L>`)
-            .replace('<h4>', `<L style="color: ${this.H4};">&lt;h4&gt;</L>`)
-            .replace('</h4>', `<L style="color: ${this.H4};">&lt;/h4&gt;<br> </L>`)
-            .replace('<H4>', `<L style="color: ${this.H4};">&lt;H4&gt;</L>`)
-            .replace('<H4>', `<L style="color: ${this.H4};">&lt;/H4&gt;<br> </L>`)
-            .replace('<h5>', `<L style="color: ${this.H5};">&lt;h5&gt;</L>`)
-            .replace('</h5>', `<L style="color: ${this.H5};">&lt;/h5&gt;<br> </L>`)
-            .replace('<H5>', `<L style="color: ${this.H5};">&lt;H5&gt;</L>`)
-            .replace('</H5>', `<L style="color: ${this.H5};">&lt;/H5&gt;<br> </L>`)
-            .replace('<h6>', `<L style="color: ${this.H6};">&lt;h6&gt;</L>`)
-            .replace('</h6>', `<L style="color: ${this.H6};">&lt;/h6&gt;<br> </L>`)
-            .replace('<H6>', `<L style="color: ${this.H6};">&lt;H6&gt;</L>`)
-            .replace('<H6>', `<L style="color: ${this.H6};">&lt;/H6&gt;<br> </L>`)
+            .replace(/class/g, `<L style="color: ${this.atributos};">class</L>`)
+            .replace(/id/g, `<L style="color: ${this.atributos};">id</L>`)
 
-            
+            .replace(/<header/g, `<br> &lt;<L style="color: ${this.etiquetas};">header</L>`)
+            .replace(/<\/header>/g, `&lt;<L style="color: ${this.etiquetas};">/header</L>&gt;`)
+            .replace(/<main/g, `<br> &lt;<L style="color: ${this.etiquetas};">main</L>`)
+            .replace(/<\/main>/g, `&lt;<L style="color: ${this.etiquetas};">/main</L>&gt;`)
+            .replace(/<footer/g, `<br> &lt;<L style="color: ${this.etiquetas};">footer</L>`)
+            .replace(/<\/footer>/g, `&lt;<L style="color: ${this.etiquetas};">/footer</L>&gt;`)
+            .replace(/<section/g, `<br> &lt;<L style="color: ${this.etiquetas};">section</L>`)
+            .replace(/<\/section>/g, `&lt;<L style="color: ${this.etiquetas};">/section</L>&gt;`)
+            .replace(/<h1/g, `<br> &lt;<L style="color: ${this.etiquetas};">h1</L>`)
+            .replace(/<\/h1>/g, `&lt;<L style="color: ${this.etiquetas};">/h1</L>&gt;`)
+            .replace(/<H1/g, `<br> &lt;<L style="color: ${this.etiquetas};">H1</L>`)
+            .replace(/<\/H1>/g, `&lt;<L style="color: ${this.etiquetas};">/H1</L>&gt;`)
+            .replace(/<h2/g, `<br> &lt;<L style="color: ${this.etiquetas};">h2</L>`)
+            .replace(/<\/h2>/g, `&lt;<L style="color: ${this.etiquetas};">/h2</L>&gt;`)
+            .replace(/<H2/g, `<br> &lt;<L style="color: ${this.etiquetas};">H2</L>`)
+            .replace(/<\/H2>/g, `&lt;<L style="color: ${this.etiquetas};">/H2</L>&gt;`)
+            .replace(/<H3/g, `<br> &lt;<L style="color: ${this.etiquetas};">H3</L>`)
+            .replace(/<\/H3>/g, `&lt;<L style="color: ${this.etiquetas};">/H3</L>&gt;`)
+            .replace(/<h3/g, `<br> &lt;<L style="color: ${this.etiquetas};">h3</L>`)
+            .replace(/<\/h3>/g, `&lt;<L style="color: ${this.etiquetas};">/h3</L>&gt;`)
+            .replace(/<h4/g, `<br> &lt;<L style="color: ${this.etiquetas};">h4</L>`)
+            .replace(/<\/h4>/g, `&lt;<L style="color: ${this.etiquetas};">/h4</L>&gt;`)
+            .replace(/<H4/g, `<br> &lt;<L style="color: ${this.etiquetas};">H4</L>`)
+            .replace(/<\/H4>/g, `&lt;<L style="color: ${this.etiquetas};">/H4</L>&gt;`)
+            .replace(/<H5/g, `<br>&lt;<L style="color: ${this.etiquetas};">H5</L>`)
+            .replace(/<\/H5>/g, `&lt;<L style="color: ${this.etiquetas};">/H5</L>&gt;`)
+            .replace(/<h5/g, `<br> &lt;<L style="color: ${this.etiquetas};">h5</L>`)
+            .replace(/<\/h5>/g, `&lt;<L style="color: ${this.etiquetas};">/h5</L>&gt;`)
+            .replace(/<h6/g, `<br> &lt;<L style="color: ${this.etiquetas};">h6</L>`)
+            .replace(/<\/h6>/g, `&lt;<L style="color: ${this.etiquetas};">/h6</L>&gt;`)
+            .replace(/<H6/g, `<br> &lt;<L style="color: ${this.etiquetas};">H6</L>`)
+            .replace(/<\/H6>/g, `&lt;<L style="color: ${this.etiquetas};">/H6</L>&gt;`)
+            .replace(/<button/g, `<br> &lt;<L style="color: ${this.etiquetas};">button</L>`)
+            .replace(/<\/button>/g, `&lt;<L style="color: ${this.etiquetas};">/button</L>&gt;`)
+            .replace(/<ul/g, `<br> &lt;<L style="color: ${this.etiquetas};">ul</L>`)
+            .replace(/<\/ul>/g, `&lt;<L style="color: ${this.etiquetas};">/ul</L>&gt;`)
+            .replace(/<li/g, `<br> &lt;<L style="color: ${this.etiquetas};">li</L>`)
+            .replace(/<\/li>/g, `&lt;<L style="color: ${this.etiquetas};">/li</L>&gt;`)
+
             ;
 
         codigoHtml.innerHTML = contenidoModificado;
+    }
+    espaciar() {
+
+        const codigoHtml = document.querySelectorAll('.colorear');
+
+        for (const c of codigoHtml) {
+
+            if (c.children.length > 0) {
+                const hijos = c.children;
+                this.colocarPadding(hijos);
+            }
+
+        }
+    }
+    colocarPadding(hijo) {
+
+        for (const c of hijo) {
+            if (c.children.length > 0) {
+                const hijos = c.children;
+
+                this.colocarPaddingInterno(hijos);
+
+            }
+        }
+    }
+    colocarPaddingInterno(hijos, padding = 20,) {
+
+        const span = document.createElement('span')
+        span.style.display = 'block'
+        span.style.marginLeft = `${padding}px`;
+        span.style.marginTop = '-20px';
+        for (const ch of hijos) {
+            const padre = ch.parentNode;
+
+
+            span.appendChild(ch);
+            padre.appendChild(span)
+
+
+            if (ch.children.length > 0) {
+
+                const hijos2 = ch.children;
+
+                this.colocarPaddingInterno2(hijos2, 40);
+            }
+        }
+    }
+    colocarPaddingInterno2(hijos, padding) {
+        const div = document.createElement('div')
+        div.style.marginLeft = `${padding}px`;
+        div.style.marginTop = '-20px';
+        let padre;
+        const hijos1 = Array.from(hijos);
+   
+        for (const ch of hijos1) {
+            padre = ch.parentNode;
+            div.appendChild(ch);
+
+        }
+        padre.appendChild(div);
     }
 
 }
@@ -108,11 +154,19 @@ function volverArriba() {
     document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
 }
 
+// Event listener para el botón de volver arriba
+window.onload = function () {
+    // Busca el botón por su ID
+    var btnVolverArriba = document.getElementById("btnVolverArriba");
 
-
+    // Agrega un event listener para el evento de clic
+    btnVolverArriba.addEventListener("click", function () {
+        volverArriba();
+    });
+};
 
 // Función para controlar la visibilidad del botón de volver arriba
-window.onscroll = function() {
+window.onscroll = function () {
     // Verifica la posición de desplazamiento
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         // Si se ha desplazado lo suficiente, muestra el botón

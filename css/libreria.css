@@ -192,7 +192,19 @@ section.libreria {
                 transform: scale(95%);
             }
         }
+
+        #ej-contenedor{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+        }
     }
+}
+
+.codigo{
+    width: fit-content;
+    background-color: #1e1d1d;
 }
 
 @media (max-width: 1000px) {

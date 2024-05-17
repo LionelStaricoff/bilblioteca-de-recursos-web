@@ -3,17 +3,59 @@
       {
         "titulo": "Galerías",
         "subitems": [
-          {"titulo": "Galería-01"}
+          {"titulo": "Ejemplo 1", 
+          "href": "#alertas-01",
+          "html":"",
+          "css":"",
+          "js":"",
+          "object":""
+          }
         ]
       },
       {
         "titulo": "Animaciones",
         "subitems": [
-          {"titulo": "Ejemplo 1"},
-          {"titulo": "Ejemplo 2"},
-          {"titulo": "Ejemplo 3"}
+          {"titulo": "Ejemplo 1", "href": "#animacion-01"},
+          {"titulo": "Ejemplo 2", "href": "#animacion-02"},
+          {"titulo": "Ejemplo 3", "href": "#animacion-03"}
         ]
+      },
+      {
+        "titulo": "Loader",
+        "subitems": 
+          [
+            {
+            "titulo": "Ejemplo 1", 
+            "href":"./proyecto/loader/loader sin setTimeOut/index.html",
+            "html": "<div class=\"loader-content\"> <div class=\"loader\"></div> </div> <div class=\"img-wrapper\"> <img class=\"img-content\" src=\"https://source.unsplash.com/random\"> </div>",
+            "css":"body{position: relative;} .img-wrapper{height: 100vh;display: none;justify-content: center;align-items: center; .img-content{ width: 500px; height: auto;}  .loader-content{position: absolute;display: flex;justify-content: center;align-items: center;height: 100vh;width: 100vw;}.loader {width: 80px;height: 80px;border: solid 5px #436ff3;border-top: solid 5px #e7ecf8;border-radius: 50%;animation: spin 1.2slinear infinite;}@keyframes spin {to {transform: rotate(360deg);}}}",
+            "js":"window.onload = () => {let contenido = document.querySelector(\".img-wrapper\");let loading = document.querySelector(\".loader\");loading.style.display = 'none'; contenido.style.display ='flex';}",
+            "object":""
+            },
+            {
+              "titulo": "", 
+              "href": "",
+              "html":"",
+              "css":"",
+              "js":"",
+              "object":""
+            }
+        
+          ]
+      },
+      {
+        "titulo": "",
+        "subitems": 
+          [{
+            "titulo": "", 
+            "href": "",
+            "html":"",
+            "css":"",
+            "js":"",
+            "object":""
+          }]
       }
+
     ]
   }
   
