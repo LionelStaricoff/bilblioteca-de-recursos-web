@@ -32,8 +32,8 @@ export class crearLoader {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 100vh;
-                width: 100vw;
+                height: 70%;
+                width: 100%;
             }
     
             .loader {
