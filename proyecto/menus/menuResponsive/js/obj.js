@@ -1,4 +1,4 @@
-/*Creando la clase para exportar*/
+/*Creando la clase para crear contenido de menú para exportar */
 
 export class item {
         constructor(enlace, nombre){
