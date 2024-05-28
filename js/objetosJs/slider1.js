@@ -27,7 +27,7 @@ export class CrearSlider {
 
 .slider-wrap{
     display: flex;
-    max-width: 900px;
+    max-width: 700px;
     align-items: center;
     justify-content: center;
     margin: 10% auto;
@@ -64,7 +64,7 @@ export class CrearSlider {
     
     .slider{
         display: flex; 
-        max-width: 800px;
+        max-width: 600px;
         /*flex: none;*/
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
@@ -87,7 +87,7 @@ export class CrearSlider {
             flex: auto;
             
             img {
-                width: 100%;
+                width: 200px;
                 filter: grayscale(100%);
                 transition: transform 0.5s;
                 
@@ -136,14 +136,12 @@ export class CrearSlider {
             height: 30px;
             line-height: 30px;
         }
-            
-    }    
-
-    .slider-wrap{
         .slider {
             div { grid-auto-columns: calc(100%); }
-        }
-    }
+        }    
+    }    
+
+    
 }
 
     </style>
@@ -156,19 +154,19 @@ export class CrearSlider {
         <section class="slider" id="contenedor">
             
             <div>
-                <span><img src="./img/objetos/imgSliders/Abadango Cluster Princess" alt="Img of Abadango Cluster Princess" /></span>
-                <span><img src="./img/objetos/imgSliders/Abradolf Lincler.jpeg" alt="img of Abradolf Lincler.jpeg" /></span>
-                <span><img src="./img/objetos/imgSliders/Adjuticator Rick.jpeg" alt="img of Adjudicator Rick" /></span>  
+                <span><img src="./img/objetos/imgSliders/img01.jpeg" alt="Img de Abadango Cluster Princess" /></span>
+                <span><img src="./img/objetos/imgSliders/img02.jpeg" alt="img de Abradolf Lincler.jpeg" /></span>
+                <span><img src="./img/objetos/imgSliders/img03.jpeg" alt="img de Adjudicator Rick" /></span>  
             </div>    
             <div>    
-                <span><img src="./img/objetos/imgSliders/Agency Director.jpeg" alt="img of Agency Director" /></span>
-                <span><img src="./img/objetos/imgSliders/Aqua Morty.jpeg" alt="img of Aqua Morty" /></span>
-                <span><img src="./img/objetos/imgSliders/Alan Rails.jpeg" alt="img of Alan Rails" /></span>
+                <span><img src="./img/objetos/imgSliders/img04.jpeg" alt="img de Agency Director" /></span>
+                <span><img src="./img/objetos/imgSliders/img05.jpeg" alt="img de Aqua Morty" /></span>
+                <span><img src="./img/objetos/imgSliders/img06.jpeg" alt="img de Alan Rails" /></span>
             </div>
             <div>    
-                <span><img src="./img/objetos/imgSliders/Beth Smith.jpeg" alt="img of Beth Smith" /></span>
-                <span><img src="./img/objetos/imgSliders/Jerry Smith.jpeg" alt="img of Jerry Smith" /></span>
-                <span><img src="./img/objetos/imgSliders/Morty Smith.jpeg" alt="img of Morty Smith" /></span>
+                <span><img src="./img/objetos/imgSliders/img07.jpeg" alt="img de Beth Smith" /></span>
+                <span><img src="./img/objetos/imgSliders/img08.png" alt="img de Jerry Smith" /></span>
+                <span><img src="./img/objetos/imgSliders/img09.png" alt="img de Morty Smith" /></span>
             </div>
                 
         </section>
