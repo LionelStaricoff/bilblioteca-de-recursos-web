@@ -9,9 +9,9 @@ export class CrearSlider {
     }
     agregarAlFront(padre = 'iframe') {
         const papa = document.querySelector(padre);
-        papa.appendChild(this.armarLoader());
+        papa.appendChild(this.armarSlider());
     }
-     armarLoader() {
+     armarSlider() {
         const divcontent = document.querySelector("#iframe")
         divcontent.srcdoc = `
         

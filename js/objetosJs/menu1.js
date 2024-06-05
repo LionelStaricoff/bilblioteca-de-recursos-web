@@ -8,9 +8,9 @@ export class CrearMenu {
     }
     agregarAlFront(padre = 'iframe') {
         const papa = document.querySelector(padre);
-        papa.appendChild(this.armarLoader());
+        papa.appendChild(this.armarMenu());
     }
-     armarLoader() {
+     armarMenu() {
         const divcontent = document.querySelector("#iframe")
         divcontent.srcdoc = `
         
@@ -198,7 +198,7 @@ export class CrearMenu {
         `
         return divcontent;
      
-        }/*Fin armarLoader*/
+        }/*Fin armarMenu*/
 
         
     }

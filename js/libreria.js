@@ -1,20 +1,18 @@
 import * as objs from './main.js'
 
 export const librerias = [
+    
     {
         titulo: "Loader",
         ejemplos:[
             {
              
                 titulo:"Ejemplo 1",
-                href: ()=> new objs.loader1("#ej-contenedor")
-  
-                ,
+                href: ()=> new objs.loader1("#ej-contenedor"),
                 html:`  
                     <div class="loader-content">
                         <div class="loader"></div>
                     </div>
-                
                     <div class="img-wrapper">
                         <!--<img class="img-content" src ="https://source.unsplash.com/random">-->
                     </div>
@@ -34,8 +32,6 @@ body{
         width: 500px;
         height: auto;
     }
-
-
 }/*fin img-wrapper*/
 
 .loader-content{
@@ -344,6 +340,244 @@ window.onload = () => {
             //     css: `<pre class="codigo"><code></code></pre>`,
             //     js: `<pre class="codigo"><code></code></pre>`,
             //     objeto: `<pre class="codigo"><code></code></pre>`
+            }
+        ]
+    
+    },
+    {
+        titulo: "Modo Claro/Oscuro",
+        ejemplos:[
+            {
+             
+                titulo:"Ejemplo 1",
+                href: ()=> new objs.modo1(".ejemplo"),
+                html:`
+
+<body class="theme-container __light">
+
+<h1>Haz clicK para cambiar el tema!</h1>
+<button id="btn-theme">CAMBIAR MODO</button>
+
+</body>
+             
+                `,
+                css: `<pre class="codigo"><code>
+                .__dark {
+    
+    
+                    background: black;
+                    color: white;
+                    font-family: 'Courier New', Courier, monospace;
+                    button{
+                        padding: 1.5em;
+                        background-color:gray;
+                        border-radius: 5px;
+                        border: 2px solid white;
+                    }
+            
+            }
+            
+            .__light {
+                
+                    background: lightcoral;
+                    color: black;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+                button{
+                    padding: 1.5em;
+                    background-color:aqua;
+                    border-radius: 5px;
+                    border: 2px dotted black;
+                }
+            }
+                        
+                </code></pre>`,
+                js: `<pre class="codigo"><code>
+
+const btn = document.getElementById("btn-theme");
+
+btn.addEventListener('click', () => {
+    const theme = document.querySelector('.theme-container');
+    theme.classList.toggle("__dark");
+    theme.classList.toggle("__light");
+}); 
+                </code></pre>`,
+                objeto: `<pre class="codigo"><code>
+         
+                    import {modo1} from './main.js';
+                    
+                    ejemplo1: colocar un id
+                    new modo1(#id_del_padre) ;
+                        
+                    ejemplo2: colocar una clase
+                    new modo1(.class_del_padre) ;
+                        
+                    ejemplo3:colocar cualquier elemento html
+                    new modo1(div) ;
+
+                    </code></pre>
+                `,
+                images:""
+                
+            },
+            {
+             
+                titulo:"Ejemplo 2",
+                href: ()=> new objs.modo2(".ejemplo"),
+                html:`
+
+                <body data-bg="LIGHT">
+
+                <h1>Haz click para cambiar el tema!</h1>
+                <button id="btn-theme">DARK MODE</button>
+            <script type="module" src="./src/js/index.js"></script>
+            </body>
+             
+                `,
+                css: `<pre class="codigo"><code>
+                body[data-bg="DARK"]{
+                    background-color: black;
+                    color:white;
+                }
+                
+                body[data-bg="LIGHT"]{
+                    background-color: white;
+                    color:black;
+                }
+                
+                body{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    gap: 20px;
+                    button{
+                        padding: 1.5em;
+                        font-weight: bolder;
+                        border-radius: 10px;
+                        border: 5px solid #fea;
+                        transition: 0.5s ease-in-out all;
+                        &:hover{
+                            transform: scale(0.9);
+                        }
+                    }
+                }
+                
+                        
+                </code></pre>`,
+                js: `<pre class="codigo"><code>
+                const btn = document.getElementById("btn-theme");
+
+                btn.addEventListener('click', () => {
+                
+                    const currentTheme = document.body.getAttribute('data-bg');
+                    console.log("actual: " +currentTheme);
+                    document.body.setAttribute('data-bg', currentTheme === 'LIGHT' ? 'DARK':'LIGHT'); //Obtener el nuevo tema con operador ternario
+                    
+                    console.log("NUEVO: "+ currentTheme);// Actualizar el atributo data-bg con el nuevo tema
+                    btn.textContent = currentTheme + ' MODE';// Actualizar el texto del botón con el nuevo tema
+                });
+
+                </code></pre>`,
+                objeto: `<pre class="codigo"><code>
+         
+                    import {modo2} from './main.js';
+                    
+                    ejemplo1: colocar un id
+                    new modo2(#id_del_padre) ;
+                        
+                    ejemplo2: colocar una clase
+                    new modo2(.class_del_padre) ;
+                        
+                    ejemplo3:colocar cualquier elemento html
+                    new modo2(div) ;
+
+                    </code></pre>
+                `,
+                images:""
+                
+            
+            },
+            {
+             
+                titulo:"Ejemplo 3",
+                href: ()=> new objs.modo3(".ejemplo"),
+                html:`
+
+                <body data-bg="LIGHT">
+
+    <h1>Haz click para cambiar el tema!</h1>
+    <button id="btn-theme">DARK MODE</button>
+<script type="module" src="./src/js/index.js"></script>
+</body>
+             
+                `,
+                css: `<pre class="codigo"><code>
+                body[data-bg="DARK"]{
+                    filter: grayscale(100%);
+                    background-color: black;
+                }
+                
+                body[data-bg="LIGHT"]{
+                   filter: grayscale(0);
+                   background-color: pink;
+                }
+                
+                body{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    gap: 20px;
+                    background-color: pink;
+                    color:royalblue;
+                    button{
+                        padding: 1.5em;
+                        font-weight: bolder;
+                        border-radius: 10px;
+                        border: 5px solid rgb(20, 94, 69);
+                        background-color: aqua;
+                        transition: 0.5s ease-in-out all;
+                        &:hover{
+                            transform: scale(0.9);
+                        }
+                    }
+                }
+                
+                </code></pre>`,
+                js: `<pre class="codigo"><code>
+                const btn = document.getElementById("btn-theme");
+
+                btn.addEventListener('click', () => {
+
+                    const currentTheme = document.body.getAttribute('data-bg');
+                    console.log("actual: " +currentTheme);
+                    document.body.setAttribute('data-bg', currentTheme === 'LIGHT' ? 'DARK':'LIGHT'); //Obtener el nuevo tema con operador ternario
+                    
+                    console.log("NUEVO: "+ currentTheme);// Actualizar el atributo data-bg con el nuevo tema
+                    btn.textContent = currentTheme + ' MODE';// Actualizar el texto del botón con el nuevo tema
+                });
+
+                </code></pre>`,
+                objeto: `<pre class="codigo"><code>
+         
+                    import {modo3} from './main.js';
+                    
+                    ejemplo1: colocar un id
+                    new modo3(#id_del_padre) ;
+                        
+                    ejemplo2: colocar una clase
+                    new modo3(.class_del_padre) ;
+                        
+                    ejemplo3:colocar cualquier elemento html
+                    new modo3(div) ;
+
+                    </code></pre>
+                `,
+                images:""
+                
+            
             }
         ]
     
@@ -893,6 +1127,107 @@ contenedor.addEventListener("mouseleave", autoPlay);
                     ejemplo3:colocar cualquier elemento html
                     new slider3(div) ;
                 </code></pre>`
+            
+            },
+            {
+                titulo:"Ejemplo4: Sólo Css",
+                href:()=> new objs.slider4(".ejemplo"),
+                html:`
+                <section id="slider">
+                <div><img src="img/objetos/imgSliders/img12.jpg" alt="Paisaje Típico de Otoño"></div>
+                <div><img src="img/objetos/imgSliders/img13.jpg" alt="Mural General San Martin"></div>
+                <div><img src="img/objetos/imgSliders/img14.jpg" alt="Paisaje Estación de Tren Abandonada"></div>
+              </section>
+                `,
+                css: `<pre class="codigo"><code>
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+              }
+              
+              #slider {
+                display: flex;
+                overflow-x: scroll;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+                height: 100vh;
+              
+                div {
+                  flex: 0 0 100%;
+                  scroll-snap-align: start;
+                  animation: slide 12s alternate 2;
+                  background-color: aqua;
+                  @media screen {
+                    @media(width < 617px) {
+                      animation: slide2 12s alternate 2;
+                    }
+                  
+                    @media screen and (orientation: landscape){
+                    width: 100%;
+                    flex: 0 0 0;
+                    img {
+                    object-fit: 110%;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    }
+                   }
+                  }
+                  img {
+                    object-fit: contain;
+                    width: auto;
+                    height: 100vh;
+                  
+                  }
+               
+                }
+              
+              }
+              
+              
+              @keyframes slide {
+                0% {
+                  transform: translateX(0);
+                }
+                25% {
+                  transform: translateX(-100%);
+                }
+                100% {
+                  transform: translateX(-200%);
+                 
+                }
+              
+              }
+              
+              
+              /* para en modo movile*/
+              @keyframes slide2 {
+                0% {
+                  transform: translateX(0);
+                }
+                25% {
+                  transform: translateX(-100%);
+                }
+                100% {
+                  transform: translateX(-250%);
+                 
+                }
+              
+              }
+                </code></pre>`,
+                js: `<pre class="codigo"><code>No posee</code></pre>`,
+                objeto: `<pre class="codigo"><code>
+                import {slider4} from './main.js';
+                    
+                ejemplo1: colocar un id
+                new slider4(#id_del_padre) ;
+                    
+                ejemplo2: colocar una clase
+                new slider4(.class_del_padre) ;
+                    
+                ejemplo3:colocar cualquier elemento html
+                new slider4(div) ;</code></pre>`    
         
             }
         ]

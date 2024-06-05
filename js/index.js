@@ -49,7 +49,7 @@ const verEjemplo= (href,html,css,js,obj)=>{
 
 
     btnvista.addEventListener('click',()=>{
-        iframe.srcdoc=""; ej.innerHTML= ''; iframe.innerText="";
+        iframe.srcdoc=""; ej.innerHTML= ""; iframe.innerText="";
         esFuncion(href);
         });
     
