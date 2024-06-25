@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Continuo con CSS</title>
+    <link rel="stylesheet" href="./css/slider.css" />
+    <script type="module" src="./js/slider.js" defer></script>
+    <style>
+            /*genero una transformación que se traslada horizontalmente, sobre el eje X. de izq a derecha*/
+            @keyframes slide {
+                from {
+                transform: translateX(0);
+                }
+                to {
+                transform: translateX(-100%);
+                }
+            }
+
+            .contenedor {
+                overflow: hidden;
+                padding:30px 0;
+                background: white; 
+                white-space: nowrap;
+                position: relative;
+
+                /*pausa la animación cuando el cursor esta encima del logo*/
+                &:hover .img-slide {
+                    animation-play-state: paused;
+                }
+
+                /*Un detalle al comienzo y al final del slide*/
+                &::before, &::after {
+                    position: absolute;
+                    top: 0;
+                    width: 200px;
+                    height: 100%;
+                    content: "";
+                    z-index: 2;
+                }  
+                &:before {
+                    left: 0%;
+                    background: linear-gradient(to left,rgba(255,255,255,0),white);
+                }
+                
+                &:after {
+                    right: 0%;
+                    background: linear-gradient(to right,rgba(255,255,255,0),white);
+                }
+
+                /*Aplico transformación creada en linea 12 a una animación*/  
+                .img-slide {
+                    display: inline-block;
+                    animation: 35s slide infinite linear; /*acá puedo modificar la velocidad del slider*/
+
+                    
+                    /*Igualo el alto de todas las imágenes y el margen entre ellas*/
+                    img {
+                        height: 250px;
+                        margin: 0 20px;
+                    }
+
+                }/*fin estilo .img-slider*/
+                
+            } /*fin estilo .contenedor*/
+
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <div class="img-slide">
+           <!--Acá se va a agregar la galería de imágenes-->
+        </div>
+    </div>
+
+    
+
+<script>
+    /*Para agregar imagenes en el slide continuo*/
+
+        class Galeria {
+            /*agregar  o quitar dentro del constructor todas las imágenes que necesites*/
+            constructor(img01,img02,img03,img04,img05,img06,img07,img08,img09,img10,img11){
+                this.img01 = img01;
+                this.img02 = img02;
+                this.img03 = img03;
+                this.img04 = img04;
+                this.img05 = img05;
+                this.img06 = img06;
+                this.img07 = img07;
+                this.img08 = img08;
+                this.img09 = img09;
+                this.img10 = img10;
+                this.img11 = img11;
+                //no olvidar agregar o quitar acá las imgs adicionales
+
+                this.newGaleria = `
+                                    <img src="${this.img01}" />
+                                    <img src="${this.img02}" />
+                                    <img src="${this.img03}" />
+                                    <img src="${this.img04}" />
+                                    <img src="${this.img05}" />
+                                    <img src="${this.img06}" />
+                                    <img src="${this.img07}" />
+                                    <img src="${this.img08}" />
+                                    <img src="${this.img09}" />
+                                    <img src="${this.img10}" />
+                                    <img src="${this.img11}" /> 
+                                `
+
+            }//fin constructor
+
+            agregarAlFront(){
+                const front =document.querySelector('.img-slide');
+                front.innerHTML = this.newGaleria;
+            }
+
+        }//fin class galería
+
+        //Creando nuevo objeto de galeria para agregar imágenes
+        const nuevaGaleria = new Galeria(
+            './img/imgSliders/img01.jpeg',//corresponde a img1
+            './img/imgSliders/img02.jpeg',//corresponde a img2
+            './img/imgSliders/img03.jpeg',//corresponde a img3
+            './img/imgSliders/img04.jpeg',//corresponde a img4
+            './img/imgSliders/img05.jpeg',//corresponde a img5
+            './img/imgSliders/img06.jpeg',//corresponde a img6
+            './img/imgSliders/img07.jpeg',//corresponde a img7
+            './img/imgSliders/img08.png',//corresponde a img8
+            './img/imgSliders/img09.png',//corresponde a img9
+            './img/imgSliders/img10.jpeg',//corresponde a img10RickSanchez
+            './img/imgSliders/img11.jpeg'//corresponde a img11 Summer smith
+        )
+
+        nuevaGaleria.agregarAlFront();//llamamos función para agregar al front
+
+        /*clona galería de imágenes, para simular un efecto continuo e infinito*/
+        const copy = document.querySelector('.img-slide').cloneNode(true);
+        document.querySelector('.contenedor').appendChild(copy);
+
+</script>    
+</body>
+</html>
