@@ -10,7 +10,7 @@ export const librerias = [
                 titulo:"Ejemplo 1",
                 href: ()=> new objs.loader1("#ej-contenedor"),
                 html:`  
-                    <div class="loader-content">
+                    <div class="loader-content colorear">
                         <div class="loader"></div>
                     </div>
                     <div class="img-wrapper">
