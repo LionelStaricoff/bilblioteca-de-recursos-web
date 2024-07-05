@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2d9fe71672.js" crossorigin="anonymous"></script>
     <link rel="icon" href="./img/iconos/logo-ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <title>Biblioteca de Recursos Web</title>
@@ -56,8 +57,7 @@
                 <label for="check-2" class="checkbtn-2">
                     <img src="img/iconos/menu.png" alt="menú">
                 </label>
-                <h5 class="volver"><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver
-                        al inicio</a></h5>
+                <h5 class="volver"><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver al inicio</a></h5>
                 <h3>LIBRERIA</h3>
             </div>
 
@@ -72,51 +72,17 @@
         <div class="contenedorEjemplo">
 
             <div class="botones">
-                <button>VISTA</button>
-                <button>HTML</button>
-                <button>CSS</button>
-                <button>JS</button>
-                <button>OBJECT</button>
+                <button id="btnVista">VISTA</button>
+                <button id="btnHtml">HTML</button>
+                <button id="btnCss">CSS</button>
+                <button id="btnJs">JS</button>
+                <button id="btnObject">OBJECT</button>
             </div>
 
             <div class="ejemplo">
-                <button class="iconoCopy"><img src="img/iconos/copiar.png" alt="Copiar" width="20px"
-                        height="20px"></button>
-                <div class="colorear">
-                    <header id="1"> encabezado</header>
-                    <header> encabezado</header>
-                    <main id="2">cuerpo</main>
-                    <footer class="new class"> pie de pagina</footer>
-                  <section>
-                    <ul>
-                        <h1>compras:</h1>
-                        <li>pan</li>
-                        <li>leche</li>
-                        <li>azucar</li>
-                    </ul>
-                  </section>
-                    
-                    <h1>titulo</h1>
-                    <h2>titulo 2</h2>
-                    <h3>titulo 3</h3>
-                    <h4>titulo 4</h4>
-                    <H5>titulo 5</H5>
-                    <H6>titulo 6</H6>
-                    <button> boton</button>
-                </div>
-                <div class="colorear">
-                    <header> encabezado</header>
-                    <main> cuerpo</main>
-                    <footer> pie de pagina</footer>
-                    <h1>titulo</h1>
-                    <h2>titulo 2</h2>
-                    <h3>titulo 3</h3>
-                    <h4>titulo 4</h4>
-                    <H5>titulo 5</H5>
-                    <H6>titulo 6</H6>
-                    <button> boton</button>
-                </div>
-
+                <div id="btn-contenedor"><button id="boton-copiar" class="iconoCopy"><img src="img/iconos/copiar.png" alt="Copiar" width="20px" height="20px" title="Copiar código"></button></div>
+                <div id="ej-contenedor" class="codigo colorear"></div>
+                <iframe id="iframe" name="codeFrame" width="100%" height="400px" frameborder="0"></iframe>
             </div>
         </div>
         <button id="btnVolverArriba"><a href="#inicio"><img src="./img/iconos/flecha-arriba.png"  alt="Al inicio"></a></button>
@@ -164,6 +130,7 @@
             </div>
         </div>
     </section>
+
     <section class="contribucion" id="contribucion">
         <div>
             <h5 class="volver"><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver
@@ -179,6 +146,7 @@
             </div>
         </div>
     </section>
+
     <section class="websDeInteres" id="websDeInteres">
         <div>
             <h5 class="volver"><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver
@@ -190,6 +158,7 @@
             </div>
         </div>
     </section>
+
     <section class="quienesSomos" id="quienesSomos">
         <div>
             <h5 class="volver"><a href="#inicio"><img src="img/iconos/flecha-izq.png" alt="flecha izquierda">Volver
@@ -217,11 +186,12 @@
             </div>
         </div>
     </section>
-    <script type="module" src="js/menu.js"></script>
- 
+
+    <script type="module" src="js/index.js"></script>
+    <!-- <script type="module" src="js/main.js"></script> -->
     <script  type="module">
-       import{ColorearHtml} from 'https://lionelstaricoff.github.io/paint-code/Paint.js';
-       new ColorearHtml();
-    </script>
+        import{ColorearHtml} from 'https://lionelstaricoff.github.io/paint-code/Paint.js';
+        new ColorearHtml();
+     </script>
 </body>
 </html>
