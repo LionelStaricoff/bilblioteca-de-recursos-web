@@ -15,7 +15,7 @@ const ej = document.querySelector("#ej-contenedor");
   const aux = document.createElement("textarea");
 
 
-  aux.innerHTML = document.querySelector('.codigo').innerHTML ||  document.querySelector('iframe').innerHTML;
+  aux.innerHTML = (document.querySelector('code') !== null)?document.querySelector('code').innerHTML  : document.querySelector('.codigo').innerHTML ;
 
   document.body.appendChild(aux);
 
@@ -26,7 +26,7 @@ const ej = document.querySelector("#ej-contenedor");
 
 
   document.body.removeChild(aux);
-  console.info(aux.innerText)
+  alert(aux.innerText)
 
   });
 
