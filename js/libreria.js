@@ -7,7 +7,7 @@ export const librerias = [
         ejemplos:[
             {
              
-                titulo:"Ejemplo 1",
+                titulo:"Loader_circle_blue",
                 href: ()=> new objs.loader1("#ej-contenedor"),
                 html:`  
                     <div class="loader-content colorear">
@@ -102,7 +102,7 @@ window.onload = () => {
         ejemplos:[
             {
              
-                titulo:"Ejemplo 1",
+                titulo:"menu1",
                 href: ()=> new objs.menu1(".ejemplo"),
                 html:`
                     
@@ -317,7 +317,14 @@ window.onload = () => {
                 </code></pre>`,
                 objeto: `<pre class="codigo"><code>
          
-                    import {menu1} from './main.js';
+                  
+                     &#60script type="module"&#62
+
+                    import{menu1} from 'https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/js/main.js';
+                    new menu1();
+                    
+                    &#60script&#62
+
                     
                     ejemplo1: colocar un id
                     new menu1(#id_del_padre) ;

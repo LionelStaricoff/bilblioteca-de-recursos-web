@@ -8,34 +8,28 @@ const ej = document.querySelector("#ej-contenedor");
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('boton-copiar').addEventListener('click', function() {
-    // const codigo = document.getElementById('codigo').innerText; // Obtener el texto del código
-    const codigo = document.querySelector('.codigo').innerText; // Obtener el texto del código
-    navigator.clipboard.writeText(codigo) // Escribir el texto en el portapapeles
- 
-      .then(() => {
-        
-        if(!codigo){
-          this.innerHTML += '<span>Sólo para copiar código</span>';
-          setTimeout(()=>{
-            this.innerHTML = '<img src="img/iconos/copiar.png" alt="Copiar Código" width="20px" height="20px" title="Copiar código">';
-          }, 3000);        
-        }else{
-        
-          this.innerHTML += '<span>Código copiado</span>';
-          setTimeout(()=>{
-            this.innerHTML = '<img src="img/iconos/copiar.png" alt="Copiar Código" width="20px" height="20px" title="Copiar código">';
-          }, 3000)
-       }
-      
-      
-      })
-      .catch(err => {
-        console.error('Error al copiar el código: ', err);
-      });
+
+  document.getElementById('boton-copiar').addEventListener('click', ()=> {
+   
+   
+  const aux = document.createElement("textarea");
+
+
+  aux.innerHTML = document.querySelector('.codigo').innerHTML ||  document.querySelector('iframe').innerHTML;
+
+  document.body.appendChild(aux);
+
+  aux.select();
+
+
+  document.execCommand("copy");
+
+
+  document.body.removeChild(aux);
+  console.info(aux.innerText)
+
   });
-});
+
 
 const verEjemplo= (href,html,css,js,obj)=>{
     
