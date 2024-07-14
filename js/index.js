@@ -9,26 +9,34 @@ const ej = document.querySelector("#ej-contenedor");
 
 
 
-  document.getElementById('boton-copiar').addEventListener('click', ()=> {
-   
-   
-  const aux = document.createElement("textarea");
 
-
-  aux.innerHTML = (document.querySelector('code') !== null)?document.querySelector('code').innerHTML  : document.querySelector('.codigo').innerHTML ;
-
-  document.body.appendChild(aux);
-
-  aux.select();
-
-
-  document.execCommand("copy");
-
-
-  document.body.removeChild(aux);
-  alert(aux.innerText)
-
+  document.getElementById('boton-copiar').addEventListener('click', function() {
+    // const codigo = document.getElementById('codigo').innerText; // Obtener el texto del código
+    const codigo = document.querySelector('.codigo').innerText; // Obtener el texto del código
+    navigator.clipboard.writeText(codigo) // Escribir el texto en el portapapeles
+ 
+      .then(() => {
+        
+        if(!codigo){
+          this.innerHTML += '<span>Sólo para copiar código</span>';
+          setTimeout(()=>{
+            this.innerHTML = '<img src="img/iconos/copiar.png" alt="Copiar Código" width="20px" height="20px" title="Copiar código">';
+          }, 3000);        
+        }else{
+        
+          this.innerHTML += '<span>Código copiado</span>';
+          setTimeout(()=>{
+            this.innerHTML = '<img src="img/iconos/copiar.png" alt="Copiar Código" width="20px" height="20px" title="Copiar código">';
+          }, 3000)
+       }
+      
+      
+      })
+      .catch(err => {
+        console.error('Error al copiar el código: ', err);
+      });
   });
+
 
 
 const verEjemplo= (href,html,css,js,obj)=>{
