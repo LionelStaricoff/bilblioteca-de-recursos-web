@@ -104,10 +104,7 @@ window.onload = () => {
              
                 titulo:"menu1",
                 href: ()=> new objs.menu1(".ejemplo"),
-                html:`
-                    
-
-                
+                html:`          
     <header class="header">
         <nav class="nav">
             <a href="#" class="logo nav-link">Your Logo</a>
@@ -118,9 +115,7 @@ window.onload = () => {
             <!--acá se agrega el contenido del menu-->
             </ul>
         </nav>
-    </header>
-             
-                    
+    </header> 
                 `,
                 css: `<pre class="codigo"><code>
                         *{

@@ -1,5 +1,5 @@
 import { librerias } from './libreria.js';
-
+import{ColorearHtml} from 'https://lionelstaricoff.github.io/paint-code/Paint.js';
 
 const iframe = document.querySelector("#iframe");
 const ej = document.querySelector("#ej-contenedor");
@@ -47,7 +47,12 @@ const verEjemplo= (href,html,css,js,obj)=>{
         esFuncion(href);
         });
     
-    btnhtml.addEventListener('click',()=>{iframe.srcdoc=""; ej.innerText=html;});
+    btnhtml.addEventListener('click',()=>{
+      iframe.srcdoc=""; 
+      ej.innerText=html;
+
+        new ColorearHtml();
+    });
     btncss.addEventListener('click',()=>{iframe.srcdoc=""; ej.innerHTML=css;});
     btnjs.addEventListener('click',()=>{iframe.srcdoc=""; ej.innerHTML=js;});
     btnobj.addEventListener('click',()=>{iframe.srcdoc=""; ej.innerHTML=obj;});
@@ -82,13 +87,14 @@ function mostrarObjeto(objeto) {
     container.appendChild(details);
 }
 
-function getAllObjects(){
+// fecactorizandon getAllObjects()
+ ( ()=>{
 
     librerias.forEach(libreria => {
         mostrarObjeto(libreria);
     });
 
-}
+})();
 
 function esFuncion(dato) {
  
@@ -102,6 +108,6 @@ function esFuncion(dato) {
 
 
 
-getAllObjects();
+//getAllObjects();
 
 
