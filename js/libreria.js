@@ -78,7 +78,7 @@ window.onload = () => {
                 </code></pre>`,
                 objeto: `<pre class="codigo"><code>
 
-            import {loader1} from './main.js';
+            import {loader1} from ' ${url} ';
                 
             ejemplo1: colocar un id
               new loader1(#id_del_padre) ;
@@ -317,7 +317,7 @@ window.onload = () => {
                   
                      &#60script type="module"&#62
 
-                    import{menu1} from 'https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/js/main.js';
+                    import{menu1} from ' ${url} ';
                     new menu1();
                     
                     &#60script&#62
@@ -408,7 +408,7 @@ btn.addEventListener('click', () => {
                 </code></pre>`,
                 objeto: `<pre class="codigo"><code>
          
-                    import {modo1} from './main.js';
+                    import {modo1} from ' ${url} ';
                     
                     ejemplo1: colocar un id
                     new modo1(#id_del_padre) ;
@@ -485,7 +485,7 @@ btn.addEventListener('click', () => {
                 </code></pre>`,
                 objeto: `<pre class="codigo"><code>
          
-                    import {modo2} from './main.js';
+                    import {modo2} from ' ${url} ';
                     
                     ejemplo1: colocar un id
                     new modo2(#id_del_padre) ;
@@ -566,7 +566,7 @@ btn.addEventListener('click', () => {
                 </code></pre>`,
                 objeto: `<pre class="codigo"><code>
          
-                    import {modo3} from './main.js';
+                    import {modo3} from ' ${url} ';
                     
                     ejemplo1: colocar un id
                     new modo3(#id_del_padre) ;
@@ -767,7 +767,7 @@ backbtn.addEventListener("click",() => {
 })
                 </code></pre>`,
                 objeto: `<pre class="codigo"><code>
-                import {slider1} from './main.js';
+                import {slider1} from ' ${url} ';
                     
                     ejemplo1: colocar un id
                     new slider1(#id_del_padre) ;
@@ -857,7 +857,7 @@ backbtn.addEventListener("click",() => {
                 </code></pre>`,
                 objeto: `<pre class="codigo">
                 <pre class="codigo"><code>
-                import {slider2} from './main.js';
+                import {slider2} from ' ${url} ';
                     
                     ejemplo1: colocar un id
                     new slider2(#id_del_padre) ;
@@ -1120,7 +1120,7 @@ contenedor.addEventListener("mouseleave", autoPlay);
 
                 </code></pre>`,
                 objeto: `<pre class="codigo"><code>
-                import {slider3} from './main.js';
+                import {slider3} from ' ${url} ';
                     
                     ejemplo1: colocar un id
                     new slider3(#id_del_padre) ;
@@ -1222,7 +1222,7 @@ contenedor.addEventListener("mouseleave", autoPlay);
                 </code></pre>`,
                 js: `<pre class="codigo"><code>No posee</code></pre>`,
                 objeto: `<pre class="codigo"><code>
-                import {slider4} from './main.js';
+                import {slider4} from ' ${url} ';
                     
                 ejemplo1: colocar un id
                 new slider4(#id_del_padre) ;
@@ -1314,7 +1314,7 @@ contenedor.addEventListener("mouseleave", autoPlay);
 
                 </code></pre>`,
                 objeto: `<pre class="codigo"><code>
-                import {login} from  ${url} 
+                import {login} from  ' ${url} ';
                 new cartelLogin('main',()=> alert('función que se pasa para ejecutar el login'));
 
                 </code></pre>`
