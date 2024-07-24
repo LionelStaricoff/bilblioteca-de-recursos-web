@@ -1,5 +1,7 @@
 import * as objs from './main.js'
 
+const url = 'https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/js/main.js'
+
 export const librerias = [
     
     {
@@ -1231,6 +1233,91 @@ contenedor.addEventListener("mouseleave", autoPlay);
                 ejemplo3:colocar cualquier elemento html
                 new slider4(div) ;</code></pre>`    
         
+            }
+        ]
+    
+    },
+
+    {
+        titulo: "Carteles",
+        ejemplos:[
+            {
+             
+                titulo:"Login",
+                href:()=> new objs.login(".ejemplo"),
+                html:`
+                <div id="login">
+                <span>X</span>
+                <input type="text" placeholder="Usuario">
+                <input type="password" placeholder="constraseña">
+                <input type="button" value="Loguear">
+                </div>
+                `,
+                css: `<pre class="codigo"><code>
+                #login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #6495ed;
+    width: min(100%, 20em);
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid blue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    span {
+        position: absolute;
+        font-weight: bolder;
+        font-size: 1.5em;
+        width: fit-content;
+        text-shadow: 3px 5px 5px gray;
+        border-radius: 15px;
+        top: 0px;
+        right: 10px;
+        color: whitesmoke;
+
+        &:hover {
+            color: #333;
+        }
+    }
+
+    input {
+        border-radius: 25px;
+        height: max(48px, 3em);
+        text-align: center;
+    }
+
+    .btn {
+        background-color: #061c41;
+        color: beige;
+        &:active{
+            transform: scale(95%);
+        }
+    }
+}
+                
+                
+                </code></pre>`,
+                js: `<pre class="codigo"><code>
+
+                const boton = document.getElementsByTagName('input')[2]; 
+
+              boton.addEventListener('click', function() {
+              alert('¡Botón clickeado!');
+                }); 
+
+                </code></pre>`,
+                objeto: `<pre class="codigo"><code>
+                import {login} from  ${url} 
+                new cartelLogin('main',()=> alert('función que se pasa para ejecutar el login'));
+
+                </code></pre>`
             }
         ]
     

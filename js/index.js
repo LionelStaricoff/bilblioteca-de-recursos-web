@@ -1,5 +1,5 @@
 import { librerias } from './libreria.js';
-import{ColorearHtml} from 'https://lionelstaricoff.github.io/paint-code/Paint.js';
+import ColorearHtml from 'https://lionelstaricoff.github.io/paint-code/Paint.js';
 
 const iframe = document.querySelector("#iframe");
 const ej = document.querySelector("#ej-contenedor");

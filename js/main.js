@@ -8,6 +8,7 @@ import { CrearSlider4 } from './objetosJs/slider4.js';
 import { CrearObjeto1 } from './objetosJs/modo1.js';
 import { CrearObjeto2 } from './objetosJs/modo2.js';
 import { CrearObjeto3 } from './objetosJs/modo3.js';
+import { cartelLogin } from './objetosJs/cartelLogin.js';
 
 
 
@@ -31,6 +32,7 @@ export class modo2 extends CrearObjeto2{};
 
 export class modo3 extends CrearObjeto3{};
 
+export class login extends cartelLogin{};
 
 
 //new loader1('#ej-contenedor')
