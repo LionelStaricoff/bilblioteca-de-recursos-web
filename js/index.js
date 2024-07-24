@@ -117,7 +117,7 @@ function esFuncion(dato) {
 
 
 //getAllObjects();
-/* verificar la funcionalidad del porque no colorea
+/* verificar la funcionalidad del porque no colorea, tira error de ansestro
 
 const _btnhtml = document.getElementById("btnHtml");
 _btnhtml.addEventListener('click', ()=>{
