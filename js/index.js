@@ -59,12 +59,12 @@ const verEjemplo= (href,html,css,js,obj)=>{
       iframe.srcdoc=""; 
       ej.innerText=html;
 
-        new ColorearHtml();
+    
     });
     btncss.addEventListener('click',()=>{iframe.srcdoc=""; ej.innerHTML=css;});
     btnjs.addEventListener('click',()=>{iframe.srcdoc=""; ej.innerHTML=js;});
     btnobj.addEventListener('click',()=>{iframe.srcdoc=""; ej.innerHTML=obj;});
-   
+  
 }
 
 function mostrarObjeto(objeto) {
@@ -117,5 +117,13 @@ function esFuncion(dato) {
 
 
 //getAllObjects();
+/* verificar la funcionalidad del porque no colorea
+
+const _btnhtml = document.getElementById("btnHtml");
+_btnhtml.addEventListener('click', ()=>{
+  alert('iniciando')
+  new ColorearHtml()
+
+})*/
 
 
