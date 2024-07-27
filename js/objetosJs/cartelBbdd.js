@@ -6,9 +6,11 @@ export class cartelBbdd {
         this._funcion = funcion;
         this._function1 = function1;
 
-        this.isAgregarAlFront();
+
         this._div;
         this.builderCartel;
+
+        this.isAgregarAlFront();
     }
 
     agregarAlFront() {
@@ -95,9 +97,13 @@ export class cartelBbdd {
     }
 
     isAgregarAlFront() {
-        const cartel = document.querySelector('#login') ?? null;
+      /*  const cartel = document.querySelector('#doble_button');
 
-        if (cartel == null) this.agregarAlFront();
+        if (cartel) {
+               const padre = cartel.parentNode;
+               padre.removeChild(cartel)
+            }*/
+            this.agregarAlFront(); 
     }
 
     isFunction(funcion) {
@@ -122,37 +128,39 @@ export class cartelBbdd {
 
     }
 
-  static  builder() {
-        this.builderCartel = new cartelBbdd();
+    static builder() {
+        this.builderCartel ={};
         return this;
     }
 
-    static padre(dtoPadre){
+    static padre(dtoPadre) {
         this.builderCartel._padre = dtoPadre;
         return this;
     }
 
-    static nameBtn(dtoNameBtn){
+    static nameBtn(dtoNameBtn) {
         this.builderCartel._nameBtn = dtoNameBtn;
         return this;
     }
-    
-    static nameBtn1(dtoNameBtn1){
+
+    static nameBtn1(dtoNameBtn1) {
         this.builderCartel._nameBtn1 = dtoNameBtn1;
         return this;
     }
 
-    static functionBtn(dtoFunction){
+    static functionBtn(dtoFunction) {
         this.builderCartel._funcion = dtoFunction;
         return this;
     }
 
-    static functionBtn1(dtoFunction){
+    static functionBtn1(dtoFunction) {
         this.builderCartel._function1 = dtoFunction;
         return this;
     }
-    static build(){
-        return this.builderCartel;
+    static build() {
+console.log(  this.builderCartel._nameBtn1)
+   
+        return new cartelBbdd(this.builderCartel._padre,this.builderCartel._nameBtn,this.builderCartel._nameBtn1,this.builderCartel._funcion,this.builderCartel._function1 ) ;
     }
 }
 
