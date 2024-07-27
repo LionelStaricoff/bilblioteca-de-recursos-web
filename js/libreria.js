@@ -3,15 +3,15 @@ import * as objs from './main.js'
 const url = 'https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/js/main.js'
 
 export const librerias = [
-    
+
     {
         titulo: "Loader",
-        ejemplos:[
+        ejemplos: [
             {
-             
-                titulo:"Loader_circle_blue",
-                href: ()=> new objs.loader1("#ej-contenedor"),
-                html:`  
+
+                titulo: "Loader_circle_blue",
+                href: () => new objs.loader1("#ej-contenedor"),
+                html: `  
                     <div class="loader-content colorear">
                         <div class="loader"></div>
                     </div>
@@ -91,22 +91,22 @@ window.onload = () => {
 
                 </code></pre>
                 `,
-                images:""
-            
+                images: ""
+
             }
-            
+
         ]
 
     },
 
     {
         titulo: "Menus",
-        ejemplos:[
+        ejemplos: [
             {
-             
-                titulo:"menu1",
-                href: ()=> new objs.menu1(".ejemplo"),
-                html:`          
+
+                titulo: "menu1",
+                href: () => new objs.menu1(".ejemplo"),
+                html: `          
     <header class="header">
         <nav class="nav">
             <a href="#" class="logo nav-link">Your Logo</a>
@@ -334,28 +334,28 @@ window.onload = () => {
 
                     </code></pre>
                 `,
-                images:""
-                
-            // },
-            // {
-            //     href:"",
-            //     titulo:"",
-            //     html:``,
-            //     css: `<pre class="codigo"><code></code></pre>`,
-            //     js: `<pre class="codigo"><code></code></pre>`,
-            //     objeto: `<pre class="codigo"><code></code></pre>`
+                images: ""
+
+                // },
+                // {
+                //     href:"",
+                //     titulo:"",
+                //     html:``,
+                //     css: `<pre class="codigo"><code></code></pre>`,
+                //     js: `<pre class="codigo"><code></code></pre>`,
+                //     objeto: `<pre class="codigo"><code></code></pre>`
             }
         ]
-    
+
     },
     {
         titulo: "Modo Claro/Oscuro",
-        ejemplos:[
+        ejemplos: [
             {
-             
-                titulo:"Ejemplo 1",
-                href: ()=> new objs.modo1(".ejemplo"),
-                html:`
+
+                titulo: "Ejemplo 1",
+                href: () => new objs.modo1(".ejemplo"),
+                html: `
 
 <body class="theme-container __light">
 
@@ -421,14 +421,14 @@ btn.addEventListener('click', () => {
 
                     </code></pre>
                 `,
-                images:""
-                
+                images: ""
+
             },
             {
-             
-                titulo:"Ejemplo 2",
-                href: ()=> new objs.modo2(".ejemplo"),
-                html:`
+
+                titulo: "Ejemplo 2",
+                href: () => new objs.modo2(".ejemplo"),
+                html: `
 
                 <body data-bg="LIGHT">
 
@@ -498,15 +498,15 @@ btn.addEventListener('click', () => {
 
                     </code></pre>
                 `,
-                images:""
-                
-            
+                images: ""
+
+
             },
             {
-             
-                titulo:"Ejemplo 3",
-                href: ()=> new objs.modo3(".ejemplo"),
-                html:`
+
+                titulo: "Ejemplo 3",
+                href: () => new objs.modo3(".ejemplo"),
+                html: `
 
                 <body data-bg="LIGHT">
 
@@ -579,21 +579,21 @@ btn.addEventListener('click', () => {
 
                     </code></pre>
                 `,
-                images:""
-                
-            
+                images: ""
+
+
             }
         ]
-    
+
     },
     {
         titulo: "Sliders",
-        ejemplos:[
+        ejemplos: [
             {
-             
-                titulo:"Ejemplo1: Manual",
-                href:()=> new objs.slider1(".ejemplo"),
-                html:`
+
+                titulo: "Ejemplo1: Manual",
+                href: () => new objs.slider1(".ejemplo"),
+                html: `
                 <div class="slider-wrap">
         <i class="fa-solid fa-angle-left" id="backBtn"> </i>
         
@@ -780,9 +780,9 @@ backbtn.addEventListener("click",() => {
                 </code></pre>`
             },
             {
-                titulo:"Ejemplo2: Continuo Infinito",
-                href:()=> new objs.slider2(".ejemplo"),
-                html:`
+                titulo: "Ejemplo2: Continuo Infinito",
+                href: () => new objs.slider2(".ejemplo"),
+                html: `
                 <div class="contenedor">
         <div class="img-slide">
            <!--Acá se va a agregar la galería de imágenes-->
@@ -871,9 +871,9 @@ backbtn.addEventListener("click",() => {
 
             },
             {
-                titulo:"Ejemplo3: Manual y automático",
-                href:()=> new objs.slider3(".ejemplo"),
-                html:`
+                titulo: "Ejemplo3: Manual y automático",
+                href: () => new objs.slider3(".ejemplo"),
+                html: `
                 <div class="contenedor">
                 <i id="left" class="fa-solid fa-angle-left"> </i>
         
@@ -1131,12 +1131,12 @@ contenedor.addEventListener("mouseleave", autoPlay);
                     ejemplo3:colocar cualquier elemento html
                     new slider3(div) ;
                 </code></pre>`
-            
+
             },
             {
-                titulo:"Ejemplo4: Sólo Css",
-                href:()=> new objs.slider4(".ejemplo"),
-                html:`
+                titulo: "Ejemplo4: Sólo Css",
+                href: () => new objs.slider4(".ejemplo"),
+                html: `
                 <section id="slider">
                 <div><img src="img/objetos/imgSliders/img12.jpg" alt="Paisaje Típico de Otoño"></div>
                 <div><img src="img/objetos/imgSliders/img13.jpg" alt="Mural General San Martin"></div>
@@ -1231,21 +1231,21 @@ contenedor.addEventListener("mouseleave", autoPlay);
                 new slider4(.class_del_padre) ;
                     
                 ejemplo3:colocar cualquier elemento html
-                new slider4(div) ;</code></pre>`    
-        
+                new slider4(div) ;</code></pre>`
+
             }
         ]
-    
+
     },
 
     {
         titulo: "Carteles",
-        ejemplos:[
+        ejemplos: [
             {
-             
-                titulo:"Login",
-                href:()=> new objs.login(".ejemplo"),
-                html:`
+
+                titulo: "Login",
+                href: () => new objs.login(".ejemplo"),
+                html: `
                 <div id="login">
                 <span>X</span>
                 <input type="text" placeholder="Usuario">
@@ -1318,10 +1318,127 @@ contenedor.addEventListener("mouseleave", autoPlay);
                 new cartelLogin('main',()=> alert('función que se pasa para ejecutar el login'));
 
                 </code></pre>`
+            },
+
+            {
+
+                titulo: "Cartel dos botones",
+                href: () => new objs.cartelDosBotones(".ejemplo", 'btn', 'btn1', () => alert('.functionBtn'), () => alert('.functionBtn1')),
+
+                html:
+                    `
+               <div id="doble_button">
+               <span>X</span>
+               <input type="button" value="Guardar_bbdd">
+               <input type="button" value="cargar_bbdd">
+               </div>
+
+                `,
+                css: `<pre class="codigo"><code>
+                #doble_button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #6495ed;
+    width: min(100%, 20em);
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid blue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    span {
+        position: absolute;
+        font-weight: bolder;
+        font-size: 1.5em;
+        width: fit-content;
+        text-shadow: 3px 5px 5px gray;
+        border-radius: 15px;
+        top: 0px;
+        right: 10px;
+        color: whitesmoke;
+
+        &:hover {
+            color: #333;
+        }
+    }
+
+    input {
+        border-radius: 25px;
+        height: max(48px, 3em);
+        text-align: center;
+    }
+
+    .btn {
+        background-color: #061c41;
+        color: beige;
+        &:active{
+            transform: scale(95%);
+        }
+    }
+}
+                
+                </code></pre>`,
+                js: `<pre class="codigo"><code>
+
+const btn = document.querySelector('#btn')
+btn.addEventListener('click', ()=>alert('.functionBtn'))
+const btn1 = document.querySelector('#btn1')
+btn1.addEventListener('click', ()=>alert('.functionBtn1'))
+                </code></pre>`,
+                objeto: `<pre class="codigo"><code>
+                
+                // constructor:
+                new cartelBbdd('main','Guardar_bbdd','cargar_bbdd',()=>alert('.functionBtn'),
+                ()=>alert('.functionBtn1'))
+                
+                //constructor builder
+                
+                 cartelBbdd.builder().padre('main')
+                 .nameBtn('Guardar_bbdd')
+                 .nameBtn1('cargar_bbdd')
+                 .functionBtn(()=>alert('.functionBtn'))
+                 .functionBtn1(()=>alert('.functionBtn1'))
+                 .build();
+                
+                </code></pre>`
             }
+
         ]
-    
+
     }
 
 ];
 
+/* codigo base:
+
+ {
+             
+                titulo:"Login",
+                href:()=> new objs.login(".ejemplo"),
+                html:
+                `
+               
+
+                `,
+                css: `<pre class="codigo"><code>
+              
+                
+                
+                </code></pre>`,
+                js: `<pre class="codigo"><code>
+
+            
+
+                </code></pre>`,
+                objeto: `<pre class="codigo"><code>
+                
+
+                </code></pre>`
+            }
+                */
