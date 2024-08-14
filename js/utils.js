@@ -56,37 +56,27 @@ volverArriba();
 export const util = {
 
     colorearHtml:  () => {
-        let colorear = colorearModule ?? null;
-        if (!colorear) {
+        // = colorearModule ?? null;
+        if (!globalThis.color) {
             import('./ColorearHtml.js')
                 .then(module => module.default)
 
                 .then(data => {
 
-                   class colorearModule extends  data{};
+                 globalThis.color =  class colorearModule extends  data{};
                     
-                    colorearModule.Builder()
+                 globalThis.color.Builder()
                     .etiquetas('blue')
                     .background('red')
                     .atributos('green')
                     .letras('black')
                     .build();
-
-                   
-
-                    
-
-
                 })
                 .catch(error => console.error(error));
         } else {
             try {
-                colorearModule.Builder()
-                .etiquetas('blue')
-                .background('red')
-                .atributos('green')
-                .letras('black')
-                .build();
+              
+               new globalThis.color()
             } catch (error) {
                 console.error(error)
             }
