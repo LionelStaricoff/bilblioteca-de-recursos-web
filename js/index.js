@@ -1,5 +1,9 @@
 import { librerias } from './libreria.js';
 import {util} from './utils.js';
+//import {CartelError} from './utils.js'
+
+//const cartel = new CartelError('.centro')
+
 
 const iframe = document.querySelector("#iframe");
 const ej = document.querySelector("#ej-contenedor");

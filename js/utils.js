@@ -2,14 +2,15 @@
 
 
 export class CartelError {
-    constructor(containerSelector) {
+    constructor(containerSelector = 'body', _errorMessage) {
         this.container = document.querySelector(containerSelector);
+    this.displayError(_errorMessage)
     }
 
     displayError(errorMessage) {
-        console.error(errorMessage);
+       // console.error(errorMessage);
         const errorMessageElement = document.createElement('div');
-        errorMessageElement.textContent = '¡Ouch! Hubo un error al cargar la información. Intenta más tarde.';
+        errorMessageElement.textContent = errorMessage ?? '¡Ouch! Hubo un error al cargar la información. Intenta más tarde.';
         errorMessageElement.classList.add('errorMessage');
         this.container.appendChild(errorMessageElement);
     }
@@ -56,9 +57,9 @@ volverArriba();
 export const util = {
 
     colorearHtml:  () => {
-        // = colorearModule ?? null;
+       
         if (!globalThis.color) {
-            import('./ColorearHtml.js')
+            import('https://lionelstaricoff.github.io/paint-code/Paint.js')
                 .then(module => module.default)
 
                 .then(data => {
