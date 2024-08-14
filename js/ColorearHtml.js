@@ -11,7 +11,6 @@ export default class ColorearHtml {
         this.reemplazar();
     
     }
-    
 
     reemplazar() {
       

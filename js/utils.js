@@ -1,3 +1,6 @@
+
+
+
 export class CartelError {
     constructor(containerSelector) {
         this.container = document.querySelector(containerSelector);
@@ -52,23 +55,51 @@ volverArriba();
 
 export const util = {
 
-    colorearHtml: () => {
-     
-    
-           
-       import('./ColorearHtml.js').then(module => module.default)
-        .then(colorear => {
-     
-            colorear.Builder()
-            .etiquetas('rgb(26, 76, 76)')
-            .background('#333')
-            .atributos('hsl(350, 100%, 88%)')
-            .letras('hwb(0 100% 0%)')
-            .build()
-    }).catch(error => console.error(error));
-  
+    colorearHtml:  () => {
+        let colorear = colorearModule ?? null;
+        if (!colorear) {
+            import('./ColorearHtml.js')
+                .then(module => module.default)
+
+                .then(data => {
+
+                   class colorearModule extends  data{};
+                    
+                    colorearModule.Builder()
+                    .etiquetas('blue')
+                    .background('red')
+                    .atributos('green')
+                    .letras('black')
+                    .build();
+
+                   
+
+                    
+
+
+                })
+                .catch(error => console.error(error));
+        } else {
+            try {
+                colorearModule.Builder()
+                .etiquetas('blue')
+                .background('red')
+                .atributos('green')
+                .letras('black')
+                .build();
+            } catch (error) {
+                console.error(error)
+            }
+          
+
+
+        }
+
+
+
     }
 }
+
 
 
 

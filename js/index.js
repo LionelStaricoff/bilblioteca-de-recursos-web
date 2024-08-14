@@ -55,7 +55,7 @@ const verEjemplo = (href, html, css, js, obj) => {
     esFuncion(href);
   });
 
-  btnhtml.addEventListener('click', () => {
+  btnhtml.addEventListener('click',  () => {
     iframe.srcdoc = "";
     ej.innerText = html;
     util.colorearHtml();
