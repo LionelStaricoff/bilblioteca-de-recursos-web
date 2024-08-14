@@ -45,3 +45,30 @@ window.onscroll = function () {
 };
 volverArriba();
 
+
+
+
+
+
+export const util = {
+
+    colorearHtml: () => {
+     
+    
+           
+       import('./ColorearHtml.js').then(module => module.default)
+        .then(colorear => {
+     
+            colorear.Builder()
+            .etiquetas('rgb(26, 76, 76)')
+            .background('#333')
+            .atributos('hsl(350, 100%, 88%)')
+            .letras('hwb(0 100% 0%)')
+            .build()
+    }).catch(error => console.error(error));
+  
+    }
+}
+
+
+

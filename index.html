@@ -189,9 +189,38 @@
 
     <script type="module" src="js/index.js"></script>
     <!-- <script type="module" src="js/main.js"></script> -->
-    <!-- <script  type="module">
+    <!-- <script  type="module" defer >
           import ColorearHtml from 'https://lionelstaricoff.github.io/paint-code/Paint.js';
-            new ColorearHtml();    
+          const c =  new ColorearHtml();    
+         console.dir(c)
+     </script> -->
+
+      <!-- <script  type="module" defer >
+         import ColorearHtml from './js/ColorearHtml.js';
+          ColorearHtml.Builder()
+                           .etiquetas('rgb(26, 76, 76)')
+                           .background('#333')
+                           .atributos('hsl(350, 100%, 88%)')
+                           .letras('hwb(0 100% 0%)')
+                           .build()  
+        
+        
+     </script> -->
+<!-- 
+     <script type="module" >
+         
+       import('https://lionelstaricoff.github.io/paint-code/Paint.js').then(module => module.default)
+        .then(colorear => {
+     
+       console.dir(colorear)
+       colorear.Builder()
+                           .etiquetas('rgb(26, 76, 76)')
+                           .background('#333')
+                           .atributos('hsl(350, 100%, 88%)')
+                           .letras('hwb(0 100% 0%)')
+                           .build()
+    }).catch(error => console.error(error));
+    
      </script> -->
 </body>
 </html>
