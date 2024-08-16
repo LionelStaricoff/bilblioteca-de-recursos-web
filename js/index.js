@@ -2,15 +2,7 @@ import { librerias } from './libreria.js';
 import {util} from './utils.js';
 
 
-import('./utils.js')
-.then(data => {
-  new data.CartelError('.inicio')
-  new data.CartelError('.inicio')
-  new data.CartelError('.inicio')
-  new data.CartelError('.inicio')
 
-})
-.catch(error => console.error(error))
 
 
 
