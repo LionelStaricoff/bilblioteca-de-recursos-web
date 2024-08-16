@@ -1407,8 +1407,73 @@ btn1.addEventListener('click', ()=>alert('.functionBtn1'))
                  .build();
                 
                 </code></pre>`
-            }
+            },
+            {
+             
+                titulo:"Cartel Error",
+                href:()=> new objs.ModalError(".ejemplo"),
+                html:
+                `
+               <div class="errorMessage">
+               <span id ="span_cartelError">X</span>
+               </div>
 
+                `,
+                css: `<pre class="codigo"><code>
+              
+                .errorMessage {
+    width: 10em;
+    background-color: #f2bfbf;
+    color: #ff0000;
+    padding: 10px;
+    padding-top: 1em;
+    border: 3px double #ff0000;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    animation: desliza 0.5s ease-in-out;
+    position: relative;
+    span{
+        width: 1em;
+        height: 1em;
+        color: #333;
+        position: absolute;
+        top: 0;
+        right: 0;
+       font-weight: bolder;
+       &:hover{
+        transform:scale(.9) ;
+        color: red
+       }
+    }
+}
+
+@keyframes desliza {
+    0% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(-10px); }
+}
+                
+                </code></pre>`,
+                js: `<pre class="codigo"><code>
+
+             const span = document.querySelector("#span_cartelError")
+  span.addEventListener('click', ()=>{
+    const div = document.querySelector('.errorMessage');
+    const padre = div.parentNode;
+    padre.removeChild(div)
+  })
+
+                </code></pre>`,
+                objeto: `<pre class="codigo"><code>
+                 import {ModalError} from ' https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/js/main.js ';
+             
+                 new objs.ModalError(".padre", 'mensaje')
+
+                </code></pre>`
+            }
         ]
 
     }

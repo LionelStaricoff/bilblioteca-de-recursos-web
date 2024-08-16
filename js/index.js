@@ -1,16 +1,23 @@
 import { librerias } from './libreria.js';
 import {util} from './utils.js';
-//import {CartelError} from './utils.js'
 
-//const cartel = new CartelError('.centro')
+
+import('./utils.js')
+.then(data => {
+  new data.CartelError('.inicio')
+  const span = document.querySelector("#span_cartelError")
+  span.addEventListener('click', ()=>{
+    const div = document.querySelector('.errorMessage');
+    const padre = div.parentNode;
+    padre.removeChild(div)
+  })
+})
+.catch(error => console.error(error))
+
 
 
 const iframe = document.querySelector("#iframe");
 const ej = document.querySelector("#ej-contenedor");
-
-
-
-
 
 
 
