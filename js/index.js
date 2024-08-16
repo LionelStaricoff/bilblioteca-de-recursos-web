@@ -1,5 +1,5 @@
 import { librerias } from './libreria.js';
-import {util} from './utils.js';
+import { util } from './utils.js';
 
 
 
@@ -29,6 +29,7 @@ document.getElementById('boton-copiar').addEventListener('click', function () {
         setTimeout(() => {
           this.innerHTML = '<img src="img/iconos/copiar.png" alt="Copiar Código" width="20px" height="20px" title="Copiar código">';
         }, 3000)
+
       }
 
 
@@ -56,11 +57,10 @@ const verEjemplo = (href, html, css, js, obj) => {
     esFuncion(href);
   });
 
-  btnhtml.addEventListener('click',  () => {
+  btnhtml.addEventListener('click', () => {
     iframe.srcdoc = "";
     ej.innerText = html;
-    util.colorearHtml();
-
+    util.colorearHtml()
   });
   btncss.addEventListener('click', () => { iframe.srcdoc = ""; ej.innerHTML = css; });
   btnjs.addEventListener('click', () => { iframe.srcdoc = ""; ej.innerHTML = js; });

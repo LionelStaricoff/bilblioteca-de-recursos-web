@@ -129,12 +129,7 @@ export const util = {
 
                     globalThis.color = class colorearModule extends data { };
 
-                    globalThis.color.Builder()
-                        .etiquetas('blue')
-                        .background('red')
-                        .atributos('green')
-                        .letras('black')
-                        .build();
+                   new globalThis.color( 'green','red','#333','white')
                 })
                 .catch(error => console.error(error));
         } else {
