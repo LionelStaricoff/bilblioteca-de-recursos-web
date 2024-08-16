@@ -1459,7 +1459,7 @@ btn1.addEventListener('click', ()=>alert('.functionBtn1'))
                 </code></pre>`,
                 js: `<pre class="codigo"><code>
 
-             const span = document.querySelector("#span_cartelError")
+const span = document.querySelector("#span_cartelError")
   span.addEventListener('click', ()=>{
     const div = document.querySelector('.errorMessage');
     const padre = div.parentNode;
@@ -1468,9 +1468,9 @@ btn1.addEventListener('click', ()=>alert('.functionBtn1'))
 
                 </code></pre>`,
                 objeto: `<pre class="codigo"><code>
-                 import {ModalError} from ' https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/js/main.js ';
+ import {ModalError} from ' https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/js/main.js ';
              
-                 new objs.ModalError(".padre", 'mensaje')
+ new objs.ModalError(".padre", 'mensaje')
 
                 </code></pre>`
             }
