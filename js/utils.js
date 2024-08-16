@@ -135,7 +135,7 @@ export const util = {
         } else {
             try {
 
-                new globalThis.color()
+                new globalThis.color( 'green','red','#333','white')
             } catch (error) {
                 console.error(error)
             }

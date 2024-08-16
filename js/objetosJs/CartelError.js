@@ -39,7 +39,7 @@ export class CartelError {
     font-size: 1.1rem;
     text-align: center;
     margin: auto;
-    margin-top: 60px;
+
     animation: desliza 0.5s ease-in-out;
     position: relative;
     span{
