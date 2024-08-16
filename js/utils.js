@@ -5,13 +5,13 @@ export class CartelError {
     constructor(containerSelector = 'body', _errorMessage) {
         this.container = document.querySelector(containerSelector);
 
-        this.agregarStyleCss();
+       if(!util.verificarCss('.errorMessage') )  this.agregarStyleCss();
         this.displayError(_errorMessage)
-        // this.verificarCss()
+    
     }
 
     displayError(errorMessage) {
-        // console.error(errorMessage);
+      
         const errorMessageElement = document.createElement('div');
         errorMessageElement.textContent = errorMessage ?? '¡Ouch! Hubo un error al cargar la información. Intenta más tarde.';
         errorMessageElement.classList.add('errorMessage');
@@ -26,11 +26,11 @@ export class CartelError {
     }
 
     agregarStyleCss() {
-        // alert(this.agregarStyleCss())
-        //  if( this.agregarStyleCss() ){
+       
+      
         const head = document.querySelector('head');
         const style = document.createElement('style');
-        style.id = 'carltelError';
+      
         style.innerText = `.errorMessage {
     width: 10em;
     background-color: #f2bfbf;
@@ -68,17 +68,10 @@ export class CartelError {
 `
 
         head.appendChild(style);
-        // }
+  
+   
     }
-    verificarCss() {
-
-        let css = document.querySelectorAll('style');
-        css = css.Node
-        console.dir(css)
-        console.log(css.some(c => c.id == 'carltelError'))
-        //const style = css.filter(c => c.id == 'carltelError')
-        //return css != undefined;
-    }
+  
     eliminarCartel(_padre) {
         const padre = _padre.parentNode;
         padre.removeChild(_padre)
@@ -158,7 +151,35 @@ export const util = {
 
 
 
-    }
+    },
+
+
+    verificarCss: (_mensaje) =>{
+
+        return  ( (mensaje)=> {
+              const hojasDeEstilo = document.styleSheets;
+            
+              for (const hoja of hojasDeEstilo) {
+                try {
+                  const reglas = hoja.cssRules || hoja.rules;
+                  if (reglas) {
+                    for (const regla of reglas) {
+                      if (regla.selectorText && regla.selectorText.includes(`${mensaje}`)) {
+                        return true;
+                      }
+                    }
+                  }
+                } catch (error) {
+                //  console.error('Error al acceder a las reglas de la hoja de estilo:', error);
+                }
+              }
+            
+              //console.log('La regla .errorMessage no se encontró en ninguna hoja de estilo.');
+              return false;
+            })(_mensaje)
+            
+        
+      }
 }
 
 

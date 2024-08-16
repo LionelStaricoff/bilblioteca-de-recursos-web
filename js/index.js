@@ -5,12 +5,10 @@ import {util} from './utils.js';
 import('./utils.js')
 .then(data => {
   new data.CartelError('.inicio')
-  const span = document.querySelector("#span_cartelError")
-  span.addEventListener('click', ()=>{
-    const div = document.querySelector('.errorMessage');
-    const padre = div.parentNode;
-    padre.removeChild(div)
-  })
+  new data.CartelError('.inicio')
+  new data.CartelError('.inicio')
+  new data.CartelError('.inicio')
+
 })
 .catch(error => console.error(error))
 
