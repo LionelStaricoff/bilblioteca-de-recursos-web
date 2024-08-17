@@ -1244,7 +1244,7 @@ contenedor.addEventListener("mouseleave", autoPlay);
             {
 
                 titulo: "Login",
-                href: () => new objs.login(".ejemplo"),
+                href: () => new objs.login("#ej-contenedor"),
                 html: `
                 <div id="login">
                 <span>X</span>
@@ -1325,7 +1325,7 @@ contenedor.addEventListener("mouseleave", autoPlay);
             {
 
                 titulo: "Cartel dos botones",
-                href: () => new objs.cartelDosBotones(".ejemplo", 'btn', 'btn1', () => alert('.functionBtn'), () => alert('.functionBtn1')),
+                href: () => new objs.cartelDosBotones("#ej-contenedor", 'btn', 'btn1', () => alert('.functionBtn'), () => alert('.functionBtn1')),
 
                 html:
                     `
@@ -1415,7 +1415,7 @@ btn1.addEventListener('click', ()=>alert('.functionBtn1'))
             {
              
                 titulo:"Cartel Error",
-                href:()=> new objs.ModalError(".ejemplo"),
+                href:()=> new objs.ModalError("#ej-contenedor"),
                 html:
                 `
                <div class="errorMessage">

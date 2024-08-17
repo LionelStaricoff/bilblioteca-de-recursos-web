@@ -35,7 +35,7 @@ document.getElementById('boton-copiar').addEventListener('click', function () {
 
     })
     .catch(err => {
-      console.error('Error al copiar el código: ', err);
+      // console.error('Error al copiar el código: ', err);
     });
 });
 
@@ -62,9 +62,12 @@ const verEjemplo = (href, html, css, js, obj) => {
     ej.innerText = html;
     util.colorearHtml()
   });
-  btncss.addEventListener('click', () => { iframe.srcdoc = ""; ej.innerHTML = css; });
+  btncss.addEventListener('click', () => {  iframe.srcdoc = ""; ej.innerHTML = css; });
   btnjs.addEventListener('click', () => { iframe.srcdoc = ""; ej.innerHTML = js; });
-  btnobj.addEventListener('click', () => { iframe.srcdoc = ""; ej.innerHTML = obj; });
+  btnobj.addEventListener('click', () => {  iframe.srcdoc = ""; ej.innerHTML = obj; });
+
+
+
 
 }
 
@@ -96,7 +99,7 @@ function mostrarObjeto(objeto) {
   container.appendChild(details);
 }
 
-// fecactorizandon getAllObjects()
+// fecactorizando getAllObjects()
 (() => {
 
   librerias.forEach(libreria => {
