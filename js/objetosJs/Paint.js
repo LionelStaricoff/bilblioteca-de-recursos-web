@@ -1,5 +1,7 @@
+export default class ColorearHtml {}
 
-export default class ColorearHtml {
+
+export  class ColorearHtmlInnerText {
     constructor(etiquetas, atributos, background, letras) {
         this._etiquetas = (etiquetas) ? etiquetas : 'yellowgreen';
         this._atributos = (atributos) ? atributos : 'palevioletred';
@@ -14,7 +16,7 @@ export default class ColorearHtml {
 
     reemplazar() {
       
-            const codigoHtml = document.querySelectorAll('.colorear');
+            const codigoHtml = document.querySelectorAll('.coloreartext');
             codigoHtml.forEach(c => this.colorar(c));
 
         
@@ -27,13 +29,13 @@ export default class ColorearHtml {
         codigoHtml.style.color = this._letras;
         const contenido = codigoHtml.innerHTML;
         const etiquetas = ["header", "main", "footer", "section", "h1", "H1", "h2", "H2", "h3", "H3", "h4", "H4", "h5", "H5", "h6", "H6",
-            "button", "ul", "li", "nav", "pre", "hr", "ol", "blockquote", 'strong', 'i', 'p',
+            "button", "ul", "li", "nav", "pre", "hr", "ol", "blockquote", 'strong',
             'canvas', 'iframe', '!DOCTYPE html', 'html', 'base', 'bdi', 'bdo','div',
             'table', 'tr', 'td', 'thead', 'colgroup', 'col', 'th', 'caption', 'head', 'title', 'body', 'dfn', 'abbr', 'address', 'script',
             'video', 'form', 'label', 'input', 'map', 'area', 'audio', 'source', 'cite', 'var', 'samp', 'kbd', 'data', 'datalist',
             'option', 'dl', 'dt', 'dd', 'del', 'ins', 'details', 'summary', 'dfn', 'dialog', 'em', 'embed', 'legend', 'fieldset',
             'figure', 'figcaption', 'hgroup', 'mark', 'menu', 'meta', 'meter', 'noscript', 'object', 'optgroup', 'output', 'param',
-            'picture', 'progress', 'ruby', 'rp', 'rt', 's', 'samp', 'search', 'select', 'small', 'strong', 'sub', 'details', 'sup', 'svg',
+            'picture', 'progress', 'ruby', 'rp', 'rt', 'samp', 'search', 'select', 'small', 'strong', 'sub', 'details', 'sup', 'svg',
             'circle', 'tbody', 'template', 'textarea', 'tfoot', 'time', 'track', 'u', 'wbr',
 
             'srcset', 'alt', 'class', 'id', 'src', 'frameborder', 'action', 'method', 'name', 'for', 'type', 'value', 'href', 'target',

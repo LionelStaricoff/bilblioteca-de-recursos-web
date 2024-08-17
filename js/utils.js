@@ -124,7 +124,7 @@ export const util = {
         if (!globalThis.color) {
            // import('https://lionelstaricoff.github.io/paint-code/Paint.js')
            import('./objetosJs/Paint.js')
-                .then(module => module.default)
+                .then(module => module.ColorearHtmlInnerText )
 
                 .then(data => {
 
