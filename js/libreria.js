@@ -1314,7 +1314,9 @@ contenedor.addEventListener("mouseleave", autoPlay);
 
                 </code></pre>`,
                 objeto: `<pre class="codigo"><code>
+
                 import {login} from  ' ${url} ';
+
                 new cartelLogin('main',()=> alert('función que se pasa para ejecutar el login'));
 
                 </code></pre>`
@@ -1392,6 +1394,8 @@ const btn1 = document.querySelector('#btn1')
 btn1.addEventListener('click', ()=>alert('.functionBtn1'))
                 </code></pre>`,
                 objeto: `<pre class="codigo"><code>
+
+                 import {login} from  ' ${url} ';
                 
                 // constructor:
                 new cartelBbdd('main','Guardar_bbdd','cargar_bbdd',()=>alert('.functionBtn'),
@@ -1468,7 +1472,8 @@ const span = document.querySelector("#span_cartelError")
 
                 </code></pre>`,
                 objeto: `<pre class="codigo"><code>
- import {ModalError} from ' https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/js/main.js ';
+
+import {login} from  ' ${url} ';
              
  new objs.ModalError(".padre", 'mensaje')
 
