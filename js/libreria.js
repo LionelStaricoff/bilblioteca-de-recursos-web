@@ -1508,6 +1508,7 @@ import {login} from  ' ${url} ';
                 </code></pre>`,
                 objeto: `<pre class="codigo"><code>
                 
+                import {login} from  ' ${url} ';
 
                 </code></pre>`
             }
