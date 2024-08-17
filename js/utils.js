@@ -122,8 +122,9 @@ export const util = {
     colorearHtml: () => {
 
         if (!globalThis.color) {
-           // import('https://lionelstaricoff.github.io/paint-code/Paint.js')
-           import('./objetosJs/Paint.js')
+            import('https://lionelstaricoff.github.io/paint-code/Paint.js')
+       
+           
                 .then(module => module.ColorearHtmlInnerText )
 
                 .then(data => {
