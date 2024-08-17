@@ -1,151 +1,85 @@
+
+
+
 export class CartelError {
-    constructor(containerSelector) {
+    constructor(containerSelector = 'body', _errorMessage) {
         this.container = document.querySelector(containerSelector);
+
+       if(!util.verificarCss('.errorMessage') )  this.agregarStyleCss();
+        this.displayError(_errorMessage)
+    
     }
 
     displayError(errorMessage) {
-        console.error(errorMessage);
+      
         const errorMessageElement = document.createElement('div');
-        errorMessageElement.textContent = '¡Ouch! Hubo un error al cargar la información. Intenta más tarde.';
+        errorMessageElement.textContent = errorMessage ?? '¡Ouch! Hubo un error al cargar la información. Intenta más tarde.';
         errorMessageElement.classList.add('errorMessage');
+
+        const x = document.createElement('span');
+        x.textContent = 'X';
+        x.id = 'span_cartelError'
+        x.addEventListener('click', () => this.eliminarCartel(errorMessageElement))
+
+        errorMessageElement.appendChild(x);
         this.container.appendChild(errorMessageElement);
     }
+
+    agregarStyleCss() {
+       
+      
+        const head = document.querySelector('head');
+        const style = document.createElement('style');
+      
+        style.innerText = `.errorMessage {
+    width: 10em;
+    background-color: #f2bfbf;
+    color: #ff0000;
+    padding: 10px;
+    padding-top: 1em;
+    border: 3px double #ff0000;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    animation: desliza 0.5s ease-in-out;
+    position: relative;
+    span{
+        width: 1em;
+        height: 1em;
+        color: #333;
+        position: absolute;
+        top: 0;
+        right: 0;
+       font-weight: bolder;
+       &:hover{
+        transform:scale(.9) ;
+        color: red
+       }
+    }
 }
 
-export class ColorearHtml {
-    constructor() {
-        this.etiquetas = 'yellowgreen';
-        this.atributos = 'palevioletred';
-        this.nombres = 'cyan';
+@keyframes desliza {
+    0% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(-10px); }
+}
+`
 
-        this.reemplazar();
-        this.espaciar();
-    }
-
-    reemplazar() {
-        document.addEventListener('DOMContentLoaded', () => {
-            const codigoHtml = document.querySelectorAll('.colorear');
-            codigoHtml.forEach(c => this.colorear(c));
-
-        });
-    }
-
-    colorear(codigoHtml) {
-        codigoHtml.style.backgroundColor = "#333333";
-        codigoHtml.style.padding = '1em';
-        codigoHtml.style.color = 'gainsboro';
-
-        const contenido = codigoHtml.innerHTML;
-
-        const contenidoModificado = contenido
-            .replace(/class/g, `<L style="color: ${this.atributos};">class</L>`)
-            .replace(/id/g, `<L style="color: ${this.atributos};">id</L>`)
-
-            .replace(/<header/g, `<br> &lt;<L style="color: ${this.etiquetas};">header</L>`)
-            .replace(/<\/header>/g, `&lt;<L style="color: ${this.etiquetas};">/header</L>&gt;`)
-            .replace(/<main/g, `<br> &lt;<L style="color: ${this.etiquetas};">main</L>`)
-            .replace(/<\/main>/g, `&lt;<L style="color: ${this.etiquetas};">/main</L>&gt;`)
-            .replace(/<footer/g, `<br> &lt;<L style="color: ${this.etiquetas};">footer</L>`)
-            .replace(/<\/footer>/g, `&lt;<L style="color: ${this.etiquetas};">/footer</L>&gt;`)
-            .replace(/<section/g, `<br> &lt;<L style="color: ${this.etiquetas};">section</L>`)
-            .replace(/<\/section>/g, `&lt;<L style="color: ${this.etiquetas};">/section</L>&gt;`)
-            .replace(/<h1/g, `<br> &lt;<L style="color: ${this.etiquetas};">h1</L>`)
-            .replace(/<\/h1>/g, `&lt;<L style="color: ${this.etiquetas};">/h1</L>&gt;`)
-            .replace(/<H1/g, `<br> &lt;<L style="color: ${this.etiquetas};">H1</L>`)
-            .replace(/<\/H1>/g, `&lt;<L style="color: ${this.etiquetas};">/H1</L>&gt;`)
-            .replace(/<h2/g, `<br> &lt;<L style="color: ${this.etiquetas};">h2</L>`)
-            .replace(/<\/h2>/g, `&lt;<L style="color: ${this.etiquetas};">/h2</L>&gt;`)
-            .replace(/<H2/g, `<br> &lt;<L style="color: ${this.etiquetas};">H2</L>`)
-            .replace(/<\/H2>/g, `&lt;<L style="color: ${this.etiquetas};">/H2</L>&gt;`)
-            .replace(/<H3/g, `<br> &lt;<L style="color: ${this.etiquetas};">H3</L>`)
-            .replace(/<\/H3>/g, `&lt;<L style="color: ${this.etiquetas};">/H3</L>&gt;`)
-            .replace(/<h3/g, `<br> &lt;<L style="color: ${this.etiquetas};">h3</L>`)
-            .replace(/<\/h3>/g, `&lt;<L style="color: ${this.etiquetas};">/h3</L>&gt;`)
-            .replace(/<h4/g, `<br> &lt;<L style="color: ${this.etiquetas};">h4</L>`)
-            .replace(/<\/h4>/g, `&lt;<L style="color: ${this.etiquetas};">/h4</L>&gt;`)
-            .replace(/<H4/g, `<br> &lt;<L style="color: ${this.etiquetas};">H4</L>`)
-            .replace(/<\/H4>/g, `&lt;<L style="color: ${this.etiquetas};">/H4</L>&gt;`)
-            .replace(/<H5/g, `<br>&lt;<L style="color: ${this.etiquetas};">H5</L>`)
-            .replace(/<\/H5>/g, `&lt;<L style="color: ${this.etiquetas};">/H5</L>&gt;`)
-            .replace(/<h5/g, `<br> &lt;<L style="color: ${this.etiquetas};">h5</L>`)
-            .replace(/<\/h5>/g, `&lt;<L style="color: ${this.etiquetas};">/h5</L>&gt;`)
-            .replace(/<h6/g, `<br> &lt;<L style="color: ${this.etiquetas};">h6</L>`)
-            .replace(/<\/h6>/g, `&lt;<L style="color: ${this.etiquetas};">/h6</L>&gt;`)
-            .replace(/<H6/g, `<br> &lt;<L style="color: ${this.etiquetas};">H6</L>`)
-            .replace(/<\/H6>/g, `&lt;<L style="color: ${this.etiquetas};">/H6</L>&gt;`)
-            .replace(/<button/g, `<br> &lt;<L style="color: ${this.etiquetas};">button</L>`)
-            .replace(/<\/button>/g, `&lt;<L style="color: ${this.etiquetas};">/button</L>&gt;`)
-            .replace(/<ul/g, `<br> &lt;<L style="color: ${this.etiquetas};">ul</L>`)
-            .replace(/<\/ul>/g, `&lt;<L style="color: ${this.etiquetas};">/ul</L>&gt;`)
-            .replace(/<li/g, `<br> &lt;<L style="color: ${this.etiquetas};">li</L>`)
-            .replace(/<\/li>/g, `&lt;<L style="color: ${this.etiquetas};">/li</L>&gt;`)
-
-            ;
-
-        codigoHtml.innerHTML = contenidoModificado;
-    }
-    espaciar() {
-
-        const codigoHtml = document.querySelectorAll('.colorear');
-
-        for (const c of codigoHtml) {
-
-            if (c.children.length > 0) {
-                const hijos = c.children;
-                this.colocarPadding(hijos);
-            }
-
-        }
-    }
-    colocarPadding(hijo) {
-
-        for (const c of hijo) {
-            if (c.children.length > 0) {
-                const hijos = c.children;
-
-                this.colocarPaddingInterno(hijos);
-
-            }
-        }
-    }
-    colocarPaddingInterno(hijos, padding = 20,) {
-
-        const span = document.createElement('span')
-        span.style.display = 'block'
-        span.style.marginLeft = `${padding}px`;
-        span.style.marginTop = '-20px';
-        for (const ch of hijos) {
-            const padre = ch.parentNode;
-
-
-            span.appendChild(ch);
-            padre.appendChild(span)
-
-
-            if (ch.children.length > 0) {
-
-                const hijos2 = ch.children;
-
-                this.colocarPaddingInterno2(hijos2, 40);
-            }
-        }
-    }
-    colocarPaddingInterno2(hijos, padding) {
-        const div = document.createElement('div')
-        div.style.marginLeft = `${padding}px`;
-        div.style.marginTop = '-20px';
-        let padre;
-        const hijos1 = Array.from(hijos);
+        head.appendChild(style);
+  
    
-        for (const ch of hijos1) {
-            padre = ch.parentNode;
-            div.appendChild(ch);
-
-        }
-        padre.appendChild(div);
     }
+  
+    eliminarCartel(_padre) {
+        const padre = _padre.parentNode;
+        padre.removeChild(_padre)
 
+    }
 }
+
+
 
 //Botón para ir al inicio desde cualquier sección
 // Función para volver al inicio de la página
@@ -178,13 +112,73 @@ window.onscroll = function () {
 };
 volverArriba();
 
-// Event listener para el botón de volver arriba
-btnVolverArriba.addEventListener("click", function() {
-    // Ejecuta la transición suave
-    setTimeout(() => {
-      window.scrollTo({
-        top: document.body.scrollHeight,
-        behavior: 'smooth'
-      });
-    }, 4000);
-  });
+
+
+
+
+
+export const util = {
+
+    colorearHtml: () => {
+
+        if (!globalThis.color) {
+            import('https://lionelstaricoff.github.io/paint-code/Paint.js')
+       
+           
+                .then(module => module.ColorearHtmlInnerText )
+
+                .then(data => {
+
+                    globalThis.color = class colorearModule extends data { };
+
+                   new globalThis.color( 'green','red','#333','white')
+                })
+                .catch(error => console.error(error));
+        } else {
+            try {
+
+                new globalThis.color( 'green','red','#333','white')
+            } catch (error) {
+                console.error(error)
+            }
+
+
+
+        }
+
+
+
+    },
+
+
+    verificarCss: (_mensaje) =>{
+
+        return  ( (mensaje)=> {
+              const hojasDeEstilo = document.styleSheets;
+            
+              for (const hoja of hojasDeEstilo) {
+                try {
+                  const reglas = hoja.cssRules || hoja.rules;
+                  if (reglas) {
+                    for (const regla of reglas) {
+                      if (regla.selectorText && regla.selectorText.includes(`${mensaje}`)) {
+                        return true;
+                      }
+                    }
+                  }
+                } catch (error) {
+                //  console.error('Error al acceder a las reglas de la hoja de estilo:', error);
+                }
+              }
+            
+              //console.log('La regla .errorMessage no se encontró en ninguna hoja de estilo.');
+              return false;
+            })(_mensaje)
+            
+        
+      }
+}
+
+
+
+

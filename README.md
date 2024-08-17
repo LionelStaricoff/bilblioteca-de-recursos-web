@@ -1,4 +1,4 @@
-<h1> Librería de recursos web </h1>
+<h1> <a href="https://lionelstaricoff.github.io/bilblioteca-de-recursos-web/"  target="_blank"> Librería de recursos web </a></h1>
 
 <h4>La idea es colaborar entre nosotros y unir fuerzas. <br>En esta página puedes hallar los códigos de distintos proyecto, que facilitarán tu tarea. <br>
 Entre ellos encontrarás ejemplos de layouts, buttons, menu responsives, efectos y muchas cosas más.<h4>
