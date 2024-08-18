@@ -11,6 +11,7 @@ import { CrearObjeto3 } from './objetosJs/modo3.js';
 import { cartelLogin } from './objetosJs/cartelLogin.js';
 import { cartelBbdd } from './objetosJs/cartelBbdd.js';
 import { CartelError } from './objetosJs/CartelError.js';
+import { Notificacion } from './objetosJs/CartelNotificacion.js';
 
 
 
@@ -39,6 +40,8 @@ export class login extends cartelLogin{};
 export class cartelDosBotones extends cartelBbdd{};
 
 export class ModalError extends CartelError{};
+
+export class CartelNotificacion extends Notificacion{};
 
 
 //new loader1('#ej-contenedor')
