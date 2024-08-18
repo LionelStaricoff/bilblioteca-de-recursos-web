@@ -1218,13 +1218,14 @@ contenedor.addEventListener("mouseleave", autoPlay);
     ],
   },
 
-  {
-    titulo: "Carteles",
-    ejemplos: [
-      {
-        titulo: "Login",
-        href: () => new objs.login(".ejemplo"),
-        html: `
+    {
+        titulo: "Carteles",
+        ejemplos: [
+            {
+
+                titulo: "Login",
+                href: () => new objs.login("#ej-contenedor"),
+                html: `
                 <div id="login">
                 <span>X</span>
                 <input type="text" placeholder="Usuario">
@@ -1301,18 +1302,13 @@ contenedor.addEventListener("mouseleave", autoPlay);
                 </code></pre>`,
       },
 
-      {
-        titulo: "Cartel dos botones",
-        href: () =>
-          new objs.cartelDosBotones(
-            ".ejemplo",
-            "btn",
-            "btn1",
-            () => alert(".functionBtn"),
-            () => alert(".functionBtn1")
-          ),
+            {
 
-        html: `
+                titulo: "Cartel dos botones",
+                href: () => new objs.cartelDosBotones("#ej-contenedor", 'btn', 'btn1', () => alert('.functionBtn'), () => alert('.functionBtn1')),
+
+                html:
+                    `
                <div id="doble_button">
                <span>X</span>
                <input type="button" value="Guardar_bbdd">
@@ -1394,12 +1390,14 @@ btn1.addEventListener('click', ()=>alert('.functionBtn1'))
                  .functionBtn1(()=>alert('.functionBtn1'))
                  .build();
                 
-                </code></pre>`,
-      },
-      {
-        titulo: "Cartel Error",
-        href: () => new objs.ModalError(".ejemplo"),
-        html: `
+                </code></pre>`
+            },
+            {
+             
+                titulo:"Cartel Error",
+                href:()=> new objs.ModalError("#ej-contenedor"),
+                html:
+                `
                <div class="errorMessage">
                <span id ="span_cartelError">X</span>
                </div>
