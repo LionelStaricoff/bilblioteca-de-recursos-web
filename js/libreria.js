@@ -104,7 +104,7 @@ window.onload = () => {
         ejemplos: [
             {
 
-                titulo: "menu1",
+                titulo: "Menu Responsive",
                 href: () => new objs.menu1(".ejemplo"),
                 html: `          
     <header class="header">
@@ -344,6 +344,193 @@ window.onload = () => {
                 //     css: `<pre class="codigo"><code></code></pre>`,
                 //     js: `<pre class="codigo"><code></code></pre>`,
                 //     objeto: `<pre class="codigo"><code></code></pre>`
+            },
+            {
+                        
+                titulo:"Menu Vertical con CSS",
+                href:()=>{new objs.menu2("Perfil", "#"
+                                                    ,"Progreso","#",
+                                                    "Foro","#",
+                                                    "Ayuda","#",
+                                                    null,null,
+                                                    null,null,
+                                                    "./img/Luma.jpg",
+                                                    "Luma"
+                                                    ,"#ej-contenedor" );
+                        
+                },
+                html:
+                `
+    <header class="header">
+        <div class="btn_menu">
+            <label for="btn_menu" title="Presionar para ver el menu desplegable vertical">☰</label>
+        </div>
+    </header><!--fin header-->
+
+    <input type="checkbox" name="" id="btn_menu">
+    
+    <div class="container_menu">
+
+        <div class="menu">
+            <div id="profile">
+                <div id="photo"><img src="./images/luma.png" alt="Imagen de Perfil"></div>
+                <div id="name"><span>Nombre Usuario</span></div>
+            </div>
+            <nav>
+                <a href="#">Perfil</a>
+                <a href="#">Progreso</a>
+                <a href="#">Foro</a>
+                <a href="#">Ayuda</a>
+            </nav>
+            <label for="btn_menu">X</label>
+        </div>
+
+    </div><!--fin container_menu-->
+
+                `,
+                css: `<pre class="codigo"><code>
+            
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+
+    background: #000000;
+
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        .btn_menu{
+            float: left;
+            line-height: 100px;
+            left: 10px;
+            top: 5px;
+            label{
+                color: white;
+                font-size: 30px;
+                cursor: pointer;
+
+            }
+        }
+    }
+
+
+    #btn_menu{
+        display: none;
+        &:checked ~ .container_menu {
+            opacity: 1;
+            visibility: visible;
+        }
+        &:checked ~ .container_menu .menu{
+            transform: translateX(0%);
+        }
+        
+        
+    }/*fin btn_menu*/
+
+
+    .container_menu{
+        position:relative;
+        background: #000000;
+        width: 200px;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+        
+        
+
+        .menu{
+            transform: translateX(-100%);
+            .profile{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 15px;
+                
+
+                #photo{
+                    img{
+                        width: 100px;
+                    }
+                }
+                #name{
+                    span{
+                        color:#d6dd75;
+                        text-align: center;
+                    }
+                }
+            }/*fin profile*/
+            nav{
+                transform: translateY(15%);
+                a{
+                    display: block;
+                    text-decoration: none;
+                    font-size: 20px;
+                    color:darkgoldenrod;
+                    transition: all 500ms ease;
+                    border-left: 10px solid transparent;
+                    border-top: 2px solid transparent;
+                    border-bottom: 2px solid transparent;
+                    line-height: 24px;
+                    padding: 20px;
+                    &:hover{
+                        border-left: 10px solid #d6dd75;
+                        border-top: 2px solid #d6dd75;
+                        border-bottom: 2px solid #d6dd75;
+                        background: #201402;
+                        font-size: 24px;
+                    }
+                }
+
+            }/*fin nav*/
+            label{
+                position:absolute;
+                right: 5px;
+                top: 10px;
+                color:darkgoldenrod;
+                cursor:pointer;
+                font-size: 20px;
+            }/*fin label de cierre*/
+        }/*fin container_menu*/
+
+}
+}/*fin Body*/
+                
+                </code></pre>`,
+                js: `<pre class="codigo"><code>
+
+No posee
+
+                </code></pre>`,
+                objeto: `<pre class="codigo"><code>
+                
+                import {menu2} from  ' ${url} ';
+                /*Ejemplo:
+                Puedes agregar hasta 6 items con sus respectivos enlaces.
+                Los que no usas, debes colocar null. 
+                También tienes la opción de agregar foto de perfil o Logo y nombre de usuario o negocio.
+                */
+                const menu = new menu2(
+                                                    "Perfil", "#",
+                                                    "Progreso","#",
+                                                    "Foro","#",
+                                                    "Ayuda","#",
+                                                    null,null,
+                                                    null,null,
+                                                    "./img/Luma.jpg",
+                                                    "Luma",
+                                                    "#iframe" ); 
+            
+
+                </code></pre>`
             }
         ]
 

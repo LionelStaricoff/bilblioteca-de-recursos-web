@@ -1,6 +1,7 @@
 import {crearLoader} from './objetosJs/Loader2.js';
 //import { librerias } from './libreria.js';
 import { CrearMenu, Item } from './objetosJs/menu1.js';
+import { CrearMenuVertical } from './objetosJs/menu2.js';
 import { CrearSlider } from './objetosJs/slider1.js';
 import { CrearSlider2 } from './objetosJs/slider2.js';
 import { CrearSlider3 } from './objetosJs/slider3.js';
@@ -17,6 +18,8 @@ import { CartelError } from './objetosJs/CartelError.js';
 export class loader1 extends crearLoader{};
 
 export class menu1 extends CrearMenu{};
+
+export class menu2 extends CrearMenuVertical{};
 
 export class menuItem extends Item{};
 
