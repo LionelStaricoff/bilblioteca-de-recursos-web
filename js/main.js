@@ -12,8 +12,9 @@ import { cartelLogin } from './objetosJs/cartelLogin.js';
 import { cartelBbdd } from './objetosJs/cartelBbdd.js';
 import { CartelError } from './objetosJs/CartelError.js';
 import { Notificacion } from './objetosJs/CartelNotificacion.js';
+import { CrearTextoFX01 } from './objetosJs/TextoFX01.js';
 
-
+export class TextoFX01 extends CrearTextoFX01{};
 
 export class loader1 extends crearLoader{};
 
@@ -50,3 +51,5 @@ export class CartelNotificacion extends Notificacion{};
 
 //console.log('librerias: '+ obj.ht)
 //librerias.forEach(l => console.l(l.ejemplos.href))
+
+//new Notificacion('../img/emojis/mueca.png', '¡Ups, algún dato es incorrecto!', 'error');

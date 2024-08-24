@@ -1217,6 +1217,94 @@ contenedor.addEventListener("mouseleave", autoPlay);
       },
     ],
   },
+  {
+    titulo: "Textos FX",
+    ejemplos: [
+      {
+        titulo: "Efecto 1: Apareciendo",
+        href: () => new objs.TextoFX01("#ej-contenedor", 'Tu Título Aquí'),
+        html: `
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Animación de Título</title>
+        </head>
+        <body>
+        <div class="title-container">
+        <h1>
+            <span class="animated-title" style="animation-delay: 0.1s;">T</span>
+            <span class="animated-title" style="animation-delay: 0.2s;">u</span>
+            <span class="animated-title" style="animation-delay: 0.3s;">&nbsp;</span>
+            <span class="animated-title" style="animation-delay: 0.4s;">T</span>
+            <span class="animated-title" style="animation-delay: 0.5s;">í</span>
+            <span class="animated-title" style="animation-delay: 0.6s;">t</span>
+            <span class="animated-title" style="animation-delay: 0.7s;">u</span>
+            <span class="animated-title" style="animation-delay: 0.8s;">l</span>
+            <span class="animated-title" style="animation-delay: 0.9s;">o</span>
+            <span class="animated-title" style="animation-delay: 1.0s;">&nbsp;</span>
+            <span class="animated-title" style="animation-delay: 1.1s;">A</span>
+            <span class="animated-title" style="animation-delay: 1.2s;">q</span>
+            <span class="animated-title" style="animation-delay: 1.3s;">u</span>
+            <span class="animated-title" style="animation-delay: 1.4s;">í</span>
+        </h1>
+    </div>
+</body>
+</html>
+        `,
+        css: `<pre class="codigo"><code>
+        .title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            font-size: 2em;
+        }
+
+        .animated-title {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            opacity: 0;
+            transform: translateX(100%);
+            animation: slideIn 1s forwards;
+        }
+
+        /* Animación para cada letra */
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        `,
+        js: `<pre class="codigo"><code>
+         renderTitle() {
+        this.text.split('').forEach((char, index) => {
+            const span = document.createElement('span');
+            span.classList.add('animated-title');
+            span.style.animationDelay = '1s';
+            span.textContent = char === ' ' ? '\u00A0' : char;
+            this.container.appendChild(span);
+        });
+    }
+        `,
+        objeto: `<pre class="codigo"><code>
+            import {CrearTextoFX01} from  ' ${url} ';
+
+            new CrearTextoFX01('.title-container h1', 'Tu Título Aquí');
+
+        `
+      },
+    ],
+    },
 
     {
         titulo: "Carteles",
@@ -1463,18 +1551,19 @@ import {login} from  ' ${url} ';
              
         titulo:"Cartel Error con emoji",
         href:()=> new objs.CartelNotificacion(
-          ".ejemplo", 
+           
           '../img/emojis/mueca.png', 
-          '¡Ups, algún dato es incorrecto!', 
-          'error'),
+          'mensaje',
+          '#ej-contenedor'
+        ),
 
         html:
         `
        <div class="ad-content">
           <div class="ad-icon">
-            <img src='${this._iconSrc}' alt="Icono" />
+            <img src='' alt="Icono" />
           </div>
-          <p class="ad-message">${this._message}</p>
+          <p class="ad-message">mensaje</p>
         </div>
 
         `,
@@ -1534,272 +1623,39 @@ import {login} from  ' ${url} ';
           letter-spacing: 0.3px;
         }
         .ad-success .ad-message {
-          background-color: ${this._colors.success.background};
-          border: 1px solid ${this._colors.success.border};
+          background-color: #7BF087;
+          border: 1px solid #31c140;
         }
         .ad-error .ad-message {
-          background-color: ${this._colors.error.background};
-          border: 1px solid ${this._colors.error.border};
+          background-color: #fa9f9f;
+          border: 1px solid #C00D0D;
         }
       
         
         
         </code></pre>`,
+
         js: `<pre class="codigo"><code>
-   
-        createNotification() {
-  
-      this.agregarCss();
-  
-      this._notificationElement = document.createElement('div');
-  
-      this._notificationElement.classList.add('ad', 'ad-${this._type}');
-  
-      this._notificationElement.innerHTML = `
-        <div class='ad-content'>
-          <div class='ad-icon'>
-            <img src='${this._iconSrc}' alt='Icono' />
-          </div>
-          <p class='ad-message'>${this._message}</p>
-        </div>
-      `;
-  
-      this._padre.appendChild(this._notificationElement);
-  
-      // Usé requestAnimationFrame para asegurar que el elemento esté renderizado
-      requestAnimationFrame(() => {
-        this._notificationElement.style.animation = 'slide-up 0.5s forwards';
-  
-      });
-  
-      // Programar la animación de salida
+        const cartel = document.querySelector('.ad')
+
+        
       setTimeout(() => {
-        this._notificationElement.style.animation = 'slide-down 2.5s forwards';
-        // Eliminar el elemento después de la animación
-        setTimeout(() => this.removeNotification(), 500);
+        cartel.style.animation = 'slide-down 2.5s forwards';
+        
+        setTimeout(() => cartel.style.display = 'none', 500);
       }, 2500);
-    }
-  
-    removeNotification() {
-      if (this._notificationElement && this._notificationElement.parentNode) {
-        this._notificationElement.parentNode.removeChild(this._notificationElement);
-      }
-    }
-    
-    agregarCss() {
-      if (!document.querySelector('#notificationStyles')) {
-        const head = document.querySelector('head');
-        const style = document.createElement('style');
-        style.id = 'notificationStyles';
-        style.innerText = `
-          .ad {
-            width: calc(100% - 32px);
-            position: fixed;
-            z-index: 10;
-            top: -500px;
-            left: 0;
-            display: flex;
-            justify-content: center;
-            pointer-events: none;
-            z-index: 9999;
-          }
-          
-        @keyframes slide-up {
-          to { top: 50%; left: 50%; 
-          transform: translate(-50%, -50%); 
-          }
-        }
-  
-          @keyframes slide-down {
-            to { top: -400px; }
-          }
-          .ad-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-          }
-          .ad-icon {
-            width: 72px;
-            height: 72px;
-            background-color: #fff;
-            border-radius: 50%;
-            box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            margin-bottom: -4px;
-            z-index: 11;
-          }
-          .ad-icon img {
-            height: 50px;
-          }
-          .ad-message {
-            min-width: 280px;
-            width: calc(100% - 32px);
-            min-height: 48px;
-            border-radius: 4px;
-            font-family: Roboto, sans-serif;
-            font-size: 15px;
-            font-weight: 500;
-            padding: 10px 20px; 
-            text-align: center;
-            align-content: center;
-            letter-spacing: 0.3px;
-          }
-          .ad-success .ad-message {
-            background-color: ${this._colors.success.background};
-            border: 1px solid ${this._colors.success.border};
-          }
-          .ad-error .ad-message {
-            background-color: ${this._colors.error.background};
-            border: 1px solid ${this._colors.error.border};
-          }
-        `;
-  
-      document.head.appendChild(style);
-    }
-  }
 
         </code></pre>`,
         objeto: `<pre class="codigo"><code>
         
         import {CartelNotificacion} from  ' ${url} ';
 
-export class Notificacion {
-  constructor(iconSrc, message, type = 'success', padre = 'body', colors = {}) {
-    this._iconSrc = iconSrc;
-    this._message = message;
-    this._type = type;
-    this._padre = document.querySelector(padre);
-    this._colors = {
-      success: { background: '#7BF087', border: '#31c140' },
-      error: { background: '#fa9f9f', border: '#C00D0D' },
-      
-    };
+        Ejemplo 1 (usando 'success'):
+        new CartelNotificacion('../img/emojis/mueca.png', '¡Ups, algún dato es incorrecto!', 'success');
 
-    this.createNotification();
-  }
+        Ejemplo 1 (usando 'error'):
+        new CartelNotificacion('../img/emojis/mueca.png', '¡Ups, algún dato es incorrecto!', 'error');
 
-  createNotification() {
-
-    this.agregarCss();
-
-    this._notificationElement = document.createElement('div');
-
-    this._notificationElement.classList.add('ad', 'ad-${this._type}');
-
-    this._notificationElement.innerHTML = '
-      <div class="ad-content">
-        <div class="ad-icon">
-          <img src="${this._iconSrc}" alt="Icono" />
-        </div>
-        <p class="ad-message">${this._message}</p>
-      </div>
-    ';
-
-    this._padre.appendChild(this._notificationElement);
-
-    // Usé requestAnimationFrame para asegurar que el elemento esté renderizado
-    requestAnimationFrame(() => {
-      this._notificationElement.style.animation = 'slide-up 0.5s forwards';
-
-    });
-
-    // Programar la animación de salida
-    setTimeout(() => {
-      this._notificationElement.style.animation = 'slide-down 2.5s forwards';
-      // Eliminar el elemento después de la animación
-      setTimeout(() => this.removeNotification(), 500);
-    }, 2500);
-  }
-
-  removeNotification() {
-    if (this._notificationElement && this._notificationElement.parentNode) {
-      this._notificationElement.parentNode.removeChild(this._notificationElement);
-    }
-  }
-  
-  agregarCss() {
-    if (!document.querySelector('#notificationStyles')) {
-      const head = document.querySelector('head');
-      const style = document.createElement('style');
-      style.id = 'notificationStyles';
-      style.innerText = '
-        .ad {
-          width: calc(100% - 32px);
-          position: fixed;
-          z-index: 10;
-          top: -500px;
-          left: 0;
-          display: flex;
-          justify-content: center;
-          pointer-events: none;
-          z-index: 9999;
-        }
-        
-      @keyframes slide-up {
-        to { top: 50%; left: 50%; 
-        transform: translate(-50%, -50%); 
-        }
-      }
-
-        @keyframes slide-down {
-          to { top: -400px; }
-        }
-        .ad-content {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        .ad-icon {
-          width: 72px;
-          height: 72px;
-          background-color: #fff;
-          border-radius: 50%;
-          box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-          display: flex; 
-          justify-content: center; 
-          align-items: center; 
-          margin-bottom: -4px;
-          z-index: 11;
-        }
-        .ad-icon img {
-          height: 50px;
-        }
-        .ad-message {
-          min-width: 280px;
-          width: calc(100% - 32px);
-          min-height: 48px;
-          border-radius: 4px;
-          font-family: Roboto, sans-serif;
-          font-size: 15px;
-          font-weight: 500;
-          padding: 10px 20px; 
-          text-align: center;
-          align-content: center;
-          letter-spacing: 0.3px;
-        }
-        .ad-success .ad-message {
-          background-color: ${this._colors.success.background};
-          border: 1px solid ${this._colors.success.border};
-        }
-        .ad-error .ad-message {
-          background-color: ${this._colors.error.background};
-          border: 1px solid ${this._colors.error.border};
-        }
-      ';
-
-    // document.head.appendChild(style);
-  }
-}
-}
-
-// Instancias 
-
-// const datoIncorrecto = new Notificacion('../img/emojis/mueca.png', '¡Ups, algún dato es incorrecto!', 'error');
-
-
-// const pedidoFinalizado = new Notificacion('../img/emojis/guiño.png', '¡Excelente, pedido finalizado!', 'success');
 
 
         </code></pre>`

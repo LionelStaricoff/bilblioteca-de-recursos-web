@@ -1,13 +1,13 @@
-export class Notificacion {
+export class Notification {
     constructor(iconSrc, message, type = 'success', padre = 'body') {
       this._iconSrc = iconSrc;
       this._message = message;
-      const colores = Array.of('success', 'error');
-      this._type = (colores.includes(type)) ? type : 'success';
+      this._type = type;
       this._padre = document.querySelector(padre);
       this._colors = {
         success: { background: '#7BF087', border: '#31c140' },
         error: { background: '#fa9f9f', border: '#C00D0D' },
+        
       };
   
       this.createNotification();
@@ -129,9 +129,5 @@ export class Notificacion {
   
   // Instancias 
   
-  // const datoIncorrecto = new Notificacion('../img/emojis/mueca.png', '¡Ups, algún dato es incorrecto!', 'error');
-  
-  // const errorAlDescargar = new Notificacion('../img/emojis/asombro.png', '¡Error al descargar!', 'error');
-  
-  // const pedidoFinalizado = new Notificacion('../img/emojis/guiño.png', '¡Excelente, pedido finalizado!', 'success');
+  const datoIncorrecto = new Notification('../../img/emojis/mueca.png', '¡Ups, algún dato es incorrecto!', 'error');
   
