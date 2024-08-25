@@ -131,13 +131,13 @@ export const util = {
 
                     globalThis.color = class colorearModule extends data { };
 
-                   new globalThis.color( 'deepskyblue','darkorange','#333','white')
+                   new globalThis.color( 'deepskyblue','lime','#333','white')
                 })
                 .catch(error => console.error(error));
         } else {
             try {
 
-                new globalThis.color( 'deepskyblue','darkorange','#333','white')
+                new globalThis.color( 'deepskyblue','lime','#333','white')
             } catch (error) {
                 console.error(error)
             }

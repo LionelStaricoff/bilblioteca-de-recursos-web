@@ -1223,6 +1223,7 @@ contenedor.addEventListener("mouseleave", autoPlay);
       {
         titulo: "Efecto 1: Apareciendo",
         href: () => new objs.TextoFX01("#ej-contenedor", 'Tu Título Aquí'),
+        
         html: `
         <!DOCTYPE html>
         <html lang="es">
