@@ -1,7 +1,5 @@
-import { CartelError } from './utils.js';
 
-document.addEventListener("DOMContentLoaded", function() {
-    const cartelError = new CartelError('.websDeInteres');
+export function CargarWebsInteres() {
 
     // Leer el archivo JSON
     fetch('json/WebsInteres.json')
@@ -53,6 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         })
         .catch(error => {
-            cartelError.displayError(error);
+            // cartelError.displayError(error);
         });
-});
+};

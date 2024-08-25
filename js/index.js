@@ -1,6 +1,6 @@
 import { librerias } from './libreria.js';
 import { util } from './utils.js';
-
+import {CargarWebsInteres} from '../js/webInteres.js';
 
 
 
@@ -117,7 +117,7 @@ function esFuncion(dato) {
   }
 }
 
-
+CargarWebsInteres();
 
 
 //getAllObjects();
