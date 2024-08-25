@@ -1284,7 +1284,7 @@ contenedor.addEventListener("mouseleave", autoPlay);
                 transform: translateX(0);
             }
         }
-        `,
+        </code></pre>`,
         js: `<pre class="codigo"><code>
          renderTitle() {
         this.text.split('').forEach((char, index) => {
@@ -1295,13 +1295,13 @@ contenedor.addEventListener("mouseleave", autoPlay);
             this.container.appendChild(span);
         });
     }
-        `,
+        </code></pre>`,
         objeto: `<pre class="codigo"><code>
             import {CrearTextoFX01} from  ' ${url} ';
 
-            new CrearTextoFX01('.title-container h1', 'Tu Título Aquí');
+            new CrearTextoFX01('#ej-contenedor', 'Tu Título Aquí');
 
-        `
+        </code></pre>`
       },
     ],
     },

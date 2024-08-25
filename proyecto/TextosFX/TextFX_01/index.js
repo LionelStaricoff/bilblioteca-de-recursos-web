@@ -2,7 +2,11 @@ class CrearTextoFX01 {
     constructor(padre = 'body', text) {
         this._padre = document.querySelector(padre);
         this._text = text;
-        this.renderTitle();
+        if (this._padre) {
+            this.renderTitle();
+        } else {
+            console.error(`No se encontró el elemento con el selector '${padre}'`);
+        }
     }
 
     renderTitle() {
@@ -17,5 +21,5 @@ class CrearTextoFX01 {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    new CrearTextoFX01('.title-container h1', 'Tu Título Aquí');
+    new CrearTextoFX01('.title-container', 'Tu Título Aquí');
 });
