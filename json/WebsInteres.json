@@ -148,6 +148,14 @@
         "titulo": "Cursos gratuitos",
         "links": [
           "https://platzi.com/clases/2822-marca-personal/46988-elige-las-comunidades-profesionales-para-tu-perfil/"
+         
+        ]
+      },
+      {
+        "titulo": "Reducir el tamaño de las imagenes para web:",
+        "links": [
+          "https://slimify.app/",
+          "https://convertirimagenacodigo.netlify.app/"
         ]
       }
     ]
