@@ -2,7 +2,7 @@ section.websDeInteres {
     height: auto;
     min-height: 100vh;
     width: 100%;
-    background-color: var(--azul_tenue);
+    background-color: var(--verde_claro_tenue);
     padding: 20px;
     padding-bottom: 80px;
     display: block;
@@ -13,7 +13,7 @@ section.websDeInteres {
         max-width: 700px;
         margin: auto;
         margin-top: 5px;
-        background-color: var(--verde_agua);
+        background-color: var(--azul_tenue);
         padding: 10px 0;
         filter: brightness(93%);
         border-radius: 5px;
@@ -28,7 +28,7 @@ section.websDeInteres {
     }
     
     .listLinks {
-        font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Roboto', 'Lucida Sans', Arial, sans-serif;
         font-size: 1.1rem;
         margin: 0 auto;
         max-width: 540px;

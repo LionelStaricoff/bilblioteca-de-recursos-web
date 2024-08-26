@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div {
+    display: flex;
+}
+div img {
+    filter: saturate(50%);
+    width: 10%;
+    border: 2px solid white;
+    min-height: 90vh;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+}
+div img:hover{
+    filter: saturate(100%);
+    width: 100%;
+    transition: all ease 2s;
+    max-height: 90vh;
+}

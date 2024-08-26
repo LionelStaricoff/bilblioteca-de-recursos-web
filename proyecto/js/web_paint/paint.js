@@ -29,28 +29,24 @@ let color = document.querySelector("#color").value;
     pincel.beginPath();
     pincel.arc(x,y,10,0,2*Math.PI);
     pincel.fill();
-   
   }
 }
 
 function borrarPantalla(){
-
-    pincel.fillStyle = "grey";
-   pincel.fillRect(0,0,600,400);
-
+  pincel.fillStyle = "grey";
+  pincel.fillRect(0,0,600,400);
 }
 
 function pintar(){
     puedoDibujar = true;
     pantalla.onmousemove = dibujarCirculo;
-  
 }
  function pintarOf(){
     puedoDibujar = false;
     pantalla.onmousemove = null;
  }
 
-//fincionalidad del boton borrar
+//funcionalidad del boton borrar
 let btnBorrar = document.querySelector("#borrar");
 btnBorrar.onclick = borrarPantalla;
 

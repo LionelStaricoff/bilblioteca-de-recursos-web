@@ -1,7 +1,7 @@
 {
     "menu": [
       {
-        "titulo": "Alertas",
+        "titulo": "Galerías",
         "subitems": [
           {"titulo": "Ejemplo 1", 
           "href": "#alertas-01",

@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", "Franklin Gothic Light";
 }
-
-
-
-
+body{
+  min-height: auto;
+}
 #slider {
   display: flex;
   overflow-x: scroll;
@@ -23,9 +23,14 @@
     z-index: 1;
     height: 2em;
 
- figcaption{
-      padding-top: 10px;
-      color:rgba(255, 153, 36, 90%) ;
+    figcaption {
+      margin-top: 5px;
+      padding: 5px;
+      color: white;
+      font-weight: bold;
+      letter-spacing: .15em;
+      background-color: rgba(58, 112, 73, 0.9);
+      border-radius: 15px 15px 0 0;
     }
 
     img {
@@ -36,26 +41,25 @@
       justify-content: center;
       border-radius: 50%;
       outline: 5px solid black;
-      filter: drop-shadow(2px 2px 10px steelblue)
+      filter: drop-shadow(2px 2px 10px rgba(58, 112, 73, 0.9));
     }
 
     p {
-      font-size: 1.5rem;
-      width: 40rem;
-      transform: translateX(-250px);
-      margin: .5em;
-      background-color: rgba(255, 153, 36, 90%);
-      font-weight: bold;
+      font-size: 1.3rem;
+      width: 50rem;
+      transform: translateX(-320px);
+      background-color: rgba(58, 112, 73, 0.9);
       border-radius: 15px;
       color: #fff;
-      text-shadow: 5px 5px 5px black;
+      padding: 15px 15px 80px;
+      line-height: 1.35em;
 
-      @media(width <768px) {
+      @media (width <768px) {
         width: 26rem;
         transform: translateX(-140px);
         font-size: 1.4rem;
       }
-      @media(width < 420px) {
+      @media (width < 420px) {
         width: 20rem;
         transform: translateX(-90px);
         font-size: 1.2rem;
@@ -70,7 +74,7 @@
     background-color: aqua;
 
     @media screen {
-      @media(width < 617px) {
+      @media (width < 617px) {
         animation: slide2 12s alternate 2;
       }
 
@@ -91,13 +95,9 @@
       object-fit: contain;
       width: auto;
       height: 100vh;
-
     }
-
   }
-
 }
-
 
 @keyframes slide {
   0% {
@@ -110,9 +110,7 @@
 
   100% {
     transform: translateX(-250%);
-
   }
-
 }
 
 .caption {
@@ -122,7 +120,6 @@
 .picture {
   text-align: center;
 }
-
 
 /* para en modo movile*/
 @keyframes slide2 {
@@ -136,7 +133,5 @@
 
   100% {
     transform: translateX(-250%);
-
   }
-
 }

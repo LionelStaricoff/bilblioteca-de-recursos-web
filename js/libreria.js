@@ -1,17 +1,16 @@
-import * as objs from './main.js'
+import * as objs from "./main.js";
 
-const url = 'https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/js/main.js'
+const url =
+  "https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/js/main.js";
 
 export const librerias = [
-
-    {
-        titulo: "Loader",
-        ejemplos: [
-            {
-
-                titulo: "Loader_circle_blue",
-                href: () => new objs.loader1("#ej-contenedor"),
-                html: `  
+  {
+    titulo: "Loader",
+    ejemplos: [
+      {
+        titulo: "Loader_circle_blue",
+        href: () => new objs.loader1("#ej-contenedor"),
+        html: `  
                     <div class="loader-content colorear">
                         <div class="loader"></div>
                     </div>
@@ -19,7 +18,7 @@ export const librerias = [
                         <!--<img class="img-content" src ="https://source.unsplash.com/random">-->
                     </div>
                 `,
-                css: `<pre class="codigo"><code>
+        css: `<pre class="codigo"><code>
 body{
     position: relative;
 }
@@ -67,7 +66,7 @@ body{
     
 }
                 </code></pre>`,
-                js: `<pre class="codigo"><code>
+        js: `<pre class="codigo"><code>
 
 window.onload = () => {
     let contenido = document.querySelector(".img-wrapper");
@@ -76,7 +75,7 @@ window.onload = () => {
     contenido.style.display ='flex'; 
 }
                 </code></pre>`,
-                objeto: `<pre class="codigo"><code>
+        objeto: `<pre class="codigo"><code>
 
             import {loader1} from ' ${url} ';
                 
@@ -91,22 +90,18 @@ window.onload = () => {
 
                 </code></pre>
                 `,
-                images: ""
+        images: "",
+      },
+    ],
+  },
 
-            }
-
-        ]
-
-    },
-
-    {
-        titulo: "Menus",
-        ejemplos: [
-            {
-
-                titulo: "menu1",
-                href: () => new objs.menu1(".ejemplo"),
-                html: `          
+  {
+    titulo: "Menus",
+    ejemplos: [
+      {
+        titulo: "menu1",
+        href: () => new objs.menu1(".ejemplo"),
+        html: `          
     <header class="header">
         <nav class="nav">
             <a href="#" class="logo nav-link">Your Logo</a>
@@ -119,7 +114,7 @@ window.onload = () => {
         </nav>
     </header> 
                 `,
-                css: `<pre class="codigo"><code>
+        css: `<pre class="codigo"><code>
                         *{
                             margin: 0;
                             box-sizing: border-box;
@@ -272,7 +267,7 @@ window.onload = () => {
                                 }
                         }            
                 </code></pre>`,
-                js: `<pre class="codigo"><code>
+        js: `<pre class="codigo"><code>
                 /*Importando Clase para crear los items del menú*/
                 import {menuItem} from './main.js';;
                 
@@ -312,7 +307,7 @@ window.onload = () => {
                 });
                
                 </code></pre>`,
-                objeto: `<pre class="codigo"><code>
+        objeto: `<pre class="codigo"><code>
          
                   
                      &#60script type="module"&#62
@@ -334,28 +329,26 @@ window.onload = () => {
 
                     </code></pre>
                 `,
-                images: ""
+        images: "",
 
-                // },
-                // {
-                //     href:"",
-                //     titulo:"",
-                //     html:``,
-                //     css: `<pre class="codigo"><code></code></pre>`,
-                //     js: `<pre class="codigo"><code></code></pre>`,
-                //     objeto: `<pre class="codigo"><code></code></pre>`
-            }
-        ]
-
-    },
-    {
-        titulo: "Modo Claro/Oscuro",
-        ejemplos: [
-            {
-
-                titulo: "Ejemplo 1",
-                href: () => new objs.modo1(".ejemplo"),
-                html: `
+        // },
+        // {
+        //     href:"",
+        //     titulo:"",
+        //     html:``,
+        //     css: `<pre class="codigo"><code></code></pre>`,
+        //     js: `<pre class="codigo"><code></code></pre>`,
+        //     objeto: `<pre class="codigo"><code></code></pre>`
+      },
+    ],
+  },
+  {
+    titulo: "Modo Claro/Oscuro",
+    ejemplos: [
+      {
+        titulo: "Ejemplo 1",
+        href: () => new objs.modo1(".ejemplo"),
+        html: `
 
 <body class="theme-container __light">
 
@@ -365,7 +358,7 @@ window.onload = () => {
 </body>
              
                 `,
-                css: `<pre class="codigo"><code>
+        css: `<pre class="codigo"><code>
                 .__dark {
     
     
@@ -396,7 +389,7 @@ window.onload = () => {
             }
                         
                 </code></pre>`,
-                js: `<pre class="codigo"><code>
+        js: `<pre class="codigo"><code>
 
 const btn = document.getElementById("btn-theme");
 
@@ -406,7 +399,7 @@ btn.addEventListener('click', () => {
     theme.classList.toggle("__light");
 }); 
                 </code></pre>`,
-                objeto: `<pre class="codigo"><code>
+        objeto: `<pre class="codigo"><code>
          
                     import {modo1} from ' ${url} ';
                     
@@ -421,14 +414,12 @@ btn.addEventListener('click', () => {
 
                     </code></pre>
                 `,
-                images: ""
-
-            },
-            {
-
-                titulo: "Ejemplo 2",
-                href: () => new objs.modo2(".ejemplo"),
-                html: `
+        images: "",
+      },
+      {
+        titulo: "Ejemplo 2",
+        href: () => new objs.modo2(".ejemplo"),
+        html: `
 
                 <body data-bg="LIGHT">
 
@@ -438,7 +429,7 @@ btn.addEventListener('click', () => {
             </body>
              
                 `,
-                css: `<pre class="codigo"><code>
+        css: `<pre class="codigo"><code>
                 body[data-bg="DARK"]{
                     background-color: black;
                     color:white;
@@ -469,7 +460,7 @@ btn.addEventListener('click', () => {
                 
                         
                 </code></pre>`,
-                js: `<pre class="codigo"><code>
+        js: `<pre class="codigo"><code>
                 const btn = document.getElementById("btn-theme");
 
                 btn.addEventListener('click', () => {
@@ -483,7 +474,7 @@ btn.addEventListener('click', () => {
                 });
 
                 </code></pre>`,
-                objeto: `<pre class="codigo"><code>
+        objeto: `<pre class="codigo"><code>
          
                     import {modo2} from ' ${url} ';
                     
@@ -498,15 +489,12 @@ btn.addEventListener('click', () => {
 
                     </code></pre>
                 `,
-                images: ""
-
-
-            },
-            {
-
-                titulo: "Ejemplo 3",
-                href: () => new objs.modo3(".ejemplo"),
-                html: `
+        images: "",
+      },
+      {
+        titulo: "Ejemplo 3",
+        href: () => new objs.modo3(".ejemplo"),
+        html: `
 
                 <body data-bg="LIGHT">
 
@@ -516,7 +504,7 @@ btn.addEventListener('click', () => {
 </body>
              
                 `,
-                css: `<pre class="codigo"><code>
+        css: `<pre class="codigo"><code>
                 body[data-bg="DARK"]{
                     filter: grayscale(100%);
                     background-color: black;
@@ -550,7 +538,7 @@ btn.addEventListener('click', () => {
                 }
                 
                 </code></pre>`,
-                js: `<pre class="codigo"><code>
+        js: `<pre class="codigo"><code>
                 const btn = document.getElementById("btn-theme");
 
                 btn.addEventListener('click', () => {
@@ -564,7 +552,7 @@ btn.addEventListener('click', () => {
                 });
 
                 </code></pre>`,
-                objeto: `<pre class="codigo"><code>
+        objeto: `<pre class="codigo"><code>
          
                     import {modo3} from ' ${url} ';
                     
@@ -579,21 +567,17 @@ btn.addEventListener('click', () => {
 
                     </code></pre>
                 `,
-                images: ""
-
-
-            }
-        ]
-
-    },
-    {
-        titulo: "Sliders",
-        ejemplos: [
-            {
-
-                titulo: "Ejemplo1: Manual",
-                href: () => new objs.slider1(".ejemplo"),
-                html: `
+        images: "",
+      },
+    ],
+  },
+  {
+    titulo: "Sliders",
+    ejemplos: [
+      {
+        titulo: "Ejemplo1: Manual",
+        href: () => new objs.slider1(".ejemplo"),
+        html: `
                 <div class="slider-wrap">
         <i class="fa-solid fa-angle-left" id="backBtn"> </i>
         
@@ -615,7 +599,7 @@ btn.addEventListener('click', () => {
         <i class="fa-solid fa-angle-right" id="nextBtn"> </i>        
     </div>
                 `,
-                css: `<pre class="codigo"><code>
+        css: `<pre class="codigo"><code>
                 .body{
                     background: #565656;
                 }
@@ -743,7 +727,7 @@ btn.addEventListener('click', () => {
                 
                 
                 </code></pre>`,
-                js: `<pre class="codigo"><code>
+        js: `<pre class="codigo"><code>
                 
 //Funcionalidades scroll
 let scrollContainer = document.querySelector(".slider");
@@ -766,7 +750,7 @@ backbtn.addEventListener("click",() => {
     scrollContainer.scrollLeft -= 900;
 })
                 </code></pre>`,
-                objeto: `<pre class="codigo"><code>
+        objeto: `<pre class="codigo"><code>
                 import {slider1} from ' ${url} ';
                     
                     ejemplo1: colocar un id
@@ -777,19 +761,19 @@ backbtn.addEventListener("click",() => {
                         
                     ejemplo3:colocar cualquier elemento html
                     new slider1(div) ;
-                </code></pre>`
-            },
-            {
-                titulo: "Ejemplo2: Continuo Infinito",
-                href: () => new objs.slider2(".ejemplo"),
-                html: `
+                </code></pre>`,
+      },
+      {
+        titulo: "Ejemplo2: Continuo Infinito",
+        href: () => new objs.slider2(".ejemplo"),
+        html: `
                 <div class="contenedor">
         <div class="img-slide">
            <!--Acá se va a agregar la galería de imágenes-->
         </div>
     </div>
                 `,
-                css: `<pre class="codigo">
+        css: `<pre class="codigo">
                 
 /*genero una transformación que se traslada horizontalmente, sobre el eje X. de izq a derecha*/
 @keyframes slide {
@@ -850,12 +834,12 @@ backbtn.addEventListener("click",() => {
 
 
                 <code></code></pre>`,
-                js: `<pre class="codigo"><code>
+        js: `<pre class="codigo"><code>
                 /*clona galería de imágenes, para simular un efecto continuo e infinito*/
         const copy = document.querySelector('.img-slide').cloneNode(true);
         document.querySelector('.contenedor').appendChild(copy);
                 </code></pre>`,
-                objeto: `<pre class="codigo">
+        objeto: `<pre class="codigo">
                 <pre class="codigo"><code>
                 import {slider2} from ' ${url} ';
                     
@@ -867,13 +851,12 @@ backbtn.addEventListener("click",() => {
                         
                     ejemplo3:colocar cualquier elemento html
                     new slider2(div) ;
-                </code></pre>`
-
-            },
-            {
-                titulo: "Ejemplo3: Manual y automático",
-                href: () => new objs.slider3(".ejemplo"),
-                html: `
+                </code></pre>`,
+      },
+      {
+        titulo: "Ejemplo3: Manual y automático",
+        href: () => new objs.slider3(".ejemplo"),
+        html: `
                 <div class="contenedor">
                 <i id="left" class="fa-solid fa-angle-left"> </i>
         
@@ -889,7 +872,7 @@ backbtn.addEventListener("click",() => {
                 <i id="right" class="fa-solid fa-angle-right"> </i>  
             </div>
                 `,
-                css: `<pre class="codigo">
+        css: `<pre class="codigo">
                 
 .contenedor {
     max-width: 1100px;
@@ -1027,7 +1010,7 @@ backbtn.addEventListener("click",() => {
 
                 
                 <code></code></pre>`,
-                js: `<pre class="codigo"><code>
+        js: `<pre class="codigo"><code>
                 
                 
 const contenedor = document.querySelector(".contenedor");
@@ -1119,7 +1102,7 @@ contenedor.addEventListener("mouseleave", autoPlay);
 
 
                 </code></pre>`,
-                objeto: `<pre class="codigo"><code>
+        objeto: `<pre class="codigo"><code>
                 import {slider3} from ' ${url} ';
                     
                     ejemplo1: colocar un id
@@ -1130,20 +1113,19 @@ contenedor.addEventListener("mouseleave", autoPlay);
                         
                     ejemplo3:colocar cualquier elemento html
                     new slider3(div) ;
-                </code></pre>`
-
-            },
-            {
-                titulo: "Ejemplo4: Sólo Css",
-                href: () => new objs.slider4(".ejemplo"),
-                html: `
+                </code></pre>`,
+      },
+      {
+        titulo: "Ejemplo4: Sólo Css",
+        href: () => new objs.slider4(".ejemplo"),
+        html: `
                 <section id="slider">
                 <div><img src="img/objetos/imgSliders/img12.jpg" alt="Paisaje Típico de Otoño"></div>
                 <div><img src="img/objetos/imgSliders/img13.jpg" alt="Mural General San Martin"></div>
                 <div><img src="img/objetos/imgSliders/img14.jpg" alt="Paisaje Estación de Tren Abandonada"></div>
               </section>
                 `,
-                css: `<pre class="codigo"><code>
+        css: `<pre class="codigo"><code>
                 * {
                 margin: 0;
                 padding: 0;
@@ -1220,8 +1202,8 @@ contenedor.addEventListener("mouseleave", autoPlay);
               
               }
                 </code></pre>`,
-                js: `<pre class="codigo"><code>No posee</code></pre>`,
-                objeto: `<pre class="codigo"><code>
+        js: `<pre class="codigo"><code>No posee</code></pre>`,
+        objeto: `<pre class="codigo"><code>
                 import {slider4} from ' ${url} ';
                     
                 ejemplo1: colocar un id
@@ -1231,11 +1213,98 @@ contenedor.addEventListener("mouseleave", autoPlay);
                 new slider4(.class_del_padre) ;
                     
                 ejemplo3:colocar cualquier elemento html
-                new slider4(div) ;</code></pre>`
+                new slider4(div) ;</code></pre>`,
+      },
+    ],
+  },
+  {
+    titulo: "Textos FX",
+    ejemplos: [
+      {
+        titulo: "Efecto 1: Apareciendo",
+        href: () => new objs.TextoFX01("#ej-contenedor", 'Tu Título Aquí'),
+        
+        html: `
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Animación de Título</title>
+        </head>
+        <body>
+        <div class="title-container">
+        <h1>
+            <span class="animated-title" style="animation-delay: 0.1s;">T</span>
+            <span class="animated-title" style="animation-delay: 0.2s;">u</span>
+            <span class="animated-title" style="animation-delay: 0.3s;">&nbsp;</span>
+            <span class="animated-title" style="animation-delay: 0.4s;">T</span>
+            <span class="animated-title" style="animation-delay: 0.5s;">í</span>
+            <span class="animated-title" style="animation-delay: 0.6s;">t</span>
+            <span class="animated-title" style="animation-delay: 0.7s;">u</span>
+            <span class="animated-title" style="animation-delay: 0.8s;">l</span>
+            <span class="animated-title" style="animation-delay: 0.9s;">o</span>
+            <span class="animated-title" style="animation-delay: 1.0s;">&nbsp;</span>
+            <span class="animated-title" style="animation-delay: 1.1s;">A</span>
+            <span class="animated-title" style="animation-delay: 1.2s;">q</span>
+            <span class="animated-title" style="animation-delay: 1.3s;">u</span>
+            <span class="animated-title" style="animation-delay: 1.4s;">í</span>
+        </h1>
+    </div>
+</body>
+</html>
+        `,
+        css: `<pre class="codigo"><code>
+        .title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            font-size: 2em;
+        }
 
+        .animated-title {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            opacity: 0;
+            transform: translateX(100%);
+            animation: slideIn 1s forwards;
+        }
+
+        /* Animación para cada letra */
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(100%);
             }
-        ]
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        </code></pre>`,
+        js: `<pre class="codigo"><code>
+         renderTitle() {
+        this.text.split('').forEach((char, index) => {
+            const span = document.createElement('span');
+            span.classList.add('animated-title');
+            span.style.animationDelay = '1s';
+            span.textContent = char === ' ' ? '\u00A0' : char;
+            this.container.appendChild(span);
+        });
+    }
+        </code></pre>`,
+        objeto: `<pre class="codigo"><code>
+            import {CrearTextoFX01} from  ' ${url} ';
 
+            new CrearTextoFX01('#ej-contenedor', 'Tu Título Aquí');
+
+        </code></pre>`
+      },
+    ],
     },
 
     {
@@ -1249,11 +1318,11 @@ contenedor.addEventListener("mouseleave", autoPlay);
                 <div id="login">
                 <span>X</span>
                 <input type="text" placeholder="Usuario">
-                <input type="password" placeholder="constraseña">
+                <input type="password" placeholder="contraseña">
                 <input type="button" value="Loguear">
                 </div>
                 `,
-                css: `<pre class="codigo"><code>
+        css: `<pre class="codigo"><code>
                 #login {
     position: absolute;
     top: 50%;
@@ -1304,7 +1373,7 @@ contenedor.addEventListener("mouseleave", autoPlay);
                 
                 
                 </code></pre>`,
-                js: `<pre class="codigo"><code>
+        js: `<pre class="codigo"><code>
 
                 const boton = document.getElementsByTagName('input')[2]; 
 
@@ -1313,14 +1382,14 @@ contenedor.addEventListener("mouseleave", autoPlay);
                 }); 
 
                 </code></pre>`,
-                objeto: `<pre class="codigo"><code>
+        objeto: `<pre class="codigo"><code>
 
                 import {login} from  ' ${url} ';
 
                 new cartelLogin('main',()=> alert('función que se pasa para ejecutar el login'));
 
-                </code></pre>`
-            },
+                </code></pre>`,
+      },
 
             {
 
@@ -1336,7 +1405,7 @@ contenedor.addEventListener("mouseleave", autoPlay);
                </div>
 
                 `,
-                css: `<pre class="codigo"><code>
+        css: `<pre class="codigo"><code>
                 #doble_button {
     position: absolute;
     top: 50%;
@@ -1386,14 +1455,14 @@ contenedor.addEventListener("mouseleave", autoPlay);
 }
                 
                 </code></pre>`,
-                js: `<pre class="codigo"><code>
+        js: `<pre class="codigo"><code>
 
 const btn = document.querySelector('#btn')
 btn.addEventListener('click', ()=>alert('.functionBtn'))
 const btn1 = document.querySelector('#btn1')
 btn1.addEventListener('click', ()=>alert('.functionBtn1'))
                 </code></pre>`,
-                objeto: `<pre class="codigo"><code>
+        objeto: `<pre class="codigo"><code>
 
                  import {login} from  ' ${url} ';
                 
@@ -1423,7 +1492,7 @@ btn1.addEventListener('click', ()=>alert('.functionBtn1'))
                </div>
 
                 `,
-                css: `<pre class="codigo"><code>
+        css: `<pre class="codigo"><code>
               
                 .errorMessage {
     width: 10em;
@@ -1461,7 +1530,7 @@ btn1.addEventListener('click', ()=>alert('.functionBtn1'))
 }
                 
                 </code></pre>`,
-                js: `<pre class="codigo"><code>
+        js: `<pre class="codigo"><code>
 
 const span = document.querySelector("#span_cartelError")
   span.addEventListener('click', ()=>{
@@ -1471,18 +1540,130 @@ const span = document.querySelector("#span_cartelError")
   })
 
                 </code></pre>`,
-                objeto: `<pre class="codigo"><code>
+        objeto: `<pre class="codigo"><code>
 
 import {login} from  ' ${url} ';
              
  new objs.ModalError(".padre", 'mensaje')
 
-                </code></pre>`
-            }
-        ]
+                </code></pre>`,
+      },
+      {
+             
+        titulo:"Cartel Error con emoji",
+        href:()=> new objs.CartelNotificacion(
+           
+          '../img/emojis/mueca.png', 
+          'mensaje',
+          '#ej-contenedor'
+        ),
 
+        html:
+        `
+       <div class="ad-content">
+          <div class="ad-icon">
+            <img src='' alt="Icono" />
+          </div>
+          <p class="ad-message">mensaje</p>
+        </div>
+
+        `,
+        css: `<pre class="codigo"><code>
+      .ad {
+          width: calc(100% - 32px);
+          position: fixed;
+          z-index: 10;
+          top: -500px;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          pointer-events: none;
+          z-index: 9999;
+        }
+        
+      @keyframes slide-up {
+        to { top: 50%; left: 50%; 
+        transform: translate(-50%, -50%); 
+        }
+      }
+
+        @keyframes slide-down {
+          to { top: -400px; }
+        }
+        .ad-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .ad-icon {
+          width: 72px;
+          height: 72px;
+          background-color: #fff;
+          border-radius: 50%;
+          box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+          display: flex; 
+          justify-content: center; 
+          align-items: center; 
+          margin-bottom: -4px;
+          z-index: 11;
+        }
+        .ad-icon img {
+          height: 50px;
+        }
+        .ad-message {
+          min-width: 280px;
+          width: calc(100% - 32px);
+          min-height: 48px;
+          border-radius: 4px;
+          font-family: Roboto, sans-serif;
+          font-size: 15px;
+          font-weight: 500;
+          padding: 10px 20px; 
+          text-align: center;
+          align-content: center;
+          letter-spacing: 0.3px;
+        }
+        .ad-success .ad-message {
+          background-color: #7BF087;
+          border: 1px solid #31c140;
+        }
+        .ad-error .ad-message {
+          background-color: #fa9f9f;
+          border: 1px solid #C00D0D;
+        }
+      
+        
+        
+        </code></pre>`,
+
+        js: `<pre class="codigo"><code>
+        const cartel = document.querySelector('.ad')
+
+        
+      setTimeout(() => {
+        cartel.style.animation = 'slide-down 2.5s forwards';
+        
+        setTimeout(() => cartel.style.display = 'none', 500);
+      }, 2500);
+
+        </code></pre>`,
+        objeto: `<pre class="codigo"><code>
+        
+        import {CartelNotificacion} from  ' ${url} ';
+
+        Ejemplo 1 (usando 'success'):
+        new CartelNotificacion('../img/emojis/mueca.png', '¡Ups, algún dato es incorrecto!', 'success');
+
+        Ejemplo 1 (usando 'error'):
+        new CartelNotificacion('../img/emojis/mueca.png', '¡Ups, algún dato es incorrecto!', 'error');
+
+
+
+        </code></pre>`
     }
-
+      
+    ],
+  },
 ];
 
 /* codigo base:

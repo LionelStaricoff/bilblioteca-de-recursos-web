@@ -11,8 +11,10 @@ import { CrearObjeto3 } from './objetosJs/modo3.js';
 import { cartelLogin } from './objetosJs/cartelLogin.js';
 import { cartelBbdd } from './objetosJs/cartelBbdd.js';
 import { CartelError } from './objetosJs/CartelError.js';
+import { Notificacion } from './objetosJs/CartelNotificacion.js';
+import { CrearTextoFX01 } from './objetosJs/TextoFX01.js';
 
-
+export class TextoFX01 extends CrearTextoFX01{};
 
 export class loader1 extends crearLoader{};
 
@@ -40,6 +42,8 @@ export class cartelDosBotones extends cartelBbdd{};
 
 export class ModalError extends CartelError{};
 
+export class CartelNotificacion extends Notificacion{};
+
 
 //new loader1('#ej-contenedor')
 
@@ -47,3 +51,5 @@ export class ModalError extends CartelError{};
 
 //console.log('librerias: '+ obj.ht)
 //librerias.forEach(l => console.l(l.ejemplos.href))
+
+//new Notificacion('../img/emojis/mueca.png', '¡Ups, algún dato es incorrecto!', 'error');
