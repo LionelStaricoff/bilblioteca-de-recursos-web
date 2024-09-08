@@ -119,6 +119,7 @@ border-radius: 25px;
         background-color: inherit;
         color: rgb(211, 21, 21);
         border: none;
+        background-color: transparent;
 
         &:hover {
             font-weight: 200;
@@ -187,6 +188,7 @@ border-radius: 25px;
         background-color: inherit;
         color: rgb(211, 21, 21);
         border: none;
+        background-color: transparent;
 
         &:hover {
             font-weight: 200;
@@ -255,6 +257,7 @@ border-radius: 25px;
         background-color: inherit;
         color: rgb(211, 21, 21);
         border: none;
+        background-color: transparent;
 
         &:hover {
             font-weight: 200;
@@ -325,6 +328,7 @@ border-radius: 25px;
         background-color: inherit;
         color: rgb(211, 21, 21);
         border: none;
+        background-color: transparent;
 
         &:hover {
             font-weight: 200;
