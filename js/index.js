@@ -1,10 +1,10 @@
 import { librerias } from './libreria.js';
 import { util } from './utils.js';
 import {CargarWebsInteres} from '../js/webInteres.js';
+import {Formulario} from './objetosJs/formulario.js';
 
-
-
-
+const f = new Formulario('.centro')
+  f.cuatroPersonas();
 
 const iframe = document.querySelector("#iframe");
 const ej = document.querySelector("#ej-contenedor");
