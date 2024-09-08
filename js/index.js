@@ -3,8 +3,8 @@ import { util } from './utils.js';
 import {CargarWebsInteres} from '../js/webInteres.js';
 import {Formulario} from './objetosJs/formulario.js';
 
-const f = new Formulario('.centro')
-  f.cuatroPersonas();
+const f = new Formulario('.centro',undefined,undefined,'nombre','apellido','dni','mensaje')
+  f.unaPersona();
 
 const iframe = document.querySelector("#iframe");
 const ej = document.querySelector("#ej-contenedor");

@@ -1,10 +1,15 @@
 
 export class Formulario {
 
-    constructor(padre, whatsApp,foto) {
+    constructor(father, whatsApp,photo,
+        placeholder_name1 = undefined,
+        placeholder_name2 = undefined,
+        placeholder_name3 = undefined,
+        placeholder_name4 = undefined) {
         this._whatsApp = whatsApp ?? '';
-        this._foto = foto;
-        this._padre = (document.querySelector(padre)) ? document.querySelector(padre) : document.querySelector('body');
+        this._foto = photo;
+        this.placeholders = [placeholder_name1,placeholder_name2,placeholder_name3,placeholder_name4];
+        this._padre = (document.querySelector(father)) ? document.querySelector(father) : document.querySelector('body');
         this._fondo = document.createElement('div');
         this._fondo.id = 'formulario';
         this._button = document.createElement('button');
@@ -19,7 +24,7 @@ export class Formulario {
     unaPersona() {
         this.crearCss();
         const input = document.createElement('input');
-        input.placeholder = 'Nombre completo'
+        input.placeholder = this.placeholders[0] ?? 'Nombre completo'
         this._fondo.append(this._x, input, this._button)
         this._padre.appendChild(this._fondo)
     }
@@ -27,9 +32,9 @@ export class Formulario {
     dosPersonas() {
         this.crearCss2();
         const input = document.createElement('input');
-        input.placeholder = 'Nombre completo';
+        input.placeholder = this.placeholders[0] ?? 'Nombre completo';
         const input2 = document.createElement('input');
-        input2.placeholder = 'Nombre completo'
+        input2.placeholder = this.placeholders[1] ?? 'Nombre completo'
         this._fondo.append(this._x, input, input2, this._button)
         this._padre.appendChild(this._fondo)
     }
@@ -37,11 +42,11 @@ export class Formulario {
     tresPersonas() {
         this.crearCss3();
         const input = document.createElement('input');
-        input.placeholder = 'Nombre completo';
+        input.placeholder = this.placeholders[0] ?? 'Nombre completo';
         const input2 = document.createElement('input');
-        input2.placeholder = 'Nombre completo';
+        input2.placeholder = this.placeholders[1] ?? 'Nombre completo';
         const input3 = document.createElement('input');
-        input3.placeholder = 'Nombre completo';
+        input3.placeholder = this.placeholders[2] ?? 'Nombre completo';
         this._fondo.append(this._x, input, input2, input3, this._button)
         this._padre.appendChild(this._fondo)
     }
@@ -49,13 +54,13 @@ export class Formulario {
     cuatroPersonas() {
         this.crearCss4();
         const input = document.createElement('input');
-        input.placeholder = 'Nombre completo';
+        input.placeholder = this.placeholders[0] ?? 'Nombre completo';
         const input2 = document.createElement('input');
-        input2.placeholder = 'Nombre completo';
+        input2.placeholder = this.placeholders[1] ??'Nombre completo';
         const input3 = document.createElement('input');
-        input3.placeholder = 'Nombre completo';
+        input3.placeholder = this.placeholders[2] ??'Nombre completo';
         const input4 = document.createElement('input');
-        input4.placeholder = 'Nombre completo';
+        input4.placeholder = this.placeholders[3] ?? 'Nombre completo';
         this._fondo.append(this._x, input, input2, input3, input4, this._button)
         this._padre.appendChild(this._fondo)
     }
