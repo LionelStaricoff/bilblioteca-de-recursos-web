@@ -114,7 +114,7 @@ border-radius: 12px;
         height: fit-content;
         width: fit-content;
         font-size: 2.2em;
-        font-weight: bolder;
+        font-weight: 200;
         position: relative;
         transform: translate(100px, 0px);
         background-color: inherit;
@@ -132,6 +132,8 @@ border-radius: 12px;
         border-radius: 12px;
         padding: 0.5em;
         font-size: 1.2em;
+           height: 60px;
+        width: 200px;
     }
 
     button:nth-child(3) {
@@ -142,6 +144,8 @@ border-radius: 12px;
         padding: 0.5em;
         font-size: 1.5em;
         border-radius: 12px;
+           height: 60px;
+        width: 200px;
 
     }
 }
@@ -183,7 +187,7 @@ border-radius: 12px;
         height: fit-content;
         width: fit-content;
         font-size: 2.2em;
-        font-weight: bolder;
+        font-weight: 200;
         position: relative;
         transform: translate(100px, 0px);
         background-color: inherit;
@@ -201,6 +205,8 @@ border-radius: 12px;
         border-radius: 12px;
         padding: 0.5em;
         font-size: 1.2em;
+           height: 60px;
+        width: 200px;
     }
 
     button:nth-child(4) {
@@ -211,6 +217,8 @@ border-radius: 12px;
         padding: 0.5em;
         font-size: 1.5em;
         border-radius: 12px;
+           height: 60px;
+        width: 200px;
 
     }
 }
@@ -252,7 +260,7 @@ border-radius: 12px;
         height: fit-content;
         width: fit-content;
         font-size: 2.2em;
-        font-weight: bolder;
+        font-weight: 200;
         position: relative;
         transform: translate(100px, 0px);
         background-color: inherit;
@@ -270,6 +278,8 @@ border-radius: 12px;
         border-radius: 12px;
         padding: 0.5em;
         font-size: 1.2em;
+           height: 60px;
+        width: 200px;
     }
 
     button:nth-child(5) {
@@ -277,9 +287,11 @@ border-radius: 12px;
         width: fit-content;
         background-color: rgb(51, 51, 51, 20%);
         color: ${this._colorBtn};
-        padding: 0.5em;
+         margin-bottom: 20px;
         font-size: 1.5em;
         border-radius: 12px;
+           height: 60px;
+        width: 200px;
 
     }
 }
@@ -323,7 +335,7 @@ border-radius: 12px;
         height: fit-content;
         width: fit-content;
         font-size: 2.2em;
-        font-weight: bolder;
+        font-weight: 300;
         position: relative;
         transform: translate(100px, 0px);
         background-color: inherit;
@@ -335,16 +347,17 @@ border-radius: 12px;
             font-weight: 200;
         }
     }
-    input{
-    color: ${this._colorBtn};
-    background-color: grey;
-    }
+  
 
     input:nth-child(2), input:nth-child(3), input:nth-child(4), input:nth-child(5) {
         text-align: center;
         border-radius: 12px;
         padding: 0.5em;
         font-size: 1.2em;
+        color: ${this._colorBtn};
+        background-color: grey;
+        height: 60px;
+        width: 200px;
     }
 
     button:nth-child(6) {
@@ -352,11 +365,12 @@ border-radius: 12px;
         width: fit-content;
         background-color: rgb(51, 51, 51, 20%);
         color: ${this._colorBtn};
-        padding: 0.5em;
+         margin-bottom: 20px;
         font-size: 1.5em;
         border-radius: 12px;
         border: 1px solid ${this._colorBtn};
-
+        height: 60px;
+        width: 200px;
     }
 }
       
