@@ -1,13 +1,14 @@
 
 export class Formulario {
 
-    constructor(father, whatsApp,photo,
+    constructor(father, whatsApp,photo,colorBtn,
         placeholder_name1 = undefined,
         placeholder_name2 = undefined,
         placeholder_name3 = undefined,
         placeholder_name4 = undefined) {
         this._whatsApp = whatsApp ?? '';
         this._foto = photo;
+        this._colorBtn = colorBtn ?? 'whitesmoke';
         this.placeholders = [placeholder_name1,placeholder_name2,placeholder_name3,placeholder_name4];
         this._padre = (document.querySelector(father)) ? document.querySelector(father) : document.querySelector('body');
         this._fondo = document.createElement('div');
@@ -89,7 +90,7 @@ export class Formulario {
     z-index: 2;
     width: min(20em, 100%);
     height: min(30em, 100%);
-border-radius: 25px;
+border-radius: 12px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -117,7 +118,7 @@ border-radius: 25px;
         position: relative;
         transform: translate(100px, 0px);
         background-color: inherit;
-        color: rgb(211, 21, 21);
+        color: ${this._colorBtn};
         border: none;
         background-color: transparent;
 
@@ -128,7 +129,7 @@ border-radius: 25px;
 
     input:nth-child(2) {
         text-align: center;
-        border-radius: 15px;
+        border-radius: 12px;
         padding: 0.5em;
         font-size: 1.2em;
     }
@@ -137,10 +138,10 @@ border-radius: 25px;
         height: fit-content;
         width: fit-content;
         background-color: rgb(51, 51, 51, 20%);
-        color: whitesmoke;
+        color: ${this._colorBtn};
         padding: 0.5em;
         font-size: 1.5em;
-        border-radius: 15px;
+        border-radius: 12px;
 
     }
 }
@@ -158,7 +159,7 @@ border-radius: 25px;
     z-index: 2;
     width: min(20em, 100%);
     height: min(30em, 100%);
-border-radius: 25px;
+border-radius: 12px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -186,7 +187,7 @@ border-radius: 25px;
         position: relative;
         transform: translate(100px, 0px);
         background-color: inherit;
-        color: rgb(211, 21, 21);
+         color: ${this._colorBtn};
         border: none;
         background-color: transparent;
 
@@ -197,7 +198,7 @@ border-radius: 25px;
 
     input:nth-child(2), input:nth-child(3) {
         text-align: center;
-        border-radius: 15px;
+        border-radius: 12px;
         padding: 0.5em;
         font-size: 1.2em;
     }
@@ -206,10 +207,10 @@ border-radius: 25px;
         height: fit-content;
         width: fit-content;
         background-color: rgb(51, 51, 51, 20%);
-        color: whitesmoke;
+        color: ${this._colorBtn};
         padding: 0.5em;
         font-size: 1.5em;
-        border-radius: 15px;
+        border-radius: 12px;
 
     }
 }
@@ -227,7 +228,7 @@ border-radius: 25px;
     z-index: 2;
     width: min(20em, 100%);
     height: min(30em, 100%);
-border-radius: 25px;
+border-radius: 12px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -255,7 +256,7 @@ border-radius: 25px;
         position: relative;
         transform: translate(100px, 0px);
         background-color: inherit;
-        color: rgb(211, 21, 21);
+        color: ${this._colorBtn};
         border: none;
         background-color: transparent;
 
@@ -266,7 +267,7 @@ border-radius: 25px;
 
     input:nth-child(2), input:nth-child(3), input:nth-child(4) {
         text-align: center;
-        border-radius: 15px;
+        border-radius: 12px;
         padding: 0.5em;
         font-size: 1.2em;
     }
@@ -275,10 +276,10 @@ border-radius: 25px;
         height: fit-content;
         width: fit-content;
         background-color: rgb(51, 51, 51, 20%);
-        color: whitesmoke;
+        color: ${this._colorBtn};
         padding: 0.5em;
         font-size: 1.5em;
-        border-radius: 15px;
+        border-radius: 12px;
 
     }
 }
@@ -298,16 +299,16 @@ border-radius: 25px;
     z-index: 2;
     width: min(20em, 100%);
     height: min(30em, 100%);
-border-radius: 25px;
+    border-radius: 12px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-     background-image: url('${this._foto}');
-      background-repeat: no-repeat;
+    background-image: url('${this._foto}');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-     background-color: #333;
+    background-color: #333;
 
     display: grid;
     justify-content: space-around;
@@ -326,7 +327,7 @@ border-radius: 25px;
         position: relative;
         transform: translate(100px, 0px);
         background-color: inherit;
-        color: rgb(211, 21, 21);
+        color: ${this._colorBtn};
         border: none;
         background-color: transparent;
 
@@ -334,10 +335,14 @@ border-radius: 25px;
             font-weight: 200;
         }
     }
+    input{
+    color: ${this._colorBtn};
+    background-color: grey;
+    }
 
     input:nth-child(2), input:nth-child(3), input:nth-child(4), input:nth-child(5) {
         text-align: center;
-        border-radius: 15px;
+        border-radius: 12px;
         padding: 0.5em;
         font-size: 1.2em;
     }
@@ -346,10 +351,11 @@ border-radius: 25px;
         height: fit-content;
         width: fit-content;
         background-color: rgb(51, 51, 51, 20%);
-        color: whitesmoke;
+        color: ${this._colorBtn};
         padding: 0.5em;
         font-size: 1.5em;
-        border-radius: 15px;
+        border-radius: 12px;
+        border: 1px solid ${this._colorBtn};
 
     }
 }
