@@ -1,7 +1,7 @@
 import { librerias } from './libreria.js';
 import { util } from './utils.js';
 import { CargarWebsInteres } from '../js/webInteres.js';
-import { formularioWsatsApp1 } from './main.js';
+import { formularioWsatsApp2 } from './main.js';
 
 
 
@@ -20,15 +20,15 @@ const objform = {
   functionBtn: ()=> alert('function optional')
 }
 
-//const f = new formularioWsatsApp1(objform);
+//const f = new formularioWsatsApp2(objform);
 
 /*
 const btn = document.querySelector('button');
 btn.addEventListener('click',()=>{
-  const input = document.querySelector('input');
-  alert(input.value())
-})
-  */
+  const input = document.querySelectorAll('input');
+  alert(input[0].value() + input[0].value());
+})*/
+  
 
 
 //,'nombre','apellido','dni','mensaje')
