@@ -99,7 +99,7 @@ export class Formulario {
         const style = document.createElement('style');
         style.innerText = `
         #formulario {
-    position: fixed;
+    position: absolute;
     z-index: 2;
     width: min(20em, 100%);
     height: auto;
@@ -176,7 +176,7 @@ export class Formulario {
         const style = document.createElement('style');
         style.innerText = `
         #formulario {
-    position: fixed;
+    position: absolute;
     z-index: 2;
     width: min(20em, 100%);
     height: auto;
@@ -253,7 +253,7 @@ border-radius: 12px;
         const style = document.createElement('style');
         style.innerText = `
      #formulario {
-    position: fixed;
+    position: absolute;
     z-index: 2;
     width: min(20em, 100%);
     height: auto;
@@ -332,7 +332,7 @@ border-radius: 12px;
         const style = document.createElement('style');
         style.innerText = `
      #formulario {
-    position: fixed;
+    position: absolute;
     z-index: 2;
     width: min(20em, 100%);
     height: auto;

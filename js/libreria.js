@@ -1664,6 +1664,61 @@ import {login} from  ' ${url} ';
       
     ],
   },
+
+  {
+    titulo: "Formularios",
+    ejemplos: [
+        {
+             
+            titulo:"formulario WsatsApp",
+            href:()=> new objs.formularioWsatsApp({father:".ejemplo"}),
+            html:
+            `
+           
+
+            `,
+            css: `<pre class="codigo"><code>
+          
+            
+            
+            </code></pre>`,
+            js: `<pre class="codigo"><code>
+
+        
+
+            </code></pre>`,
+            objeto: `<pre class="codigo"><code>
+            
+            import {formularioWsatsApp} from  ' ${url} ';
+
+            const objform = {
+  father:'.class',
+  whatsApp: null,
+  photo: null,
+  colorBtn: null,
+  backgroundInput: null,
+  backgroundForm : null,
+  placeholder_name1: 'nombre',
+  placeholder_name2: 'apellido',
+  placeholder_name3: 'dni',
+  placeholder_name4: 'ciudad',
+  nameBtn: null,
+  functionBtn: null
+}
+
+const f = new formularioWsatsApp(objform);
+
+
+
+//,'nombre','apellido','dni','mensaje')
+//f.cuatroPersonas();
+//f.tresPersonas();
+f.dosPersonas()
+//f.unaPersona()
+            </code></pre>`
+        }
+    ]
+  }
 ];
 
 /* codigo base:

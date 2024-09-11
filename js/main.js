@@ -13,6 +13,10 @@ import { cartelBbdd } from './objetosJs/cartelBbdd.js';
 import { CartelError } from './objetosJs/CartelError.js';
 import { Notificacion } from './objetosJs/CartelNotificacion.js';
 import { CrearTextoFX01 } from './objetosJs/TextoFX01.js';
+import { Formulario } from './objetosJs/formulario.js';
+
+
+export class formularioWsatsApp extends Formulario{};
 
 export class TextoFX01 extends CrearTextoFX01{};
 
