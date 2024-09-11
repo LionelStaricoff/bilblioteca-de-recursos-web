@@ -1,20 +1,23 @@
 
 export class Formulario {
 
-    constructor(father, whatsApp,photo,colorBtn,
+    constructor(father, whatsApp, photo, colorBtn, backgroundInput,
         placeholder_name1 = undefined,
         placeholder_name2 = undefined,
         placeholder_name3 = undefined,
-        placeholder_name4 = undefined) {
+        placeholder_name4 = undefined,
+        nameBtn
+    ) {
         this._whatsApp = whatsApp ?? '';
         this._foto = photo;
-        this._colorBtn = colorBtn ?? 'whitesmoke';
-        this.placeholders = [placeholder_name1,placeholder_name2,placeholder_name3,placeholder_name4];
+        this._colorBtn = colorBtn ?? 'grey';
+        this._backgroundInput = backgroundInput ?? 'whitesmoke';
+        this.placeholders = [placeholder_name1, placeholder_name2, placeholder_name3, placeholder_name4];
         this._padre = (document.querySelector(father)) ? document.querySelector(father) : document.querySelector('body');
         this._fondo = document.createElement('div');
         this._fondo.id = 'formulario';
         this._button = document.createElement('button');
-        this._button.innerText = 'Enviar'
+        this._button.innerText = nameBtn ?? 'Enviar'
         this._button.addEventListener('click', () => this.enviarMensaje())
         this._x = document.createElement('button');
         this._x.innerText = "X";
@@ -57,9 +60,9 @@ export class Formulario {
         const input = document.createElement('input');
         input.placeholder = this.placeholders[0] ?? 'Nombre completo';
         const input2 = document.createElement('input');
-        input2.placeholder = this.placeholders[1] ??'Nombre completo';
+        input2.placeholder = this.placeholders[1] ?? 'Nombre completo';
         const input3 = document.createElement('input');
-        input3.placeholder = this.placeholders[2] ??'Nombre completo';
+        input3.placeholder = this.placeholders[2] ?? 'Nombre completo';
         const input4 = document.createElement('input');
         input4.placeholder = this.placeholders[3] ?? 'Nombre completo';
         this._fondo.append(this._x, input, input2, input3, input4, this._button)
@@ -132,7 +135,7 @@ border-radius: 12px;
         border-radius: 12px;
         padding: 0.5em;
         font-size: 1.2em;
-           height: 60px;
+        height: 48px;
         width: 200px;
     }
 
@@ -144,8 +147,9 @@ border-radius: 12px;
         padding: 0.5em;
         font-size: 1.5em;
         border-radius: 12px;
-           height: 60px;
+        height: 48px;
         width: 200px;
+        box-shadow: 1px 1px 1px 1px ${this._backgroundInput};
 
     }
 }
@@ -205,8 +209,9 @@ border-radius: 12px;
         border-radius: 12px;
         padding: 0.5em;
         font-size: 1.2em;
-           height: 60px;
+         height: 48px;
         width: 200px;
+      
     }
 
     button:nth-child(4) {
@@ -217,8 +222,9 @@ border-radius: 12px;
         padding: 0.5em;
         font-size: 1.5em;
         border-radius: 12px;
-           height: 60px;
+        height: 48px;
         width: 200px;
+        box-shadow: 1px 1px 1px 1px ${this._backgroundInput};
 
     }
 }
@@ -278,8 +284,9 @@ border-radius: 12px;
         border-radius: 12px;
         padding: 0.5em;
         font-size: 1.2em;
-           height: 60px;
+        height: 48px;
         width: 200px;
+   
     }
 
     button:nth-child(5) {
@@ -290,8 +297,9 @@ border-radius: 12px;
          margin-bottom: 20px;
         font-size: 1.5em;
         border-radius: 12px;
-           height: 60px;
+       height: 48px;
         width: 200px;
+        box-shadow: 1px 1px 1px 1px ${this._backgroundInput};
 
     }
 }
@@ -355,8 +363,8 @@ border-radius: 12px;
         padding: 0.5em;
         font-size: 1.2em;
         color: ${this._colorBtn};
-        background-color: grey;
-        height: 60px;
+        background-color: ${this._backgroundInput};
+        height: 48px;
         width: 200px;
     }
 
@@ -369,8 +377,9 @@ border-radius: 12px;
         font-size: 1.5em;
         border-radius: 12px;
         border: 1px solid ${this._colorBtn};
-        height: 60px;
+        height: 48px;
         width: 200px;
+        box-shadow: 1px 1px 1px 1px ${this._backgroundInput};
     }
 }
       
