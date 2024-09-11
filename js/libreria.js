@@ -1676,17 +1676,92 @@ import {login} from  ' ${url} ';
               },
             html:
             `
-           
+           <div id="formulario">
+           <button>X</button>
+           <input placeholder="nombre">
+           <button>Enviar</button>
+           </div>
 
             `,
             css: `<pre class="codigo"><code>
           
-            
+              #formulario {
+    position: absolute;
+    z-index: 2;
+    width: min(20em, 100%);
+    height: auto;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    //background-image: url(');
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     background-color: #333;
+
+    display: grid;
+    justify-content: space-around;
+    text-align: center;
+    place-items: center;
+    gap: 20px;
+
+    border: solid 3px #333;
+    
+
+    button:nth-child(1) {
+        height: fit-content;
+        width: fit-content;
+        font-size: 2.2em;
+        font-weight: 200;
+        position: relative;
+        transform: translate(100px, 0px);
+        background-color: inherit;
+        color: grey;
+        border: none;
+        background-color: transparent;
+
+        &:hover {
+            font-weight: 200;
+        }
+    }
+
+    input:nth-child(2) {
+        text-align: center;
+        border-radius: 12px;
+        padding: 0.5em;
+        font-size: 1.2em;
+        height: 48px;
+        width: 200px;
+        color: grey;
+        background-color: whitesmoke;
+    }
+
+    button:nth-child(3) {
+        height: fit-content;
+        width: fit-content;
+        background-color: rgb(51, 51, 51, 20%);
+        color: grey;
+        padding: 0.5em;
+        font-size: 1.5em;
+        border-radius: 12px;
+        height: 48px;
+        width: 200px;
+        box-shadow: 1px 1px 1px 1px whitesmoke;
+        margin-bottom: 1em;
+
+    }
+}
             
             </code></pre>`,
             js: `<pre class="codigo"><code>
 
-        
+    const btn = document.querySelector('button');
+    btn.addEventListener('click',()=>{
+    const input = document.querySelector('input');
+    alert(input.value())
+     })
 
             </code></pre>`,
             objeto: `<pre class="codigo"><code>

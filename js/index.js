@@ -22,6 +22,13 @@ const objform = {
 
 //const f = new formularioWsatsApp1(objform);
 
+/*
+const btn = document.querySelector('button');
+btn.addEventListener('click',()=>{
+  const input = document.querySelector('input');
+  alert(input.value())
+})
+  */
 
 
 //,'nombre','apellido','dni','mensaje')
