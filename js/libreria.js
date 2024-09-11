@@ -1671,9 +1671,8 @@ import {login} from  ' ${url} ';
         {
              
             titulo:"formulario WsatsApp",
-            href:()=>{ 
-                const f =  new objs.formularioWsatsApp1({father:"#ej-contenedor"});
-                f.unaPersona();
+            href:()=>{ new objs.formularioWsatsApp1({father:"#ej-contenedor",functionBtn: ()=> alert('function optional')});
+              
               },
             html:
             `
@@ -1694,30 +1693,24 @@ import {login} from  ' ${url} ';
             
             import {formularioWsatsApp} from  ' ${url} ';
 
-            const objform = {
+  const objform = {
   father:'.class',
   whatsApp: null,
   photo: null,
   colorBtn: null,
   backgroundInput: null,
   backgroundForm : null,
-  placeholder_name1: 'nombre',
-  placeholder_name2: 'apellido',
-  placeholder_name3: 'dni',
-  placeholder_name4: 'ciudad',
+  placeholder_name1: null,
   nameBtn: null,
-  functionBtn: null
-}
-
-const f = new formularioWsatsApp(objform);
+  functionBtn: null //()=> alert('optional logic')
+  }
 
 
+      const f = new formularioWsatsApp(objform);
 
-//,'nombre','apellido','dni','mensaje')
-//f.cuatroPersonas();
-//f.tresPersonas();
-f.dosPersonas()
-//f.unaPersona()
+
+
+
             </code></pre>`
         }
     ]

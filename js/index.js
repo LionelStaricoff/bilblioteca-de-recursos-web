@@ -17,10 +17,10 @@ const objform = {
   placeholder_name3: 'dni',
   placeholder_name4: 'ciudad',
   nameBtn: null,
-  functionBtn: null
+  functionBtn: ()=> alert('function optional')
 }
 
-//const f = new formularioWsatsApp1({father:".ejemplo"});
+//const f = new formularioWsatsApp1(objform);
 
 
 
