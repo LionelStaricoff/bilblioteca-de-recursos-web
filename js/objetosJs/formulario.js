@@ -64,7 +64,7 @@ export class Formulario {
 
     cuatroPersonas() {
         if(!util.verificarCss('#formulario4') ) this.crearCss4();
-        this._fondo.id = 'formulario1';
+        this._fondo.id = 'formulario4';
         const input = document.createElement('input');
         input.placeholder = this.placeholders[0] ?? 'Nombre completo';
         const input2 = document.createElement('input');

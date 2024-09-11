@@ -1695,11 +1695,11 @@ import {login} from  ' ${url} ';
     left: 50%;
     transform: translate(-50%, -50%);
 
-    //background-image: url(');
-      background-repeat: no-repeat;
+    background-image: url(');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-     background-color: #333;
+    background-color: #333;
 
     display: grid;
     justify-content: space-around;
@@ -1815,7 +1815,7 @@ border-radius: 12px;
     left: 50%;
     transform: translate(-50%, -50%);
 
-       //background-image: url('');
+       background-image: url('');
       background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2024,6 +2024,134 @@ border-radius: 12px;
   placeholder_name1: null,
   placeholder_name2: 'apellido',
   placeholder_name3: 'dni',
+  nameBtn: null,
+  functionBtn: null //()=> alert('optional logic')
+  }
+
+
+      const f = new formularioWsatsApp(objform);
+
+
+
+
+            </code></pre>`
+        },
+
+        {
+             
+            titulo:"formulario WsatsApp3",
+            href:()=>{ new objs.formularioWsatsApp4({father:"#ej-contenedor",functionBtn: ()=> alert('function optional')});
+              
+              },
+            html:
+            `
+          <div id="formulario">
+          <button>X</button>
+          <input placeholder="nombre">
+          <input placeholder="apellido">
+          <input placeholder="dni">
+          <input placeholder="ciudad">
+          <button>Enviar</button></div>
+
+            `,
+            css: `<pre class="codigo"><code>
+          
+               #formulario4 {
+    position: absolute;
+    z-index: 2;
+    width: min(20em, 100%);
+    height: auto;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+
+    display: grid;
+    justify-content: space-around;
+    text-align: center;
+    place-items: center;
+    gap: 20px;
+
+    border: solid 3px #333;
+    
+
+    button:nth-child(1) {
+        height: fit-content;
+        width: fit-content;
+        font-size: 2.2em;
+        font-weight: 300;
+        position: relative;
+        transform: translate(100px, 0px);
+        background-color: inherit;
+        color: grey;
+        border: none;
+        background-color: transparent;
+
+        &:hover {
+            font-weight: 200;
+        }
+    }
+  
+
+    input:nth-child(2), input:nth-child(3), input:nth-child(4), input:nth-child(5) {
+        text-align: center;
+        border-radius: 12px;
+        padding: 0.5em;
+        font-size: 1.2em;
+        color: grey;
+        background-color: whitesmoke;
+        height: 48px;
+        width: 200px;
+    }
+
+    button:nth-child(6) {
+        height: fit-content;
+        width: fit-content;
+        background-color: rgb(51, 51, 51, 20%);
+        color: grey;
+         margin-bottom: 20px;
+        font-size: 1.5em;
+        border-radius: 12px;
+        border: 1px solid grey;
+        height: 48px;
+        width: 200px;
+        box-shadow: 1px 1px 1px 1px whitesmoke;
+        margin-bottom: 2em;
+    }
+}
+
+            </code></pre>`,
+            js: `<pre class="codigo"><code>
+
+  const btn = document.querySelector('button');
+  btn.addEventListener('click',()=>{
+  const input = document.querySelectorAll('input');
+  alert(input[0].value() + input[1].value() + input[2].value()+ input[3].value());
+  })
+  
+
+            </code></pre>`,
+            objeto: `<pre class="codigo"><code>
+            
+            import {formularioWsatsApp4} from  ' ${url} ';
+
+  const objform = {
+  father:'.class',
+  whatsApp: null,
+  photo: null,
+  colorBtn: null,
+  backgroundInput: null,
+  backgroundForm : null,
+  placeholder_name1: null,
+  placeholder_name2: 'apellido',
+  placeholder_name3: 'dni',
+  placeholder_name4: 'ciudad',
   nameBtn: null,
   functionBtn: null //()=> alert('optional logic')
   }
