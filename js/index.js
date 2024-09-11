@@ -10,14 +10,15 @@ const objform = {
   father:'.centro',
   whatsApp: null,
   photo: null,
-  colorBtn: null,
-  backgroundInput: null,
+  colorBtn: 'red',
+  backgroundInput: 'green',
+  backgroundForm : 'grey',
   placeholder_name1: 'nombre',
   placeholder_name2: 'apellido',
   placeholder_name3: 'dni',
   placeholder_name4: 'ciudad',
-  nameBtn: null,
-  functionBtn: null
+  nameBtn: 'Mandalo',
+  functionBtn: ()=> alert('datos enviados')
 }
 
 const f = new Formulario(objform)
@@ -25,10 +26,10 @@ const f = new Formulario(objform)
 
 
 //,'nombre','apellido','dni','mensaje')
-f.cuatroPersonas();
+//f.cuatroPersonas();
 //f.tresPersonas();
 //f.dosPersonas()
-//f.unaPersona()
+f.unaPersona()
 
 const iframe = document.querySelector("#iframe");
 const ej = document.querySelector("#ej-contenedor");

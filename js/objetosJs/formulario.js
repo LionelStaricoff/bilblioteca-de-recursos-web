@@ -3,7 +3,7 @@ import {util} from '../utils.js'
 export class Formulario {
 
     constructor({father, whatsApp, photo, 
-        colorBtn, backgroundInput,
+        colorBtn, backgroundInput,backgroundForm,
         placeholder_name1 = undefined,
         placeholder_name2 = undefined,
         placeholder_name3 = undefined,
@@ -15,6 +15,7 @@ export class Formulario {
         this._foto = photo;
         this._colorBtn = colorBtn ?? 'grey';
         this._backgroundInput = backgroundInput ?? 'whitesmoke';
+        this._backgroundForm = backgroundForm ?? '#333'
         this.placeholders = [placeholder_name1, placeholder_name2, placeholder_name3, placeholder_name4];
         this._padre = (document.querySelector(father)) ? document.querySelector(father) : document.querySelector('body');
         this._fondo = document.createElement('div');
@@ -111,7 +112,7 @@ export class Formulario {
       background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-     background-color: #333;
+     background-color: ${this._backgroundForm};
 
     display: grid;
     justify-content: space-around;
@@ -146,6 +147,8 @@ export class Formulario {
         font-size: 1.2em;
         height: 48px;
         width: 200px;
+        color: ${this._colorBtn};
+        background-color: ${this._backgroundInput};
     }
 
     button:nth-child(3) {
@@ -186,7 +189,7 @@ border-radius: 12px;
       background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-     background-color: #333;
+     background-color: ${this._backgroundForm};
 
     display: grid;
     justify-content: space-around;
@@ -219,8 +222,10 @@ border-radius: 12px;
         border-radius: 12px;
         padding: 0.5em;
         font-size: 1.2em;
-         height: 48px;
+        height: 48px;
         width: 200px;
+        color: ${this._colorBtn};
+        background-color: ${this._backgroundInput};
       
     }
 
@@ -261,7 +266,7 @@ border-radius: 12px;
       background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-     background-color: #333;
+     background-color:${this._backgroundForm};
 
     display: grid;
     justify-content: space-around;
@@ -296,6 +301,8 @@ border-radius: 12px;
         font-size: 1.2em;
         height: 48px;
         width: 200px;
+        color: ${this._colorBtn};
+        background-color: ${this._backgroundInput};
    
     }
 
@@ -338,7 +345,7 @@ border-radius: 12px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: #333;
+    background-color: ${this._backgroundForm};
 
     display: grid;
     justify-content: space-around;
@@ -390,7 +397,7 @@ border-radius: 12px;
         height: 48px;
         width: 200px;
         box-shadow: 1px 1px 1px 1px ${this._backgroundInput};
-        margin-bottom: 1em;
+        margin-bottom: 2em;
     }
 }
       
