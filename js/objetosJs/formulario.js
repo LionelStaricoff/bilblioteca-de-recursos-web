@@ -101,7 +101,7 @@ export class Formulario {
     position: fixed;
     z-index: 2;
     width: min(20em, 100%);
-    height: min(30em, 100%);
+    height: auto;
     border-radius: 12px;
     top: 50%;
     left: 50%;
@@ -159,6 +159,7 @@ export class Formulario {
         height: 48px;
         width: 200px;
         box-shadow: 1px 1px 1px 1px ${this._backgroundInput};
+        margin-bottom: 1em;
 
     }
 }
@@ -175,7 +176,7 @@ export class Formulario {
     position: fixed;
     z-index: 2;
     width: min(20em, 100%);
-    height: min(30em, 100%);
+    height: auto;
 border-radius: 12px;
     top: 50%;
     left: 50%;
@@ -234,7 +235,7 @@ border-radius: 12px;
         height: 48px;
         width: 200px;
         box-shadow: 1px 1px 1px 1px ${this._backgroundInput};
-
+        margin-bottom: 1em;
     }
 }
         `
@@ -250,8 +251,8 @@ border-radius: 12px;
     position: fixed;
     z-index: 2;
     width: min(20em, 100%);
-    height: min(30em, 100%);
-border-radius: 12px;
+    height: auto;
+    border-radius: 12px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -303,13 +304,13 @@ border-radius: 12px;
         width: fit-content;
         background-color: rgb(51, 51, 51, 20%);
         color: ${this._colorBtn};
-         margin-bottom: 20px;
+        margin-bottom: 20px;
         font-size: 1.5em;
         border-radius: 12px;
-       height: 48px;
+        height: 48px;
         width: 200px;
         box-shadow: 1px 1px 1px 1px ${this._backgroundInput};
-
+        margin-bottom: 1em;
     }
 }
       
@@ -327,7 +328,7 @@ border-radius: 12px;
     position: fixed;
     z-index: 2;
     width: min(20em, 100%);
-    height: min(30em, 100%);
+    height: auto;
     border-radius: 12px;
     top: 50%;
     left: 50%;
@@ -389,6 +390,7 @@ border-radius: 12px;
         height: 48px;
         width: 200px;
         box-shadow: 1px 1px 1px 1px ${this._backgroundInput};
+        margin-bottom: 1em;
     }
 }
       

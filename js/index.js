@@ -25,10 +25,10 @@ const f = new Formulario(objform)
 
 
 //,'nombre','apellido','dni','mensaje')
-//f.cuatroPersonas();
+f.cuatroPersonas();
 //f.tresPersonas();
 //f.dosPersonas()
-f.unaPersona()
+//f.unaPersona()
 
 const iframe = document.querySelector("#iframe");
 const ej = document.querySelector("#ej-contenedor");
