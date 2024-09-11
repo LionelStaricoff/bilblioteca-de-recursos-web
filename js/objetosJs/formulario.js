@@ -1,12 +1,15 @@
+import {util} from '../utils.js'
 
 export class Formulario {
 
-    constructor(father, whatsApp, photo, colorBtn, backgroundInput,
+    constructor({father, whatsApp, photo, 
+        colorBtn, backgroundInput,
         placeholder_name1 = undefined,
         placeholder_name2 = undefined,
         placeholder_name3 = undefined,
         placeholder_name4 = undefined,
-        nameBtn
+        nameBtn,
+        functionBtn}
     ) {
         this._whatsApp = whatsApp ?? '';
         this._foto = photo;
@@ -22,11 +25,12 @@ export class Formulario {
         this._x = document.createElement('button');
         this._x.innerText = "X";
         this._x.addEventListener('click', () => this._padre.removeChild(this._fondo));
+        this._functionBtn = functionBtn;
 
     }
 
     unaPersona() {
-        this.crearCss();
+        if(!util.verificarCss('#formulario') ) this.crearCss();
         const input = document.createElement('input');
         input.placeholder = this.placeholders[0] ?? 'Nombre completo'
         this._fondo.append(this._x, input, this._button)
@@ -34,7 +38,7 @@ export class Formulario {
     }
 
     dosPersonas() {
-        this.crearCss2();
+        if(!util.verificarCss('#formulario') ) this.crearCss2();
         const input = document.createElement('input');
         input.placeholder = this.placeholders[0] ?? 'Nombre completo';
         const input2 = document.createElement('input');
@@ -44,7 +48,7 @@ export class Formulario {
     }
 
     tresPersonas() {
-        this.crearCss3();
+        if(!util.verificarCss('#formulario') ) this.crearCss3();
         const input = document.createElement('input');
         input.placeholder = this.placeholders[0] ?? 'Nombre completo';
         const input2 = document.createElement('input');
@@ -56,7 +60,7 @@ export class Formulario {
     }
 
     cuatroPersonas() {
-        this.crearCss4();
+        if(!util.verificarCss('#formulario') ) this.crearCss4();
         const input = document.createElement('input');
         input.placeholder = this.placeholders[0] ?? 'Nombre completo';
         const input2 = document.createElement('input');
@@ -70,6 +74,10 @@ export class Formulario {
     }
 
     enviarMensaje() {
+
+        if( typeof this._functionBtn == 'function'){
+            this._functionBtn();
+        }else{
         const numero = this._whatsApp;
         let mensaje = '';
         const inputs = document.querySelectorAll("input");
@@ -82,6 +90,7 @@ export class Formulario {
 
 
         globalThis.open(enlaceWhatsApp);
+        }
     }
 
     crearCss() {
@@ -93,7 +102,7 @@ export class Formulario {
     z-index: 2;
     width: min(20em, 100%);
     height: min(30em, 100%);
-border-radius: 12px;
+    border-radius: 12px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
