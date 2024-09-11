@@ -16,7 +16,7 @@ import { CrearTextoFX01 } from './objetosJs/TextoFX01.js';
 import { Formulario } from './objetosJs/formulario.js';
 
 
-export class formularioWsatsApp extends Formulario{};
+export class formularioWsatsApp1 extends Formulario{};
 
 export class TextoFX01 extends CrearTextoFX01{};
 

@@ -1671,7 +1671,10 @@ import {login} from  ' ${url} ';
         {
              
             titulo:"formulario WsatsApp",
-            href:()=> new objs.formularioWsatsApp({father:".ejemplo"}),
+            href:()=>{ 
+                const f =  new objs.formularioWsatsApp1({father:"#ej-contenedor"});
+                f.unaPersona();
+              },
             html:
             `
            

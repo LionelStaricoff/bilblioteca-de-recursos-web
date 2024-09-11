@@ -1,7 +1,7 @@
 import { librerias } from './libreria.js';
 import { util } from './utils.js';
 import { CargarWebsInteres } from '../js/webInteres.js';
-import { formularioWsatsApp } from './main.js';
+import { formularioWsatsApp1 } from './main.js';
 
 
 
@@ -20,7 +20,7 @@ const objform = {
   functionBtn: null
 }
 
-const f = new formularioWsatsApp({father:".ejemplo"});
+//const f = new formularioWsatsApp1({father:".ejemplo"});
 
 
 
@@ -28,7 +28,7 @@ const f = new formularioWsatsApp({father:".ejemplo"});
 //f.cuatroPersonas();
 //f.tresPersonas();
 //f.dosPersonas()
-f.unaPersona()
+//f.unaPersona()
 
 const iframe = document.querySelector("#iframe");
 const ej = document.querySelector("#ej-contenedor");
