@@ -19,7 +19,7 @@ export class Formulario {
         this.placeholders = [placeholder_name1, placeholder_name2, placeholder_name3, placeholder_name4];
         this._padre = (document.querySelector(father)) ? document.querySelector(father) : document.querySelector('body');
         this._fondo = document.createElement('div');
-        this._fondo.id = 'formulario';
+        this._fondo.id = 'formulario1';
         this._button = document.createElement('button');
         this._button.innerText = nameBtn ?? 'Enviar'
         this._button.addEventListener('click', () => this.enviarMensaje())
@@ -31,7 +31,7 @@ export class Formulario {
     }
 
     unaPersona() {
-        if(!util.verificarCss('#formulario') ) this.crearCss();
+        if(!util.verificarCss('#formulario1') ) this.crearCss();
         const input = document.createElement('input');
         input.placeholder = this.placeholders[0] ?? 'Nombre completo'
         this._fondo.append(this._x, input, this._button)
@@ -39,7 +39,8 @@ export class Formulario {
     }
 
     dosPersonas() {
-        if(!util.verificarCss('#formulario') ) this.crearCss2();
+        if(!util.verificarCss('#formulario2') ) this.crearCss2();
+        this._fondo.id = 'formulario2';
         const input = document.createElement('input');
         input.placeholder = this.placeholders[0] ?? 'Nombre completo';
         const input2 = document.createElement('input');
@@ -49,7 +50,8 @@ export class Formulario {
     }
 
     tresPersonas() {
-        if(!util.verificarCss('#formulario') ) this.crearCss3();
+        if(!util.verificarCss('#formulario3') ) this.crearCss3();
+        this._fondo.id = 'formulario3';
         const input = document.createElement('input');
         input.placeholder = this.placeholders[0] ?? 'Nombre completo';
         const input2 = document.createElement('input');
@@ -61,7 +63,8 @@ export class Formulario {
     }
 
     cuatroPersonas() {
-        if(!util.verificarCss('#formulario') ) this.crearCss4();
+        if(!util.verificarCss('#formulario4') ) this.crearCss4();
+        this._fondo.id = 'formulario1';
         const input = document.createElement('input');
         input.placeholder = this.placeholders[0] ?? 'Nombre completo';
         const input2 = document.createElement('input');
@@ -98,7 +101,7 @@ export class Formulario {
         const head = document.head;
         const style = document.createElement('style');
         style.innerText = `
-        #formulario {
+        #formulario1 {
     position: absolute;
     z-index: 2;
     width: min(20em, 100%);
@@ -175,7 +178,7 @@ export class Formulario {
         const head = document.head;
         const style = document.createElement('style');
         style.innerText = `
-        #formulario {
+        #formulario2 {
     position: absolute;
     z-index: 2;
     width: min(20em, 100%);
@@ -252,7 +255,7 @@ border-radius: 12px;
         const head = document.head;
         const style = document.createElement('style');
         style.innerText = `
-     #formulario {
+     #formulario3 {
     position: absolute;
     z-index: 2;
     width: min(20em, 100%);
@@ -331,7 +334,7 @@ border-radius: 12px;
         const head = document.head;
         const style = document.createElement('style');
         style.innerText = `
-     #formulario {
+     #formulario4 {
     position: absolute;
     z-index: 2;
     width: min(20em, 100%);

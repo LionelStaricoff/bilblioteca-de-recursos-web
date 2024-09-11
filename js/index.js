@@ -1,7 +1,7 @@
 import { librerias } from './libreria.js';
 import { util } from './utils.js';
 import { CargarWebsInteres } from '../js/webInteres.js';
-import { formularioWsatsApp2 } from './main.js';
+import { formularioWsatsApp1, formularioWsatsApp2, formularioWsatsApp3 } from './main.js';
 
 
 
@@ -20,7 +20,7 @@ const objform = {
   functionBtn: ()=> alert('function optional')
 }
 
-//const f = new formularioWsatsApp2(objform);
+const f = new formularioWsatsApp1(objform);
 
 /*
 const btn = document.querySelector('button');

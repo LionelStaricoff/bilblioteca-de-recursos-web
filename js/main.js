@@ -87,8 +87,22 @@ export class formularioWsatsApp2 extends Formulario {
 };
 
 export class formularioWsatsApp3 extends Formulario {
-    constructor({ father, whatsApp, photo, colorBtn, backgroundInput, backgroundForm, placeholder_name1 = undefined, placeholder_name2 = undefined, placeholder_name3 = undefined, placeholder_name4 = undefined, nameBtn, functionBtn }) {
-        super(father, whatsApp, photo, colorBtn, backgroundInput, backgroundForm, placeholder_name1, placeholder_name2, placeholder_name3, placeholder_name4, nameBtn, functionBtn);
+    constructor({ father: _father, whatsApp: _whatsApp, photo: _photo, 
+        colorBtn: _colorBtn, backgroundInput: _backgroundInput,
+         backgroundForm: _backgroundForm, placeholder_name1: _placeholder_name1 = undefined,
+         placeholder_name2: _placeholder_name2 = undefined,placeholder_name3: _placeholder_name3 = undefined,
+          nameBtn: _nameBtn, functionBtn: _functionBtn }) {
+        const objform = {
+            father:_father,whatsApp: _whatsApp,
+            photo: _photo, colorBtn: _colorBtn,
+            backgroundInput: _backgroundInput,
+            backgroundForm : _backgroundForm,
+            placeholder_name1: _placeholder_name1,
+            placeholder_name2: _placeholder_name2,
+            placeholder_name3: _placeholder_name3,
+            nameBtn: _nameBtn,functionBtn: _functionBtn
+          }
+        super(objform);
         this.tresPersonas();
     }
 };
