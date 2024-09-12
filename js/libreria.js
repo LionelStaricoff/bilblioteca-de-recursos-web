@@ -1750,6 +1750,7 @@ import {login} from  ' ${url} ';
         width: 200px;
         box-shadow: 1px 1px 1px 1px whitesmoke;
         margin-bottom: 1em;
+        line-height: 100%;
 
     }
 }
@@ -1871,6 +1872,7 @@ border-radius: 12px;
         width: 200px;
         box-shadow: 1px 1px 1px 1px whitesmoke;
         margin-bottom: 1em;
+        line-height: 100%;
     }
 }
             

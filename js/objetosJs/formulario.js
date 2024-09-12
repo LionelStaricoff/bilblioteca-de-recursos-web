@@ -166,7 +166,7 @@ export class Formulario {
         width: 200px;
         box-shadow: 1px 1px 1px 1px ${this._backgroundInput};
         margin-bottom: 1em;
-
+        line-height: 100%;
     }
 }
         `
@@ -244,6 +244,7 @@ border-radius: 12px;
         width: 200px;
         box-shadow: 1px 1px 1px 1px ${this._backgroundInput};
         margin-bottom: 1em;
+        line-height: 100%;
     }
 }
         `
@@ -314,13 +315,13 @@ border-radius: 12px;
         width: fit-content;
         background-color: rgb(51, 51, 51, 20%);
         color: ${this._colorBtn};
-        margin-bottom: 20px;
         font-size: 1.5em;
         border-radius: 12px;
         height: 48px;
         width: 200px;
         box-shadow: 1px 1px 1px 1px ${this._backgroundInput};
         margin-bottom: 1em;
+        
     }
 }
       
@@ -393,7 +394,6 @@ border-radius: 12px;
         width: fit-content;
         background-color: rgb(51, 51, 51, 20%);
         color: ${this._colorBtn};
-         margin-bottom: 20px;
         font-size: 1.5em;
         border-radius: 12px;
         border: 1px solid ${this._colorBtn};
