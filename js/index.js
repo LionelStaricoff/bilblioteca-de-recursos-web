@@ -20,7 +20,7 @@ const objform = {
   functionBtn: ()=> alert('function optional')
 }
 
- new formularioWsatsApp2(objform);
+ //new formularioWsatsApp2(objform);
 
 /*
 const btn = document.querySelector('button');
