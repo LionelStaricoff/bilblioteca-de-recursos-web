@@ -2167,7 +2167,53 @@ border-radius: 12px;
             </code></pre>`
         },
     ]
-  }
+  },
+
+{
+    titulo: "Herramientas",
+    ejemplos: [
+
+        {
+             
+            titulo:"VerificarCss",
+            href:()=> {
+                new objs.TextoFX01("#ej-contenedor",'El objeto verificarCss(id o class), se utiliza para realizar importaciones dinámicas de css.');
+                new objs.TextoFX01("#ej-contenedor",'Solo hay que colocar un id o clase y buscara entre las hojas de style dentro del <head> para ver si existe esa clase o id, en el caso de que exista retornara  true sino false.');
+                new objs.TextoFX01("#ej-contenedor",'En la parte de objetos pueden ver como se importa y ulitiza el objeto');
+            },
+            html:
+            `
+                   No contiene
+
+            `,
+            css: `<pre class="codigo"><code>
+          
+                               No contiene
+
+            
+            </code></pre>`,
+            js: `<pre class="codigo"><code>
+
+                           No contiene
+
+
+            </code></pre>`,
+            objeto: `<pre class="codigo"><code>
+            
+            import {VerificarCss} from  ' ${url} ';
+
+            // Donde this.agregarCss() es una clase interna de tu objeto el cual crea un style y lo agrega al head
+
+            //Agregando la clase animated-title si no existe
+             if (!verificarCss('.animated-title')) this.agregarCss();
+
+              //Agregando el id animated-title si no existe
+             if (!verificarCss('#animated-title')) this.agregarCss();
+
+            </code></pre>`
+        }
+    ]
+},
 ];
 
 /* codigo base:

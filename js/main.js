@@ -14,9 +14,11 @@ import { CartelError } from './objetosJs/CartelError.js';
 import { Notificacion } from './objetosJs/CartelNotificacion.js';
 import { CrearTextoFX01 } from './objetosJs/TextoFX01.js';
 import { Formulario } from './objetosJs/formulario.js';
+import {util} from './utils.js';
 
 
 
+export const VerificarCss = (msj)=> {return util.verificarCss(msj)}; 
 
 export class TextoFX01 extends CrearTextoFX01 { };
 
