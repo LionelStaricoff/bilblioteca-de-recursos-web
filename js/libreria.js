@@ -1230,15 +1230,7 @@ contenedor.addEventListener("mouseleave", autoPlay);
                 },
 
                 html: `
-        <!DOCTYPE html>
-        <html lang="es">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <title>Animación de Título</title>
-        </head>
-        <body>
+       
         <div class="title-container">
         <h1>
             <span class="animated-title" style="animation-delay: 0.1s;">T</span>
@@ -1257,8 +1249,7 @@ contenedor.addEventListener("mouseleave", autoPlay);
             <span class="animated-title" style="animation-delay: 1.4s;">í</span>
         </h1>
     </div>
-</body>
-</html>
+
         `,
                 css: `<pre class="codigo"><code>
         .title-container {
@@ -1292,15 +1283,7 @@ contenedor.addEventListener("mouseleave", autoPlay);
         }
         </code></pre>`,
                 js: `<pre class="codigo"><code>
-         renderTitle() {
-        this.text.split('').forEach((char, index) => {
-            const span = document.createElement('span');
-            span.classList.add('animated-title');
-            span.style.animationDelay = '1s';
-            span.textContent = char === ' ' ? '\u00A0' : char;
-            this.container.appendChild(span);
-        });
-    }
+        no posee
         </code></pre>`,
                 objeto: `<pre class="codigo"><code>
             import {CrearTextoFX01} from  ' ${url} ';
@@ -1320,16 +1303,62 @@ contenedor.addEventListener("mouseleave", autoPlay);
 
                 html: `
         
-
+   <div class="spanAnimation">
+       
+            <span class="animated-title" style="animation-delay: 0.1s;">T</span>
+            <span class="animated-title" style="animation-delay: 0.2s;">u</span>
+            <span class="animated-title" style="animation-delay: 0.3s;">&nbsp;</span>
+            <span class="animated-title" style="animation-delay: 0.4s;">T</span>
+            <span class="animated-title" style="animation-delay: 0.5s;">í</span>
+            <span class="animated-title" style="animation-delay: 0.6s;">t</span>
+            <span class="animated-title" style="animation-delay: 0.7s;">u</span>
+            <span class="animated-title" style="animation-delay: 0.8s;">l</span>
+            <span class="animated-title" style="animation-delay: 0.9s;">o</span>
+            <span class="animated-title" style="animation-delay: 1.0s;">&nbsp;</span>
+            <span class="animated-title" style="animation-delay: 1.1s;">A</span>
+            <span class="animated-title" style="animation-delay: 1.2s;">q</span>
+            <span class="animated-title" style="animation-delay: 1.3s;">u</span>
+            <span class="animated-title" style="animation-delay: 1.4s;">í</span>
+     
+    </div>
 
         `,
                 css: `<pre class="codigo"><code>
-        
+              
+   .spanAnimation {
+
+    span {
+     
+    overflow: visible;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn forwards;
+    height: fit-content;
+    text-wrap: wrap;
+    }
+
+}
+
+
+
+/* Animación para cada letra */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
         </code></pre>`,
                 js: `<pre class="codigo"><code>
         
-
+       no posee
         </code></pre>`,
                 objeto: `<pre class="codigo"><code>
             import {TextoFxBlock} from  ' ${url} ';

@@ -30,9 +30,6 @@ export class CrearSpanAnimation {
         
    .spanAnimation {
 
-
-  
-
     span {
      
     overflow: visible;
