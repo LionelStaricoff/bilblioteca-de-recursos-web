@@ -1,41 +1,10 @@
 import { librerias } from './libreria.js';
 import { util } from './utils.js';
 import { CargarWebsInteres } from '../js/webInteres.js';
-import { formularioWsatsApp1, formularioWsatsApp2, formularioWsatsApp3, formularioWsatsApp4 } from './main.js';
+import { TextoFxBlock } from './main.js';
 
 
-
-const objform = {
-  father:'.class',
-  whatsApp: null,
-  photo: null,
-  colorBtn: null,
-  backgroundInput: null,
-  backgroundForm : null,
-  placeholder_name1: 'nombre',
-  placeholder_name2: 'apellido',
-  placeholder_name3: 'dni',
-  placeholder_name4: 'ciudad',
-  nameBtn: null,
-  functionBtn: ()=> alert('function optional')
-}
-
- //new formularioWsatsApp2(objform);
-
-/*
-const btn = document.querySelector('button');
-btn.addEventListener('click',()=>{
-  const input = document.querySelectorAll('input');
-  alert(input[0].value() + input[0].value());
-})*/
-  
-
-
-//,'nombre','apellido','dni','mensaje')
-//f.cuatroPersonas();
-//f.tresPersonas();
-//f.dosPersonas()
-//f.unaPersona()
+new TextoFxBlock('hola a todos probando el texto en block','#ej-contenedor')
 
 const iframe = document.querySelector("#iframe");
 const ej = document.querySelector("#ej-contenedor");

@@ -2205,7 +2205,7 @@ border-radius: 12px;
             // Donde this.agregarCss() es una clase interna de tu objeto el cual crea un style y lo agrega al head
 
             //Agregando la clase animated-title si no existe
-             if (!verificarCss('.animated-title')) this.agregarCss();
+             if (!VerificarCss('.animated-title')) this.agregarCss();
 
               //Agregando el id animated-title si no existe
              if (!verificarCss('#animated-title')) this.agregarCss();

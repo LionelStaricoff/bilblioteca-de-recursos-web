@@ -15,8 +15,10 @@ import { Notificacion } from './objetosJs/CartelNotificacion.js';
 import { CrearTextoFX01 } from './objetosJs/TextoFX01.js';
 import { Formulario } from './objetosJs/formulario.js';
 import {util} from './utils.js';
+import {CrearSpanAnimation} from './objetosJs/CrearSpanAnimation.js'
 
 
+export class TextoFxBlock extends CrearSpanAnimation{};
 
 export const VerificarCss = (msj)=> {return util.verificarCss(msj)}; 
 
