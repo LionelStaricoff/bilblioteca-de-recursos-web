@@ -18,6 +18,7 @@ import {util} from './utils.js';
 import {CrearSpanAnimation} from './objetosJs/CrearSpanAnimation.js'
 
 
+
 export class TextoFxBlock extends CrearSpanAnimation{};
 
 export const VerificarCss = (msj)=> {return util.verificarCss(msj)}; 

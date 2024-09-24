@@ -1,10 +1,10 @@
 import { librerias } from './libreria.js';
 import { util } from './utils.js';
 import { CargarWebsInteres } from '../js/webInteres.js';
-import { TextoFxBlock } from './main.js';
 
 
-new TextoFxBlock('hola a todos probando el texto en block','#ej-contenedor')
+
+
 
 const iframe = document.querySelector("#iframe");
 const ej = document.querySelector("#ej-contenedor");

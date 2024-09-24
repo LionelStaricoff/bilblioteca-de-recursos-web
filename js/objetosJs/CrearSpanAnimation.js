@@ -30,7 +30,7 @@ export class CrearSpanAnimation {
         
    .spanAnimation {
 
-  
+
   
 
     span {
@@ -41,7 +41,7 @@ export class CrearSpanAnimation {
     transform: translateX(100%);
     animation: slideIn forwards;
     height: fit-content;
-       
+    text-wrap: wrap;
     }
 
 }
