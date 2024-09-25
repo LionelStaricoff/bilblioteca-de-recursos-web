@@ -5,13 +5,13 @@ export class CartelError {
     constructor(containerSelector = 'body', _errorMessage) {
         this.container = document.querySelector(containerSelector);
 
-       if(!util.verificarCss('.errorMessage') )  this.agregarStyleCss();
+        if (!util.verificarCss('.errorMessage')) this.agregarStyleCss();
         this.displayError(_errorMessage)
-    
+
     }
 
     displayError(errorMessage) {
-      
+
         const errorMessageElement = document.createElement('div');
         errorMessageElement.textContent = errorMessage ?? '¡Ouch! Hubo un error al cargar la información. Intenta más tarde.';
         errorMessageElement.classList.add('errorMessage');
@@ -26,11 +26,11 @@ export class CartelError {
     }
 
     agregarStyleCss() {
-       
-      
+
+
         const head = document.querySelector('head');
         const style = document.createElement('style');
-      
+
         style.innerText = `.errorMessage {
     width: 10em;
     background-color: #f2bfbf;
@@ -68,10 +68,10 @@ export class CartelError {
 `
 
         head.appendChild(style);
-  
-   
+
+
     }
-  
+
     eliminarCartel(_padre) {
         const padre = _padre.parentNode;
         padre.removeChild(_padre)
@@ -123,21 +123,21 @@ export const util = {
 
         if (!globalThis.color) {
             import('https://lionelstaricoff.github.io/paint-code/Paint.js')
-       
-           
-                .then(module => module.ColorearHtmlInnerText )
+
+
+                .then(module => module.ColorearHtmlInnerText)
 
                 .then(data => {
 
                     globalThis.color = class colorearModule extends data { };
 
-                   new globalThis.color( 'deepskyblue','lime','#333','white')
+                    new globalThis.color('deepskyblue', 'lime', '#333', 'white')
                 })
                 .catch(error => console.error(error));
         } else {
             try {
 
-                new globalThis.color( 'deepskyblue','lime','#333','white')
+                new globalThis.color('deepskyblue', 'lime', '#333', 'white')
             } catch (error) {
                 console.error(error)
             }
@@ -151,38 +151,59 @@ export const util = {
     },
 
 
-    verificarCss: (_mensaje) =>{
+    verificarCss: (_mensaje) => {
 
-        return  ( (mensaje)=> {
-              const hojasDeEstilo = document.styleSheets;
-            
-              for (const hoja of hojasDeEstilo) {
+        return ((mensaje) => {
+            const hojasDeEstilo = document.styleSheets;
+
+            for (const hoja of hojasDeEstilo) {
                 try {
-                  const reglas = hoja.cssRules || hoja.rules;
-                  if (reglas) {
-                    for (const regla of reglas) {
-                      if (regla.selectorText && regla.selectorText.includes(`${mensaje}`)) {
-                        return true;
-                      }
+                    const reglas = hoja.cssRules || hoja.rules;
+                    if (reglas) {
+                        for (const regla of reglas) {
+                            if (regla.selectorText && regla.selectorText.includes(`${mensaje}`)) {
+                                return true;
+                            }
+                        }
                     }
-                  }
                 } catch (error) {
-                //  console.error('Error al acceder a las reglas de la hoja de estilo:', error);
+                    //  console.error('Error al acceder a las reglas de la hoja de estilo:', error);
                 }
-              }
-            
-              //console.log('La regla .errorMessage no se encontró en ninguna hoja de estilo.');
-              return false;
-            })(_mensaje)
-            
-        
-      },
+            }
 
-      scrollFx: () => {
-        document.addEventListener("scroll", () => { 
-         
-             const divs = document.querySelectorAll(".desaparecer");
-            divs.forEach( div => {
+            //console.log('La regla .errorMessage no se encontró en ninguna hoja de estilo.');
+            return false;
+        })(_mensaje)
+
+
+    },
+
+    scrollFx: () => {
+        document.addEventListener("scroll", () => {
+            
+            const agregarCss = () => {
+                const css = `
+  .desaparecer {
+    opacity: 1;
+    transform: scale(0.5);
+    transition: opacity 0.5s, transform 2s;
+  }
+  
+  .aparecer {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+`;
+                const style = document.createComment('style');
+                style.innerText = css;
+                document.head.appendChild(style);
+            }
+
+            if(!util.verificarCss(aparecer)) agregarCss();
+
+            const divs = document.querySelectorAll(".desaparecer");
+            divs.forEach(div => {
                 const rect = div.getBoundingClientRect();
                 const windowHeight = window.innerHeight || document.documentElement.clientHeight;
                 if (rect.top < windowHeight && rect.bottom >= 0) {
@@ -193,10 +214,10 @@ export const util = {
             });
         })
 
-         }
-   
-}
-
-
+    }
 
 }
+
+
+
+

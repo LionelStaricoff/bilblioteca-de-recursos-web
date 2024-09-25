@@ -19,9 +19,11 @@ import {CrearSpanAnimation} from './objetosJs/CrearSpanAnimation.js'
 
 
 
-export class TextoFxBlock extends CrearSpanAnimation{};
+export const ScrollFx = ()=> {return util.scrollFx()}; 
 
 export const VerificarCss = (msj)=> {return util.verificarCss(msj)}; 
+
+export class TextoFxBlock extends CrearSpanAnimation{};
 
 export class TextoFX01 extends CrearTextoFX01 { };
 
