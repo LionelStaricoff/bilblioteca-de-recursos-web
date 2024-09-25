@@ -15,11 +15,12 @@ import { Notificacion } from './objetosJs/CartelNotificacion.js';
 import { CrearTextoFX01 } from './objetosJs/TextoFX01.js';
 import { Formulario } from './objetosJs/formulario.js';
 import {util} from './utils.js';
-import {CrearSpanAnimation} from './objetosJs/CrearSpanAnimation.js'
+import {CrearSpanAnimation} from './objetosJs/CrearSpanAnimation.js';
+import {scrollFx} from './scrollFx.js';
 
 
 
-export const ScrollFx = ()=> {return util.scrollFx()}; 
+export const ScrollFx = ()=> {return scrollFx()}; 
 
 export const VerificarCss = (msj)=> {return util.verificarCss(msj)}; 
 
