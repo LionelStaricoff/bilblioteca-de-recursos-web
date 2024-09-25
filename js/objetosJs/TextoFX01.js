@@ -6,14 +6,12 @@ export class CrearTextoFX01 {
         this._text = text;
         if (!util.verificarCss('animated-title')) this.agregarCss();
         this.renderTitle();
-
     }
 
 
     agregarCss(){
         const style = document.createElement('style');
         style.textContent = `
-        
 
         .animated-title {
             display: inline-block;
@@ -22,6 +20,11 @@ export class CrearTextoFX01 {
             opacity: 0;
             transform: translateX(100%);
             animation: slideIn 1s forwards;
+            font-size: 2.6em;
+            font-family: Garamond;
+            font-weight: bolder;
+            letter-spacing: .2em;
+            color: gold;
         }
 
         /* Animación para cada letra */

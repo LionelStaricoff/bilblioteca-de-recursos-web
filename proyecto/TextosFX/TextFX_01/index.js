@@ -1,34 +1,19 @@
 import { TextoFX01 } from '../../../js/main.js';
 new TextoFX01('.title-container', 'Tu Título Aquí')
 
-class CrearTextoFX01 {
+export class CrearTextoFX01 {
     constructor(padre, text) {
-        this._padre = document.querySelector(padre ?? 'body');
+        this._padre = (document.querySelector(padre)) ? document.querySelector(padre) : document.querySelector('body');
         this._text = text;
-        this.agregarCss();
-        if (this._padre) {
-            this.renderTitle();
-        } else {
-            console.error(`No se encontró el elemento con el selector '${padre}'`);
-        }
+        if (!util.verificarCss('animated-title')) this.agregarCss();
+        this.renderTitle();
+
     }
 
 
     agregarCss(){
         const style = document.createElement('style');
         style.textContent = `
-        
-        .title-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            font-size: 2.6em;
-            font-weight: bolder;
-            letter-spacing: 10px;
-            color: orange;
-        }
 
         .animated-title {
             display: inline-block;
@@ -37,6 +22,9 @@ class CrearTextoFX01 {
             opacity: 0;
             transform: translateX(100%);
             animation: slideIn 1s forwards;
+            font-size: 2em !important;
+            font-family: Lucida !important;
+            
         }
 
         /* Animación para cada letra */
@@ -51,7 +39,7 @@ class CrearTextoFX01 {
             }
         }
             `
-            // document.head.appendChild(style);
+            document.head.appendChild(style);
     }
 
     renderTitle() {
@@ -61,6 +49,7 @@ class CrearTextoFX01 {
             span.classList.add('animated-title');
             span.style.animationDelay = `${(index + 1) * 0.1}s`;
             span.textContent = char === ' ' ? '\u00A0' : char;
+
             this._padre.appendChild(span);
         });
     }
