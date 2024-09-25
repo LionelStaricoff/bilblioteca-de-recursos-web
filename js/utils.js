@@ -200,7 +200,7 @@ export const util = {
                 document.head.appendChild(style);
             }
 
-            if(!util.verificarCss(aparecer)) agregarCss();
+            if(!util.verificarCss('.aparecer')) agregarCss();
 
             const divs = document.querySelectorAll(".desaparecer");
             divs.forEach(div => {

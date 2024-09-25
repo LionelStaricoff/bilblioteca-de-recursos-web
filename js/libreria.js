@@ -1,7 +1,6 @@
 import * as objs from "./main.js";
 
-const url =
-    "https://github.com/LionelStaricoff/bilblioteca-de-recursos-web/blob/main/js/main.js";
+const url = "https://lionelstaricoff.github.io/bilblioteca-de-recursos-web/js/main.js";
 
 export const librerias = [
     {
