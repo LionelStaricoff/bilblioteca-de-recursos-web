@@ -1,4 +1,4 @@
-
+import {VerificarCss} from './main.js'
 export const scrollFx = () => {
     document.addEventListener("scroll", () => {
         
@@ -21,7 +21,7 @@ transform: scale(1);
             document.head.appendChild(style);
         }
 
-        if(!util.verificarCss('.aparecer')) agregarCss();
+        if(!VerificarCss('.aparecer')) agregarCss();
 
         const divs = document.querySelectorAll(".desaparecer");
         divs.forEach(div => {
