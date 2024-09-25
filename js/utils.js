@@ -80,6 +80,8 @@ export class CartelError {
 }
 
 
+try {
+    
 
 //Botón para ir al inicio desde cualquier sección
 // Función para volver al inicio de la página
@@ -113,7 +115,9 @@ window.onscroll = function () {
 volverArriba();
 
 
-
+} catch (error) {
+    
+}
 
 
 
