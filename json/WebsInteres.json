@@ -1,6 +1,19 @@
 {
     "websDeInteres": [
       {
+        "titulo": "Lista de recursos gratuitos para desarrolladores",
+        "links": [
+          "http://free-for.dev"
+   
+        ]
+      },
+      {
+        "titulo": "patrones de diseño para desarrolladores",
+        "links": [
+          "https://refactoring.guru/"
+        ]
+      },
+      {
         "titulo": "Imágenes & iconos gratis",
         "links": [
           "https://www.iconfinder.com/",
@@ -73,7 +86,8 @@
       {
         "titulo": "Efectos css",
         "links": [
-          "https://ideakreativa.net/30-ejemplos-geniales-de-animacion-css-para-sitios-web-increibles/amp/"
+          "https://ideakreativa.net/30-ejemplos-geniales-de-animacion-css-para-sitios-web-increibles/amp/",
+          "https://www.transition.style/"
         ]
       },
       {
@@ -148,6 +162,14 @@
         "titulo": "Cursos gratuitos",
         "links": [
           "https://platzi.com/clases/2822-marca-personal/46988-elige-las-comunidades-profesionales-para-tu-perfil/"
+         
+        ]
+      },
+      {
+        "titulo": "Reducir el tamaño de las imagenes para web:",
+        "links": [
+          "https://slimify.app/",
+          "https://convertirimagenacodigo.netlify.app/"
         ]
       }
     ]

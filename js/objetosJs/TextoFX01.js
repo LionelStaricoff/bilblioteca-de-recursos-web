@@ -4,7 +4,7 @@ export class CrearTextoFX01 {
     constructor(padre, text) {
         this._padre = (document.querySelector(padre)) ? document.querySelector(padre) : document.querySelector('body');
         this._text = text;
-        if (!util.verificarCss('animated-title')) this.agregarCss();
+        if (!util.verificarCss('.animated-title')) this.agregarCss();
         this.renderTitle();
     }
 

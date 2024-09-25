@@ -1,4 +1,4 @@
-import {crearLoader} from './objetosJs/Loader2.js';
+import { crearLoader } from './objetosJs/Loader2.js';
 //import { librerias } from './libreria.js';
 import { CrearMenu, Item } from './objetosJs/menu1.js';
 import { CrearSlider } from './objetosJs/slider1.js';
@@ -13,36 +13,130 @@ import { cartelBbdd } from './objetosJs/cartelBbdd.js';
 import { CartelError } from './objetosJs/CartelError.js';
 import { Notificacion } from './objetosJs/CartelNotificacion.js';
 import { CrearTextoFX01 } from './objetosJs/TextoFX01.js';
+import { Formulario } from './objetosJs/formulario.js';
+import {verificarCss} from './verificarCss.js';
+import {CrearSpanAnimation} from './objetosJs/CrearSpanAnimation.js';
+import {scrollFx} from './scrollFx.js';
 
-export class TextoFX01 extends CrearTextoFX01{};
 
-export class loader1 extends crearLoader{};
 
-export class menu1 extends CrearMenu{};
+export const ScrollFx = ()=> {return scrollFx()}; 
 
-export class menuItem extends Item{};
+export const VerificarCss = (msj)=> {return verificarCss(msj)}; 
 
-export class slider1 extends CrearSlider{};
+export class TextoFxBlock extends CrearSpanAnimation{};
 
-export class slider2 extends CrearSlider2{};
+export class TextoFX01 extends CrearTextoFX01 { };
 
-export class slider3 extends CrearSlider3{};
+export class loader1 extends crearLoader { };
 
-export class slider4 extends CrearSlider4{};
+export class menu1 extends CrearMenu { };
 
-export class modo1 extends CrearObjeto1{};
+export class menuItem extends Item { };
 
-export class modo2 extends CrearObjeto2{};
+export class slider1 extends CrearSlider { };
 
-export class modo3 extends CrearObjeto3{};
+export class slider2 extends CrearSlider2 { };
 
-export class login extends cartelLogin{};
+export class slider3 extends CrearSlider3 { };
 
-export class cartelDosBotones extends cartelBbdd{};
+export class slider4 extends CrearSlider4 { };
 
-export class ModalError extends CartelError{};
+export class modo1 extends CrearObjeto1 { };
 
-export class CartelNotificacion extends Notificacion{};
+export class modo2 extends CrearObjeto2 { };
+
+export class modo3 extends CrearObjeto3 { };
+
+export class login extends cartelLogin { };
+
+export class cartelDosBotones extends cartelBbdd { };
+
+export class ModalError extends CartelError { };
+
+export class CartelNotificacion extends Notificacion { };
+
+export class formularioWsatsApp1 extends Formulario {
+    constructor({ father: _father, whatsApp: _whatsApp, photo: _photo, 
+        colorBtn: _colorBtn, backgroundInput: _backgroundInput,
+         backgroundForm: _backgroundForm, placeholder_name1: _placeholder_name1 = undefined,
+          nameBtn: _nameBtn, functionBtn: _functionBtn }) {
+        const objform = {
+            father:_father,whatsApp: _whatsApp,
+            photo: _photo, colorBtn: _colorBtn,
+            backgroundInput: _backgroundInput,
+            backgroundForm : _backgroundForm,
+            placeholder_name1: _placeholder_name1,
+            nameBtn: _nameBtn,functionBtn: _functionBtn
+          }
+        super(objform);
+        this.unaPersona();
+    }
+};
+
+export class formularioWsatsApp2 extends Formulario {
+    constructor({ father: _father, whatsApp: _whatsApp, photo: _photo, 
+        colorBtn: _colorBtn, backgroundInput: _backgroundInput,
+         backgroundForm: _backgroundForm, placeholder_name1: _placeholder_name1 = undefined,
+         placeholder_name2: _placeholder_name2 = undefined,
+          nameBtn: _nameBtn, functionBtn: _functionBtn }) {
+        const objform = {
+            father:_father,whatsApp: _whatsApp,
+            photo: _photo, colorBtn: _colorBtn,
+            backgroundInput: _backgroundInput,
+            backgroundForm : _backgroundForm,
+            placeholder_name1: _placeholder_name1,
+            placeholder_name2: _placeholder_name2,
+            nameBtn: _nameBtn,functionBtn: _functionBtn
+          }
+        super(objform);
+        this.dosPersonas();
+    }
+};
+
+export class formularioWsatsApp3 extends Formulario {
+    constructor({ father: _father, whatsApp: _whatsApp, photo: _photo, 
+        colorBtn: _colorBtn, backgroundInput: _backgroundInput,
+         backgroundForm: _backgroundForm, placeholder_name1: _placeholder_name1 = undefined,
+         placeholder_name2: _placeholder_name2 = undefined,placeholder_name3: _placeholder_name3 = undefined,
+          nameBtn: _nameBtn, functionBtn: _functionBtn }) {
+        const objform = {
+            father:_father,whatsApp: _whatsApp,
+            photo: _photo, colorBtn: _colorBtn,
+            backgroundInput: _backgroundInput,
+            backgroundForm : _backgroundForm,
+            placeholder_name1: _placeholder_name1,
+            placeholder_name2: _placeholder_name2,
+            placeholder_name3: _placeholder_name3,
+            nameBtn: _nameBtn,functionBtn: _functionBtn
+          }
+        super(objform);
+        this.tresPersonas();
+    }
+};
+
+export class formularioWsatsApp4 extends Formulario {
+    constructor({ father: _father, whatsApp: _whatsApp, photo: _photo, 
+        colorBtn: _colorBtn, backgroundInput: _backgroundInput,
+         backgroundForm: _backgroundForm, placeholder_name1: _placeholder_name1 = undefined,
+         placeholder_name2: _placeholder_name2 = undefined,placeholder_name3: _placeholder_name3 = undefined,
+         placeholder_name4: _placeholder_name4 = undefined,
+          nameBtn: _nameBtn, functionBtn: _functionBtn }) {
+        const objform = {
+            father:_father,whatsApp: _whatsApp,
+            photo: _photo, colorBtn: _colorBtn,
+            backgroundInput: _backgroundInput,
+            backgroundForm : _backgroundForm,
+            placeholder_name1: _placeholder_name1,
+            placeholder_name2: _placeholder_name2,
+            placeholder_name3: _placeholder_name3,
+            placeholder_name4: _placeholder_name4,
+            nameBtn: _nameBtn,functionBtn: _functionBtn
+          }
+        super(objform);
+        this.cuatroPersonas();
+    }
+};
 
 
 //new loader1('#ej-contenedor')

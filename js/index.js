@@ -1,6 +1,6 @@
 import { librerias } from './libreria.js';
 import { util } from './utils.js';
-import {CargarWebsInteres} from '../js/webInteres.js';
+import { CargarWebsInteres } from '../js/webInteres.js';
 
 
 
@@ -62,9 +62,9 @@ const verEjemplo = (href, html, css, js, obj) => {
     ej.innerText = html;
     util.colorearHtml()
   });
-  btncss.addEventListener('click', () => {  iframe.srcdoc = ""; ej.innerHTML = css; });
+  btncss.addEventListener('click', () => { iframe.srcdoc = ""; ej.innerHTML = css; });
   btnjs.addEventListener('click', () => { iframe.srcdoc = ""; ej.innerHTML = js; });
-  btnobj.addEventListener('click', () => {  iframe.srcdoc = ""; ej.innerHTML = obj; });
+  btnobj.addEventListener('click', () => { iframe.srcdoc = ""; ej.innerHTML = obj; });
 
 
 
