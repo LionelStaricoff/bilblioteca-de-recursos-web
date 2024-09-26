@@ -3,7 +3,8 @@
       {
         "titulo": "Lista de recursos gratuitos para desarrolladores",
         "links": [
-          "http://free-for.dev"
+          "http://free-for.dev",
+          "https://publicapis.io/"
    
         ]
       },
@@ -155,13 +156,17 @@
         "links": [
           "https://stackblitz.com/?starters=backend",
           "https://northflank.com/",
-          "https://www.netlify.com/"
+          "https://www.netlify.com/",
+          "https://render.com/",
+          "https://www.fl0.com/",
+          "https://slimify.app/"
         ]
       },
       {
         "titulo": "Cursos gratuitos",
         "links": [
-          "https://platzi.com/clases/2822-marca-personal/46988-elige-las-comunidades-profesionales-para-tu-perfil/"
+          "https://platzi.com/clases/2822-marca-personal/46988-elige-las-comunidades-profesionales-para-tu-perfil/",
+          "https://www.freecodecamp.org/espanol/news/aprende-react-desde-cero-curso-de-react-con-proyectos/"
          
         ]
       },
@@ -169,7 +174,8 @@
         "titulo": "Reducir el tamaño de las imagenes para web:",
         "links": [
           "https://slimify.app/",
-          "https://convertirimagenacodigo.netlify.app/"
+          "https://convertirimagenacodigo.netlify.app/",
+          "https://www.softandapps.info/category/aplicaciones/"
         ]
       }
     ]
