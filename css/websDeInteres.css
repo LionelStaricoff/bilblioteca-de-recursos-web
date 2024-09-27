@@ -40,6 +40,7 @@ section.websDeInteres {
         margin-top: 5px;
         padding: 2px 0px 2px 5px;
         text-decoration: underline;
+        text-underline-offset: 3px;  /* aumenta el espacio entre la letra y el subrayado */
         cursor: pointer;
         color: var(--negro);
         text-align: left;

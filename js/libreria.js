@@ -1220,7 +1220,7 @@ contenedor.addEventListener("mouseleave", autoPlay);
         titulo: "Textos FX",
         ejemplos: [
             {
-                titulo: "Efecto 1: Apareciendo en linea",
+                titulo: "Efecto 1: Apareciendo en línea",
                 href: () => {
                     new objs.TextoFX01("#ej-contenedor", 'Título 1 Aquí, ');
                     new objs.TextoFX01("#ej-contenedor", 'Título 2 Aquí, ');
@@ -1380,7 +1380,7 @@ contenedor.addEventListener("mouseleave", autoPlay);
                 <div id="login">
                 <span>X</span>
                 <input type="text" placeholder="Usuario">
-                <input type="password" placeholder="contraseña">
+                <input type="password" placeholder="Contraseña">
                 <input type="button" value="Loguear">
                 </div>
                 `,
@@ -1732,7 +1732,7 @@ import {login} from  ' ${url} ';
         ejemplos: [
             {
 
-                titulo: "formulario WsatsApp1",
+                titulo: "Formulario WhatsApp1",
                 href: () => {
                     new objs.formularioWsatsApp1({ father: "#ej-contenedor", functionBtn: () => alert('function optional') });
 
@@ -1753,7 +1753,7 @@ import {login} from  ' ${url} ';
     z-index: 2;
     width: min(20em, 100%);
     height: auto;
-    border-radius: 12px;
+    border-radius: 25px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1771,19 +1771,24 @@ import {login} from  ' ${url} ';
     gap: 20px;
 
     border: solid 3px #333;
-    
+    padding: 2em 0;
 
     button:nth-child(1) {
         height: fit-content;
         width: fit-content;
-        font-size: 2.2em;
+        font-size: 1.5em;
         font-weight: 200;
-        position: relative;
-        transform: translate(100px, 0px);
+        position: absolute;
+        top: 10px;
+        right: 10px;
         background-color: inherit;
         color: grey;
+        border-radius: 25px;
         border: none;
-        background-color: transparent;
+        background-color: rgba(0,0,0,0.1);
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
 
         &:hover {
             font-weight: 200;
@@ -1792,11 +1797,11 @@ import {login} from  ' ${url} ';
 
     input:nth-child(2) {
         text-align: center;
-        border-radius: 12px;
-        padding: 0.5em;
+        border-radius: 25px;
+        padding: 0.1em;
         font-size: 1.2em;
         height: 48px;
-        width: 200px;
+        width: 95%;
         color: grey;
         background-color: whitesmoke;
     }
@@ -1807,13 +1812,13 @@ import {login} from  ' ${url} ';
         background-color: rgb(51, 51, 51, 20%);
         color: grey;
         padding: 0.5em;
-        font-size: 1.5em;
-        border-radius: 12px;
+        font-size: 1.2em;
+        border-radius: 25px;
         height: 48px;
-        width: 200px;
+        width: 95%;
         box-shadow: 1px 1px 1px 1px whitesmoke;
-        margin-bottom: 1em;
         line-height: 100%;
+        cursor: pointer;
 
     }
 }
@@ -1854,7 +1859,7 @@ import {login} from  ' ${url} ';
             },
             {
 
-                titulo: "formulario WsatsApp2",
+                titulo: "Formulario WhatsApp2",
                 href: () => {
                     new objs.formularioWsatsApp2({ father: "#ej-contenedor", functionBtn: () => alert('function optional') });
 
@@ -1875,7 +1880,7 @@ import {login} from  ' ${url} ';
     z-index: 2;
     width: min(20em, 100%);
     height: auto;
-border-radius: 12px;
+border-radius: 25px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1893,33 +1898,36 @@ border-radius: 12px;
     gap: 20px;
  
     border: solid 3px #333;
-    
+    padding: 2em 0;
 
     button:nth-child(1) {
         height: fit-content;
         width: fit-content;
-        font-size: 2.2em;
+        font-size: 1.5em;
         font-weight: 200;
-        position: relative;
-        transform: translate(100px, 0px);
-        background-color: inherit;
-         color: grey;
-        border: none;
-        background-color: transparent;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: rgba(0,0,0,0.1);
+        color: grey;
+        border-radius: 25px;
+        border:none;
+        padding: 0.5px 10px 0.4px;
+        cursor: pointer;
 
         &:hover {
-            font-weight: 200;
+            font-weight: 400;
         }
     }
 
     input:nth-child(2), input:nth-child(3) {
         text-align: center;
-        border-radius: 12px;
-        padding: 0.5em;
+        border-radius: 25px;
+        padding: 0.1em;
         font-size: 1.2em;
         height: 48px;
-        width: 200px;
-        color: grey;
+        width: 95%;
+        color: black;
         background-color: whitesmoke;
       
     }
@@ -1930,13 +1938,13 @@ border-radius: 12px;
         background-color: rgb(51, 51, 51, 20%);
         color: grey;
         padding: 0.5em;
-        font-size: 1.5em;
-        border-radius: 12px;
+        font-size: 1.2em;
+        border-radius: 25px;
         height: 48px;
-        width: 200px;
-        box-shadow: 1px 1px 1px 1px whitesmoke;
-        margin-bottom: 1em;
+        width: 95%;
+        box-shadow: -1px 1px 1px 1px grey;
         line-height: 100%;
+        cursor: pointer;
     }
 }
             
@@ -1979,7 +1987,7 @@ border-radius: 12px;
 
             {
 
-                titulo: "formulario WsatsApp3",
+                titulo: "Formulario WhatsApp3",
                 href: () => {
                     new objs.formularioWsatsApp3({ father: "#ej-contenedor", functionBtn: () => alert('function optional') });
 
@@ -2001,7 +2009,7 @@ border-radius: 12px;
     z-index: 2;
     width: min(20em, 100%);
     height: auto;
-    border-radius: 12px;
+    border-radius: 25px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -2019,33 +2027,36 @@ border-radius: 12px;
     gap: 20px;
 
     border: solid 3px #333;
+    padding: 2em 0;
     
-
     button:nth-child(1) {
         height: fit-content;
         width: fit-content;
-        font-size: 2.2em;
+        font-size: 1.5em;
         font-weight: 200;
-        position: relative;
-        transform: translate(100px, 0px);
-        background-color: inherit;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: rgba(0,0,0,0.1);
         color: grey;
-        border: none;
-        background-color: transparent;
+        border-radius: 25px;
+        border:none;
+        padding: 0.5px 10px 0.4px;
+        cursor: pointer;
 
         &:hover {
-            font-weight: 200;
+            font-weight: 400;
         }
     }
 
     input:nth-child(2), input:nth-child(3), input:nth-child(4) {
         text-align: center;
-        border-radius: 12px;
-        padding: 0.5em;
+        border-radius: 25px;
+        padding: 0.1em;
         font-size: 1.2em;
         height: 48px;
-        width: 200px;
-        color: grey;
+        width: 95%;
+        color: black;
         background-color: whitesmoke;
    
     }
@@ -2055,13 +2066,14 @@ border-radius: 12px;
         width: fit-content;
         background-color: rgb(51, 51, 51, 20%);
         color: grey;
-        margin-bottom: 20px;
-        font-size: 1.5em;
-        border-radius: 12px;
+        padding: 0.5em;
+        font-size: 1.2em;
+        border-radius: 25px;
         height: 48px;
-        width: 200px;
-        box-shadow: 1px 1px 1px 1px whitesmoke;
-        margin-bottom: 1em;
+        width: 95%;
+        box-shadow: -1px 1px 1px 1px grey;
+        line-height: 100%;
+        cursor: pointer;
     }
 }
         
@@ -2106,7 +2118,7 @@ border-radius: 12px;
 
             {
 
-                titulo: "formulario WsatsApp3",
+                titulo: "Formulario WhatsApp4",
                 href: () => {
                     new objs.formularioWsatsApp4({ father: "#ej-contenedor", functionBtn: () => alert('function optional') });
 
@@ -2129,7 +2141,7 @@ border-radius: 12px;
     z-index: 2;
     width: min(20em, 100%);
     height: auto;
-    border-radius: 12px;
+    border-radius: 25px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -2147,35 +2159,39 @@ border-radius: 12px;
     gap: 20px;
 
     border: solid 3px #333;
-    
+    padding: 2em 0;
 
     button:nth-child(1) {
         height: fit-content;
         width: fit-content;
-        font-size: 2.2em;
-        font-weight: 300;
-        position: relative;
-        transform: translate(100px, 0px);
-        background-color: inherit;
+        font-size: 1.5em;
+        font-weight: 200;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: rgba(0,0,0,0.1);
         color: grey;
-        border: none;
-        background-color: transparent;
+        border-radius: 25px;
+        border:none;
+        padding: 0.5px 10px 0.4px;
+        cursor: pointer;
 
         &:hover {
-            font-weight: 200;
+            font-weight: 400;
         }
     }
   
 
     input:nth-child(2), input:nth-child(3), input:nth-child(4), input:nth-child(5) {
         text-align: center;
-        border-radius: 12px;
-        padding: 0.5em;
+        border-radius: 25px;
+        padding: 0.1em;
         font-size: 1.2em;
-        color: grey;
-        background-color: whitesmoke;
         height: 48px;
-        width: 200px;
+        width: 95%;
+        color: black;
+        background-color: whitesmoke;
+        
     }
 
     button:nth-child(6) {
@@ -2183,15 +2199,16 @@ border-radius: 12px;
         width: fit-content;
         background-color: rgb(51, 51, 51, 20%);
         color: grey;
-         margin-bottom: 20px;
-        font-size: 1.5em;
-        border-radius: 12px;
+        padding: 0.5em;
+        font-size: 1.2em;
+        border-radius: 25px;
         border: 1px solid grey;
         height: 48px;
-        width: 200px;
-        box-shadow: 1px 1px 1px 1px whitesmoke;
-        margin-bottom: 2em;
-    }
+        width: 95%;
+        box-shadow: -1px 1px 1px 1px grey;
+        line-height: 100%;
+        cursor: pointer;    
+        }
 }
 
             </code></pre>`,

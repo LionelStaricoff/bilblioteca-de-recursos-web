@@ -23,7 +23,7 @@ export class cartelLogin {
         usuario.placeholder = 'Usuario'
         const password = document.createElement('input');
         password.type = 'password';
-        password.placeholder = 'constraseña'
+        password.placeholder = 'Contraseña'
         const button = document.createElement('input');
         button.type = 'button';
         button.value = 'Loguear';
@@ -97,7 +97,7 @@ export class cartelLogin {
         if (typeof this._funcion == 'function') {
             this._funcion()
         } else {
-            alert('el parametro debe ser una funcion')
+            alert('El parámetro debe ser una función')
         }
     }
 

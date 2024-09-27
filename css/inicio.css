@@ -173,12 +173,10 @@ section.inicio {
                 display: grid;
                 place-content: center;
                 grid-auto-flow: column;
-                padding-bottom: 6px;
             }
             img {
                 width: 24px;
                 height: 24px;
-                padding-top: 8px;
             }
             &::after {
                 content: "";

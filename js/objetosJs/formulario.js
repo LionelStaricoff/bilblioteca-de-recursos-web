@@ -13,9 +13,9 @@ export class Formulario {
     ) {
         this._whatsApp = whatsApp ?? '';
         this._foto = photo;
-        this._colorBtn = colorBtn ?? 'grey';
+        this._colorBtn = colorBtn ?? 'white';
         this._backgroundInput = backgroundInput ?? 'whitesmoke';
-        this._backgroundForm = backgroundForm ?? '#333'
+        this._backgroundForm = backgroundForm ?? 'DarkTurquoise'
         this.placeholders = [placeholder_name1, placeholder_name2, placeholder_name3, placeholder_name4];
         this._padre = (document.querySelector(father)) ? document.querySelector(father) : document.querySelector('body');
         this._fondo = document.createElement('div');
@@ -24,7 +24,7 @@ export class Formulario {
         this._button.innerText = nameBtn ?? 'Enviar'
         this._button.addEventListener('click', () => this.enviarMensaje())
         this._x = document.createElement('button');
-        this._x.innerText = "X";
+        this._x.innerText = "x";
         this._x.addEventListener('click', () => this._padre.removeChild(this._fondo));
         this._functionBtn = functionBtn;
 
@@ -106,7 +106,7 @@ export class Formulario {
     z-index: 2;
     width: min(20em, 100%);
     height: auto;
-    border-radius: 12px;
+    border-radius: 25px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -124,33 +124,36 @@ export class Formulario {
     gap: 20px;
 
     border: solid 3px #333;
-    
+    padding: 2em 0;
 
     button:nth-child(1) {
         height: fit-content;
         width: fit-content;
-        font-size: 2.2em;
+        font-size: 1.5em;
         font-weight: 200;
-        position: relative;
-        transform: translate(100px, 0px);
-        background-color: inherit;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: rgba(0,0,0,0.1);
         color: ${this._colorBtn};
-        border: none;
-        background-color: transparent;
+        border-radius: 25px;
+        border:none;
+        padding: 0.5px 10px 0.4px;
+        cursor: pointer;
 
         &:hover {
-            font-weight: 200;
+            font-weight: 400;
         }
     }
 
     input:nth-child(2) {
         text-align: center;
-        border-radius: 12px;
-        padding: 0.5em;
+        border-radius: 25px;
+        padding: 0.1em;
         font-size: 1.2em;
         height: 48px;
-        width: 200px;
-        color: ${this._colorBtn};
+        width: 95%;
+        color: black;
         background-color: ${this._backgroundInput};
     }
 
@@ -160,13 +163,13 @@ export class Formulario {
         background-color: rgb(51, 51, 51, 20%);
         color: ${this._colorBtn};
         padding: 0.5em;
-        font-size: 1.5em;
-        border-radius: 12px;
+        font-size: 1.2em;
+        border-radius: 25px;
         height: 48px;
-        width: 200px;
-        box-shadow: 1px 1px 1px 1px ${this._backgroundInput};
-        margin-bottom: 1em;
+        width: 95%;
+        box-shadow: -1px 1px 1px 1px grey;
         line-height: 100%;
+        cursor: pointer;
     }
 }
         `
@@ -183,7 +186,7 @@ export class Formulario {
     z-index: 2;
     width: min(20em, 100%);
     height: auto;
-border-radius: 12px;
+    border-radius: 25px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -201,33 +204,36 @@ border-radius: 12px;
     gap: 20px;
  
     border: solid 3px #333;
-    
+    padding: 2em 0;
 
     button:nth-child(1) {
         height: fit-content;
         width: fit-content;
-        font-size: 2.2em;
+        font-size: 1.5em;
         font-weight: 200;
-        position: relative;
-        transform: translate(100px, 0px);
-        background-color: inherit;
-         color: ${this._colorBtn};
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: rgba(0,0,0,0.1);
+        color: ${this._colorBtn};
+        border-radius: 25px;
         border: none;
-        background-color: transparent;
+        padding: 0.5px 10px 0.4px;
+        cursor: pointer;
 
         &:hover {
-            font-weight: 200;
+            font-weight: 400;
         }
     }
 
     input:nth-child(2), input:nth-child(3) {
         text-align: center;
-        border-radius: 12px;
-        padding: 0.5em;
+        border-radius: 25px;
+        padding: 0.1em;
         font-size: 1.2em;
         height: 48px;
-        width: 200px;
-        color: ${this._colorBtn};
+        width: 95%;
+        color: black;
         background-color: ${this._backgroundInput};
       
     }
@@ -238,13 +244,13 @@ border-radius: 12px;
         background-color: rgb(51, 51, 51, 20%);
         color: ${this._colorBtn};
         padding: 0.5em;
-        font-size: 1.5em;
-        border-radius: 12px;
+        font-size: 1.2em;
+        border-radius: 25px;
         height: 48px;
-        width: 200px;
-        box-shadow: 1px 1px 1px 1px ${this._backgroundInput};
-        margin-bottom: 1em;
+        width: 95%;
+        box-shadow: -1px 1px 1px 1px grey;
         line-height: 100%;
+        cursor: pointer;
     }
 }
         `
@@ -261,7 +267,7 @@ border-radius: 12px;
     z-index: 2;
     width: min(20em, 100%);
     height: auto;
-    border-radius: 12px;
+    border-radius: 25px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -279,19 +285,22 @@ border-radius: 12px;
     gap: 20px;
 
     border: solid 3px #333;
-    
+    padding: 2em 0;
 
     button:nth-child(1) {
         height: fit-content;
         width: fit-content;
-        font-size: 2.2em;
+        font-size: 1.5em;
         font-weight: 200;
-        position: relative;
-        transform: translate(100px, 0px);
-        background-color: inherit;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: rgba(0,0,0,0.1);
         color: ${this._colorBtn};
+        border-radius: 25px;
         border: none;
-        background-color: transparent;
+        padding: 0.5px 10px 0.4px;
+        cursor: pointer;
 
         &:hover {
             font-weight: 200;
@@ -300,12 +309,12 @@ border-radius: 12px;
 
     input:nth-child(2), input:nth-child(3), input:nth-child(4) {
         text-align: center;
-        border-radius: 12px;
-        padding: 0.5em;
+        border-radius: 25px;
+        padding: 0.1em;
         font-size: 1.2em;
         height: 48px;
-        width: 200px;
-        color: ${this._colorBtn};
+        width: 95%;
+        color: black;
         background-color: ${this._backgroundInput};
    
     }
@@ -315,12 +324,14 @@ border-radius: 12px;
         width: fit-content;
         background-color: rgb(51, 51, 51, 20%);
         color: ${this._colorBtn};
-        font-size: 1.5em;
-        border-radius: 12px;
+        padding: 0.5em;
+        font-size: 1.2em;
+        border-radius: 25px;
         height: 48px;
-        width: 200px;
-        box-shadow: 1px 1px 1px 1px ${this._backgroundInput};
-        margin-bottom: 1em;
+        width: 95%;
+        box-shadow: -1px 1px 1px 1px grey;
+        line-height: 100%;
+        cursor: pointer;
         
     }
 }
@@ -340,7 +351,7 @@ border-radius: 12px;
     z-index: 2;
     width: min(20em, 100%);
     height: auto;
-    border-radius: 12px;
+    border-radius: 25px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -358,19 +369,22 @@ border-radius: 12px;
     gap: 20px;
 
     border: solid 3px #333;
-    
+    padding: 2em 0;
 
     button:nth-child(1) {
         height: fit-content;
         width: fit-content;
-        font-size: 2.2em;
-        font-weight: 300;
-        position: relative;
-        transform: translate(100px, 0px);
-        background-color: inherit;
+        font-size: 1.5em;
+        font-weight: 200;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: rgba(0,0,0,0.1);
         color: ${this._colorBtn};
-        border: none;
-        background-color: transparent;
+        border-radius: 25px;
+        border:none;
+        padding: 0.5px 10px 0.4px;
+        cursor: pointer;
 
         &:hover {
             font-weight: 200;
@@ -380,13 +394,13 @@ border-radius: 12px;
 
     input:nth-child(2), input:nth-child(3), input:nth-child(4), input:nth-child(5) {
         text-align: center;
-        border-radius: 12px;
-        padding: 0.5em;
+        border-radius: 25px;
+        padding: 0.1em;
         font-size: 1.2em;
-        color: ${this._colorBtn};
-        background-color: ${this._backgroundInput};
         height: 48px;
-        width: 200px;
+        width: 95%;
+        color: black;
+        background-color: ${this._backgroundInput};
     }
 
     button:nth-child(6) {
@@ -394,13 +408,14 @@ border-radius: 12px;
         width: fit-content;
         background-color: rgb(51, 51, 51, 20%);
         color: ${this._colorBtn};
-        font-size: 1.5em;
-        border-radius: 12px;
-        border: 1px solid ${this._colorBtn};
+        padding: 0.5em;
+        font-size: 1.2em;
+        border-radius: 25px;
         height: 48px;
-        width: 200px;
-        box-shadow: 1px 1px 1px 1px ${this._backgroundInput};
-        margin-bottom: 2em;
+        width: 95%;
+        box-shadow: -1px 1px 1px 1px grey;
+        line-height: 100%;
+        cursor: pointer;
     }
 }
       
