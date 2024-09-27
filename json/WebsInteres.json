@@ -179,6 +179,13 @@
           "https://convertirimagenacodigo.netlify.app/",
           "https://www.softandapps.info/category/aplicaciones/",
           "https://slimify.app/"
+        
+        ]
+      },
+      {
+        "titulo": "Recursos para dev",
+        "links": [
+           "https://free-for.dev"
         ]
       }
     ]
