@@ -2294,6 +2294,50 @@ border-radius: 25px;
              if (!verificarCss('#animated-title')) this.agregarCss();
 
             </code></pre>`
+            },
+            {
+
+                titulo: "ScrollFx",
+                href: () => {
+                    new objs.TextoFX01("#ej-contenedor", 'El objeto ScrollFx(_elements, _classNameFx), agregar un efecto al realizar un scroll en la pantalla.');
+                    new objs.TextoFX01("#ej-contenedor", 'Posee dos parámetros que son opcionales, si no se utilizan por defecto carga una transición en todos los elementos que posean la clase: desaparecer.');
+                    new objs.TextoFX01("#ej-contenedor", '@param {*} _elements : Este parámetro se utiliza para agarrar todos los componentes que se le aplicaran los efectos del scroll. Puede ser un, id: #identificador, o una clase: .classFx');
+                    new objs.TextoFX01("#ej-contenedor", '@param {*} _classNameFx : Este parámetro corresponde únicamente al nombre de una clase que posea un efecto para realizar el scroll, el cual ya debería estar cargado con anterioridad, el cual tiene que ser pasado sin el punto de la clase y como un String, ejemplo: "classFx".');
+                },
+                html:
+                    `
+                   No contiene
+
+            `,
+                css: `<pre class="codigo"><code>
+          
+                               No contiene
+
+            
+            </code></pre>`,
+                js: `<pre class="codigo"><code>
+
+                           No contiene
+
+
+            </code></pre>`,
+                objeto: `<pre class="codigo"><code>
+            
+            import {ScrollFx} from  ' ${url} ';
+      
+            //Por defecto, esta función posee un efecto de CSS para hacer parecer elementos si el segundo parámetro está vacío.
+            ScrollFx();
+
+            /**
+            * @param {*} _elements : Este parámetro se utiliza para agarrar todos los componentes que se le aplicaran los efectos del scroll.
+            * Puede ser un, id: #identificador, o una clase: .classFx.
+            * 
+            * @param {*} _classNameFx : Este parámetro corresponde únicamente al nombre de una clase que posea un efecto para realizar el scroll,
+            *  el cual ya debería estar cargado con anterioridad, el cual tiene que ser pasado sin el punto de la clase y como un String, ejemplo: 'classFx'.
+            */
+            ScrollFx(_elements, _classNameFx);
+
+            </code></pre>`
             }
         ]
     },

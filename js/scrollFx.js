@@ -1,5 +1,14 @@
-import {VerificarCss} from './main.js'
-export const scrollFx = () => {
+import {VerificarCss} from './main.js';
+
+/**
+ * @param {*} _elements : Este parámetro se utiliza para agarrar todos los componentes que se le aplicaran los efectos del scroll.
+ * Puede ser un, id: #identificador, o una clase: .classFx.
+ * 
+ * @param {*} _classNameFx : Este parámetro corresponde únicamente al nombre de una clase que posea un efecto para realizar el scroll,
+ *  el cual ya debería estar cargado con anterioridad, el cual tiene que ser pasado sin el punto de la clase y como un String, ejemplo: 'classFx'.
+ */
+export const scrollFx =  (_elements,_classNameFx) => {
+   
     document.addEventListener("scroll", () => {
         
         const agregarCss = () => {
@@ -21,16 +30,16 @@ transform: scale(1);
             document.head.appendChild(style);
         }
 
-        if(!VerificarCss('.aparecer')) agregarCss();
+      if(!_classNameFx)  if(!VerificarCss('.aparecer')) agregarCss();
 
-        const divs = document.querySelectorAll(".desaparecer");
+        const divs = document.querySelectorAll(_elements ?? ".desaparecer" );
         divs.forEach(div => {
             const rect = div.getBoundingClientRect();
             const windowHeight = window.innerHeight || document.documentElement.clientHeight;
             if (rect.top < windowHeight && rect.bottom >= 0) {
-                div.classList.add("aparecer");
+                div.classList.add(_classNameFx ?? "aparecer");
             } else {
-                div.classList.remove("aparecer");
+                div.classList.remove(_classNameFx ?? "aparecer");
             }
         });
     })
