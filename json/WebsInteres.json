@@ -159,7 +159,9 @@
           "https://www.netlify.com/",
           "https://render.com/",
           "https://www.fl0.com/",
-          "https://slimify.app/"
+          "https://vercel.com/",
+          "https://railway.app"
+          
         ]
       },
       {
@@ -175,7 +177,8 @@
         "links": [
           "https://slimify.app/",
           "https://convertirimagenacodigo.netlify.app/",
-          "https://www.softandapps.info/category/aplicaciones/"
+          "https://www.softandapps.info/category/aplicaciones/",
+          "https://slimify.app/"
         ]
       }
     ]
