@@ -198,8 +198,12 @@ section.libreria {
         }
 
         #ej-contenedor{
-            display: block;
+            display: flex;
             margin: auto;
+            align-content: center;
+            justify-items: center;
+            justify-content: center;
+            
         }
     }
 }

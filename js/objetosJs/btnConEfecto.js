@@ -4,9 +4,9 @@ export class BotonFX {
     constructor(padre, texto, colorFondo, colorHover, colorTexto, iconoUrl) {
         this._padre = (document.querySelector(padre)) ? document.querySelector(padre) : document.querySelector('body');
         this._texto = texto ?? 'Guardar';
-        this._colorFondo = colorFondo;
-        this._colorHover = colorHover;
-        this._colorTexto = colorTexto;
+        this._colorFondo = colorFondo ?? 'green' ;
+        this._colorHover = colorHover ?? 'blue';
+        this._colorTexto = colorTexto ?? 'white';
         this._iconoUrl = iconoUrl ?? null;
 
         if(!util.verificarCss('.botonFX')) this.agregarCss();
@@ -20,11 +20,11 @@ export class BotonFX {
         .botonFX {
             width: 150px;
             height: 50px;
-            background-color: var(--fondoBtnFX, var(--verde_claro));
-            color: var(--texto, var(--negro));
+            background-color: ${this._colorFondo};
+            color: ${this._colorTexto};
             font-size: 18px;
             font-weight: bold;
-            border: 3px outset var(--fondoBtnFX, var(--verde_claro));
+            border: 3px outset ${this._colorFondo};
             cursor: pointer;
             border-radius: 25px;
             box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.6);
@@ -54,7 +54,7 @@ export class BotonFX {
             z-index: 1;
             top: 0;
             left: calc(-100% - 50px);
-            border-bottom: 50px solid var(--hoverBtnFX, var(--azul_oscuro));
+            border-bottom: 50px solid ${this._colorHover};
             border-right: 50px solid transparent;
             transition: 0.4s ease-in-out all;
         }
@@ -64,7 +64,7 @@ export class BotonFX {
         }
 
         .botonFX:hover span a {
-            color: var(--blanco);
+            color: ${this._colorTexto};
         }
 
         .botonFX:hover img {
@@ -82,11 +82,6 @@ export class BotonFX {
         // Crea el botón
         this.boton = document.createElement('button');
         this.boton.classList.add('botonFX');
-        
-        // Agrega los estilos personalizados
-        this.boton.style.setProperty('--fondoBtnFX', this._colorFondo);
-        this.boton.style.setProperty('--hoverBtnFX', this._colorHover);
-        this.boton.style.setProperty('--textoBtnFX', this._colorTexto);
         
         // Crea el texto del botón
         const span = document.createElement('span');

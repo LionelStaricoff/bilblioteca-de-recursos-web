@@ -14,11 +14,11 @@ import { CartelError } from './objetosJs/CartelError.js';
 import { Notificacion } from './objetosJs/CartelNotificacion.js';
 import { CrearTextoFX01 } from './objetosJs/TextoFX01.js';
 import { Formulario } from './objetosJs/formulario.js';
-import { verificarCss } from './verificarCss.js';
-import { CrearSpanAnimation } from './objetosJs/CrearSpanAnimation.js';
-import { scrollFx } from './scrollFx.js';
+import {verificarCss} from './verificarCss.js';
+import {CrearSpanAnimation} from './objetosJs/CrearSpanAnimation.js';
+import {scrollFx} from './scrollFx.js';
+import Contador from './objetosJs/contador.js';
 import { BotonFX } from './objetosJs/btnConEfecto.js';
-
 
 
 export const ScrollFx = ()=> {return scrollFx()}; 
@@ -58,6 +58,8 @@ export class cartelDosBotones extends cartelBbdd { };
 export class ModalError extends CartelError { };
 
 export class CartelNotificacion extends Notificacion { };
+
+export class CartelConteo extends Contador {};
 
 export class formularioWsatsApp1 extends Formulario {
     constructor({ father: _father, whatsApp: _whatsApp, photo: _photo, 
