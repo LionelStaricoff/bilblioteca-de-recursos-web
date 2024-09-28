@@ -94,12 +94,17 @@ export default class Contador {
         const tiempoRestante = await Contador.calcularTiempoRestante();
         const spans = document.querySelectorAll('.counter')
 
+        if(tiempoRestante.segundos >=0){
         spans[0].innerText = tiempoRestante.dias;
         spans[1].innerText = tiempoRestante.horas;
         spans[2].innerText = tiempoRestante.minutos;
         spans[3].innerText = tiempoRestante.segundos;
-        //console.log(`Faltan ${tiempoRestante.dias} días, ${tiempoRestante.horas} horas, ${tiempoRestante.minutos} minutos y ${tiempoRestante.segundos} segundos para el 28 de septiembre de 2024.`);
-    }
+            }else{
+                spans[0].innerText = 0;
+                spans[1].innerText = 0;
+                spans[2].innerText = 0;
+                spans[3].innerText = 0;
+            }    }
 
 
 }
