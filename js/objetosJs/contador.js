@@ -2,6 +2,14 @@ import {VerificarCss} from '../main.js'
 
 export default class Contador {
 
+    /**
+     * Clase para armar un conteo regresivo.
+     * @param {*} _padre :Debemos agregar un #id o .class.
+     * @param {*} _año : debemos colocar un numero de año desde el actual en adelante.
+     * @param {*} _mes :debemos colocar un numero de mes desde el 1 al 12.
+     * @param {*} _dia :debemos colocar un numero de dia válido desde el 1 al 31 verificando que el mes cumpla con eso.
+     * @param {*} _horas :debemos colocar un numero de hora válida desde el 0 al 24.
+     */
     constructor(_padre, _año, _mes, _dia,_horas) {
         this.padre = _padre ?? 'body';
         this.año = _año;
@@ -42,7 +50,7 @@ export default class Contador {
     height: 6em;
     border: solid 3px rgb(51, 51, 51, 0.8);
     margin: 0 auto;
-  text-align: center;
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(4, auto);
     gap: 20px;
@@ -76,7 +84,7 @@ export default class Contador {
 
      
     static async calcularTiempoRestante() {
-        const fechaObjetivo = new Date( globalThis.timer)//('2024-09-28T00:00:00');
+        const fechaObjetivo = new Date( globalThis.timer);
         const fechaActual = new Date();
 
         const diferencia = fechaObjetivo - fechaActual;

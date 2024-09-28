@@ -140,9 +140,7 @@ export class formularioWsatsApp4 extends Formulario {
     }
 };
 
-new CartelConteo('#ej-contenedor',2024,9,28,17)
-   
-setInterval(CartelConteo.mostrarContador, 1000);
+
 //new loader1('#ej-contenedor')
 
 //const obj = librerias[0].ejemplos.href;
