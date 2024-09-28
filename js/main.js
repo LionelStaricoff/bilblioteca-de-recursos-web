@@ -17,7 +17,7 @@ import { Formulario } from './objetosJs/formulario.js';
 import {verificarCss} from './verificarCss.js';
 import {CrearSpanAnimation} from './objetosJs/CrearSpanAnimation.js';
 import {scrollFx} from './scrollFx.js';
-
+import Contador from './objetosJs/contador.js';
 
 
 export const ScrollFx = ()=> {return scrollFx()}; 
@@ -55,6 +55,8 @@ export class cartelDosBotones extends cartelBbdd { };
 export class ModalError extends CartelError { };
 
 export class CartelNotificacion extends Notificacion { };
+
+export class CartelConteo extends Contador {};
 
 export class formularioWsatsApp1 extends Formulario {
     constructor({ father: _father, whatsApp: _whatsApp, photo: _photo, 
@@ -138,7 +140,9 @@ export class formularioWsatsApp4 extends Formulario {
     }
 };
 
-
+new CartelConteo('#ej-contenedor',2024,9,28,16)
+   
+setInterval(CartelConteo.mostrarContador, 1000);
 //new loader1('#ej-contenedor')
 
 //const obj = librerias[0].ejemplos.href;
