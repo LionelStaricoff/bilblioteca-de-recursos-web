@@ -14,7 +14,7 @@ export class cartelBbdd {
     }
 
     agregarAlFront() {
-        this.caragarStyle();
+        this.cargarStyle();
         const padre = document.querySelector(this._padre);
         padre.appendChild(this.armarCartel());
     }
@@ -42,7 +42,7 @@ export class cartelBbdd {
         return this._div;
     }
 
-    caragarStyle() {
+    cargarStyle() {
         const head = document.querySelector('head');
         const style = document.createElement('style');
         style.innerText = `#doble_button {

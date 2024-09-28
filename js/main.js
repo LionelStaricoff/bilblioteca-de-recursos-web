@@ -14,15 +14,18 @@ import { CartelError } from './objetosJs/CartelError.js';
 import { Notificacion } from './objetosJs/CartelNotificacion.js';
 import { CrearTextoFX01 } from './objetosJs/TextoFX01.js';
 import { Formulario } from './objetosJs/formulario.js';
-import {verificarCss} from './verificarCss.js';
-import {CrearSpanAnimation} from './objetosJs/CrearSpanAnimation.js';
-import {scrollFx} from './scrollFx.js';
+import { verificarCss } from './verificarCss.js';
+import { CrearSpanAnimation } from './objetosJs/CrearSpanAnimation.js';
+import { scrollFx } from './scrollFx.js';
+import { BotonFX } from './objetosJs/btnConEfecto.js';
 
 
 
 export const ScrollFx = ()=> {return scrollFx()}; 
 
 export const VerificarCss = (msj)=> {return verificarCss(msj)}; 
+
+export class BotonFX01 extends BotonFX{};
 
 export class TextoFxBlock extends CrearSpanAnimation{};
 

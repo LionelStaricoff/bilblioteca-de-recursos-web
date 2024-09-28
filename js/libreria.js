@@ -4,6 +4,93 @@ const url = "https://lionelstaricoff.github.io/bilblioteca-de-recursos-web/js/ma
 
 export const librerias = [
     {
+             
+        titulo:"Boton con efectos",
+        href:()=> new objs.BotonFX01('body', 'Guardar', 'green', 'blue', 'white', null),
+        html:
+        `
+        <button class="boton">
+                <span><a href="#">Guardar <img src="img/iconos/flecha-derecha.png" alt=""></a></span>
+            </button>
+        `,
+        css: `<pre class="codigo"><code>
+        .botonFX {
+            width: 150px;
+            height: 50px;
+            background-color: var(--fondoBtnFX, var(--verde_claro));
+            color: var(--texto, var(--negro));
+            font-size: 18px;
+            font-weight: bold;
+            border: 3px outset var(--fondoBtnFX, var(--verde_claro));
+            cursor: pointer;
+            border-radius: 25px;
+            box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.6);
+            position: relative;
+            overflow: hidden;
+            display: grid;
+            place-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .botonFX span {
+            z-index: 2;
+            display: grid;
+            place-content: center;
+            grid-auto-flow: column;
+        }
+
+        .botonFX img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .boton::after {
+            content: "";
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: calc(-100% - 50px);
+            border-bottom: 50px solid var(--hoverBtnFX, var(--azul_oscuro));
+            border-right: 50px solid transparent;
+            transition: 0.4s ease-in-out all;
+        }
+
+        .botonFX:hover::after {
+            left: 0;
+        }
+
+        .botonFX:hover span a {
+            color: var(--blanco);
+        }
+
+        .botonFX:hover img {
+            filter: invert(100%);
+        }
+
+        .botonFX:active {
+            transform: scale(0.9);
+        }
+        
+        
+        </code></pre>`,
+        js: `<pre class="codigo"><code>
+        No posee
+    
+
+        </code></pre>`,
+        objeto: `<pre class="codigo"><code>
+        
+        import {BotonFX1} from  ' ${url} ';
+
+        new BotonFX1('body', 'Guardar', 'green', 'blue', 'white', 'iconoUrl');
+
+        </code></pre>`
+    },
+
+
+
+    {
         titulo: "Loader",
         ejemplos: [
             {
@@ -1282,7 +1369,7 @@ contenedor.addEventListener("mouseleave", autoPlay);
         }
         </code></pre>`,
                 js: `<pre class="codigo"><code>
-        no posee
+        No posee
         </code></pre>`,
                 objeto: `<pre class="codigo"><code>
             import {CrearTextoFX01} from  ' ${url} ';
