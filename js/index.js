@@ -1,6 +1,7 @@
 import { librerias } from './libreria.js';
 import { util } from './utils.js';
 import { CargarWebsInteres } from '../js/webInteres.js';
+import {ColorearHtmlInnerText} from './colorear.js'
 
 
 
@@ -60,7 +61,8 @@ const verEjemplo = (href, html, css, js, obj) => {
   btnhtml.addEventListener('click', () => {
     iframe.srcdoc = "";
     ej.innerText = html;
-    util.colorearHtml()
+   new ColorearHtmlInnerText('deepskyblue', 'lime', '#333', 'white')
+   // util.colorearHtml()
   });
   btncss.addEventListener('click', () => { iframe.srcdoc = ""; ej.innerHTML = css; });
   btnjs.addEventListener('click', () => { iframe.srcdoc = ""; ej.innerHTML = js; });
