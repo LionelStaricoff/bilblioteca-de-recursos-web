@@ -388,5 +388,6 @@ export class colorearHtml2{
         }
         `;
         document.head.appendChild(style);
+        
     }
 }
