@@ -43,7 +43,9 @@
           "https://es.vecteezy.com/",
           "https://www.lifeofpix.com/",
           "https://kaboompics.com/",
-          "https://pngwing.com.es"
+          "https://pngwing.com.es",
+          "http://potlabicons.com",
+          "https://magecdn.com/tools/svg-loaders"
         ]
       },
       {
@@ -142,7 +144,8 @@
       {
         "titulo": "Crear componentes con ai",
         "links": [
-          "https://ai2ui.co/es"
+          "https://ai2ui.co/es",
+          "https://venice.ai/es"
         ]
       },
       {
