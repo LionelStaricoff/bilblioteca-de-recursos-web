@@ -151,7 +151,9 @@
       {
         "titulo": "Desarrollo front end",
         "links": [
-          "https://design.penpot.app/"
+          "https://design.penpot.app/",
+          "https://revealjs.com/",
+          "https://revealjs.com/"
         ]
       },
       {
@@ -192,7 +194,8 @@
            "https://www.mongodb.com/es",
            "https://securityheaders.com/",
            "https://httpie.io/app",
-           "https://libretranslate.com/"
+           "https://libretranslate.com/".
+           "https://github.com/Genymobile/scrcpy"
         ]
       }
     ]
