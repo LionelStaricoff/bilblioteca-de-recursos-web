@@ -197,8 +197,15 @@
            "https://www.mongodb.com/es",
            "https://securityheaders.com/",
            "https://httpie.io/app",
-           "https://libretranslate.com/".
+           "https://libretranslate.com/",
            "https://github.com/Genymobile/scrcpy"
+     
+        ]
+      },
+      {
+        "titulo": "Dominios gratis",
+        "links": [
+           "https://is-a.dev/"
         ]
       }
     ]
