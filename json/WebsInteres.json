@@ -74,6 +74,18 @@
         ]
       },
       {
+        "titulo": "emails temporales",
+        "links": [
+          "https://temp-mail.org/es/"
+        ]
+      },
+      {
+        "titulo": "sacar informacion de ubicacion de una ip",
+        "links": [
+          "https://ipquery.io/"
+        ]
+      },
+      {
         "titulo": "Proyectos para realizar",
         "links": [
           "https://github.com/bradtraversy/50projects50days"
