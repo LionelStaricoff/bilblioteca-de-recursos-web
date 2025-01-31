@@ -182,9 +182,13 @@
           "https://www.fl0.com/",
           "https://vercel.com/",
           "https://railway.app",
-          "https://dokploy.com/",
-          "https://posthog.com/"
-          
+          "https://dokploy.com/"
+        ]
+      },
+      {
+        "titulo": "para sacar analiticas de web o apis",
+        "links": [
+          "https://posthog.com/"  
         ]
       },
       {
