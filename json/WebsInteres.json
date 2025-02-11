@@ -138,7 +138,8 @@
         "titulo": "Editor online",
         "links": [
           "https://duckly.com/tools",
-          "https://codepen.io/"
+          "https://codepen.io/",
+          "https://idx.google.com"
         ]
       },
       {
@@ -218,7 +219,9 @@
            "https://securityheaders.com/",
            "https://httpie.io/app",
            "https://libretranslate.com/",
-           "https://github.com/Genymobile/scrcpy"
+           "https://github.com/Genymobile/scrcpy",
+           "http://web-check.xyz/",
+           "http://rapidapi.com/learn"
      
         ]
       },
