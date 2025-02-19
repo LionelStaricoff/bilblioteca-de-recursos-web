@@ -76,7 +76,8 @@
       {
         "titulo": "emails temporales",
         "links": [
-          "https://temp-mail.org/es/"
+          "https://temp-mail.org/es/",
+          "https://resend.com/"
         ]
       },
       {
@@ -182,7 +183,6 @@
           "https://render.com/",
           "https://www.fl0.com/",
           "https://vercel.com/",
-          "https://railway.app",
           "https://dokploy.com/",
           "https://fly.io/"
         ]
@@ -221,7 +221,8 @@
            "https://libretranslate.com/",
            "https://github.com/Genymobile/scrcpy",
            "http://web-check.xyz/",
-           "http://rapidapi.com/learn"
+           "http://rapidapi.com/learn",
+           "http://flaviocopes.com/books/"
      
         ]
       },
@@ -229,6 +230,13 @@
         "titulo": "Dominios gratis",
         "links": [
            "https://is-a.dev/"
+        ]
+      },
+      {
+        "titulo": "Probar aplicacion en varias vistas y ver errores",
+        "links": [
+           "https://www.webmobilefirst.com/es/",
+           "https://next.unlighthouse.dev/"
         ]
       }
     ]
