@@ -185,7 +185,8 @@
           "https://www.fl0.com/",
           "https://vercel.com/",
           "https://dokploy.com/",
-          "https://fly.io/"
+          "https://fly.io/",
+          "https://www.cloudflare.com/"
         ]
       },
       {
@@ -208,7 +209,9 @@
           "https://slimify.app/",
           "https://convertirimagenacodigo.netlify.app/",
           "https://www.softandapps.info/category/aplicaciones/",
-          "https://slimify.app/"
+          "https://slimify.app/",
+          "https://tinypng.com/",
+          "https://www.minifier.org/"
         
         ]
       },
@@ -244,6 +247,13 @@
         "titulo": "Probar una api y Simula un Ataque haking",
         "links": [
            "https://github.com/jaimeirazabal1/api-rate-limit-demo"
+        ]
+      },
+      {
+        "titulo": "Verifica los problemas de las páginas web",
+        "links": [
+           "https://pagespeed.web.dev/",
+           "https://buff.ly/4hX27AE"
         ]
       }
     ]
