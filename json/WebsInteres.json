@@ -226,7 +226,8 @@
           "https://www.softandapps.info/category/aplicaciones/",
           "https://slimify.app/",
           "https://tinypng.com/",
-          "https://www.minifier.org/"
+          "https://www.minifier.org/",
+          "https://squoosh.app/"
         
         ]
       },
@@ -313,6 +314,30 @@
         "links": [
              "https://uptimerobot.com/"
         ]
+      },
+      {
+        "titulo": "cofigurar nginx proxi inverso con spring boot con dominio + ssl",
+        "links": [
+             "https://blog.tericcabrel.com/deploy-spring-boot-application-docker-nginx-reverse-proxy/"
+        ]
+      },
+      {
+        "titulo": "Obtener certificado ssl sin costo para paginas webs o apis",
+        "links": [
+             "https://letsencrypt.org/"
+                 ]
+      },
+      {
+        "titulo": "Inges para devepoper",
+        "links": [
+             "https://cursos.desafiolatam.com/courses/english-for-developers-it-professionals?utm_source=linkedin&utm_medium=embajadores_charlie&utm_campaign=cursos_gratuitos&utm_content=ingles"
+        ]
+      },
+      {
+        "titulo": "Obtener certificado de kubernetes y otros",
+        "links": [
+             "https://t.co/E0DuG3oNWb"
+                 ]
       }
     ]
   }
