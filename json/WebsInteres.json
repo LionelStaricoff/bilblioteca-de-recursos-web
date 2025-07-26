@@ -1,350 +1,308 @@
 {
-    "websDeInteres": [
-      {
-        "titulo": "Lista de recursos gratuitos para desarrolladores",
-        "links": [
-          "http://free-for.dev",
-          "https://publicapis.io/"
-   
-        ]
-      },
-      {
-        "titulo": "patrones de diseño para desarrolladores",
-        "links": [
-          "https://refactoring.guru/"
-        ]
-      },
-      {
-        "titulo": "Imágenes & iconos gratis",
-        "links": [
-          "https://www.iconfinder.com/",
-          "https://dryicons.com/",
-          "https://vector.me/",
-          "https://vectorportal.com/es",
-          "https://www.1001freedownloads.com/",
-          "https://www.vectorstock.com/",
-          "https://pixabay.com/es/",
-          "https://es.vecteezy.com/",
-          "https://wallpapers.com/",
-          "https://unsplash.com/es",
-          "https://www.pexels.com/es-es/",
-          "https://www.flaticon.es/ (tiene packs de iconos)",
-          "https://favicon.io/",
-          "https://fontawesome.com/",
-          "https://fonts.google.com/iconshttps://fonts.google.com/icons",
-          "https://freeillustrations.xyz/",
-          "https://error404.fun/",
-          "https://bgjar.com/ (fondos svg)",
-          "https://coolors.co/ (para crear paletas de colores)",
-          "https://burst.shopify.com/ (fotos free)",
-          "https://stocksnap.io/",
-          "https://www.stockvault.net/",
-          "https://pixabay.com/es/",
-          "https://es.vecteezy.com/",
-          "https://www.lifeofpix.com/",
-          "https://kaboompics.com/",
-          "https://pngwing.com.es",
-          "http://potlabicons.com",
-          "https://magecdn.com/tools/svg-loaders"
-        ]
-      },
-      {
-        "titulo": "Prácticas y tutoriales",
-        "links": [
-          "https://www.frontendmentor.io/",
-          "https://aprendecss.com/"
-        ]
-      },
-      {
-        "titulo": "Editar online",
-        "links": [
-          "https://miro.com/es/",
-          "https://penpot.app/",
-          "https://www.ilovepdf.com/",
-          "https://www.canva.com/es_419/",
-          "https://www.photopea.com/",
-          "http://www.umletino.com/umletino.html",
-          "https://boxy-svg.com/"
-        ]
-      },
-      {
-        "titulo": "Crear programas en línea",
-        "links": [
-          "https://stackblitz.com/"
-        ]
-      },
-      {
-        "titulo": "Servidor para mensajes push",
-        "links": [
-          "http://pocketbase.io"
-        ]
-      },
-      {
-        "titulo": "emails temporales",
-        "links": [
-          "https://temp-mail.org/es/",
-          "https://resend.com/"
-        ]
-      },
-      {
-        "titulo": "sacar informacion de ubicacion de una ip",
-        "links": [
-          "https://ipquery.io/"
-        ]
-      },
-      {
-        "titulo": "Proyectos para realizar",
-        "links": [
-          "https://github.com/bradtraversy/50projects50days"
-        ]
-      },
-      {
-        "titulo": "Templates html y css",
-        "links": [
-          "https://www.noupe.com/essentials/freebies-tools-templates/50-free-css-x-html-templates.html",
-          "https://html5up.net/",
-          "https://web-dev-resources.com/"
-        ]
-      },
-      {
-        "titulo": "Efectos css",
-        "links": [
-          "https://ideakreativa.net/30-ejemplos-geniales-de-animacion-css-para-sitios-web-increibles/amp/",
-          "https://www.transition.style/"
-        ]
-      },
-      {
-        "titulo": "Convertir archivos jar de la libreria javaFx en apk para android",
-        "links": [
-          "https://gluonhq.com/products/scene-builder/"
-        ]
-      },
-      {
-        "titulo": "Convertir archivos web  en apk para android",
-        "links": [
-          "https://www.webintoapp.com/html-to-app"
-        ]
-      },
-      {
-        "titulo": "Aprender desarrollo web y lenguajes",
-        "links": [
-          "https://open-bootcamp.com/",
-          "https://100dayscss.com/",
-          "https://web.dev/learn?hl=es-419",
-          "https://quickref.me/index.html",
-          "https://learnjavascript.online/app.html?id=1435",
-          "https://sqlinteractivo.desafiolatam.com/",
-          "https://es.javascript.info/",
-          "https://applicants.bairesdev.com/test-lab?lang=es",
-          "https://refactoring.guru/es/design-patterns/java",
-          "https://picodotdev.github.io/blog-bitix/"
-        ]
-      },
-      {
-        "titulo": "CEO web",
-        "links": [
-          "https://developer.chrome.com/docs/lighthouse/seo/meta-description?hl=es-419",
-          "https://www.aluracursos.com/blog/seo-herramientas-gratuitas-para-que-tu-sitio-se-posicione-mejor",
-          "https://www.freecodecamp.org/news/learn-html-and-css-from-the-ceo-of-scrimba/"
-        ]
-      },
-      {
-        "titulo": "Editor online",
-        "links": [
-          "https://duckly.com/tools",
-          "https://codepen.io/",
-          "https://idx.google.com"
-        ]
-      },
-      {
-        "titulo": "Editor svg online",
-        "links": [
-          "https://boxy-svg.com/app"
-        ]
-      },
-      {
-        "titulo": "Mejorar perfil LinkedIn",
-        "links": [
-          "https://www.aluracursos.com/blog/como-crear-un-perfil-atractivo-para-reclutadores-en-linkedin"
-        ]
-      },
-      {
-        "titulo": "Crear componentes con ai",
-        "links": [
-          "https://ai2ui.co/es",
-          "https://venice.ai/es"
-        ]
-      },
-      {
-        "titulo": "Desarrollo front end",
-        "links": [
-          "https://design.penpot.app/",
-          "https://revealjs.com/",
-          "https://revealjs.com/",
-          "https://calltoinspiration.com/",
-          "https://reactcomponents.com/",
-          "https://www.lightgalleryjs.com/",
-          "https://cssgridgenerator.io/"
-        ]
-      },
-      {
-        "titulo": "Servidores web",
-        "links": [
-          "https://stackblitz.com/?starters=backend",
-          "https://northflank.com/",
-          "https://www.netlify.com/",
-          "https://render.com/",
-          "https://www.fl0.com/",
-          "https://vercel.com/",
-          "https://dokploy.com/",
-          "https://fly.io/",
-          "https://www.cloudflare.com/",
-          "https://www.koyeb.com/",
-          "https://huggingface.co/",
-          "https://glitch.com/"
-        ]
-      },
-      {
-        "titulo": "para sacar analiticas de web o apis",
-        "links": [
-          "https://posthog.com/"  
-        ]
-      },
-      {
-        "titulo": "Cursos gratuitos",
-        "links": [
-          "https://platzi.com/clases/2822-marca-personal/46988-elige-las-comunidades-profesionales-para-tu-perfil/",
-          "https://www.freecodecamp.org/espanol/news/aprende-react-desde-cero-curso-de-react-con-proyectos/"
-         
-        ]
-      },
-      {
-        "titulo": "Reducir el tamaño de las imagenes para web:",
-        "links": [
-          "https://slimify.app/",
-          "https://convertirimagenacodigo.netlify.app/",
-          "https://www.softandapps.info/category/aplicaciones/",
-          "https://slimify.app/",
-          "https://tinypng.com/",
-          "https://www.minifier.org/",
-          "https://squoosh.app/"
-        
-        ]
-      },
-      {
-        "titulo": "Recursos para dev",
-        "links": [
-           "https://free-for.dev",
-           "https://www.mongodb.com/es",
-           "https://securityheaders.com/",
-           "https://httpie.io/app",
-           "https://libretranslate.com/",
-           "https://github.com/Genymobile/scrcpy",
-           "http://web-check.xyz/",
-           "http://rapidapi.com/learn",
-           "http://flaviocopes.com/books/",
-           "https://exercism.org/"
-     
-        ]
-      },
-      {
-        "titulo": "Dominios gratis",
-        "links": [
-           "https://is-a.dev/"
-        ]
-      },
-      {
-        "titulo": "Probar aplicacion en varias vistas y ver errores",
-        "links": [
-           "https://www.webmobilefirst.com/es/",
-           "https://next.unlighthouse.dev/"
-        ]
-      },
-      {
-        "titulo": "Probar una api y Simula un Ataque haking",
-        "links": [
-           "https://github.com/jaimeirazabal1/api-rate-limit-demo"
-        ]
-      },
-      {
-        "titulo": "Verifica los problemas de las páginas web",
-        "links": [
-           "https://pagespeed.web.dev/",
-           "https://buff.ly/4hX27AE"
-        ]
-      },
-      {
-        "titulo": "Simulador kubernetes",
-        "links": [
-           "https://github.com/vhgalvez/FlatcarMicroCloud"
-        ]
-      },
-      {
-        "titulo": "Simulador AWS",
-        "links": [
-           "https://github.com/AgnerVillaFabrega/Devops/tree/main/labs/localstack"
-        ]
-      },
-      {
-        "titulo": "Civerseguridad",
-        "links": [
-           "https://cyberforcehacking.com/web/es"
-        ]
-      },
-      {
-        "titulo": "openAi free",
-        "links": [
-           "https://developer.puter.com/tutorials/free-unlimited-openai-api/"
-        ]
-      },
-      {
-        "titulo": "deploy Ios y android online",
-        "links": [
-             "https://codemagic.io"
-        ]
-      },
-      {
-        "titulo": "adaptar iconos de varios tamaños para ios",
-        "links": [
-             "https://makeappicon.com/"
-        ]
-      },
-      {
-        "titulo": "Mantener despierto Render, monitorea un back-end",
-        "links": [
-             "https://uptimerobot.com/"
-        ]
-      },
-      {
-        "titulo": "cofigurar nginx proxi inverso con spring boot con dominio + ssl",
-        "links": [
-             "https://blog.tericcabrel.com/deploy-spring-boot-application-docker-nginx-reverse-proxy/"
-        ]
-      },
-      {
-        "titulo": "Obtener certificado ssl sin costo para paginas webs o apis",
-        "links": [
-             "https://letsencrypt.org/"
-                 ]
-      },
-      {
-        "titulo": "Inges para devepoper",
-        "links": [
-             "https://cursos.desafiolatam.com/courses/english-for-developers-it-professionals?utm_source=linkedin&utm_medium=embajadores_charlie&utm_campaign=cursos_gratuitos&utm_content=ingles"
-        ]
-      },
-      {
-        "titulo": "Obtener certificado de kubernetes y otros",
-        "links": [
-             "https://t.co/E0DuG3oNWb"
-                 ]
-      },
-      {
-        "titulo": "Información sobre un dominio web",
-        "links": [
-             "http://digger.tools"
-                 ]
-      }
-    ]
-  }
-  
+  "websDeInteres": [
+    {
+      "titulo": "Lista de recursos gratuitos para desarrolladores",
+      "links": ["http://free-for.dev", "https://publicapis.io/"]
+    },
+    {
+      "titulo": "patrones de diseño para desarrolladores",
+      "links": ["https://refactoring.guru/"]
+    },
+    {
+      "titulo": "Imágenes & iconos gratis",
+      "links": [
+        "https://www.iconfinder.com/",
+        "https://dryicons.com/",
+        "https://vector.me/",
+        "https://vectorportal.com/es",
+        "https://www.1001freedownloads.com/",
+        "https://www.vectorstock.com/",
+        "https://pixabay.com/es/",
+        "https://es.vecteezy.com/",
+        "https://wallpapers.com/",
+        "https://unsplash.com/es",
+        "https://www.pexels.com/es-es/",
+        "https://www.flaticon.es/ (tiene packs de iconos)",
+        "https://favicon.io/",
+        "https://fontawesome.com/",
+        "https://fonts.google.com/iconshttps://fonts.google.com/icons",
+        "https://freeillustrations.xyz/",
+        "https://error404.fun/",
+        "https://bgjar.com/ (fondos svg)",
+        "https://coolors.co/ (para crear paletas de colores)",
+        "https://burst.shopify.com/ (fotos free)",
+        "https://stocksnap.io/",
+        "https://www.stockvault.net/",
+        "https://pixabay.com/es/",
+        "https://es.vecteezy.com/",
+        "https://www.lifeofpix.com/",
+        "https://kaboompics.com/",
+        "https://pngwing.com.es",
+        "http://potlabicons.com",
+        "https://magecdn.com/tools/svg-loaders",
+        "https://animatedicons.co/"
+      ]
+    },
+    {
+      "titulo": "Prácticas y tutoriales",
+      "links": ["https://www.frontendmentor.io/", "https://aprendecss.com/"]
+    },
+    {
+      "titulo": "Editar online",
+      "links": [
+        "https://miro.com/es/",
+        "https://penpot.app/",
+        "https://www.ilovepdf.com/",
+        "https://www.canva.com/es_419/",
+        "https://www.photopea.com/",
+        "http://www.umletino.com/umletino.html",
+        "https://boxy-svg.com/"
+      ]
+    },
+    {
+      "titulo": "Crear programas en línea",
+      "links": ["https://stackblitz.com/"]
+    },
+    {
+      "titulo": "Servidor para mensajes push",
+      "links": ["http://pocketbase.io"]
+    },
+    {
+      "titulo": "Enviar emails",
+      "links": [
+        "https://temp-mail.org/es/",
+        "https://resend.com/",
+        "http://maileroo.com"
+      ]
+    },
+    {
+      "titulo": "sacar informacion de ubicacion de una ip",
+      "links": ["https://ipquery.io/"]
+    },
+    {
+      "titulo": "Proyectos para realizar",
+      "links": ["https://github.com/bradtraversy/50projects50days"]
+    },
+    {
+      "titulo": "Templates html y css",
+      "links": [
+        "https://www.noupe.com/essentials/freebies-tools-templates/50-free-css-x-html-templates.html",
+        "https://html5up.net/",
+        "https://web-dev-resources.com/"
+      ]
+    },
+    {
+      "titulo": "Efectos css",
+      "links": [
+        "https://ideakreativa.net/30-ejemplos-geniales-de-animacion-css-para-sitios-web-increibles/amp/",
+        "https://www.transition.style/"
+      ]
+    },
+    {
+      "titulo": "Convertir archivos jar de la libreria javaFx en apk para android",
+      "links": ["https://gluonhq.com/products/scene-builder/"]
+    },
+    {
+      "titulo": "Convertir archivos web  en apk para android",
+      "links": ["https://www.webintoapp.com/html-to-app"]
+    },
+    {
+      "titulo": "Aprender desarrollo web y lenguajes",
+      "links": [
+        "https://open-bootcamp.com/",
+        "https://100dayscss.com/",
+        "https://web.dev/learn?hl=es-419",
+        "https://quickref.me/index.html",
+        "https://learnjavascript.online/app.html?id=1435",
+        "https://sqlinteractivo.desafiolatam.com/",
+        "https://es.javascript.info/",
+        "https://applicants.bairesdev.com/test-lab?lang=es",
+        "https://refactoring.guru/es/design-patterns/java",
+        "https://picodotdev.github.io/blog-bitix/"
+      ]
+    },
+    {
+      "titulo": "CEO web",
+      "links": [
+        "https://developer.chrome.com/docs/lighthouse/seo/meta-description?hl=es-419",
+        "https://www.aluracursos.com/blog/seo-herramientas-gratuitas-para-que-tu-sitio-se-posicione-mejor",
+        "https://www.freecodecamp.org/news/learn-html-and-css-from-the-ceo-of-scrimba/"
+      ]
+    },
+    {
+      "titulo": "Editor online",
+      "links": [
+        "https://duckly.com/tools",
+        "https://codepen.io/",
+        "https://idx.google.com"
+      ]
+    },
+    {
+      "titulo": "Editor svg online",
+      "links": ["https://boxy-svg.com/app"]
+    },
+    {
+      "titulo": "Mejorar perfil LinkedIn",
+      "links": [
+        "https://www.aluracursos.com/blog/como-crear-un-perfil-atractivo-para-reclutadores-en-linkedin"
+      ]
+    },
+    {
+      "titulo": "Crear componentes con ai",
+      "links": ["https://ai2ui.co/es", "https://venice.ai/es"]
+    },
+    {
+      "titulo": "Desarrollo front end",
+      "links": [
+        "https://design.penpot.app/",
+        "https://revealjs.com/",
+        "https://revealjs.com/",
+        "https://calltoinspiration.com/",
+        "https://reactcomponents.com/",
+        "https://www.lightgalleryjs.com/",
+        "https://cssgridgenerator.io/"
+      ]
+    },
+    {
+      "titulo": "Servidores web",
+      "links": [
+        "https://stackblitz.com/?starters=backend",
+        "https://northflank.com/",
+        "https://www.netlify.com/",
+        "https://render.com/",
+        "https://www.fl0.com/",
+        "https://vercel.com/",
+        "https://dokploy.com/",
+        "https://fly.io/",
+        "https://www.cloudflare.com/",
+        "https://www.koyeb.com/",
+        "https://huggingface.co/",
+        "https://glitch.com/"
+      ]
+    },
+    {
+      "titulo": "para sacar analiticas de web o apis",
+      "links": ["https://posthog.com/"]
+    },
+    {
+      "titulo": "Cursos gratuitos",
+      "links": [
+        "https://platzi.com/clases/2822-marca-personal/46988-elige-las-comunidades-profesionales-para-tu-perfil/",
+        "https://www.freecodecamp.org/espanol/news/aprende-react-desde-cero-curso-de-react-con-proyectos/"
+      ]
+    },
+    {
+      "titulo": "Reducir el tamaño de las imagenes para web:",
+      "links": [
+        "https://slimify.app/",
+        "https://convertirimagenacodigo.netlify.app/",
+        "https://www.softandapps.info/category/aplicaciones/",
+        "https://slimify.app/",
+        "https://tinypng.com/",
+        "https://www.minifier.org/",
+        "https://squoosh.app/"
+      ]
+    },
+    {
+      "titulo": "Recursos para dev",
+      "links": [
+        "https://free-for.dev",
+        "https://securityheaders.com/",
+        "https://httpie.io/app",
+        "https://libretranslate.com/",
+        "https://github.com/Genymobile/scrcpy",
+        "http://web-check.xyz/",
+        "http://rapidapi.com/learn",
+        "http://flaviocopes.com/books/",
+        "https://exercism.org/"
+      ]
+    },
+    {
+      "titulo": "Dominios gratis",
+      "links": ["https://is-a.dev/"]
+    },
+    {
+      "titulo": "Probar aplicacion en varias vistas y ver errores",
+      "links": [
+        "https://www.webmobilefirst.com/es/",
+        "https://next.unlighthouse.dev/"
+      ]
+    },
+    {
+      "titulo": "Probar una api y Simula un Ataque haking",
+      "links": ["https://github.com/jaimeirazabal1/api-rate-limit-demo"]
+    },
+    {
+      "titulo": "Verifica los problemas de las páginas web",
+      "links": ["https://pagespeed.web.dev/", "https://buff.ly/4hX27AE"]
+    },
+    {
+      "titulo": "Simulador kubernetes",
+      "links": ["https://github.com/vhgalvez/FlatcarMicroCloud"]
+    },
+    {
+      "titulo": "Simulador AWS",
+      "links": [
+        "https://github.com/AgnerVillaFabrega/Devops/tree/main/labs/localstack"
+      ]
+    },
+    {
+      "titulo": "Civerseguridad",
+      "links": ["https://cyberforcehacking.com/web/es"]
+    },
+    {
+      "titulo": "openAi free",
+      "links": [
+        "https://developer.puter.com/tutorials/free-unlimited-openai-api/"
+      ]
+    },
+    {
+      "titulo": "deploy Ios y android online",
+      "links": ["https://codemagic.io"]
+    },
+    {
+      "titulo": "adaptar iconos de varios tamaños para ios",
+      "links": ["https://makeappicon.com/"]
+    },
+    {
+      "titulo": "Mantener despierto Render, monitorea un back-end",
+      "links": ["https://uptimerobot.com/"]
+    },
+    {
+      "titulo": "cofigurar nginx proxi inverso con spring boot con dominio + ssl",
+      "links": [
+        "https://blog.tericcabrel.com/deploy-spring-boot-application-docker-nginx-reverse-proxy/"
+      ]
+    },
+    {
+      "titulo": "Obtener certificado ssl sin costo para paginas webs o apis",
+      "links": ["https://letsencrypt.org/"]
+    },
+    {
+      "titulo": "Inges para devepoper",
+      "links": [
+        "https://cursos.desafiolatam.com/courses/english-for-developers-it-professionals?utm_source=linkedin&utm_medium=embajadores_charlie&utm_campaign=cursos_gratuitos&utm_content=ingles"
+      ]
+    },
+    {
+      "titulo": "Obtener certificado de kubernetes y otros",
+      "links": ["https://t.co/E0DuG3oNWb"]
+    },
+    {
+      "titulo": "Información sobre un dominio web",
+      "links": ["http://digger.tools"]
+    },
+    {
+      "titulo": "Emuladores Android e ios",
+      "links": ["http://minisim.app"]
+    },
+    {
+      "titulo": "Bases de datos",
+      "links": ["https://www.mongodb.com/es", "https://lite.xata.io/"]
+    },
+    {
+      "titulo": "Obtener métricas de un front gratis siempre impementada por micrisoft",
+      "links": ["https://clarity.microsoft.com/"]
+    }
+  ]
+}
