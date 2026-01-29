@@ -285,8 +285,11 @@
       ]
     },
     {
-      "titulo": "Obtener certificado de kubernetes y otros",
-      "links": ["https://t.co/E0DuG3oNWb"]
+      "titulo": "Obtener certificado de kubernetes y practicas otros",
+      "links": [
+        "https://t.co/E0DuG3oNWb",
+        "https://kodekloud.com/free-labs/kubernetes"
+      ]
     },
     {
       "titulo": "Información sobre un dominio web",
@@ -303,6 +306,10 @@
     {
       "titulo": "Obtener métricas de un front gratis siempre impementada por micrisoft",
       "links": ["https://clarity.microsoft.com/"]
+    },
+    {
+      "titulo": "Obtener el cartel de kokkies de regulacion europea",
+      "links": ["https://github.com/AmauriC/tarteaucitron.js/"]
     }
   ]
 }
