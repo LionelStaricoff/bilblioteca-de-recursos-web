@@ -310,6 +310,10 @@
     {
       "titulo": "Obtener el cartel de kokkies de regulacion europea",
       "links": ["https://github.com/AmauriC/tarteaucitron.js/"]
+    },
+    {
+      "titulo": "Generar front desde prompt",
+      "links": ["https://www.pencil.dev/", "https://stitch.withgoogle.com/"]
     }
   ]
 }
